@@ -14,120 +14,119 @@
 <body id="top">
   <header class="site-header">
     <div class="container header-inner">
-      <a href="https://www.stoneconnection.cz/" class="brand-logo" aria-label="Stone Connection">
-        <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_80,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection logo" width="36" height="36">
+      <a href="domu.html" class="brand-logo" aria-label="Stone Connection — Domů">
+        <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_80,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection logo" width="34" height="34">
         <span class="brand-text">STONE CONNECTION</span>
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace">
-        <a href="https://www.stoneconnection.cz/" class="nav-link">Domů</a>
-        <a href="#top" class="nav-link active" aria-current="page">Online Sklad</a>
-        <a href="https://www.stoneconnection.cz/katalog/" class="nav-link">Katalog</a>
-        <a href="https://www.stoneconnection.cz/realizace/" class="nav-link">Realizace</a>
-        <a href="https://www.stoneconnection.cz/o-nas/" class="nav-link">O nás</a>
-        <a href="https://www.stoneconnection.cz/kontakt/" class="nav-link nav-cta">Kontakt</a>
+        <a href="domu.html" class="nav-link">Domů</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Online Sklad</a>
+        <a href="katalog.html" class="nav-link">Katalog</a>
+        <a href="realizace.html" class="nav-link">Realizace</a>
+        <a href="o-nas.html" class="nav-link">O nás</a>
+        <a href="kontakt.html" class="nav-link nav-cta">Kontakt</a>
       </nav>
 
       <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-
-    <div class="hero-strip">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>ONLINE SKLAD DESKOVINY</h1>
-          <p>Vyberte si kámen podle kresby, barvy a druhu. Detailní rozměry bloků a skladovou dostupnost v Praze a Rožnově zobrazíte jedním kliknutím.</p>
-        </div>
-        <div class="stats-bar" id="stats-bar" aria-live="polite">
-          <div class="stat-pill"><strong id="stat-materials">—</strong><span>materiálů</span></div>
-          <div class="stat-pill"><strong id="stat-blocks">—</strong><span>bloků</span></div>
-          <div class="stat-pill"><strong id="stat-slabs">—</strong><span>desek</span></div>
-          <div class="stat-pill"><strong id="stat-area">—</strong><span>celkem</span></div>
-        </div>
-      </div>
-    </div>
   </header>
 
-  <section class="toolbar-wrap" aria-label="Filtry a řazení skladu">
-    <div class="container">
-      <div class="filter-group">
-        <span class="filter-label">Druh kamene</span>
-        <div class="pill-list" id="type-pills" role="group" aria-label="Filtrovat podle druhu kamene (možno vybrat více)"></div>
+  <section class="context-bar">
+    <div class="container context-row">
+      <div>
+        <nav class="breadcrumb" aria-label="Drobečková navigace">
+          <a href="domu.html">Stone Connection</a>
+          <span aria-hidden="true">›</span>
+          <span>Online sklad</span>
+        </nav>
+        <h1 class="page-title">Skladová zásoba deskoviny v Praze a Rožnově</h1>
       </div>
 
-      <div class="filter-group">
-        <span class="filter-label">Barva</span>
-        <div class="pill-list" id="color-pills" role="group" aria-label="Filtrovat podle barvy (možno vybrat více)"></div>
-      </div>
-
-      <div class="toolbar-controls">
-        <div class="search-box">
-          <svg class="search-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-          </svg>
-          <input type="search" id="search-input" placeholder="Hledat název kamene nebo číslo bloku…" autocomplete="off" aria-label="Hledat kámen nebo číslo bloku">
-        </div>
-
-        <div class="controls-right">
-          <div class="segmented" role="group" aria-label="Sklad">
-            <button type="button" class="seg-btn active" data-warehouse="">Všechny sklady</button>
-            <button type="button" class="seg-btn" data-warehouse="Praha">Praha</button>
-            <button type="button" class="seg-btn" data-warehouse="Rožnov">Rožnov</button>
-          </div>
-
-          <select id="thickness-filter" class="filter-select" aria-label="Tloušťka desky">
-            <option value="">Všechny tloušťky</option>
-          </select>
-
-          <select id="surface-filter" class="filter-select" aria-label="Povrchová úprava">
-            <option value="">Všechny povrchy</option>
-          </select>
-
-          <select id="group-by" class="filter-select" aria-label="Seskupení galerie">
-            <option value="none">Seskupení: Abecedně</option>
-            <option value="type">Seskupení: Podle druhu</option>
-            <option value="color">Seskupení: Podle barvy</option>
-          </select>
-
-          <label class="photo-toggle" title="Skrýt položky bez fotografie">
-            <input type="checkbox" id="photo-only-toggle">
-            <span>Jen s fotkou</span>
-          </label>
-
-          <div class="view-switcher" role="group" aria-label="Režim zobrazení">
-            <button type="button" class="view-btn active" data-view="materials">Galerie</button>
-            <button type="button" class="view-btn" data-view="blocks">Bloky</button>
-            <button type="button" class="view-btn" data-view="table">Tabulka</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="active-bar" id="active-bar" hidden>
-        <div class="active-chips" id="active-chips"></div>
-        <button type="button" id="reset-filters" class="reset-btn">Vymazat vše</button>
-      </div>
-
-      <div class="results-meta">
-        <span id="results-summary">Načítám aktuální sklad…</span>
-        <span id="sync-stamp" class="sync-stamp"></span>
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="search" id="search-input" placeholder="Vyhledat kámen nebo číslo bloku…" autocomplete="off" aria-label="Vyhledat kámen nebo číslo bloku">
       </div>
     </div>
   </section>
 
-  <main class="container main-content" id="main-content">
-    <div id="gallery-root" aria-live="polite"></div>
-    <div id="table-root" class="table-wrap" hidden></div>
-    <div id="empty-state" class="empty-state" hidden>
-      <p>Zvolené kombinaci filtrů neodpovídá žádný kámen na skladě.</p>
-      <button type="button" id="empty-reset" class="reset-btn">Zobrazit celý sklad</button>
-    </div>
-  </main>
+  <div class="container catalog-layout">
+    <aside class="sidebar-box" aria-label="Filtr produktů">
+      <div class="sidebar-head">
+        <h2 class="sidebar-title">Filtr produktů</h2>
+        <button type="button" id="reset-filters" class="sidebar-clear" hidden>Vymazat vše</button>
+      </div>
+
+      <details class="acc-group" open>
+        <summary class="acc-summary">Barva kamene</summary>
+        <div class="acc-body" id="filter-colors"></div>
+      </details>
+
+      <details class="acc-group" open>
+        <summary class="acc-summary">Druh kamene</summary>
+        <div class="acc-body" id="filter-types"></div>
+      </details>
+
+      <details class="acc-group">
+        <summary class="acc-summary">Sklad</summary>
+        <div class="acc-body" id="filter-warehouses"></div>
+      </details>
+
+      <details class="acc-group">
+        <summary class="acc-summary">Povrch kamene</summary>
+        <div class="acc-body" id="filter-surfaces"></div>
+      </details>
+
+      <details class="acc-group">
+        <summary class="acc-summary">Tloušťka kamene v cm</summary>
+        <div class="acc-body" id="filter-thicknesses"></div>
+      </details>
+
+      <div style="padding:12px 16px;border-top:1px solid var(--border);">
+        <label class="check-option">
+          <input type="checkbox" id="photo-only-toggle">
+          <span class="check-label">Jen položky s fotografií</span>
+        </label>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <div class="utility-row">
+        <div class="view-tabs" role="tablist" aria-label="Zobrazení skladu">
+          <button type="button" class="view-btn active" data-view="materials" role="tab" aria-selected="true">Galerie materiálů</button>
+          <button type="button" class="view-btn" data-view="blocks" role="tab" aria-selected="false">Jednotlivé bloky</button>
+          <button type="button" class="view-btn" data-view="table" role="tab" aria-selected="false">Tabulka</button>
+        </div>
+
+        <div class="utility-right">
+          <select id="group-by" class="group-select" aria-label="Seskupení galerie">
+            <option value="none">Řazení: Abecedně</option>
+            <option value="type">Seskupit: Podle druhu</option>
+            <option value="color">Seskupit: Podle barvy</option>
+          </select>
+          <span id="results-summary" class="results-summary">Načítám sklad…</span>
+        </div>
+      </div>
+
+      <div class="active-bar" id="active-bar" hidden></div>
+
+      <div id="gallery-root" aria-live="polite"></div>
+      <div id="table-root" class="table-wrap" hidden></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <p>Zvolené kombinaci filtrů neodpovídá žádný kámen na skladě.</p>
+        <button type="button" id="empty-reset" class="card-detail-btn" style="max-width:220px;margin:0 auto;">Zobrazit celý sklad</button>
+      </div>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="https://www.stoneconnection.cz/" class="brand-logo">
+      <div>
+        <a href="domu.html" class="brand-logo">
           <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection" width="32" height="32">
           <span class="brand-text">STONE CONNECTION</span>
         </a>
@@ -143,21 +142,20 @@
 
       <div class="footer-col">
         <strong>Sklady a showroomy</strong>
-        <div>Praha — sklad deskoviny</div>
-        <div>Rožnov pod Radhoštěm — sklad a centrála</div>
-        <div><a href="https://www.stoneconnection.cz/kontakt/">Kontakty a otevírací doba →</a></div>
+        <div>Praha 4 — Dobronická 1256</div>
+        <div>Rožnov pod Radhoštěm — Zuberská ul.</div>
+        <div><a href="kontakt.html">Kontakty a otevírací doba →</a></div>
       </div>
 
       <div class="footer-col">
-        <strong>Další sekce</strong>
-        <div><a href="https://www.stoneconnection.cz/katalog/">Katalog materiálů</a></div>
-        <div><a href="https://www.stoneconnection.cz/realizace/">Realizace</a></div>
+        <strong>Navigace</strong>
+        <div><a href="domu.html">Domů</a> · <a href="katalog.html">Katalog</a></div>
+        <div><a href="realizace.html">Realizace</a> · <a href="o-nas.html">O nás</a></div>
         <div id="footer-meta" class="footer-sync"></div>
       </div>
     </div>
   </footer>
 
-  <!-- Detail Modal -->
   <div id="detail-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
     <div class="modal-dialog">
       <button type="button" class="modal-close" id="modal-close" aria-label="Zavřít detail">✕</button>
@@ -165,16 +163,16 @@
     </div>
   </div>
 
-  <!-- Lightbox (Slab photo OR Interior composite scene) -->
   <div id="lightbox" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="Zvětšený náhled" hidden>
     <button type="button" class="lb-close" id="lb-close" aria-label="Zavřít galerii">✕</button>
-    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Předchozí fotka">‹</button>
+    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Předchozí">‹</button>
     <div class="lb-stage" id="lb-stage"></div>
-    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Další fotka">›</button>
+    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Další">›</button>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
+  <script src="shared.js" defer></script>
   <script src="app.js" defer></script>
 </body>
 </html>

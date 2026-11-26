@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kontakt | Stone Connection</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="domu.html" class="brand-logo" aria-label="Stone Connection — Domů">
+        <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_80,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection logo" width="34" height="34">
+        <span class="brand-text">STONE CONNECTION</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace">
+        <a href="domu.html" class="nav-link">Domů</a>
+        <a href="index.html" class="nav-link">Online Sklad</a>
+        <a href="katalog.html" class="nav-link">Katalog</a>
+        <a href="realizace.html" class="nav-link">Realizace</a>
+        <a href="o-nas.html" class="nav-link">O nás</a>
+        <a href="kontakt.html" class="nav-link nav-cta active" aria-current="page">Kontakt</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="context-bar">
+    <div class="container context-row">
+      <div>
+        <nav class="breadcrumb" aria-label="Drobečková navigace">
+          <a href="domu.html">Stone Connection</a>
+          <span aria-hidden="true">›</span>
+          <span>Kontakt</span>
+        </nav>
+        <h1 class="page-title">Pobočky, sklady a poptávka materiálu</h1>
+      </div>
+      <a href="index.html" class="btn-secondary">← Zpět do Online skladu</a>
+    </div>
+  </section>
+
+  <section class="page-band">
+    <div class="container">
+      <div class="cards-3" style="margin-bottom:36px;">
+        <div class="info-panel">
+          <h3>Kancelář Rožnov pod Radhoštěm</h3>
+          <p style="margin:6px 0;color:var(--text-muted);">Sokolská 408<br>756 61 Rožnov pod Radhoštěm</p>
+          <p style="margin:6px 0;font-size:13.5px;"><strong>Tel:</strong> +420 571 655 357<br><strong>E-mail:</strong> info@stoneconnection.cz<br><strong>Po – Pá:</strong> 7:00 – 15:30</p>
+        </div>
+
+        <div class="info-panel">
+          <h3>Sklad a kancelář Praha</h3>
+          <p style="margin:6px 0;color:var(--text-muted);">Dobronická 1256<br>148 00 Praha 4</p>
+          <p style="margin:6px 0;font-size:13.5px;"><strong>Tel:</strong> +420 244 461 764<br><strong>E-mail:</strong> info@stoneconnection.cz<br><strong>Po – Pá:</strong> 7:00 – 15:30</p>
+        </div>
+
+        <div class="info-panel">
+          <h3>Sklad Rožnov pod Radhoštěm</h3>
+          <p style="margin:6px 0;color:var(--text-muted);">Zuberská ul.<br>756 61 Rožnov pod Radhoštěm</p>
+          <p style="margin:6px 0;font-size:13.5px;"><strong>Tel:</strong> +420 777 772 544<br><strong>E-mail:</strong> info@stoneconnection.cz<br><strong>Po – Pá:</strong> 7:00 – 15:30</p>
+        </div>
+      </div>
+
+      <div class="info-grid-2">
+        <div class="info-panel">
+          <h2 class="band-title" style="font-size:24px;margin-bottom:14px;">Napište nám / Poptávka materiálu</h2>
+          <form id="contact-form" class="form-grid">
+            <div class="form-field">
+              <label for="f-name">Jméno nebo firma *</label>
+              <input type="text" id="f-name" required placeholder="Vaše jméno nebo název společnosti">
+            </div>
+            <div class="form-field">
+              <label for="f-email">E-mailová adresa *</label>
+              <input type="email" id="f-email" required placeholder="vas@email.cz">
+            </div>
+            <div class="form-field">
+              <label for="f-phone">Telefon</label>
+              <input type="tel" id="f-phone" placeholder="+420 ...">
+            </div>
+            <div class="form-field">
+              <label for="f-msg">Poptávaný materiál / zpráva *</label>
+              <textarea id="f-msg" rows="4" required placeholder="Specifikujte prosím materiál, blok nebo požadované rozměry desek…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="justify-self:start;">Odeslat poptávku</button>
+          </form>
+          <div id="contact-done" class="form-success" style="margin-top:14px;" hidden>
+            Poptávka byla v ukázkovém formuláři potvrzena. V ostrém nasazení na stoneconnection.cz se odešle přímo obchodnímu oddělení.
+          </div>
+        </div>
+
+        <div class="info-panel">
+          <h2 class="band-title" style="font-size:24px;margin-bottom:14px;">Specialisté</h2>
+          <div style="display:grid;gap:16px;">
+            <div>
+              <strong>Mgr. Jan Lapčík</strong> — Obchodní ředitel<br>
+              <span style="color:var(--text-muted);font-size:13.5px;">+420 777 772 549 · jlp@stoneconnection.com</span>
+            </div>
+            <div>
+              <strong>Bc. Jana Petříčková</strong> — Péče o klienty Čechy<br>
+              <span style="color:var(--text-muted);font-size:13.5px;">+420 777 772 551 · jrt@stoneconnection.com</span>
+            </div>
+            <div>
+              <strong>Miloš Kapoun</strong> — Péče o klienty Morava, Slezsko a Slovensko<br>
+              <span style="color:var(--text-muted);font-size:13.5px;">+420 777 772 544 · mkp@stoneconnection.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="domu.html" class="brand-logo">
+          <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection" width="32" height="32">
+          <span class="brand-text">STONE CONNECTION</span>
+        </a>
+        <p class="footer-note">Vysokoobrátkové pomníkové materiály jako Tarn, Nero Impala atd. jsou vždy skladem v dostatečném množství.</p>
+      </div>
+
+      <address class="footer-col">
+        <strong>Stone Connection Czech s.r.o.</strong>
+        <div>Sokolská 408</div>
+        <div>756 61 Rožnov pod Radhoštěm</div>
+        <div class="footer-ico">IČO: 26827301</div>
+      </address>
+
+      <div class="footer-col">
+        <strong>Sklady a showroomy</strong>
+        <div>Praha 4 — Dobronická 1256</div>
+        <div>Rožnov pod Radhoštěm — Zuberská ul.</div>
+        <div><a href="index.html">Online Sklad →</a></div>
+      </div>
+
+      <div class="footer-col">
+        <strong>Navigace</strong>
+        <div><a href="domu.html">Domů</a> · <a href="katalog.html">Katalog</a></div>
+        <div><a href="realizace.html">Realizace</a> · <a href="o-nas.html">O nás</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const mat = params.get('material');
+      const blok = params.get('blok');
+      const msg = document.getElementById('f-msg');
+      if (mat && msg) {
+        msg.value = blok
+          ? `Dobrý den, mám zájem o materiál ${mat}, blok ${blok}. Prosím o aktuální dostupnost a cenovou nabídku.`
+          : `Dobrý den, mám zájem o materiál ${mat}. Prosím o aktuální nabídku desek ze skladu.`;
+      }
+      const form = document.getElementById('contact-form');
+      const done = document.getElementById('contact-done');
+      if (form && done) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          done.hidden = false;
+        });
+      }
+    });
+  </script>
+</body>
+</html>

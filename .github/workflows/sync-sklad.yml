@@ -20,17 +20,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Sync stock data from stoneconnection.cz
+      - name: Sync stock and catalog data from stoneconnection.cz
         run: node scripts/sync_sklad.mjs
 
       - name: Commit updated data if changed
         run: |
-          if git diff --quiet data/sklad.json; then
-            echo "No changes in data/sklad.json"
+          if git diff --quiet data/sklad.json data/katalog.json; then
+            echo "No changes in data/sklad.json or data/katalog.json"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sklad.json
-          git commit -m "chore: sync sklad data"
+          git add data/sklad.json data/katalog.json
+          git commit -m "chore: sync sklad and katalog data"
           git push

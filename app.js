@@ -38,12 +38,12 @@ const state = {
   data: null,
   view: 'materials', // 'materials' | 'blocks' | 'table'
   groupBy: 'none',   // 'none' | 'type' | 'color'
-  selectedTypes: new Set(),
   selectedColors: new Set(),
+  selectedTypes: new Set(),
+  selectedWarehouses: new Set(),
+  selectedSurfaces: new Set(),
+  selectedThicknesses: new Set(),
   search: '',
-  warehouse: '',
-  thickness: '',
-  surface: '',
   photoOnly: false,
   expandedTableRows: new Set(),
   lightboxItems: [],
@@ -51,25 +51,18 @@ const state = {
 };
 
 const el = {
-  menuToggle: document.getElementById('menu-toggle'),
-  mainNav: document.getElementById('main-nav'),
-  statMaterials: document.getElementById('stat-materials'),
-  statBlocks: document.getElementById('stat-blocks'),
-  statSlabs: document.getElementById('stat-slabs'),
-  statArea: document.getElementById('stat-area'),
-  typePills: document.getElementById('type-pills'),
-  colorPills: document.getElementById('color-pills'),
+  filterColors: document.getElementById('filter-colors'),
+  filterTypes: document.getElementById('filter-types'),
+  filterWarehouses: document.getElementById('filter-warehouses'),
+  filterSurfaces: document.getElementById('filter-surfaces'),
+  filterThicknesses: document.getElementById('filter-thicknesses'),
   searchInput: document.getElementById('search-input'),
-  thicknessFilter: document.getElementById('thickness-filter'),
-  surfaceFilter: document.getElementById('surface-filter'),
   groupBy: document.getElementById('group-by'),
   photoOnlyToggle: document.getElementById('photo-only-toggle'),
   activeBar: document.getElementById('active-bar'),
-  activeChips: document.getElementById('active-chips'),
   resetBtn: document.getElementById('reset-filters'),
   emptyReset: document.getElementById('empty-reset'),
   resultsSummary: document.getElementById('results-summary'),
-  syncStamp: document.getElementById('sync-stamp'),
   galleryRoot: document.getElementById('gallery-root'),
   tableRoot: document.getElementById('table-root'),
   emptyState: document.getElementById('empty-state'),
@@ -136,69 +129,89 @@ async function copyText(text, successMsg) {
   }
 }
 
-function populateFilterOptions(data) {
-  const typeCounts = new Map();
+function populateSidebarFilters(data) {
   const colorCounts = new Map();
-  const thicknesses = new Set();
-  const surfaces = new Set();
+  const typeCounts = new Map();
+  const whCounts = new Map();
+  const surfaceCounts = new Map();
+  const thicknessCounts = new Map();
 
   for (const m of data.materials) {
-    typeCounts.set(m.categoryKey, (typeCounts.get(m.categoryKey) || 0) + 1);
     m.colors.forEach((c) => colorCounts.set(c.key, (colorCounts.get(c.key) || 0) + 1));
-    m.thicknesses.forEach((t) => thicknesses.add(t));
-    m.surfaces.forEach((s) => surfaces.add(s));
+    typeCounts.set(m.categoryKey, (typeCounts.get(m.categoryKey) || 0) + 1);
+    m.warehouses.forEach((w) => whCounts.set(w, (whCounts.get(w) || 0) + 1));
+    m.surfaces.forEach((s) => surfaceCounts.set(s, (surfaceCounts.get(s) || 0) + 1));
+    m.thicknesses.forEach((t) => thicknessCounts.set(String(t), (thicknessCounts.get(String(t)) || 0) + 1));
   }
 
-  el.typePills.innerHTML = TYPE_ORDER.filter((k) => typeCounts.has(k))
-    .map(
-      (k) => `
-      <button type="button" class="filter-pill" data-type="${escapeHtml(k)}" aria-pressed="false">
-        <span>${escapeHtml(TYPE_LABELS[k] || k)}</span>
-        <span class="pill-count">${typeCounts.get(k)}</span>
-      </button>`
-    )
-    .join('');
-
-  el.colorPills.innerHTML = COLOR_META.filter((c) => colorCounts.has(c.key))
+  el.filterColors.innerHTML = COLOR_META.filter((c) => colorCounts.has(c.key))
     .map(
       (c) => `
-      <button type="button" class="filter-pill color-pill" data-color="${escapeHtml(c.key)}" aria-pressed="false">
+      <label class="check-option">
+        <input type="checkbox" data-filter="color" value="${escapeHtml(c.key)}">
         <span class="swatch-dot" style="background:${escapeHtml(c.hex)}"></span>
-        <span>${escapeHtml(c.label)}</span>
-        <span class="pill-count">${colorCounts.get(c.key)}</span>
-      </button>`
+        <span class="check-label">${escapeHtml(c.label)}</span>
+        <span class="check-count">${colorCounts.get(c.key)}</span>
+      </label>`
     )
     .join('');
 
-  [...thicknesses]
-    .sort((a, b) => a - b)
-    .forEach((t) => {
-      const opt = document.createElement('option');
-      opt.value = String(t);
-      opt.textContent = `${formatNumber(t, Number.isInteger(t) ? 0 : 1)} cm`;
-      el.thicknessFilter.appendChild(opt);
-    });
+  el.filterTypes.innerHTML = TYPE_ORDER.filter((k) => typeCounts.has(k))
+    .map(
+      (k) => `
+      <label class="check-option">
+        <input type="checkbox" data-filter="type" value="${escapeHtml(k)}">
+        <span class="check-label">${escapeHtml(TYPE_LABELS[k] || k)}</span>
+        <span class="check-count">${typeCounts.get(k)}</span>
+      </label>`
+    )
+    .join('');
 
-  [...surfaces]
-    .sort((a, b) => a.localeCompare(b, 'cs'))
-    .forEach((s) => {
-      const opt = document.createElement('option');
-      opt.value = s;
-      opt.textContent = s;
-      el.surfaceFilter.appendChild(opt);
-    });
+  el.filterWarehouses.innerHTML = [...whCounts.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], 'cs'))
+    .map(
+      ([w, cnt]) => `
+      <label class="check-option">
+        <input type="checkbox" data-filter="warehouse" value="${escapeHtml(w)}">
+        <span class="check-label">${escapeHtml(w)}</span>
+        <span class="check-count">${cnt}</span>
+      </label>`
+    )
+    .join('');
+
+  el.filterSurfaces.innerHTML = [...surfaceCounts.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], 'cs'))
+    .map(
+      ([s, cnt]) => `
+      <label class="check-option">
+        <input type="checkbox" data-filter="surface" value="${escapeHtml(s)}">
+        <span class="check-label">${escapeHtml(s)}</span>
+        <span class="check-count">${cnt}</span>
+      </label>`
+    )
+    .join('');
+
+  el.filterThicknesses.innerHTML = [...thicknessCounts.entries()]
+    .sort((a, b) => Number(a[0]) - Number(b[0]))
+    .map(
+      ([t, cnt]) => `
+      <label class="check-option">
+        <input type="checkbox" data-filter="thickness" value="${escapeHtml(t)}">
+        <span class="check-label">${escapeHtml(t)} cm</span>
+        <span class="check-count">${cnt}</span>
+      </label>`
+    )
+    .join('');
 }
 
 function getFilteredMaterials() {
   const q = foldText(state.search.trim());
-  const thick = state.thickness ? Number(state.thickness) : null;
-
   return state.data.materials.filter((m) => {
-    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(m.categoryKey)) return false;
     if (state.selectedColors.size > 0 && !m.colors.some((c) => state.selectedColors.has(c.key))) return false;
-    if (state.warehouse && !m.warehouses.includes(state.warehouse)) return false;
-    if (thick !== null && !m.thicknesses.includes(thick)) return false;
-    if (state.surface && !m.surfaces.includes(state.surface)) return false;
+    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(m.categoryKey)) return false;
+    if (state.selectedWarehouses.size > 0 && !m.warehouses.some((w) => state.selectedWarehouses.has(w))) return false;
+    if (state.selectedSurfaces.size > 0 && !m.surfaces.some((s) => state.selectedSurfaces.has(s))) return false;
+    if (state.selectedThicknesses.size > 0 && !m.thicknesses.some((t) => state.selectedThicknesses.has(String(t)))) return false;
     if (state.photoOnly && !m.cardImage) return false;
     if (q) {
       const inName = foldText(m.name).includes(q);
@@ -212,14 +225,12 @@ function getFilteredMaterials() {
 
 function getFilteredBlocks() {
   const q = foldText(state.search.trim());
-  const thick = state.thickness ? Number(state.thickness) : null;
-
   return state.data.blocks.filter((b) => {
-    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(b.categoryKey)) return false;
     if (state.selectedColors.size > 0 && !b.colors.some((c) => state.selectedColors.has(c))) return false;
-    if (state.warehouse && !b.warehouses.includes(state.warehouse)) return false;
-    if (thick !== null && !b.thicknesses.includes(thick)) return false;
-    if (state.surface && !b.surfaces.includes(state.surface)) return false;
+    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(b.categoryKey)) return false;
+    if (state.selectedWarehouses.size > 0 && !b.warehouses.some((w) => state.selectedWarehouses.has(w))) return false;
+    if (state.selectedSurfaces.size > 0 && !b.surfaces.some((s) => state.selectedSurfaces.has(s))) return false;
+    if (state.selectedThicknesses.size > 0 && !b.thicknesses.some((t) => state.selectedThicknesses.has(String(t)))) return false;
     if (state.photoOnly && !b.cardImage) return false;
     if (q) {
       const inName = foldText(b.materialName).includes(q);
@@ -233,20 +244,18 @@ function getFilteredBlocks() {
 
 function renderActiveChips() {
   const chips = [];
-  for (const t of state.selectedTypes) {
-    chips.push({ kind: 'type', value: t, label: `Druh: ${TYPE_LABELS[t] || t}` });
-  }
-  for (const c of state.selectedColors) {
-    chips.push({ kind: 'color', value: c, label: `Barva: ${COLOR_MAP.get(c)?.label || c}` });
-  }
-  if (state.warehouse) chips.push({ kind: 'warehouse', value: state.warehouse, label: `Sklad: ${state.warehouse}` });
-  if (state.thickness) chips.push({ kind: 'thickness', value: state.thickness, label: `Tloušťka: ${state.thickness} cm` });
-  if (state.surface) chips.push({ kind: 'surface', value: state.surface, label: `Povrch: ${state.surface}` });
-  if (state.search.trim()) chips.push({ kind: 'search', value: state.search, label: `Hledání: „${state.search.trim()}“` });
+  for (const c of state.selectedColors) chips.push({ kind: 'color', value: c, label: COLOR_MAP.get(c)?.label || c });
+  for (const t of state.selectedTypes) chips.push({ kind: 'type', value: t, label: TYPE_LABELS[t] || t });
+  for (const w of state.selectedWarehouses) chips.push({ kind: 'warehouse', value: w, label: w });
+  for (const s of state.selectedSurfaces) chips.push({ kind: 'surface', value: s, label: s });
+  for (const th of state.selectedThicknesses) chips.push({ kind: 'thickness', value: th, label: `${th} cm` });
+  if (state.search.trim()) chips.push({ kind: 'search', value: state.search, label: `„${state.search.trim()}“` });
   if (state.photoOnly) chips.push({ kind: 'photoOnly', value: '1', label: 'Jen s fotkou' });
 
+  el.resetBtn.hidden = chips.length === 0;
   el.activeBar.hidden = chips.length === 0;
-  el.activeChips.innerHTML = chips
+  el.activeChips = el.activeBar;
+  el.activeBar.innerHTML = chips
     .map(
       (ch) => `
       <button type="button" class="active-chip" data-remove-kind="${escapeHtml(ch.kind)}" data-remove-val="${escapeHtml(ch.value)}">
@@ -265,33 +274,31 @@ function renderCardImage(imageUrl, alt) {
 }
 
 function materialCardHtml(m) {
-  const blockHint = `${m.blockCount} ${m.blockCount === 1 ? 'blok' : m.blockCount < 5 ? 'bloky' : 'bloků'}`;
   return `
-    <button type="button" class="stone-card" data-open-material="${escapeHtml(m.slug)}">
-      <div class="card-media">
+    <article class="stone-card">
+      <button type="button" class="card-media-btn" data-open-material="${escapeHtml(m.slug)}" aria-label="${escapeHtml(m.name)}">
         ${renderCardImage(m.cardImage, m.name)}
-        <span class="card-type-pill">${escapeHtml(m.categoryLabel)}</span>
-        <span class="card-hover-hint">${escapeHtml(blockHint)} · detail</span>
-      </div>
+      </button>
       <div class="card-body">
-        <h2 class="card-title">${escapeHtml(m.name)}</h2>
+        <h3 class="card-title">${escapeHtml(m.name)}</h3>
+        <div class="card-sub">${escapeHtml(m.categoryLabel)}</div>
+        <button type="button" class="card-detail-btn" data-open-material="${escapeHtml(m.slug)}">Detail</button>
       </div>
-    </button>`;
+    </article>`;
 }
 
 function blockCardHtml(b) {
   return `
-    <button type="button" class="stone-card" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
-      <div class="card-media">
+    <article class="stone-card">
+      <button type="button" class="card-media-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}" aria-label="${escapeHtml(b.materialName)} — blok ${escapeHtml(b.blockNumber)}">
         ${renderCardImage(b.cardImage, `${b.materialName} — blok ${b.blockNumber}`)}
-        <span class="card-type-pill">${escapeHtml(b.categoryLabel)}</span>
-        <span class="card-hover-hint">${escapeHtml(b.warehouses.join(', '))} · detail</span>
-      </div>
+      </button>
       <div class="card-body">
-        <h2 class="card-title">${escapeHtml(b.materialName)}</h2>
-        <span class="card-block-tag">Blok ${escapeHtml(b.blockNumber)}</span>
+        <h3 class="card-title">${escapeHtml(b.materialName)} (${escapeHtml(b.blockNumber)})</h3>
+        <div class="card-sub">${escapeHtml(b.categoryLabel)} · ${escapeHtml(b.warehouses.join(', '))}</div>
+        <button type="button" class="card-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">Detail</button>
       </div>
-    </button>`;
+    </article>`;
 }
 
 function renderGroupedGallery(items, isBlocks) {
@@ -307,9 +314,7 @@ function renderGroupedGallery(items, isBlocks) {
   if (state.groupBy === 'type') {
     for (const k of TYPE_ORDER) {
       const subset = items.filter((item) => item.categoryKey === k);
-      if (subset.length) {
-        sections.push({ title: TYPE_LABELS[k] || k, items: subset });
-      }
+      if (subset.length) sections.push({ title: TYPE_LABELS[k] || k, items: subset });
     }
   } else if (state.groupBy === 'color') {
     for (const cm of COLOR_META) {
@@ -317,9 +322,7 @@ function renderGroupedGallery(items, isBlocks) {
         if (isBlocks) return item.colors[0] === cm.key;
         return item.colors[0]?.key === cm.key;
       });
-      if (subset.length) {
-        sections.push({ title: cm.label, hex: cm.hex, items: subset });
-      }
+      if (subset.length) sections.push({ title: cm.label, hex: cm.hex, items: subset });
     }
   }
 
@@ -328,7 +331,7 @@ function renderGroupedGallery(items, isBlocks) {
       (sec) => `
       <section class="group-section">
         <h3 class="group-heading">
-          ${sec.hex ? `<span class="swatch-dot" style="background:${escapeHtml(sec.hex)};width:16px;height:16px;"></span>` : ''}
+          ${sec.hex ? `<span class="swatch-dot" style="background:${escapeHtml(sec.hex)};width:15px;height:15px;"></span>` : ''}
           ${escapeHtml(sec.title)}
           <span>(${sec.items.length})</span>
         </h3>
@@ -380,7 +383,7 @@ function renderTable(blocks) {
           <td>${escapeHtml(b.blockNumber)}</td>
           <td>${escapeHtml(b.categoryLabel)}</td>
           <td>${renderWarehouseBadges(b.warehouses)}</td>
-          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="pill-count">(${b.slabCount} ks)</span></td>
+          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="check-count">(${b.slabCount} ks)</span></td>
           <td>
             <button type="button" class="table-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
               Detail
@@ -430,11 +433,7 @@ function render() {
 
   if (state.view === 'materials') {
     const materials = getFilteredMaterials();
-    const totalBlocks = materials.reduce((acc, m) => acc + m.blockCount, 0);
-    const totalSlabs = materials.reduce((acc, m) => acc + m.totalSlabs, 0);
-    const totalArea = materials.reduce((acc, m) => acc + m.totalAreaM2, 0);
-
-    el.resultsSummary.textContent = `Zobrazeno ${materials.length} materiálů (${totalBlocks} bloků · ${totalSlabs} desek · ${formatNumber(totalArea, 2)} m²)`;
+    el.resultsSummary.textContent = `${materials.length} materiálů`;
     el.emptyState.hidden = materials.length > 0;
     if (materials.length > 0) {
       renderGroupedGallery(materials, false);
@@ -444,17 +443,11 @@ function render() {
     }
   } else {
     const blocks = getFilteredBlocks();
-    const totalSlabs = blocks.reduce((acc, b) => acc + b.slabCount, 0);
-    const totalArea = blocks.reduce((acc, b) => acc + b.totalAreaM2, 0);
-
-    el.resultsSummary.textContent = `Zobrazeno ${blocks.length} bloků (${totalSlabs} desek · ${formatNumber(totalArea, 2)} m²)`;
+    el.resultsSummary.textContent = `${blocks.length} bloků`;
     el.emptyState.hidden = blocks.length > 0;
     if (blocks.length > 0) {
-      if (state.view === 'blocks') {
-        renderGroupedGallery(blocks, true);
-      } else {
-        renderTable(blocks);
-      }
+      if (state.view === 'blocks') renderGroupedGallery(blocks, true);
+      else renderTable(blocks);
     } else {
       el.galleryRoot.hidden = true;
       el.tableRoot.hidden = true;
@@ -498,14 +491,13 @@ function openMaterialModal(slug, focusBlock = null) {
     if (foundIdx >= 0) initialIdx = foundIdx;
   }
 
-  // Build unified lightbox list: stone gallery + interior visualizations + real realizations
   const lbItems = images.map((img) => ({
     kind: 'photo',
     url: img.fullUrl,
     caption: img.label,
   }));
 
-  let sceneStartIdx = lbItems.length;
+  const sceneStartIdx = lbItems.length;
   if (mat.sceneTextureUrl) {
     for (const sc of SCENES) {
       lbItems.push({
@@ -517,7 +509,7 @@ function openMaterialModal(slug, focusBlock = null) {
     }
   }
 
-  let realStartIdx = lbItems.length;
+  const realStartIdx = lbItems.length;
   for (const rImg of mat.realizationImages || []) {
     lbItems.push({
       kind: 'photo',
@@ -527,10 +519,11 @@ function openMaterialModal(slug, focusBlock = null) {
   }
 
   const activeImg = images[initialIdx] || null;
+  const stageBg = mat.cardImage || activeImg?.thumbUrl || '';
   const galleryHtml = activeImg
     ? `
       <div>
-        <div class="gallery-main" id="modal-main-stage" data-lb-idx="${initialIdx}">
+        <div class="gallery-main" id="modal-main-stage" data-lb-idx="${initialIdx}" ${stageBg ? `style="background-image:url('${escapeHtml(stageBg)}')"` : ''}>
           <img id="modal-main-img" src="${escapeHtml(activeImg.fullUrl)}" alt="${escapeHtml(mat.name)}">
           <span class="gallery-caption" id="modal-main-caption">${escapeHtml(activeImg.label)}</span>
           <span class="gallery-zoom-pill">Zvětšit ⤢</span>
@@ -598,6 +591,8 @@ function openMaterialModal(slug, focusBlock = null) {
         )
         .join('');
 
+      const inquiryHref = `kontakt.html?material=${encodeURIComponent(mat.name)}&blok=${encodeURIComponent(b.blockNumber)}`;
+
       return `
         <article class="block-card" id="block-card-${escapeHtml(b.id)}">
           <div class="block-card-head">
@@ -606,9 +601,14 @@ function openMaterialModal(slug, focusBlock = null) {
               ${renderWarehouseBadges(b.warehouses)}
               <span class="meta-tag">${b.slabCount} ks · ${formatNumber(b.totalAreaM2, 2)} m²</span>
             </div>
-            <button type="button" class="copy-block-btn" data-copy-block="${escapeHtml(b.blockNumber)}">
-              Zkopírovat specifikaci bloku
-            </button>
+            <div class="block-head-actions">
+              <button type="button" class="copy-block-btn" data-copy-block="${escapeHtml(b.blockNumber)}">
+                Zkopírovat specifikaci
+              </button>
+              <a href="${inquiryHref}" class="btn-primary" style="padding:5px 11px;font-size:12px;">
+                Poptat blok →
+              </a>
+            </div>
           </div>
           <div class="block-card-body${bImg ? '' : ' no-photo'}">
             ${
@@ -667,6 +667,9 @@ function openMaterialModal(slug, focusBlock = null) {
       </section>`
       : '';
 
+  const catalogSlug = mat.catalogUrl ? mat.catalogUrl.split('/').filter(Boolean).pop() : null;
+  const materialInquiryHref = `kontakt.html?material=${encodeURIComponent(mat.name)}`;
+
   el.modalBody.innerHTML = `
     <div class="modal-hero">
       ${galleryHtml}
@@ -695,13 +698,13 @@ function openMaterialModal(slug, focusBlock = null) {
           ${mat.applications.length ? `<div><strong>Vhodné použití:</strong> ${escapeHtml(mat.applications.join(', '))}</div>` : ''}
         </div>
         <div class="modal-cta-row">
-          <a href="https://www.stoneconnection.cz/kontakt/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            Poptat materiál ↗
+          <a href="${materialInquiryHref}" class="btn-primary">
+            Poptat materiál →
           </a>
           ${
-            mat.catalogUrl
-              ? `<a href="${escapeHtml(mat.catalogUrl)}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                  Katalogový list ↗
+            catalogSlug
+              ? `<a href="katalog.html#k=${escapeHtml(catalogSlug)}" class="btn-secondary">
+                  Katalogový list →
                 </a>`
               : ''
           }
@@ -736,6 +739,7 @@ function openMaterialModal(slug, focusBlock = null) {
       const mainImg = document.getElementById('modal-main-img');
       const mainCaption = document.getElementById('modal-main-caption');
       const stage = document.getElementById('modal-main-stage');
+      if (stage) stage.style.backgroundImage = `url('${chosen.thumbUrl}')`;
       if (mainImg) mainImg.src = chosen.fullUrl;
       if (mainCaption) mainCaption.textContent = chosen.label;
       if (stage) stage.setAttribute('data-lb-idx', String(idx));
@@ -807,124 +811,88 @@ function closeLightbox() {
   el.lightbox.hidden = true;
 }
 
-function syncPillStates() {
-  el.typePills.querySelectorAll('[data-type]').forEach((btn) => {
-    const active = state.selectedTypes.has(btn.getAttribute('data-type'));
-    btn.classList.toggle('active', active);
-    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-  });
-  el.colorPills.querySelectorAll('[data-color]').forEach((btn) => {
-    const active = state.selectedColors.has(btn.getAttribute('data-color'));
-    btn.classList.toggle('active', active);
-    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+function syncCheckboxes() {
+  document.querySelectorAll('[data-filter]').forEach((cb) => {
+    const kind = cb.getAttribute('data-filter');
+    const val = cb.value;
+    if (kind === 'color') cb.checked = state.selectedColors.has(val);
+    else if (kind === 'type') cb.checked = state.selectedTypes.has(val);
+    else if (kind === 'warehouse') cb.checked = state.selectedWarehouses.has(val);
+    else if (kind === 'surface') cb.checked = state.selectedSurfaces.has(val);
+    else if (kind === 'thickness') cb.checked = state.selectedThicknesses.has(val);
   });
 }
 
 function resetAllFilters() {
-  state.selectedTypes.clear();
   state.selectedColors.clear();
+  state.selectedTypes.clear();
+  state.selectedWarehouses.clear();
+  state.selectedSurfaces.clear();
+  state.selectedThicknesses.clear();
   state.search = '';
-  state.warehouse = '';
-  state.thickness = '';
-  state.surface = '';
   state.photoOnly = false;
 
   el.searchInput.value = '';
-  el.thicknessFilter.value = '';
-  el.surfaceFilter.value = '';
   el.photoOnlyToggle.checked = false;
-
-  syncPillStates();
-  document.querySelectorAll('.seg-btn').forEach((btn) => {
-    btn.classList.toggle('active', btn.getAttribute('data-warehouse') === '');
-  });
-
+  syncCheckboxes();
   render();
 }
 
 function bindEvents() {
-  if (el.menuToggle && el.mainNav) {
-    el.menuToggle.addEventListener('click', () => {
-      const open = el.mainNav.classList.toggle('open');
-      el.menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-
-  el.typePills.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-type]');
-    if (!btn) return;
-    const val = btn.getAttribute('data-type');
-    if (state.selectedTypes.has(val)) state.selectedTypes.delete(val);
-    else state.selectedTypes.add(val);
-    syncPillStates();
+  document.querySelector('.sidebar-box').addEventListener('change', (e) => {
+    const cb = e.target.closest('input[data-filter]');
+    if (!cb) return;
+    const kind = cb.getAttribute('data-filter');
+    const val = cb.value;
+    const map = {
+      color: state.selectedColors,
+      type: state.selectedTypes,
+      warehouse: state.selectedWarehouses,
+      surface: state.selectedSurfaces,
+      thickness: state.selectedThicknesses,
+    };
+    const set = map[kind];
+    if (!set) return;
+    if (cb.checked) set.add(val);
+    else set.delete(val);
     render();
   });
 
-  el.colorPills.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-color]');
-    if (!btn) return;
-    const val = btn.getAttribute('data-color');
-    if (state.selectedColors.has(val)) state.selectedColors.delete(val);
-    else state.selectedColors.add(val);
-    syncPillStates();
-    render();
-  });
-
-  el.activeChips.addEventListener('click', (e) => {
+  el.activeBar.addEventListener('click', (e) => {
     const chip = e.target.closest('[data-remove-kind]');
     if (!chip) return;
     const kind = chip.getAttribute('data-remove-kind');
     const val = chip.getAttribute('data-remove-val');
-    if (kind === 'type') state.selectedTypes.delete(val);
-    else if (kind === 'color') state.selectedColors.delete(val);
-    else if (kind === 'warehouse') {
-      state.warehouse = '';
-      document.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('active', b.getAttribute('data-warehouse') === ''));
-    } else if (kind === 'thickness') {
-      state.thickness = '';
-      el.thicknessFilter.value = '';
-    } else if (kind === 'surface') {
-      state.surface = '';
-      el.surfaceFilter.value = '';
-    } else if (kind === 'search') {
+    if (kind === 'color') state.selectedColors.delete(val);
+    else if (kind === 'type') state.selectedTypes.delete(val);
+    else if (kind === 'warehouse') state.selectedWarehouses.delete(val);
+    else if (kind === 'surface') state.selectedSurfaces.delete(val);
+    else if (kind === 'thickness') state.selectedThicknesses.delete(val);
+    else if (kind === 'search') {
       state.search = '';
       el.searchInput.value = '';
     } else if (kind === 'photoOnly') {
       state.photoOnly = false;
       el.photoOnlyToggle.checked = false;
     }
-    syncPillStates();
+    syncCheckboxes();
     render();
   });
 
   document.querySelectorAll('.view-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       state.view = btn.getAttribute('data-view');
-      document.querySelectorAll('.view-btn').forEach((b) => b.classList.toggle('active', b === btn));
-      render();
-    });
-  });
-
-  document.querySelectorAll('.seg-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      state.warehouse = btn.getAttribute('data-warehouse') || '';
-      document.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('.view-btn').forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
       render();
     });
   });
 
   el.searchInput.addEventListener('input', () => {
     state.search = el.searchInput.value;
-    render();
-  });
-
-  el.thicknessFilter.addEventListener('change', () => {
-    state.thickness = el.thicknessFilter.value;
-    render();
-  });
-
-  el.surfaceFilter.addEventListener('change', () => {
-    state.surface = el.surfaceFilter.value;
     render();
   });
 
@@ -942,9 +910,9 @@ function bindEvents() {
   el.emptyReset.addEventListener('click', resetAllFilters);
 
   el.galleryRoot.addEventListener('click', (e) => {
-    const card = e.target.closest('[data-open-material]');
-    if (!card) return;
-    openMaterialModal(card.getAttribute('data-open-material'), card.getAttribute('data-focus-block'));
+    const trigger = e.target.closest('[data-open-material]');
+    if (!trigger) return;
+    openMaterialModal(trigger.getAttribute('data-open-material'), trigger.getAttribute('data-focus-block'));
   });
 
   el.tableRoot.addEventListener('click', (e) => {
@@ -995,16 +963,10 @@ async function init() {
     const data = await res.json();
     state.data = data;
 
-    el.statMaterials.textContent = formatNumber(data.meta.totalMaterials);
-    el.statBlocks.textContent = formatNumber(data.meta.totalBlocks);
-    el.statSlabs.textContent = formatNumber(data.meta.totalSlabs);
-    el.statArea.textContent = `${formatNumber(data.meta.totalAreaM2, 0)} m²`;
-
     const updated = formatDateCs(data.meta.sourceUpdatedAt || data.meta.syncedAt);
-    el.syncStamp.textContent = `Poslední aktualizace: ${updated}`;
     el.footerMeta.textContent = `Aktualizováno: ${updated}`;
 
-    populateFilterOptions(data);
+    populateSidebarFilters(data);
     render();
 
     if (window.location.hash.startsWith('#m=')) {

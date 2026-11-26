@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'sklad.json');
+const KATALOG_OUT_PATH = path.join(ROOT_DIR, 'data', 'katalog.json');
 const NOTES_PATH = path.join(ROOT_DIR, 'data', 'material_notes.json');
 
 const STOCK_URL = 'https://www.stoneconnection.cz/online-sklad/';
@@ -654,7 +655,60 @@ async function main() {
   fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
   fs.writeFileSync(DATA_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
 
+  // Build data/katalog.json for the self-contained Katalog page
+  const stockByCatalogSlug = new Map();
+  for (const m of materials) {
+    if (m.catalogUrl) {
+      const cSlug = m.catalogUrl.split('/').filter(Boolean).pop();
+      if (cSlug) stockByCatalogSlug.set(cSlug, m);
+    }
+    stockByCatalogSlug.set(m.slug, m);
+  }
+
+  const catalogProducts = rawCatalog
+    .map((item) => {
+      const name = normalizeWhitespace(item.name);
+      const slug = normalizeWhitespace(item.slug) || slugify(name);
+      const typeInfo = mapProductType(item.type || item.typeSlug);
+      const stockMatch = stockByCatalogSlug.get(slug) || stockByCatalogSlug.get(slugify(name)) || null;
+      const colorKeys = Array.isArray(item.colors) ? item.colors : [];
+      const imgs = makeImageVariants(item.image, name, 'catalog');
+
+      return {
+        id: item.id,
+        slug,
+        name,
+        categoryKey: typeInfo.key,
+        categoryLabel: typeInfo.label,
+        origin: normalizeWhitespace(item.origin),
+        colors: colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c })),
+        applications: Array.isArray(item.appIcons) ? item.appIcons.map((a) => a.name) : [],
+        collections: Array.isArray(item.collections) ? item.collections : [],
+        cardUrl: imgs?.cardUrl || null,
+        fullUrl: imgs?.fullUrl || null,
+        sceneUrl: imgs?.sceneUrl || null,
+        inStockSlug: stockMatch ? stockMatch.slug : null,
+        inStockBlocks: stockMatch ? stockMatch.blockCount : 0,
+        inStockSlabs: stockMatch ? stockMatch.totalSlabs : 0,
+        comment: stockMatch?.comment || buildFallbackComment(name, typeInfo.label, normalizeWhitespace(item.origin), colorKeys.map((c) => COLOR_LABELS.get(c) || c), []),
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, 'cs'));
+
+  const katalogPayload = {
+    meta: {
+      sourceUrl: CATALOG_URL,
+      syncedAt: payload.meta.syncedAt,
+      totalProducts: catalogProducts.length,
+      inStockCount: catalogProducts.filter((p) => Boolean(p.inStockSlug)).length,
+    },
+    products: catalogProducts,
+  };
+
+  fs.writeFileSync(KATALOG_OUT_PATH, JSON.stringify(katalogPayload, null, 2) + '\n', 'utf8');
+
   console.log('Synchronizace dokoncena:', JSON.stringify(payload.meta, null, 2));
+  console.log('Katalog synchronizovan:', JSON.stringify(katalogPayload.meta, null, 2));
 }
 
 main().catch((err) => {

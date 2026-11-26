@@ -1,0 +1,4129 @@
+{
+  "meta": {
+    "sourceUrl": "https://www.stoneconnection.cz/katalog/",
+    "syncedAt": "2026-11-26T18:41:39.139Z",
+    "totalProducts": 118,
+    "inStockCount": 43
+  },
+  "products": [
+    {
+      "id": "508",
+      "slug": "amarelo-macieira",
+      "name": "Amarelo Macieira",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Portugalsko",
+      "colors": [
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
+      "inStockSlug": "amarelo-macieira",
+      "inStockBlocks": 3,
+      "inStockSlabs": 16,
+      "comment": "Teple medová až okrová žula se stejnoměrným středně zrnitým krystalem. V tryskaném provedení vynikne na exteriérových dlažbách, schodištích, soklech a terasách s vysokým nárokem na protiskluznost."
+    },
+    {
+      "id": "485",
+      "slug": "andromeda-white",
+      "name": "Andromeda White",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "491",
+      "slug": "astoria",
+      "name": "Astoria",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
+      "inStockSlug": "astoria",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Světle béžová žula prostoupená plynulou, teplou šedohnědou vlnitou kresbou. Skvěle působí na velkoformátových kuchyňských deskách, koupelnových obkladech i parapetech v přírodně laděných interiérech."
+    },
+    {
+      "id": "342",
+      "slug": "atlantic-blue",
+      "name": "Atlantic Blue",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "modra",
+          "label": "Modrá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech modrá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "461",
+      "slug": "aurora-india",
+      "name": "Aurora India",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně",
+        "Hřbitovní architektura"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
+      "inStockSlug": "aurora-india",
+      "inStockBlocks": 4,
+      "inStockSlabs": 18,
+      "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. Využívá se tam, kde má kámen tvořit dominantní prvek — na krbových stěnách, obkladech i masivních výrobcích."
+    },
+    {
+      "id": "344",
+      "slug": "avocatus",
+      "name": "Avocatus",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech zelená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "498",
+      "slug": "azul-aran",
+      "name": "Azul Aran",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "modra",
+          "label": "Modrá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
+      "inStockSlug": "azul-aran",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Chladnější šedomodrá žula s jemnou krystalickou strukturou a klidným, rovnoměrným výrazem. Kartáčovaný či tryskaný povrch ji předurčuje pro nadčasové fasády, venkovní schody i městskou architekturu."
+    },
+    {
+      "id": "345",
+      "slug": "azul-noche",
+      "name": "Azul Noche",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Hřbitovní architektura",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
+      "inStockSlug": "azul-noche",
+      "inStockBlocks": 2,
+      "inStockSlabs": 16,
+      "comment": "Tmavě břidlicově šedá žula s jemnou rovnoměrnou zrnitostí a decentními modrošedými odlesky. Dobře se uplatní na pracovních deskách, schodištích, parapetech i venkovních obkladech."
+    },
+    {
+      "id": "346",
+      "slug": "azul-platino",
+      "name": "Azul Platino",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
+      "inStockSlug": "azul-platino",
+      "inStockBlocks": 4,
+      "inStockSlabs": 16,
+      "comment": "Vyrovnaná stříbrošedá žula s drobným zrnem a neutrálním architektonickým charakterem. Osvědčená volba pro větší plochy podlah, schodišť, parapetů a komerčních interiérů."
+    },
+    {
+      "id": "347",
+      "slug": "balthus-neve",
+      "name": "Balthus Neve",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
+      "inStockSlug": "balthus-neve",
+      "inStockBlocks": 1,
+      "inStockSlabs": 6,
+      "comment": "Světlá žula se smetanově bílým základem a měkkými šedými přechody připomínajícími mramor. Spojuje čistý vzhled světlých desek s vysokou mechanickou odolností žuly pro kuchyně i koupelny."
+    },
+    {
+      "id": "477",
+      "slug": "bararp",
+      "name": "Bararp",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Švédsko",
+      "colors": [
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        },
+        {
+          "key": "oranzova",
+          "label": "Oranžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1767961182/zula_bararp_detail_9513d20002.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1767961182/zula_bararp_detail_9513d20002.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1767961182/zula_bararp_detail_9513d20002.jpg",
+      "inStockSlug": "bararp",
+      "inStockBlocks": 3,
+      "inStockSlabs": 9,
+      "comment": "Severská rula/žula s charakteristickým pruhováním v teplých měděných, hnědých a tmavě šedých tónech. Vyhledávaný materiál pro reprezentativní fasády, sokly, krby i venkovní dlažby."
+    },
+    {
+      "id": "348",
+      "slug": "bayada",
+      "name": "Bayada",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Španělsko v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "482",
+      "slug": "belvedere",
+      "name": "Belvedere",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
+      "inStockSlug": "belvedere",
+      "inStockBlocks": 1,
+      "inStockSlabs": 1,
+      "comment": "Exkluzivní tmavý kvarcit s hlubokým černým základem a výraznými bílými i zlatavými žilami. V provedení leather skin dává vyniknout plastické struktuře na kuchyňských ostrovech a solitérních stěnách."
+    },
+    {
+      "id": "350",
+      "slug": "belvedere-white",
+      "name": "Belvedere White",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Angola v odstínech černá, bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "487",
+      "slug": "bianco-carrara",
+      "name": "Bianco Carrara",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
+      "inStockSlug": "bianco-carrara",
+      "inStockBlocks": 3,
+      "inStockSlabs": 9,
+      "comment": "Klasický italský mramor s chladným mléčně bílým podkladem a jemným popelavě šedým žilkováním. Ideální pro koupelny, obklady krbů, umyvadlové desky a reprezentativní interiéry."
+    },
+    {
+      "id": "352",
+      "slug": "bianco-cristal",
+      "name": "Bianco Cristal",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Hřbitovní architektura",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Španělsko v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "484",
+      "slug": "bianco-sardo",
+      "name": "Bianco Sardo",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "488",
+      "slug": "black-forest",
+      "name": "Black Forest",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "494",
+      "slug": "black-fusion",
+      "name": "Black Fusion",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        },
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Brazílie v odstínech zlatá, černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "472",
+      "slug": "black-vermont",
+      "name": "Black Vermont",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
+      "inStockSlug": "black-vermont",
+      "inStockBlocks": 1,
+      "inStockSlabs": 1,
+      "comment": "Tmavě grafitová žula s decentním kouřovým pohybem a jemnými světlejšími žilkami. Hodí se do moderních kuchyní a interiérů, kde má černý kámen působit přirozeněji než jednolitá plocha."
+    },
+    {
+      "id": "394",
+      "slug": "blanche",
+      "name": "Blanche",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761293027/keramika_blanche_detail_6a9a2631af.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293027/keramika_blanche_detail_6a9a2631af.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761293027/keramika_blanche_detail_6a9a2631af.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "510",
+      "slug": "blue-dunes",
+      "name": "Blue Dunes",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        },
+        {
+          "key": "modra",
+          "label": "Modrá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech zelená, modrá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "357",
+      "slug": "blue-pearl",
+      "name": "Blue Pearl",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Norsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "modra",
+          "label": "Modrá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Norsko v odstínech šedá, modrá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "358",
+      "slug": "blue-roma",
+      "name": "Blue Roma",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "modra",
+          "label": "Modrá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech modrá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "395",
+      "slug": "botticino-classico",
+      "name": "Botticino Classico",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech béžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "490",
+      "slug": "breccia-pernice",
+      "name": "Breccia Pernice",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        },
+        {
+          "key": "oranzova",
+          "label": "Oranžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech béžová, růžová, oranžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "360",
+      "slug": "brown-antique",
+      "name": "Brown Antique",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Angola v odstínech černá, hnědá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "396",
+      "slug": "calacatta",
+      "name": "Calacatta",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "397",
+      "slug": "calacatta-oro",
+      "name": "Calacatta Oro",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "362",
+      "slug": "calacatta-oro-1",
+      "name": "Calacatta Oro",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "398",
+      "slug": "calacatta-rose",
+      "name": "Calacatta Rosé",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        },
+        {
+          "key": "fialova",
+          "label": "Fialová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá, růžová, fialová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "399",
+      "slug": "calacatta-super-extra",
+      "name": "Calacatta Super Extra",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "366",
+      "slug": "calacatta-supreme",
+      "name": "Calacatta Supreme",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, šedá, zlatá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "367",
+      "slug": "calacatta-top",
+      "name": "Calacatta Top",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "400",
+      "slug": "calacatta-viola",
+      "name": "Calacatta Viola",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "fialova",
+          "label": "Fialová"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá, fialová, růžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "481",
+      "slug": "calacatta-vivaldi",
+      "name": "Calacatta Vivaldi",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
+      "inStockSlug": "calacatta-vivaldi",
+      "inStockBlocks": 1,
+      "inStockSlabs": 8,
+      "comment": "Italský mramor se světlým slonovinově bílým podkladem a kontrastní šedou kresbou se zlatavým akcentem. Vynikne především v koupelnách, na krbových portálech a velkých stěnových obkladech."
+    },
+    {
+      "id": "479",
+      "slug": "cape-red",
+      "name": "Cape Red",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Jihoafrická republika",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
+      "inStockSlug": "cape-red",
+      "inStockBlocks": 1,
+      "inStockSlabs": 6,
+      "comment": "Jihoafrická červenošedá žula s vyrovnaným středně hrubým krystalem a teplým rustikálním tónem. Odolný kámen vhodný na schodiště, obklady, parapety i exteriérové prvky."
+    },
+    {
+      "id": "369",
+      "slug": "cielo-de-ivory",
+      "name": "Cielo de Ivory",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
+      "inStockSlug": "cielo-de-ivory",
+      "inStockBlocks": 1,
+      "inStockSlabs": 7,
+      "comment": "Světlá slonovinově béžová žula s jemnou oblačnou kresbou v teple šedých odstínech. Klidný, univerzální materiál pro kuchyňské desky, parapety a světlé koupelny."
+    },
+    {
+      "id": "370",
+      "slug": "cinza-antas",
+      "name": "Cinza Antas",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Portugalsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Portugalsko v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "499",
+      "slug": "cinza-ariz",
+      "name": "Cinza Ariz",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Portugalsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
+      "inStockSlug": "cinza-ariz",
+      "inStockBlocks": 6,
+      "inStockSlabs": 58,
+      "comment": "Světle šedá portugalská žula s pravidelným jemným zrnem a čistým architektonickým výrazem. V tryskaném provedení je výborná pro venkovní dlažby, schody, obrubníky a sokly."
+    },
+    {
+      "id": "505",
+      "slug": "colonial-gold",
+      "name": "Colonial Gold",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
+      "inStockSlug": "colonial-gold",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Krémově zlatavá žula se šedohnědým obláčkováním a drobnými minerálními akcenty. Tradiční a velmi oblíbená volba pro teplé kuchyňské linky, ostrůvky i koupelny."
+    },
+    {
+      "id": "373",
+      "slug": "colonial-white",
+      "name": "Colonial White",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "374",
+      "slug": "cosmopolitan",
+      "name": "Cosmopolitan",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "401",
+      "slug": "crema-marfil",
+      "name": "Crema Marfil",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Španělsko v odstínech béžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "501",
+      "slug": "crema-valencia",
+      "name": "Crema Valencia",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        },
+        {
+          "key": "oranzova",
+          "label": "Oranžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Španělsko v odstínech zlatá, žlutá, oranžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "376",
+      "slug": "crystal-white",
+      "name": "Crystal White",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761299998/keramika_crystal_white_detail_814ab88653.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299998/keramika_crystal_white_detail_814ab88653.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761299998/keramika_crystal_white_detail_814ab88653.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "402",
+      "slug": "daino-reale",
+      "name": "Daino Reale",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
+      "inStockSlug": "daino-reale",
+      "inStockBlocks": 1,
+      "inStockSlabs": 18,
+      "comment": "Sardinský mramor v teplých pískových a karamelových odstínech s přirozeným diagonálním vrstvením. Ideální pro interiérové obklady stěn, koupelny, parapety a schodiště."
+    },
+    {
+      "id": "493",
+      "slug": "diaspro",
+      "name": "Diaspro",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1778137255/mramor_diaspro_detail_3785059141.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1778137255/mramor_diaspro_detail_3785059141.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1778137255/mramor_diaspro_detail_3785059141.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech červená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "378",
+      "slug": "doret",
+      "name": "Doret",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761300628/keramika_doret_detail_6d8c22d187.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300628/keramika_doret_detail_6d8c22d187.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761300628/keramika_doret_detail_6d8c22d187.png",
+      "inStockSlug": "doret",
+      "inStockBlocks": 1,
+      "inStockSlabs": 6,
+      "comment": "Velkoformátová italská keramika s věrnou kresbou světlého kamene, protkaná jemnými teplými zlatavými žilkami. Nulová nasákavost a vysoká odolnost ji předurčují pro kuchyně i koupelny."
+    },
+    {
+      "id": "403",
+      "slug": "dover-white",
+      "name": "Dover White",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Namibie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Namibie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "380",
+      "slug": "emerald-pearl",
+      "name": "Emerald Pearl",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Norsko",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "modra",
+          "label": "Modrá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Norsko v odstínech černá, modrá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "404",
+      "slug": "fior-di-pesco",
+      "name": "Fior di Pesco",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "405",
+      "slug": "forest-brown",
+      "name": "Forest Brown",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Indie v odstínech hnědá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "406",
+      "slug": "forest-green",
+      "name": "Forest Green",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        },
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Indie v odstínech zelená, hnědá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "407",
+      "slug": "gialo-siena",
+      "name": "Gialo Siena",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech béžová, zlatá, žlutá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "385",
+      "slug": "glacier",
+      "name": "Glacier",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301068/keramika_glacier_detail_8af10a40ed.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301068/keramika_glacier_detail_8af10a40ed.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761301068/keramika_glacier_detail_8af10a40ed.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech béžová, růžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "386",
+      "slug": "green-army",
+      "name": "Green Army",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Angola v odstínech zelená, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "474",
+      "slug": "ijen-blue",
+      "name": "Ijen Blue",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "modra",
+          "label": "Modrá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
+      "inStockSlug": "ijen-blue",
+      "inStockBlocks": 1,
+      "inStockSlabs": 1,
+      "comment": "Přírodní kvarcit spojující chladné šedomodré proudy se světlými krystalickými poli. Hodí se na dominantní kuchyňské desky, barové pulty i dekorativní obklady stěn."
+    },
+    {
+      "id": "495",
+      "slug": "ivory-fantasy",
+      "name": "Ivory Fantasy",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
+      "inStockSlug": "ivory-fantasy",
+      "inStockBlocks": 1,
+      "inStockSlabs": 5,
+      "comment": "Světlá slonovinová žula s jemně plynoucí kresbou v teplých béžových a měkkých šedých odstínech. Působí vzdušně na kuchyňských deskách, parapetech i koupelnových obkladech."
+    },
+    {
+      "id": "388",
+      "slug": "juparana-india",
+      "name": "Juparana India",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech šedá, růžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "389",
+      "slug": "jura-beige",
+      "name": "Jura Beige",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Německo",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Německo v odstínech béžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "390",
+      "slug": "jura-grey",
+      "name": "Jura Grey",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Německo",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Německo v odstínech béžová, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "391",
+      "slug": "magma-gold",
+      "name": "Magma Gold",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Brazílie v odstínech černá, zlatá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "392",
+      "slug": "marinace-black",
+      "name": "Marinace Black",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
+      "inStockSlug": "marinace-black",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Unikátní slepencová žula tvořící mozaiku tmavých a světlých zaoblených valounů na černém pojivu. Nepřehlédnutelný solitér pro kuchyňské ostrůvky, stoly a obklady krbů."
+    },
+    {
+      "id": "393",
+      "slug": "marinace-green",
+      "name": "Marinace Green",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Brazílie v odstínech zelená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "408",
+      "slug": "misty-brown",
+      "name": "Misty Brown",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Čína",
+      "colors": [
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
+      "inStockSlug": "misty-brown-vyska-90-cm",
+      "inStockBlocks": 2,
+      "inStockSlabs": 77,
+      "comment": "Středně zrnitá hnědošedá žula s rovnoměrnou strukturou bez výkyvů v kresbě. Formát s výškou 90 cm je praktický zejména pro parapety, schody, sokly a standardní kuchyňské desky."
+    },
+    {
+      "id": "409",
+      "slug": "misty-grey",
+      "name": "Misty Grey",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Čína",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Čína v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "502",
+      "slug": "moleanos",
+      "name": "Moleanos",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Portugalsko",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
+      "inStockSlug": "moleanos",
+      "inStockBlocks": 3,
+      "inStockSlabs": 11,
+      "comment": "Jemnozrnný portugalský vápenec ve světle béžovém až krémově šedém odstínu s drobnými zkamenělinami. Ideální pro klidné architektonické obklady stěn, koupelny, krby i dlažby."
+    },
+    {
+      "id": "411",
+      "slug": "monet",
+      "name": "Monet",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "fialova",
+          "label": "Fialová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech bílá, fialová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "412",
+      "slug": "mont-blanc",
+      "name": "Mont Blanc",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "413",
+      "slug": "mountain-white",
+      "name": "Mountain White",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Čína",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Čína v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "414",
+      "slug": "multicolor-red",
+      "name": "Multicolor Red",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech červená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "415",
+      "slug": "nero-angola",
+      "name": "Nero Angola",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
+      "inStockSlug": "nero-angola",
+      "inStockBlocks": 2,
+      "inStockSlabs": 7,
+      "comment": "Tmavě černá až uhlově šedá žula s jemným krystalickým zrnem a decentním třpytem slídy. Univerzální, mimořádně odolný kámen pro kuchyňské desky, krby i venkovní dlažby."
+    },
+    {
+      "id": "462",
+      "slug": "nero-impala",
+      "name": "Nero Impala",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Jihoafrická republika",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
+      "inStockSlug": "nero-impala",
+      "inStockBlocks": 1,
+      "inStockSlabs": 16,
+      "comment": "Osvědčená jihoafrická tmavá žula (gabro) s rovnoměrným drobným zrnem a vysokou mrazuvzdorností. V opalované a kartáčované úpravě je ideální pro venkovní dlažby, schody i sokly."
+    },
+    {
+      "id": "475",
+      "slug": "nero-marquina",
+      "name": "Nero Marquina",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
+      "inStockSlug": "nero-marquina",
+      "inStockBlocks": 1,
+      "inStockSlabs": 5,
+      "comment": "Ikonický španělský černý mramor s ostrými bílými kalcitovými žilami. Mimořádně efektní v luxusních koupelnách, na krbových stěnách i dekorativních prvcích."
+    },
+    {
+      "id": "418",
+      "slug": "nero-marquinia",
+      "name": "Nero Marquinia",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "419",
+      "slug": "nero-zimbabwe",
+      "name": "Nero Zimbabwe",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Zimbabwe",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Zimbabwe v odstínech černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "420",
+      "slug": "olive-green",
+      "name": "Olive Green",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Jihoafrická republika",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
+      "inStockSlug": "olive-green",
+      "inStockBlocks": 5,
+      "inStockSlabs": 13,
+      "comment": "Tmavě olivově zelená žula (charnockit) s vyrovnanou strukturou a hlubokým přírodním odstínem. Vysoká hustota a odolnost ji předurčují pro kuchyně, parapety i reprezentativní exteriéry."
+    },
+    {
+      "id": "507",
+      "slug": "onice-orange",
+      "name": "Onice Orange",
+      "categoryKey": "ostatni",
+      "categoryLabel": "Exkluzivní",
+      "origin": "Irán",
+      "colors": [
+        {
+          "key": "oranzova",
+          "label": "Oranžová"
+        },
+        {
+          "key": "cervena",
+          "label": "Červená"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Exkluzivní z oblasti Irán v odstínech oranžová, červená, žlutá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "421",
+      "slug": "palomino",
+      "name": "Palomino",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech béžová, hnědá, žlutá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "422",
+      "slug": "paonazzo",
+      "name": "Paonazzo",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        },
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, žlutá, béžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "460",
+      "slug": "paradiso-classico",
+      "name": "Paradiso Classico",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "fialova",
+          "label": "Fialová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
+      "inStockSlug": "paradiso-classico",
+      "inStockBlocks": 3,
+      "inStockSlabs": 7,
+      "comment": "Klasická indická žula s proudovitou kresbou mísící šedofialové, růžové a antracitové tóny. Vyznačuje se vysokou tvrdostí a dlouhodobou životností v interiéru i exteriéru."
+    },
+    {
+      "id": "424",
+      "slug": "pedra-porto",
+      "name": "Pedra Porto",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Portugalsko",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Portugalsko v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "425",
+      "slug": "pietra-grey",
+      "name": "Pietra Grey",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "469",
+      "slug": "pietra-lavica",
+      "name": "Pietra Lavica",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
+      "inStockSlug": "pietra-lavica",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, krby a moderní fasády."
+    },
+    {
+      "id": "426",
+      "slug": "planet-moon",
+      "name": "Planet Moon",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "427",
+      "slug": "port-laurent",
+      "name": "Port Laurent",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Maroko",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Maroko v odstínech černá, zlatá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "428",
+      "slug": "premium-black",
+      "name": "Premium Black",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082141/zula_premium_black_detail_ac60424888.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082141/zula_premium_black_detail_ac60424888.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760082141/zula_premium_black_detail_ac60424888.png",
+      "inStockSlug": "premium-black",
+      "inStockBlocks": 8,
+      "inStockSlabs": 17,
+      "comment": "Hluboce černá jemnozrnná indická žula se stabilním tónem a vysokým zrcadlovým leskem. Univerzální kámen pro kuchyňské pracovní desky, parapety, schody i pomníkovou výrobu."
+    },
+    {
+      "id": "429",
+      "slug": "rosa-porinho",
+      "name": "Rosa Porinho",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Španělsko v odstínech růžová, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "430",
+      "slug": "rosso-iberico",
+      "name": "Rosso Iberico",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Španělsko",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Španělsko v odstínech červená, růžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "431",
+      "slug": "rosso-lepanto",
+      "name": "Rosso Lepanto",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Turecko",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Turecko v odstínech červená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "432",
+      "slug": "rosso-verona",
+      "name": "Rosso Verona",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Itálie v odstínech červená, růžová s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "433",
+      "slug": "sahara-noir",
+      "name": "Sahara Noir",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Tunisko",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Tunisko v odstínech černá, zlatá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "434",
+      "slug": "salone",
+      "name": "Salone",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082403/zula_salone_detail_c6f6374371.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082403/zula_salone_detail_c6f6374371.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760082403/zula_salone_detail_c6f6374371.jpg",
+      "inStockSlug": "salone",
+      "inStockBlocks": 2,
+      "inStockSlabs": 4,
+      "comment": "Světlá žula kombinující bílou a stříbrošedou krystalickou strukturu s klidným celkovým vyzněním. Odolná volba pro větší interiérové plochy, pracovní desky i parapety."
+    },
+    {
+      "id": "435",
+      "slug": "shivakashi",
+      "name": "Shivakashi",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "ruzova",
+          "label": "Růžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
+      "inStockSlug": "shivakashi",
+      "inStockBlocks": 1,
+      "inStockSlabs": 13,
+      "comment": "Teplá indická žula ve slonovinovém a jemně lososovém odstínu s měkkou oblačnou kresbou. Příjemně prosvětluje kuchyňské linky, koupelny i schodiště."
+    },
+    {
+      "id": "436",
+      "slug": "spider-green",
+      "name": "Spider Green",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        },
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Indie v odstínech zelená, černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "437",
+      "slug": "star-galaxy",
+      "name": "Star Galaxy",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
+      "inStockSlug": "star-galaxy",
+      "inStockBlocks": 3,
+      "inStockSlabs": 10,
+      "comment": "Proslulá černá žula posetá jemnými kovově zlatými a měděnými odlesky bronzitu. Efektivní volba pro kuchyňské desky, barové pulty a reprezentativní koupelny."
+    },
+    {
+      "id": "438",
+      "slug": "statuario",
+      "name": "Statuario",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "439",
+      "slug": "statuario-extra",
+      "name": "Statuario Extra",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
+      "inStockSlug": "statuario-extra",
+      "inStockBlocks": 2,
+      "inStockSlabs": 9,
+      "comment": "Velkoformátová italská keramika s čistě bílým základem a elegantní kresbou mramoru Statuario. Odolává skvrnám, kyselinám i vysokým teplotám v kuchyních a koupelnách."
+    },
+    {
+      "id": "440",
+      "slug": "steel-grey",
+      "name": "Steel Grey",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
+      "inStockSlug": "steel-grey",
+      "inStockBlocks": 3,
+      "inStockSlabs": 9,
+      "comment": "Středně až tmavě ocelově šedá žula s výraznými perleťovými krystaly. V provedení leather skin má příjemně matnou, hmatatelnou strukturu vhodnou pro moderní kuchyňské desky."
+    },
+    {
+      "id": "441",
+      "slug": "suger-black",
+      "name": "Suger Black",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "hneda",
+          "label": "Hnědá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761304020/keramika_suger_black_detail_319deb26a0.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761304020/keramika_suger_black_detail_319deb26a0.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761304020/keramika_suger_black_detail_319deb26a0.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech hnědá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "442",
+      "slug": "super-white-1",
+      "name": "Super White",
+      "categoryKey": "keramika",
+      "categoryLabel": "Keramika",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "keramika"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761305106/keramika_super_white_detail_4448a58a5c.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761305106/keramika_super_white_detail_4448a58a5c.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1761305106/keramika_super_white_detail_4448a58a5c.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Keramika z oblasti Itálie v odstínech bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "443",
+      "slug": "super-white",
+      "name": "Super White",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Brazílie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "444",
+      "slug": "taj-mahal",
+      "name": "Taj Mahal",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
+      "inStockSlug": "taj-mahal",
+      "inStockBlocks": 3,
+      "inStockSlabs": 7,
+      "comment": "Vysoce žádaný brazilský kvarcit se sametovým krémově béžovým základem a jemnými zlatavými či šedými žilkami. Ideální spojení křehké krásy mramoru a extrémní odolnosti pro kuchyně."
+    },
+    {
+      "id": "445",
+      "slug": "tarn",
+      "name": "Tarn",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Francie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083368/zula_tarn_detail_7994e5be75.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083368/zula_tarn_detail_7994e5be75.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760083368/zula_tarn_detail_7994e5be75.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Francie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "446",
+      "slug": "tiger-skin",
+      "name": "Tiger Skin",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "oranzova",
+          "label": "Oranžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
+      "inStockSlug": "tiger-skin",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Výrazná indická žula s kontrastním pruhováním v teplých okrově oranžových a černých tónech. Uplatní se na solitérních obkladech, krbech, schodištích i parapetech."
+    },
+    {
+      "id": "447",
+      "slug": "travertino-classico",
+      "name": "Travertino Classico",
+      "categoryKey": "travertin",
+      "categoryLabel": "Travertin",
+      "origin": "Itálie",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
+      "inStockSlug": "travertino-classico",
+      "inStockBlocks": 1,
+      "inStockSlabs": 11,
+      "comment": "Pravý římský travertin v teplém slonovinově béžovém tónu s jemnou vrstevnatou strukturou. Plněný lesk uzavírá povrch pro snadnou údržbu v koupelnách, obkladech stěn i na krbech."
+    },
+    {
+      "id": "448",
+      "slug": "tropical-storm",
+      "name": "Tropical Storm",
+      "categoryKey": "kvarcit",
+      "categoryLabel": "Kvarcit",
+      "origin": "Angola",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        },
+        {
+          "key": "zlata",
+          "label": "Zlatá"
+        },
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Kvarcit z oblasti Angola v odstínech černá, zlatá, bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "449",
+      "slug": "vahlovice",
+      "name": "Vahlovice",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Česká republika",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Česká republika v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "450",
+      "slug": "vanga-red",
+      "name": "Vanga Red",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Švédsko",
+      "colors": [
+        {
+          "key": "cervena",
+          "label": "Červená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
+      "inStockSlug": "vanga-red",
+      "inStockBlocks": 4,
+      "inStockSlabs": 9,
+      "comment": "Tradiční švédská žula v ušlechtilé cihlově červené barvě s jemnou pravidelnou zrnitostí. Vyniká mrazuvzdorností a barevnou stálostí na fasádách, dlažbách i v interiéru."
+    },
+    {
+      "id": "451",
+      "slug": "verde-guatemala",
+      "name": "Verde Guatemala",
+      "categoryKey": "mramor",
+      "categoryLabel": "Mramor",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Mramor z oblasti Indie v odstínech zelená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "452",
+      "slug": "verde-marina",
+      "name": "Verde Marina",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "seda",
+          "label": "Šedá"
+        },
+        {
+          "key": "zelena",
+          "label": "Zelená"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Indie v odstínech šedá, zelená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "453",
+      "slug": "via-lattea",
+      "name": "Via Lattea",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "cerna",
+          "label": "Černá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
+      "inStockSlug": "via-lattea",
+      "inStockBlocks": 1,
+      "inStockSlabs": 9,
+      "comment": "Tmavě břidlicová až černá brazilská žula protkaná jemnými bílými křemennými žilkami připomínajícími Mléčnou dráhu. Mimořádně oblíbená na kuchyňské ostrůvky a architektonické fasády."
+    },
+    {
+      "id": "459",
+      "slug": "viscount-white",
+      "name": "Viscont White",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Fasády a obklady",
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
+      "inStockSlug": "viscont-white",
+      "inStockBlocks": 3,
+      "inStockSlabs": 18,
+      "comment": "Dynamická světlá žula s bílým základem a výraznými vlnitými šedočernými tahy. Na velkých deskách působí velmi živě a skvěle snáší intenzivní provoz v kuchyni."
+    },
+    {
+      "id": "511",
+      "slug": "vitro",
+      "name": "Vitro",
+      "categoryKey": "ostatni",
+      "categoryLabel": "Exkluzivní",
+      "origin": "Brazílie",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1792572369/quartzite_vitro_deska_2_3251612054.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1792572369/quartzite_vitro_deska_2_3251612054.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1792572369/quartzite_vitro_deska_2_3251612054.png",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Exkluzivní z oblasti Brazílie v odstínech bílá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    },
+    {
+      "id": "463",
+      "slug": "vizag-blue",
+      "name": "Vizag Blue",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Indie",
+      "colors": [
+        {
+          "key": "modra",
+          "label": "Modrá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
+      "inStockSlug": "vizag-blue",
+      "inStockBlocks": 5,
+      "inStockSlabs": 18,
+      "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen pro interiéry, schodiště i venkovní prvky."
+    },
+    {
+      "id": "457",
+      "slug": "yellow-river",
+      "name": "Yellow River",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Čína",
+      "colors": [
+        {
+          "key": "bezova",
+          "label": "Béžová"
+        },
+        {
+          "key": "zluta",
+          "label": "Žlutá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
+      "inStockSlug": "yellow-river-vyska-70-cm",
+      "inStockBlocks": 1,
+      "inStockSlabs": 6,
+      "comment": "Světle okrová až písková žula s drobným zrnem a teplým přírodním vzhledem. Formát 70 cm v opalované úpravě se výborně hodí na terasy, schodišťové stupně a venkovní dlažby."
+    },
+    {
+      "id": "458",
+      "slug": "zambezia",
+      "name": "Zambezia",
+      "categoryKey": "zula",
+      "categoryLabel": "Žula",
+      "origin": "Mosambik",
+      "colors": [
+        {
+          "key": "bila",
+          "label": "Bílá"
+        },
+        {
+          "key": "seda",
+          "label": "Šedá"
+        }
+      ],
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "collections": [
+        "prirodni-kamen"
+      ],
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Mosambik v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+    }
+  ]
+}

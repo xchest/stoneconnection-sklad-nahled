@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Katalog produktů | Stone Connection</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="domu.html" class="brand-logo" aria-label="Stone Connection — Domů">
+        <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_80,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection logo" width="34" height="34">
+        <span class="brand-text">STONE CONNECTION</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace">
+        <a href="domu.html" class="nav-link">Domů</a>
+        <a href="index.html" class="nav-link">Online Sklad</a>
+        <a href="katalog.html" class="nav-link active" aria-current="page">Katalog</a>
+        <a href="realizace.html" class="nav-link">Realizace</a>
+        <a href="o-nas.html" class="nav-link">O nás</a>
+        <a href="kontakt.html" class="nav-link nav-cta">Kontakt</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="context-bar">
+    <div class="container context-row">
+      <div>
+        <nav class="breadcrumb" aria-label="Drobečková navigace">
+          <a href="domu.html">Stone Connection</a>
+          <span aria-hidden="true">›</span>
+          <span>Katalog materiálů</span>
+        </nav>
+        <h1 class="page-title">Kolekce přírodního kamene a keramiky</h1>
+      </div>
+
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="search" id="k-search" placeholder="Vyhledat v katalogu…" autocomplete="off" aria-label="Vyhledat kámen v katalogu">
+      </div>
+    </div>
+  </section>
+
+  <div class="container catalog-layout">
+    <aside class="sidebar-box" aria-label="Filtr katalogu">
+      <div class="sidebar-head">
+        <h2 class="sidebar-title">Filtr katalogu</h2>
+        <button type="button" id="k-reset" class="sidebar-clear" hidden>Vymazat vše</button>
+      </div>
+
+      <details class="acc-group" open>
+        <summary class="acc-summary">Barva kamene</summary>
+        <div class="acc-body" id="k-colors"></div>
+      </details>
+
+      <details class="acc-group" open>
+        <summary class="acc-summary">Druh kamene</summary>
+        <div class="acc-body" id="k-types"></div>
+      </details>
+
+      <details class="acc-group">
+        <summary class="acc-summary">Použití</summary>
+        <div class="acc-body" id="k-apps"></div>
+      </details>
+
+      <div style="padding:12px 16px;border-top:1px solid var(--border);">
+        <label class="check-option">
+          <input type="checkbox" id="k-stock-only">
+          <span class="check-label">Pouze aktuálně skladem</span>
+        </label>
+      </div>
+    </aside>
+
+    <main>
+      <div class="utility-row">
+        <div class="view-tabs">
+          <span class="view-btn active" style="cursor:default;">Všechny materiály</span>
+        </div>
+        <div class="utility-right">
+          <span id="k-summary" class="results-summary">Načítám katalog…</span>
+        </div>
+      </div>
+
+      <div class="active-bar" id="k-active" hidden></div>
+      <div id="k-grid" class="gallery-grid" aria-live="polite"></div>
+      <div id="k-empty" class="empty-state" hidden>
+        <p>Zvoleným filtrům neodpovídá žádný materiál v katalogu.</p>
+        <button type="button" id="k-empty-reset" class="card-detail-btn" style="max-width:220px;margin:0 auto;">Zobrazit celý katalog</button>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="domu.html" class="brand-logo">
+          <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection" width="32" height="32">
+          <span class="brand-text">STONE CONNECTION</span>
+        </a>
+        <p class="footer-note">Vysokoobrátkové pomníkové materiály jako Tarn, Nero Impala atd. jsou vždy skladem v dostatečném množství.</p>
+      </div>
+
+      <address class="footer-col">
+        <strong>Stone Connection Czech s.r.o.</strong>
+        <div>Sokolská 408</div>
+        <div>756 61 Rožnov pod Radhoštěm</div>
+        <div class="footer-ico">IČO: 26827301</div>
+      </address>
+
+      <div class="footer-col">
+        <strong>Sklady a showroomy</strong>
+        <div>Praha 4 — Dobronická 1256</div>
+        <div>Rožnov pod Radhoštěm — Zuberská ul.</div>
+        <div><a href="kontakt.html">Kontakty a otevírací doba →</a></div>
+      </div>
+
+      <div class="footer-col">
+        <strong>Navigace</strong>
+        <div><a href="domu.html">Domů</a> · <a href="index.html">Online Sklad</a></div>
+        <div><a href="realizace.html">Realizace</a> · <a href="o-nas.html">O nás</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="k-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="k-modal-title" hidden>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="k-modal-close" aria-label="Zavřít detail">✕</button>
+      <div class="modal-scroll" id="k-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="shared.js" defer></script>
+  <script src="katalog.js" defer></script>
+</body>
+</html>
