@@ -6,9 +6,11 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'sklad.json');
+const NOTES_PATH = path.join(ROOT_DIR, 'data', 'material_notes.json');
 
 const STOCK_URL = 'https://www.stoneconnection.cz/online-sklad/';
 const CATALOG_URL = 'https://www.stoneconnection.cz/katalog/';
+const REALIZATIONS_URL = 'https://www.stoneconnection.cz/realizace/';
 
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -145,6 +147,7 @@ function makeImageVariants(url, label, kind, blockNumber = null) {
     cardUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_640,h_440,c_fill,g_center'),
     thumbUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_240,h_180,c_fill,g_center'),
     fullUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_1400,c_limit'),
+    sceneUrl: rewriteCloudinary(url, 'f_auto,q_85,w_900,c_limit'),
     rawUrl: url,
   };
 }
@@ -153,7 +156,6 @@ function findCatalogMatch(materialName, catalogByKey) {
   const fullKey = normalizeKey(materialName);
   if (catalogByKey.has(fullKey)) return catalogByKey.get(fullKey);
 
-  // Strip suffixes such as ", výška 90 cm" or trailing " W" if needed
   const withoutComma = fullKey.split(',')[0].trim();
   if (withoutComma && catalogByKey.has(withoutComma)) {
     return catalogByKey.get(withoutComma);
@@ -177,6 +179,130 @@ const COLOR_LABELS = new Map([
   ['fialova', 'Fialová'],
 ]);
 
+function inferColorsFromName(name) {
+  const k = normalizeKey(name);
+  const out = [];
+  if (/\b(white|bianco|neve|ivory|alabastro)\b/.test(k)) out.push('bila');
+  if (/\b(black|nero|assoluto)\b/.test(k)) out.push('cerna');
+  if (/\b(green|verde|olive)\b/.test(k)) out.push('zelena');
+  if (/\b(blue|azul|cielo)\b/.test(k)) out.push('modra');
+  if (/\b(red|rosso)\b/.test(k)) out.push('cervena');
+  if (/\b(gold|macaubas)\b/.test(k)) out.push('zlata');
+  if (/\b(yellow|amarelo)\b/.test(k)) out.push('zluta');
+  if (/\b(grey|gray|cinza|steel)\b/.test(k)) out.push('seda');
+  if (/\b(brown|emperador|cohiba)\b/.test(k)) out.push('hneda');
+  if (/\b(beige|marfil|taj|travertin|daino|moleanos)\b/.test(k)) out.push('bezova');
+  if (/\b(pink|rosa|shivakashi)\b/.test(k)) out.push('ruzova');
+  if (/\b(orange)\b/.test(k)) out.push('oranzova');
+  return out.length ? [...new Set(out)] : ['seda'];
+}
+
+function inferTone(colors, note) {
+  if (note?.tone) return note.tone;
+  const set = new Set(colors);
+  if (set.has('cerna')) return 'dark';
+  if (set.has('bila') || set.has('bezova')) return 'light';
+  return 'medium';
+}
+
+function inferPattern(note) {
+  return note?.pattern || 'veined';
+}
+
+function buildFallbackComment(name, categoryLabel, origin, colorLabels, surfaces) {
+  const originPart = origin ? ` z oblasti ${origin}` : '';
+  const colorPart = colorLabels.length ? ` v odstínech ${colorLabels.join(', ').toLowerCase()}` : '';
+  const surfPart = surfaces.length ? ` Dostupný v úpravě ${surfaces.join(' / ')}.` : '';
+  return `${categoryLabel}${originPart}${colorPart} s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady.${surfPart}`;
+}
+
+function extractRealizationMap(html, materialSlugs) {
+  const map = new Map();
+  if (!html) return map;
+
+  const urls = [...new Set(html.match(/https:\/\/res\.cloudinary\.com\/diizxq7gf\/image\/upload\/[^"'\s)]+/g) || [])];
+  for (const rawUrl of urls) {
+    if (rawUrl.includes('favicon_')) continue;
+    const filename = (rawUrl.split('/').pop() || '').toLowerCase();
+    for (const slug of materialSlugs) {
+      const underscoreSlug = slug.replace(/-/g, '_');
+      if (filename.includes(`_${underscoreSlug}_`) || filename.startsWith(`${underscoreSlug}_`)) {
+        const list = map.get(slug) || [];
+        const normalizedBase = filename.replace(/\.[a-z0-9]+$/, '');
+        if (!list.some((item) => item.rawUrl.toLowerCase().includes(normalizedBase))) {
+          list.push(makeImageVariants(rawUrl, 'Reálná realizace Stone Connection', 'realization'));
+          map.set(slug, list);
+        }
+      }
+    }
+  }
+  return map;
+}
+
+function computeAlternatives(materials) {
+  const lightCompat = new Set(['mramor', 'vapenec', 'travertin', 'onyx']);
+  const hardCompat = new Set(['zula', 'kvarcit', 'keramika']);
+
+  for (const a of materials) {
+    const aColors = a.colors.map((c) => c.key);
+    const aColorSet = new Set(aColors);
+    const scored = [];
+
+    for (const b of materials) {
+      if (b.slug === a.slug) continue;
+      let score = 0;
+      const bColors = b.colors.map((c) => c.key);
+      const sharedColors = bColors.filter((c) => aColorSet.has(c));
+
+      if (sharedColors.length > 0) {
+        score += aColors[0] && bColors[0] === aColors[0] ? 5 : 4;
+        score += Math.max(0, sharedColors.length - 1) * 3;
+      }
+
+      if (a.categoryKey === b.categoryKey) {
+        score += 3.5;
+      } else if (
+        (hardCompat.has(a.categoryKey) && hardCompat.has(b.categoryKey)) ||
+        (lightCompat.has(a.categoryKey) && lightCompat.has(b.categoryKey))
+      ) {
+        score += 1.5;
+      }
+
+      if (a.tone === b.tone) score += 2.5;
+      if (a.pattern === b.pattern) score += 2;
+      if (b.cardImage) score += 1.5;
+
+      const reasonParts = [];
+      if (sharedColors.length) {
+        const cName = (COLOR_LABELS.get(sharedColors[0]) || sharedColors[0]).toLowerCase();
+        reasonParts.push(`Podobný odstín (${cName})`);
+      } else if (a.tone === b.tone) {
+        const toneLabel = a.tone === 'dark' ? 'tmavý tón' : a.tone === 'light' ? 'světlý tón' : 'střední tón';
+        reasonParts.push(`Blízký ${toneLabel}`);
+      }
+      if (a.categoryKey === b.categoryKey) {
+        reasonParts.push(b.categoryLabel.toLowerCase());
+      } else {
+        reasonParts.push(`alternativa: ${b.categoryLabel.toLowerCase()}`);
+      }
+
+      scored.push({
+        score,
+        item: {
+          slug: b.slug,
+          name: b.name,
+          categoryLabel: b.categoryLabel,
+          cardImage: b.cardImage,
+          reason: reasonParts.join(' · '),
+        },
+      });
+    }
+
+    scored.sort((x, y) => y.score - x.score || x.item.name.localeCompare(y.item.name, 'cs'));
+    a.alternatives = scored.slice(0, 2).map((s) => s.item);
+  }
+}
+
 async function fetchHtml(url) {
   const res = await fetch(url, { headers: FETCH_HEADERS });
   if (!res.ok) {
@@ -187,9 +313,15 @@ async function fetchHtml(url) {
 
 async function main() {
   console.log('Stahuji verejna data ze stoneconnection.cz...');
-  const [stockHtml, catalogHtml] = await Promise.all([
+  let notesBySlug = {};
+  if (fs.existsSync(NOTES_PATH)) {
+    notesBySlug = JSON.parse(fs.readFileSync(NOTES_PATH, 'utf8'));
+  }
+
+  const [stockHtml, catalogHtml, realizationsHtml] = await Promise.all([
     fetchHtml(STOCK_URL),
     fetchHtml(CATALOG_URL),
+    fetchHtml(REALIZATIONS_URL).catch(() => ''),
   ]);
 
   const tsMatch = stockHtml.match(/data-timestamp="([^"]+)"/);
@@ -219,13 +351,13 @@ async function main() {
   let totalSlabs = 0;
   let totalAreaM2 = 0;
 
-  const blocksWithoutOwnPhoto = [];
   const normalizedBlocks = rawBlocks.map((raw, idx) => {
     const materialName = normalizeWhitespace(raw.nazev1);
     const materialSlug = slugify(materialName);
     const blockNumber = normalizeWhitespace(raw.blockNumber);
     const typeInfo = mapProductType(raw.productType);
     const catalogMatch = findCatalogMatch(materialName, catalogByKey);
+    const note = notesBySlug[materialSlug] || null;
 
     const slabs = (Array.isArray(raw.items) ? raw.items : []).map((it) => ({
       id: it.id ?? null,
@@ -258,9 +390,12 @@ async function main() {
     );
 
     const hasRealPhoto = Boolean(featuredVariant || detailVariants.length > 0);
-    if (!hasRealPhoto) {
-      blocksWithoutOwnPhoto.push(idx);
-    }
+    const mergedColors =
+      catalogMatch?.colors?.length
+        ? catalogMatch.colors
+        : note?.colors?.length
+          ? note.colors
+          : inferColorsFromName(materialName);
 
     return {
       id: `${materialSlug}-${slugify(blockNumber) || idx}`,
@@ -275,6 +410,7 @@ async function main() {
       warehouses,
       thicknesses,
       surfaces,
+      colors: mergedColors,
       featuredImage: featuredVariant,
       detailImages: detailVariants,
       hasRealPhoto,
@@ -298,7 +434,6 @@ async function main() {
     throw new Error(`Sanity check selhal: nalezeno pouze ${totalSlabs} desek (min 100).`);
   }
 
-  // Build sibling photo lookup per material for fallback
   const siblingPhotoByMaterial = new Map();
   for (const b of normalizedBlocks) {
     if (!siblingPhotoByMaterial.has(b.materialSlug) && (b.detailImages[0] || b.featuredImage)) {
@@ -326,44 +461,43 @@ async function main() {
     }
   }
 
-  // Group blocks into unique materials
   const materialsMap = new Map();
   for (const block of normalizedBlocks) {
     let mat = materialsMap.get(block.materialSlug);
     if (!mat) {
+      const note = notesBySlug[block.materialSlug] || null;
       mat = {
         slug: block.materialSlug,
         name: block.materialName,
         categoryKey: block.categoryKey,
         categoryLabel: block.categoryLabel,
-        productTypes: new Set(),
         totalAreaM2: 0,
         totalSlabs: 0,
         blockCount: 0,
         warehouses: new Set(),
         thicknesses: new Set(),
         surfaces: new Set(),
-        colors: new Set(),
-        origin: block.catalogMatch?.origin || '',
+        colors: new Set(block.colors),
+        origin: block.catalogMatch?.origin || note?.origin || '',
         applications: block.catalogMatch?.applications || [],
         catalogUrl: block.catalogMatch?.url || null,
         catalogImage: block.catalogMatch?.image || null,
+        note,
         blocks: [],
       };
       materialsMap.set(block.materialSlug, mat);
     }
-    mat.productTypes.add(block.categoryLabel);
     mat.totalAreaM2 = Number((mat.totalAreaM2 + block.totalAreaM2).toFixed(2));
     mat.totalSlabs += block.slabCount;
     mat.blockCount += 1;
     block.warehouses.forEach((w) => mat.warehouses.add(w));
     block.thicknesses.forEach((t) => mat.thicknesses.add(t));
     block.surfaces.forEach((s) => mat.surfaces.add(s));
-    if (block.catalogMatch?.colors) {
-      block.catalogMatch.colors.forEach((c) => mat.colors.add(c));
-    }
+    block.colors.forEach((c) => mat.colors.add(c));
     mat.blocks.push(block);
   }
+
+  const realizationMap = extractRealizationMap(realizationsHtml, [...materialsMap.keys()]);
 
   const materials = [...materialsMap.values()].map((mat) => {
     const galleryImages = [];
@@ -385,23 +519,38 @@ async function main() {
       if (b.featuredImage) pushUnique(b.featuredImage);
     }
 
-    // Priority for material card photo:
-    // 1. catalog close-up texture -> 2. block detail close-up -> 3. block full slab center-cropped -> null
     const firstDetail = mat.blocks.find((b) => b.detailImages.length > 0)?.detailImages[0] || null;
     const firstSlab = mat.blocks.find((b) => b.featuredImage)?.featuredImage || null;
 
     let cardImage = null;
+    let sceneTextureUrl = null;
     let cardImageSource = 'none';
     if (mat.catalogImage) {
       cardImage = mat.catalogImage.cardUrl;
+      sceneTextureUrl = mat.catalogImage.sceneUrl;
       cardImageSource = 'catalog';
     } else if (firstDetail) {
       cardImage = firstDetail.cardUrl;
+      sceneTextureUrl = firstDetail.sceneUrl;
       cardImageSource = 'detail';
     } else if (firstSlab) {
       cardImage = firstSlab.cardUrl;
+      sceneTextureUrl = firstSlab.sceneUrl;
       cardImageSource = 'slab';
     }
+
+    const colorKeys = [...mat.colors];
+    const colorObjs = colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c }));
+    const surfaces = [...mat.surfaces].sort((a, b) => a.localeCompare(b, 'cs'));
+    const tone = inferTone(colorKeys, mat.note);
+    const pattern = inferPattern(mat.note);
+    const comment = mat.note?.comment || buildFallbackComment(
+      mat.name,
+      mat.categoryLabel,
+      mat.origin,
+      colorObjs.map((c) => c.label),
+      surfaces
+    );
 
     return {
       slug: mat.slug,
@@ -413,14 +562,20 @@ async function main() {
       blockCount: mat.blockCount,
       warehouses: [...mat.warehouses].sort((a, b) => a.localeCompare(b, 'cs')),
       thicknesses: [...mat.thicknesses].sort((a, b) => a - b),
-      surfaces: [...mat.surfaces].sort((a, b) => a.localeCompare(b, 'cs')),
-      colors: [...mat.colors].map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c })),
+      surfaces,
+      colors: colorObjs,
+      tone,
+      pattern,
       origin: mat.origin,
       applications: mat.applications,
       catalogUrl: mat.catalogUrl,
+      comment,
       cardImage,
+      sceneTextureUrl,
       cardImageSource,
+      realizationImages: realizationMap.get(mat.slug) || [],
       galleryImages,
+      alternatives: [],
       blocks: mat.blocks.map((b) => ({
         id: b.id,
         blockNumber: b.blockNumber,
@@ -437,7 +592,8 @@ async function main() {
     };
   });
 
-  // Sort materials alphabetically (push items with no image to the end)
+  computeAlternatives(materials);
+
   materials.sort((a, b) => {
     const aHas = a.cardImage ? 0 : 1;
     const bHas = b.cardImage ? 0 : 1;
@@ -445,7 +601,6 @@ async function main() {
     return a.name.localeCompare(b.name, 'cs');
   });
 
-  // Sort blocks alphabetically, pushing blocks without any photo to the end
   normalizedBlocks.sort((a, b) => {
     const aHas = a.cardImage ? 0 : 1;
     const bHas = b.cardImage ? 0 : 1;
@@ -470,6 +625,8 @@ async function main() {
       blocksWithoutPhoto,
       materialsWithPhoto: materials.filter((m) => Boolean(m.cardImage)).length,
       materialsWithoutPhoto: materials.filter((m) => !m.cardImage).length,
+      materialsWithColors: materials.filter((m) => m.colors.length > 0).length,
+      materialsWithRealizations: materials.filter((m) => m.realizationImages.length > 0).length,
     },
     materials,
     blocks: normalizedBlocks.map((b) => ({
@@ -484,7 +641,7 @@ async function main() {
       warehouses: b.warehouses,
       thicknesses: b.thicknesses,
       surfaces: b.surfaces,
-      colors: b.catalogMatch?.colors || [],
+      colors: b.colors,
       cardImage: b.cardImage,
       cardImageSource: b.cardImageSource,
       hasRealPhoto: b.hasRealPhoto,

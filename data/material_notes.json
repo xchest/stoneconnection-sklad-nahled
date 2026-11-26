@@ -1,0 +1,541 @@
+{
+  "absolut-black-w": {
+    "colors": ["cerna"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "uniform",
+    "comment": "Hluboká, mimořádně jemnozrnná černá žula s vyrovnaným odstínem bez výrazné kresby. Vhodná pro minimalistické kuchyňské desky, obklady krbů i reprezentativní exteriérové a pomníkové prvky."
+  },
+  "amarelo-macieira": {
+    "colors": ["zluta", "bezova"],
+    "origin": "Portugalsko",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Teple medová až okrová žula se stejnoměrným středně zrnitým krystalem. V tryskaném provedení vynikne na exteriérových dlažbách, schodištích, soklech a terasách s vysokým nárokem na protiskluznost."
+  },
+  "astoria": {
+    "colors": ["bezova", "seda", "hneda"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Světle béžová žula prostoupená plynulou, teplou šedohnědou vlnitou kresbou. Skvěle působí na velkoformátových kuchyňských deskách, koupelnových obkladech i parapetech v přírodně laděných interiérech."
+  },
+  "aurora-india": {
+    "colors": ["cerna", "cervena"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "dramatic",
+    "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. Využívá se tam, kde má kámen tvořit dominantní prvek — na krbových stěnách, obkladech i masivních výrobcích."
+  },
+  "azul-aran": {
+    "colors": ["modra", "seda"],
+    "origin": "Španělsko",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Chladnější šedomodrá žula s jemnou krystalickou strukturou a klidným, rovnoměrným výrazem. Kartáčovaný či tryskaný povrch ji předurčuje pro nadčasové fasády, venkovní schody i městskou architekturu."
+  },
+  "azul-noche": {
+    "colors": ["seda", "cerna"],
+    "origin": "Španělsko",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Tmavě břidlicově šedá žula s jemnou rovnoměrnou zrnitostí a decentními modrošedými odlesky. Dobře se uplatní na pracovních deskách, schodištích, parapetech i venkovních obkladech."
+  },
+  "azul-platino": {
+    "colors": ["seda"],
+    "origin": "Španělsko",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Vyrovnaná stříbrošedá žula s drobným zrnem a neutrálním architektonickým charakterem. Osvědčená volba pro větší plochy podlah, schodišť, parapetů a komerčních interiérů."
+  },
+  "balthus-neve": {
+    "colors": ["bila", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá žula se smetanově bílým základem a měkkými šedými přechody připomínajícími mramor. Spojuje čistý vzhled světlých desek s vysokou mechanickou odolností žuly pro kuchyně i koupelny."
+  },
+  "bararp": {
+    "colors": ["hneda", "oranzova", "seda", "cervena"],
+    "origin": "Švédsko",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Severská rula/žula s charakteristickým pruhováním v teplých měděných, hnědých a tmavě šedých tónech. Vyhledávaný materiál pro reprezentativní fasády, sokly, krby i venkovní dlažby."
+  },
+  "belvedere": {
+    "colors": ["cerna", "bila", "zlata"],
+    "origin": "Angola",
+    "tone": "dark",
+    "pattern": "dramatic",
+    "comment": "Exkluzivní tmavý kvarcit s hlubokým černým základem a výraznými bílými i zlatavými žilami. V provedení leather skin dává vyniknout plastiké struktuře na kuchyňských ostrovech a solitérních stěnách."
+  },
+  "bianco-carrara": {
+    "colors": ["bila", "seda"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Klasický italský mramor s chladným mléčně bílým podkladem a jemným popelavě šedým žilkováním. Ideální pro koupelny, obklady krbů, umyvadlové desky a reprezentativní interiéry."
+  },
+  "black-vermont": {
+    "colors": ["seda", "cerna"],
+    "origin": "Brazílie",
+    "tone": "dark",
+    "pattern": "veined",
+    "comment": "Tmavě grafitová žula s decentním kouřovým pohybem a jemnými světlejšími žilkami. Hodí se do moderních kuchyní a interiérů, kde má černý kámen působit přirozeněji než jednolitá plocha."
+  },
+  "calacatta-green": {
+    "colors": ["zelena", "bila", "seda"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Kvarcit s bílo-krémovým podkladem a elegantní zelenošedou až olivovou kresbou. Nabízí výraz luxusního mramoru při tvrdosti přírodního kvarcitu pro kuchyňské desky i koupelnové stěny."
+  },
+  "calacatta-vivaldi": {
+    "colors": ["bila", "seda", "zlata"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Italský mramor se světlým slonovinově bílým podkladem a kontrastní šedou kresbou se zlatavým akcentem. Vynikne především v koupelnách, na krbových portálech a velkých stěnových obkladech."
+  },
+  "cape-red": {
+    "colors": ["cervena", "seda"],
+    "origin": "Jihoafrická republika",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Jihoafrická červenošedá žula s vyrovnaným středně hrubým krystalem a teplým rustikálním tónem. Odolný kámen vhodný na schodiště, obklady, parapety i exteriérové prvky."
+  },
+  "cielo-de-ivory": {
+    "colors": ["bezova", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá slonovinově béžová žula s jemnou oblačnou kresbou v teple šedých odstínech. Klidný, univerzální materiál pro kuchyňské desky, parapety a světlé koupelny."
+  },
+  "cielo-de-marfil": {
+    "colors": ["bezova", "bila"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Teplá krémová žula se světlým podkladem a jemným minerálním žilkováním bez ostrých kontrastů. Příjemně zatepluje moderní interiéry v kombinaci s dubem či matným lakem."
+  },
+  "cinza-ariz": {
+    "colors": ["seda"],
+    "origin": "Portugalsko",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Světle šedá portugalská žula s pravidelným jemným zrnem a čistým architektonickým výrazem. V tryskaném provedení je výborná pro venkovní dlažby, schody, obrubníky a sokly."
+  },
+  "colonial-gold": {
+    "colors": ["bezova", "zluta", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Krémově zlatavá žula se šedohnědým obláčkováním a drobnými minerálními akcenty. Tradiční a velmi oblíbená volba pro teplé kuchyňské linky, ostrůvky i koupelny."
+  },
+  "daino-reale": {
+    "colors": ["bezova", "hneda"],
+    "origin": "Itálie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Sardinský mramor v teplých pískových a karamelových odstínech s přirozeným diagonálním vrstvením. Ideální pro interiérové obklady stěn, koupelny, parapety a schodiště."
+  },
+  "delycatus-white": {
+    "colors": ["bila", "seda", "cerna"],
+    "origin": "Brazílie",
+    "tone": "light",
+    "pattern": "dramatic",
+    "comment": "Kontrastní světlá žula s bílým až perleťovým základem a výraznými tmavě šedými až černými shluky biotitu a křemene. Na větších kuchyňských deskách vytváří působivou přírodní grafiku."
+  },
+  "doret": {
+    "colors": ["bezova", "seda", "zlata"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Velkoformátová italská keramika s věrnou kresbou světlého kamene, protkaná jemnými teplými zlatavými žilkami. Nulová nasákavost a vysoká odolnost ji předurčují pro kuchyně i koupelny."
+  },
+  "emperador-dark": {
+    "colors": ["hneda", "cerna"],
+    "origin": "Španělsko",
+    "tone": "dark",
+    "pattern": "veined",
+    "comment": "Klasický tmavě čokoládový mramor se sítí jemných světlejších a kalcitových žilek. Dodává koupelnám, krbovým obkladům a hotelovým interiérům teplou, elegantní atmosféru."
+  },
+  "fior-di-bosco": {
+    "colors": ["seda", "bila", "oranzova"],
+    "origin": "Itálie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Ušlechtilý šedý mramor s kouřovými tóny a jemnými bílými i teplými jantarovými žilkami. Architektonicky čistý materiál pro obklady koupelen, krbů a interiérové stěny."
+  },
+  "golden-macaubas": {
+    "colors": ["zluta", "bezova", "zlata"],
+    "origin": "Brazílie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Vzácný brazilský kvarcit s lineární, plynulou kresbou v odstínech slonoviny, zlata a medového okru. Mimořádně tvrdý a reprezentativní kámen pro kuchyňské ostrůvky a stěny."
+  },
+  "ijen-blue": {
+    "colors": ["bila", "modra", "seda"],
+    "origin": "Brazílie",
+    "tone": "medium",
+    "pattern": "dramatic",
+    "comment": "Přírodní kvarcit spojující chladné šedomodré proudy se světlými krystalickými poli. Hodí se na dominantní kuchyňské desky, barové pulty i dekorativní obklady stěn."
+  },
+  "imperial-red": {
+    "colors": ["cervena"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Sytě rubínově červená žula s jemným černobílým zrnem a vysokým leskem. Osvědčená volba pro výrazné interiérové prvky, schodiště i odolné exteriérové aplikace."
+  },
+  "ivory-fantasy": {
+    "colors": ["bezova", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá slonovinová žula s jemně plynoucí kresbou v teplých béžových a měkkých šedých odstínech. Působí vzdušně na kuchyňských deskách, parapetech i koupelnových obkladech."
+  },
+  "kashmir-white": {
+    "colors": ["bila", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Světlá, téměř bílá až světle šedá žula s drobnou tečkovanou strukturou a teplými minerálními zrny. Nadčasová a praktická alternativa do světlých kuchyní a koupelen."
+  },
+  "labradorite-white": {
+    "colors": ["bila", "seda", "modra"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Světlý krystalický kámen s perleťovými a jemně modravými odlesky živců při dopadu světla. Vynikne na kuchyňských deskách a koupelnových plochách pod přímým osvětlením."
+  },
+  "madura-gold": {
+    "colors": ["zluta", "zlata", "hneda"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Teplá zlatohnědá žula s bohatou kresbou okrových a šedavých pruhů. V úpravě antic vynikne přirozený sametový reliéf kamene v kuchyních i rustikálně laděných interiérech."
+  },
+  "marinace-black": {
+    "colors": ["cerna", "bila", "seda"],
+    "origin": "Brazílie",
+    "tone": "dark",
+    "pattern": "dramatic",
+    "comment": "Unikátní slepencová žula tvořící mozaiku tmavých a světlých zaoblených valounů na černém pojivu. Nepřehlédnutelný solitér pro kuchyňské ostrůvky, stoly a obklady krbů."
+  },
+  "mist-black": {
+    "colors": ["cerna", "seda"],
+    "origin": "",
+    "tone": "dark",
+    "pattern": "veined",
+    "comment": "Tmavě antracitová až černá žula se zastřenou kouřově šedou kresbou a jemným pohybem. V kombinaci lesk/leather působí klidně a moderně na pracovních deskách i obkladech."
+  },
+  "misty-brown-vyska-90-cm": {
+    "colors": ["hneda", "seda"],
+    "origin": "Čína",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Středně zrnitá hnědošedá žula s rovnoměrnou strukturou bez výkyvů v kresbě. Formát s výškou 90 cm je praktický zejména pro parapety, schody, sokly a standardní kuchyňské desky."
+  },
+  "moleanos": {
+    "colors": ["bezova", "seda"],
+    "origin": "Portugalsko",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Jemnozrnný portugalský vápenec ve světle béžovém až krémově šedém odstínu s drobnými zkamenělinami. Ideální pro klidné architektonické obklady stěn, koupelny, krby i dlažby."
+  },
+  "multicolour-red": {
+    "colors": ["cervena", "hneda", "cerna"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "dramatic",
+    "comment": "Indická žula s bohatou vlnitou kresbou spojující terakotově červenou, hnědou a tmavě šedou. Velmi odolný materiál pro interiéry, schodiště, parapety i exteriérové prvky."
+  },
+  "nero-angola": {
+    "colors": ["cerna", "seda"],
+    "origin": "Angola",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Tmavě černá až uhlově šedá žula s jemným krystalickým zrnem a decentním třpytem slídy. Univerzální, mimořádně odolný kámen pro kuchyňské desky, krby i venkovní dlažby."
+  },
+  "nero-assoluto-zimbabwe": {
+    "colors": ["cerna"],
+    "origin": "Zimbabwe",
+    "tone": "dark",
+    "pattern": "uniform",
+    "comment": "Špičková hluboce černá žula ze Zimbabwe s velmi jemnou a stejnorodou strukturou. Patří k nejoblíbenějším materiálům pro moderní kuchyňské desky, obklady a precizní kamenické detaily."
+  },
+  "nero-cohiba": {
+    "colors": ["cerna", "hneda"],
+    "origin": "Angola",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Tmavě hnědočerná žula s vyrovnanou jemnou strukturou a teplým tmavým podtónem. Skvěle doplňuje dřevěné dekory a bronzové či černé prvky v moderních kuchyních."
+  },
+  "nero-impala": {
+    "colors": ["cerna", "seda"],
+    "origin": "Jihoafrická republika",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Osvědčená jihoafrická tmavá žula (gabro) s rovnoměrným drobným zrnem a vysokou mrazuvzdorností. V opalované a kartáčované úpravě je ideální pro venkovní dlažby, schody i sokly."
+  },
+  "nero-marquina": {
+    "colors": ["cerna", "bila"],
+    "origin": "Španělsko",
+    "tone": "dark",
+    "pattern": "veined",
+    "comment": "Ikonický španělský černý mramor s ostrými bílými kalcitovými žilami. Mimořádně efektní v luxusních koupelnách, na krbových stěnách i dekorativních prvcích."
+  },
+  "olive-green": {
+    "colors": ["zelena"],
+    "origin": "Jihoafrická republika",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Tmavě olivově zelená žula (charnockit) s vyrovnanou strukturou a hlubokým přírodním odstínem. Vysoká hustota a odolnost ji předurčují pro kuchyně, parapety i reprezentativní exteriéry."
+  },
+  "onyx-orange": {
+    "colors": ["oranzova", "zluta", "bila"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "dramatic",
+    "comment": "Průsvitný přírodní onyx v teplých medových, oranžových a krémových pruzích. Vyniká zejména jako podsvícený obklad stěn, barů, recepcí a solitérních krbů."
+  },
+  "onyx-white": {
+    "colors": ["bila", "bezova"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlý alabastrově bílý onyx s jemnými mléčnými a světle zlatavými vrstvami. Ideální pro podsvícené interiérové panely, luxusní koupelny a dekorativní detaily."
+  },
+  "palm-green": {
+    "colors": ["zelena", "seda"],
+    "origin": "",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Zelená žula s harmonickou kresbou v odstínech lesní zeleně a kouřově šedé. Přináší do interiéru přírodní barevný akcent při zachování všech vlastností tvrdé žuly."
+  },
+  "paradiso-classico": {
+    "colors": ["fialova", "seda", "hneda"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "dramatic",
+    "comment": "Klasická indická žula s proudovitou kresbou mísící šedofialové, růžové a antracitové tóny. Vyznačuje se vysokou tvrdostí a dlouhodobou životností v interiéru i exteriéru."
+  },
+  "peregrine": {
+    "colors": ["bezova", "hneda", "seda"],
+    "origin": "",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Teple šedohnědá žula s jemným lineárním žilkováním a přírodním charakterem. Dobře se kombinuje s neutrálními odstíny v kuchyních, na parapetech i na schodištích."
+  },
+  "pietra-di-luserna": {
+    "colors": ["seda", "zelena"],
+    "origin": "Itálie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Tradiční alpská rula z oblasti Piemontu se šedozeleným nádechem a břidličnatou strukturou. Ve štípaném provedení je špičkovým materiálem pro terasy, fasády a venkovní dlažby."
+  },
+  "pietra-lavica": {
+    "colors": ["seda", "cerna"],
+    "origin": "Itálie",
+    "tone": "dark",
+    "pattern": "uniform",
+    "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, krby a moderní fasády."
+  },
+  "premium-black": {
+    "colors": ["cerna"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "uniform",
+    "comment": "Hluboce černá jemnozrnná indická žula se stabilním tónem a vysokým zrcadlovým leskem. Univerzální kámen pro kuchyňské pracovní desky, parapety, schody i pomníkovou výrobu."
+  },
+  "quartzite-cielo": {
+    "colors": ["modra", "seda", "bila"],
+    "origin": "Brazílie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Nebesky šedomodrý přírodní kvarcit s jemnou mramorovanou kresbou a krystalickou hloubkou. Spojuje mimořádnou tvrdost kvarcitu s lehkým vzdušným vzhledem pro kuchyně a koupelny."
+  },
+  "regal-black": {
+    "colors": ["cerna"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "uniform",
+    "comment": "Elegantní černá žula s kompaktní jemnou strukturou a sytým tmavým odstínem. Často využívaná pro kuchyňské desky, obklady i vysoce odolné venkovní a pomníkové prvky."
+  },
+  "river-white": {
+    "colors": ["bila", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá indická žula s bílým až krémově šedým základem a měkkými proudy s drobnými vínovými zrny. Velmi oblíbená pro kuchyňské desky, kde nahrazuje světlé mramory vyšší odolností."
+  },
+  "romantica": {
+    "colors": ["hneda", "bezova", "cervena"],
+    "origin": "",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Žula s teplou vlnitou kresbou v tónech hnědé, karamelové a jemně načervenalé. Přináší výraznější přírodní kresbu na pracovní desky, schody i krbové obklady."
+  },
+  "sahara-white": {
+    "colors": ["bila", "bezova", "seda"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá žula v pískově bílých a měkce šedých tónech s jemnou, vyváženou kresbou. Hodí se do světlých kuchyní a koupelen, kde působí čistě a nadčasově."
+  },
+  "salone": {
+    "colors": ["bila", "seda"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Světlá žula kombinující bílou a stříbrošedou krystalickou strukturu s klidným celkovým vyzněním. Odolná volba pro větší interiérové plochy, pracovní desky i parapety."
+  },
+  "shivakashi": {
+    "colors": ["bezova", "ruzova"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Teplá indická žula ve slonovinovém a jemně lososovém odstínu s měkkou oblačnou kresbou. Příjemně prosvětluje kuchyňské linky, koupelny i schodiště."
+  },
+  "silvestre": {
+    "colors": ["seda"],
+    "origin": "Španělsko",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Klasická španělská středně zrnitá šedá žula s vyváženým černo-bílým zrnem. V tryskaném povrchu je mimořádně vhodná pro venkovní dlažby, schody, sokly a veřejné prostory."
+  },
+  "star-galaxy": {
+    "colors": ["cerna", "zlata"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Proslulá černá žula posetá jemnými kovově zlatými a měděnými odlesky bronzitu. Efektivní volba pro kuchyňské desky, barové pulty a reprezentativní koupelny."
+  },
+  "statuario-corchia": {
+    "colors": ["bila", "seda"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Ušlechtilý bílý italský mramor s chladným základem a výraznější šedou žilnou sítí. Vhodný pro koupelny, obklady stěn, krbové portály a klasické i moderní interiéry."
+  },
+  "statuario-extra": {
+    "colors": ["bila", "seda"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Velkoformátová italská keramika s čistě bílým základem a elegantní kresbou mramoru Statuario. Odolává skvrnám, kyselinám i vysokým teplotám v kuchyních a koupelnách."
+  },
+  "steel-grey": {
+    "colors": ["seda", "cerna"],
+    "origin": "Indie",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Středně až tmavě ocelově šedá žula s výraznými perleťovými krystaly. V provedení leather skin má příjemně matnou, hmatatelnou strukturu vhodnou pro moderní kuchyňské desky."
+  },
+  "striato-olimpico": {
+    "colors": ["bila", "seda"],
+    "origin": "Turecko",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Charakteristický bílý mramor s rovnoběžnými vodorovnými šedými pruhy. Umožňuje výrazné architektonické skládání kresby na stěnách koupelen, sprchových koutů a krbů."
+  },
+  "taj-mahal": {
+    "colors": ["bezova", "seda", "bila"],
+    "origin": "Brazílie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Vysoce žádaný brazilský kvarcit se sametovým krémově béžovým základem a jemnými zlatavými či šedými žilkami. Ideální spojení křehké krásy mramoru a extrémní odolnosti pro kuchyně."
+  },
+  "tiger-skin": {
+    "colors": ["cerna", "oranzova", "hneda"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "dramatic",
+    "comment": "Výrazná indická žula s kontrastním pruhováním v teplých okrově oranžových a černých tónech. Uplatní se na solitérních obkladech, krbech, schodištích i parapetech."
+  },
+  "travertino-classico": {
+    "colors": ["bezova"],
+    "origin": "Itálie",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Pravý římský travertin v teplém slonovinově béžovém tónu s jemnou vrstevnatou strukturou. Plněný lesk uzavírá povrch pro snadnou údržbu v koupelnách, obkladech stěn i na krbech."
+  },
+  "vanga-red": {
+    "colors": ["cervena"],
+    "origin": "Švédsko",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Tradiční švédská žula v ušlechtilé cihlově červené barvě s jemnou pravidelnou zrnitostí. Vyniká mrazuvzdorností a barevnou stálostí na fasádách, dlažbách i v interiéru."
+  },
+  "verde-bahia": {
+    "colors": ["zelena", "cerna"],
+    "origin": "Brazílie",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Sytě smaragdově zelená až tmavě zelená žula s jemnou vyrovnanou strukturou. Zajímavá alternativa k černým deskám pro kuchyně, koupelny i reprezentativní parapety."
+  },
+  "verde-eucaliptus": {
+    "colors": ["zelena", "seda"],
+    "origin": "Brazílie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Přírodní zelená žula s chladnými eukalyptovými a šedozelenými přechody. Vnáší do prostoru klidný organický tón na obkladech, deskách i solitérních prvcích."
+  },
+  "via-lattea": {
+    "colors": ["cerna", "bila"],
+    "origin": "Brazílie",
+    "tone": "dark",
+    "pattern": "veined",
+    "comment": "Tmavě břidlicová až černá brazilská žula protkaná jemnými bílými křemennými žilkami připomínajícími Mléčnou dráhu. Mimořádně oblíbená na kuchyňské ostrůvky a architektonické fasády."
+  },
+  "viscont-white": {
+    "colors": ["bila", "seda", "cerna"],
+    "origin": "Indie",
+    "tone": "light",
+    "pattern": "dramatic",
+    "comment": "Dynamická světlá žula s bílým základem a výraznými vlnitými šedočernými tahy. Na velkých deskách působí velmi živě a skvěle snáší intenzivní provoz v kuchyni."
+  },
+  "vizag-blue": {
+    "colors": ["modra", "seda"],
+    "origin": "Indie",
+    "tone": "medium",
+    "pattern": "veined",
+    "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen pro interiéry, schodiště i venkovní prvky."
+  },
+  "yellow-river-vyska-70-cm": {
+    "colors": ["bezova", "zluta"],
+    "origin": "Čína",
+    "tone": "light",
+    "pattern": "speckled",
+    "comment": "Světle okrová až písková žula s drobným zrnem a teplým přírodním vzhledem. Formát 70 cm v opalované úpravě se výborně hodí na terasy, schodišťové stupně a venkovní dlažby."
+  },
+  "zambezia-white": {
+    "colors": ["bila", "seda"],
+    "origin": "",
+    "tone": "light",
+    "pattern": "veined",
+    "comment": "Světlá žula s bílým základem a jemnými šedavými přechody s přírodním leskem či leather úpravou. Čistý a odolný materiál pro světlé kuchyňské desky a koupelnové stěny."
+  },
+  "blue-in-night": {
+    "colors": ["cerna", "modra"],
+    "origin": "Angola",
+    "tone": "dark",
+    "pattern": "speckled",
+    "comment": "Tmavý anorthozit/žula s tmavě šedočerným základem a charakteristickou modrou iridiscencí labradoritových krystalů. Luxusní kámen pro kuchyňské desky a reprezentativní interiéry."
+  },
+  "new-mountain-pink": {
+    "colors": ["ruzova", "cervena", "seda"],
+    "origin": "",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Růžovo-šedá žula se stejnoměrným středním zrnem a teplým přírodním odstínem. Vhodná pro odolné interiérové i exteriérové kamenické výrobky a schodiště."
+  },
+  "rio-verde": {
+    "colors": ["zelena"],
+    "origin": "",
+    "tone": "medium",
+    "pattern": "speckled",
+    "comment": "Zelená žula s rovnoměrnou krystalickou strukturou a sytým přírodním tónem. Odolný materiál pro parapety, desky, obklady i exteriérové prvky."
+  }
+}

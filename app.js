@@ -1,29 +1,71 @@
+const COLOR_META = [
+  { key: 'bila', label: 'Bílá', hex: '#f5f5f4' },
+  { key: 'bezova', label: 'Béžová', hex: '#e5d3b3' },
+  { key: 'zluta', label: 'Žlutá', hex: '#eab308' },
+  { key: 'zlata', label: 'Zlatá', hex: '#ca8a04' },
+  { key: 'oranzova', label: 'Oranžová', hex: '#ea580c' },
+  { key: 'cervena', label: 'Červená', hex: '#b91c1c' },
+  { key: 'ruzova', label: 'Růžová', hex: '#e18d96' },
+  { key: 'fialova', label: 'Fialová', hex: '#7e5a7b' },
+  { key: 'modra', label: 'Modrá', hex: '#3b6ea5' },
+  { key: 'zelena', label: 'Zelená', hex: '#3f6a4f' },
+  { key: 'hneda', label: 'Hnědá', hex: '#6f4e37' },
+  { key: 'seda', label: 'Šedá', hex: '#78716c' },
+  { key: 'cerna', label: 'Černá', hex: '#1c1917' },
+];
+
+const COLOR_MAP = new Map(COLOR_META.map((c) => [c.key, c]));
+
+const SCENES = [
+  { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png' },
+  { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png' },
+  { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png' },
+];
+
+const TYPE_ORDER = ['zula', 'kvarcit', 'mramor', 'onyx', 'travertin', 'vapenec', 'keramika', 'ostatni'];
+const TYPE_LABELS = {
+  zula: 'Žula',
+  kvarcit: 'Kvarcit',
+  mramor: 'Mramor',
+  onyx: 'Onyx',
+  travertin: 'Travertin',
+  vapenec: 'Vápenec',
+  keramika: 'Keramika',
+  ostatni: 'Ostatní',
+};
+
 const state = {
   data: null,
   view: 'materials', // 'materials' | 'blocks' | 'table'
-  category: '',
+  groupBy: 'none',   // 'none' | 'type' | 'color'
+  selectedTypes: new Set(),
+  selectedColors: new Set(),
   search: '',
   warehouse: '',
   thickness: '',
   surface: '',
-  color: '',
   photoOnly: false,
   expandedTableRows: new Set(),
-  lightboxImages: [],
+  lightboxItems: [],
   lightboxIndex: 0,
 };
 
 const el = {
+  menuToggle: document.getElementById('menu-toggle'),
+  mainNav: document.getElementById('main-nav'),
   statMaterials: document.getElementById('stat-materials'),
   statBlocks: document.getElementById('stat-blocks'),
   statSlabs: document.getElementById('stat-slabs'),
   statArea: document.getElementById('stat-area'),
-  categoryTabs: document.getElementById('category-tabs'),
+  typePills: document.getElementById('type-pills'),
+  colorPills: document.getElementById('color-pills'),
   searchInput: document.getElementById('search-input'),
   thicknessFilter: document.getElementById('thickness-filter'),
   surfaceFilter: document.getElementById('surface-filter'),
-  colorFilter: document.getElementById('color-filter'),
+  groupBy: document.getElementById('group-by'),
   photoOnlyToggle: document.getElementById('photo-only-toggle'),
+  activeBar: document.getElementById('active-bar'),
+  activeChips: document.getElementById('active-chips'),
   resetBtn: document.getElementById('reset-filters'),
   emptyReset: document.getElementById('empty-reset'),
   resultsSummary: document.getElementById('results-summary'),
@@ -36,8 +78,7 @@ const el = {
   modalBody: document.getElementById('modal-body'),
   modalClose: document.getElementById('modal-close'),
   lightbox: document.getElementById('lightbox'),
-  lbImg: document.getElementById('lb-img'),
-  lbCaption: document.getElementById('lb-caption'),
+  lbStage: document.getElementById('lb-stage'),
   lbClose: document.getElementById('lb-close'),
   lbPrev: document.getElementById('lb-prev'),
   lbNext: document.getElementById('lb-next'),
@@ -96,42 +137,38 @@ async function copyText(text, successMsg) {
 }
 
 function populateFilterOptions(data) {
-  const categories = [
-    { key: '', label: 'Vše', count: data.materials.length },
-  ];
-  const counts = new Map();
+  const typeCounts = new Map();
+  const colorCounts = new Map();
+  const thicknesses = new Set();
+  const surfaces = new Set();
+
   for (const m of data.materials) {
-    counts.set(m.categoryKey, {
-      label: m.categoryKey === 'ostatni' ? 'Ostatní' : m.categoryLabel,
-      count: (counts.get(m.categoryKey)?.count || 0) + 1,
-    });
-  }
-  const order = ['zula', 'kvarcit', 'mramor', 'onyx', 'travertin', 'vapenec', 'keramika', 'ostatni'];
-  for (const k of order) {
-    if (counts.has(k)) {
-      categories.push({ key: k, ...counts.get(k) });
-    }
+    typeCounts.set(m.categoryKey, (typeCounts.get(m.categoryKey) || 0) + 1);
+    m.colors.forEach((c) => colorCounts.set(c.key, (colorCounts.get(c.key) || 0) + 1));
+    m.thicknesses.forEach((t) => thicknesses.add(t));
+    m.surfaces.forEach((s) => surfaces.add(s));
   }
 
-  el.categoryTabs.innerHTML = categories
+  el.typePills.innerHTML = TYPE_ORDER.filter((k) => typeCounts.has(k))
     .map(
-      (c) => `
-      <button type="button" class="cat-tab${state.category === c.key ? ' active' : ''}" data-category="${escapeHtml(c.key)}">
-        <span>${escapeHtml(c.label)}</span>
-        <span class="cat-count">${c.count}</span>
+      (k) => `
+      <button type="button" class="filter-pill" data-type="${escapeHtml(k)}" aria-pressed="false">
+        <span>${escapeHtml(TYPE_LABELS[k] || k)}</span>
+        <span class="pill-count">${typeCounts.get(k)}</span>
       </button>`
     )
     .join('');
 
-  const thicknesses = new Set();
-  const surfaces = new Set();
-  const colorsMap = new Map();
-
-  for (const m of data.materials) {
-    m.thicknesses.forEach((t) => thicknesses.add(t));
-    m.surfaces.forEach((s) => surfaces.add(s));
-    m.colors.forEach((c) => colorsMap.set(c.key, c.label));
-  }
+  el.colorPills.innerHTML = COLOR_META.filter((c) => colorCounts.has(c.key))
+    .map(
+      (c) => `
+      <button type="button" class="filter-pill color-pill" data-color="${escapeHtml(c.key)}" aria-pressed="false">
+        <span class="swatch-dot" style="background:${escapeHtml(c.hex)}"></span>
+        <span>${escapeHtml(c.label)}</span>
+        <span class="pill-count">${colorCounts.get(c.key)}</span>
+      </button>`
+    )
+    .join('');
 
   [...thicknesses]
     .sort((a, b) => a - b)
@@ -150,15 +187,6 @@ function populateFilterOptions(data) {
       opt.textContent = s;
       el.surfaceFilter.appendChild(opt);
     });
-
-  [...colorsMap.entries()]
-    .sort((a, b) => a[1].localeCompare(b[1], 'cs'))
-    .forEach(([k, label]) => {
-      const opt = document.createElement('option');
-      opt.value = k;
-      opt.textContent = label;
-      el.colorFilter.appendChild(opt);
-    });
 }
 
 function getFilteredMaterials() {
@@ -166,11 +194,11 @@ function getFilteredMaterials() {
   const thick = state.thickness ? Number(state.thickness) : null;
 
   return state.data.materials.filter((m) => {
-    if (state.category && m.categoryKey !== state.category) return false;
+    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(m.categoryKey)) return false;
+    if (state.selectedColors.size > 0 && !m.colors.some((c) => state.selectedColors.has(c.key))) return false;
     if (state.warehouse && !m.warehouses.includes(state.warehouse)) return false;
     if (thick !== null && !m.thicknesses.includes(thick)) return false;
     if (state.surface && !m.surfaces.includes(state.surface)) return false;
-    if (state.color && !m.colors.some((c) => c.key === state.color)) return false;
     if (state.photoOnly && !m.cardImage) return false;
     if (q) {
       const inName = foldText(m.name).includes(q);
@@ -187,11 +215,11 @@ function getFilteredBlocks() {
   const thick = state.thickness ? Number(state.thickness) : null;
 
   return state.data.blocks.filter((b) => {
-    if (state.category && b.categoryKey !== state.category) return false;
+    if (state.selectedTypes.size > 0 && !state.selectedTypes.has(b.categoryKey)) return false;
+    if (state.selectedColors.size > 0 && !b.colors.some((c) => state.selectedColors.has(c))) return false;
     if (state.warehouse && !b.warehouses.includes(state.warehouse)) return false;
     if (thick !== null && !b.thicknesses.includes(thick)) return false;
     if (state.surface && !b.surfaces.includes(state.surface)) return false;
-    if (state.color && !b.colors.includes(state.color)) return false;
     if (state.photoOnly && !b.cardImage) return false;
     if (q) {
       const inName = foldText(b.materialName).includes(q);
@@ -203,16 +231,30 @@ function getFilteredBlocks() {
   });
 }
 
-function hasActiveFilters() {
-  return Boolean(
-    state.category ||
-      state.search.trim() ||
-      state.warehouse ||
-      state.thickness ||
-      state.surface ||
-      state.color ||
-      state.photoOnly
-  );
+function renderActiveChips() {
+  const chips = [];
+  for (const t of state.selectedTypes) {
+    chips.push({ kind: 'type', value: t, label: `Druh: ${TYPE_LABELS[t] || t}` });
+  }
+  for (const c of state.selectedColors) {
+    chips.push({ kind: 'color', value: c, label: `Barva: ${COLOR_MAP.get(c)?.label || c}` });
+  }
+  if (state.warehouse) chips.push({ kind: 'warehouse', value: state.warehouse, label: `Sklad: ${state.warehouse}` });
+  if (state.thickness) chips.push({ kind: 'thickness', value: state.thickness, label: `Tloušťka: ${state.thickness} cm` });
+  if (state.surface) chips.push({ kind: 'surface', value: state.surface, label: `Povrch: ${state.surface}` });
+  if (state.search.trim()) chips.push({ kind: 'search', value: state.search, label: `Hledání: „${state.search.trim()}“` });
+  if (state.photoOnly) chips.push({ kind: 'photoOnly', value: '1', label: 'Jen s fotkou' });
+
+  el.activeBar.hidden = chips.length === 0;
+  el.activeChips.innerHTML = chips
+    .map(
+      (ch) => `
+      <button type="button" class="active-chip" data-remove-kind="${escapeHtml(ch.kind)}" data-remove-val="${escapeHtml(ch.value)}">
+        <span>${escapeHtml(ch.label)}</span>
+        <span aria-hidden="true">×</span>
+      </button>`
+    )
+    .join('');
 }
 
 function renderCardImage(imageUrl, alt) {
@@ -222,46 +264,78 @@ function renderCardImage(imageUrl, alt) {
   return `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">`;
 }
 
-function renderMaterialsCards(materials) {
-  el.galleryRoot.hidden = false;
-  el.tableRoot.hidden = true;
-
-  el.galleryRoot.innerHTML = materials
-    .map((m) => {
-      const blockHint = `${m.blockCount} ${m.blockCount === 1 ? 'blok' : m.blockCount < 5 ? 'bloky' : 'bloků'}`;
-      return `
-        <button type="button" class="stone-card" data-open-material="${escapeHtml(m.slug)}">
-          <div class="card-media">
-            ${renderCardImage(m.cardImage, m.name)}
-            <span class="card-type-pill">${escapeHtml(m.categoryLabel)}</span>
-            <span class="card-hover-hint">${escapeHtml(blockHint)} · detail</span>
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">${escapeHtml(m.name)}</h2>
-          </div>
-        </button>`;
-    })
-    .join('');
+function materialCardHtml(m) {
+  const blockHint = `${m.blockCount} ${m.blockCount === 1 ? 'blok' : m.blockCount < 5 ? 'bloky' : 'bloků'}`;
+  return `
+    <button type="button" class="stone-card" data-open-material="${escapeHtml(m.slug)}">
+      <div class="card-media">
+        ${renderCardImage(m.cardImage, m.name)}
+        <span class="card-type-pill">${escapeHtml(m.categoryLabel)}</span>
+        <span class="card-hover-hint">${escapeHtml(blockHint)} · detail</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">${escapeHtml(m.name)}</h2>
+      </div>
+    </button>`;
 }
 
-function renderBlockCards(blocks) {
+function blockCardHtml(b) {
+  return `
+    <button type="button" class="stone-card" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
+      <div class="card-media">
+        ${renderCardImage(b.cardImage, `${b.materialName} — blok ${b.blockNumber}`)}
+        <span class="card-type-pill">${escapeHtml(b.categoryLabel)}</span>
+        <span class="card-hover-hint">${escapeHtml(b.warehouses.join(', '))} · detail</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">${escapeHtml(b.materialName)}</h2>
+        <span class="card-block-tag">Blok ${escapeHtml(b.blockNumber)}</span>
+      </div>
+    </button>`;
+}
+
+function renderGroupedGallery(items, isBlocks) {
   el.galleryRoot.hidden = false;
   el.tableRoot.hidden = true;
 
-  el.galleryRoot.innerHTML = blocks
+  if (state.groupBy === 'none') {
+    el.galleryRoot.innerHTML = `<div class="gallery-grid">${items.map(isBlocks ? blockCardHtml : materialCardHtml).join('')}</div>`;
+    return;
+  }
+
+  const sections = [];
+  if (state.groupBy === 'type') {
+    for (const k of TYPE_ORDER) {
+      const subset = items.filter((item) => item.categoryKey === k);
+      if (subset.length) {
+        sections.push({ title: TYPE_LABELS[k] || k, items: subset });
+      }
+    }
+  } else if (state.groupBy === 'color') {
+    for (const cm of COLOR_META) {
+      const subset = items.filter((item) => {
+        if (isBlocks) return item.colors[0] === cm.key;
+        return item.colors[0]?.key === cm.key;
+      });
+      if (subset.length) {
+        sections.push({ title: cm.label, hex: cm.hex, items: subset });
+      }
+    }
+  }
+
+  el.galleryRoot.innerHTML = sections
     .map(
-      (b) => `
-      <button type="button" class="stone-card" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
-        <div class="card-media">
-          ${renderCardImage(b.cardImage, `${b.materialName} — blok ${b.blockNumber}`)}
-          <span class="card-type-pill">${escapeHtml(b.categoryLabel)}</span>
-          <span class="card-hover-hint">${escapeHtml(b.warehouses.join(', '))} · detail</span>
+      (sec) => `
+      <section class="group-section">
+        <h3 class="group-heading">
+          ${sec.hex ? `<span class="swatch-dot" style="background:${escapeHtml(sec.hex)};width:16px;height:16px;"></span>` : ''}
+          ${escapeHtml(sec.title)}
+          <span>(${sec.items.length})</span>
+        </h3>
+        <div class="gallery-grid">
+          ${sec.items.map(isBlocks ? blockCardHtml : materialCardHtml).join('')}
         </div>
-        <div class="card-body">
-          <h2 class="card-title">${escapeHtml(b.materialName)}</h2>
-          <span class="card-block-tag">Blok ${escapeHtml(b.blockNumber)}</span>
-        </div>
-      </button>`
+      </section>`
     )
     .join('');
 }
@@ -306,7 +380,7 @@ function renderTable(blocks) {
           <td>${escapeHtml(b.blockNumber)}</td>
           <td>${escapeHtml(b.categoryLabel)}</td>
           <td>${renderWarehouseBadges(b.warehouses)}</td>
-          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="cat-count">(${b.slabCount} ks)</span></td>
+          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="pill-count">(${b.slabCount} ks)</span></td>
           <td>
             <button type="button" class="table-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
               Detail
@@ -352,7 +426,7 @@ function renderTable(blocks) {
 function render() {
   if (!state.data) return;
 
-  el.resetBtn.hidden = !hasActiveFilters();
+  renderActiveChips();
 
   if (state.view === 'materials') {
     const materials = getFilteredMaterials();
@@ -363,7 +437,7 @@ function render() {
     el.resultsSummary.textContent = `Zobrazeno ${materials.length} materiálů (${totalBlocks} bloků · ${totalSlabs} desek · ${formatNumber(totalArea, 2)} m²)`;
     el.emptyState.hidden = materials.length > 0;
     if (materials.length > 0) {
-      renderMaterialsCards(materials);
+      renderGroupedGallery(materials, false);
     } else {
       el.galleryRoot.hidden = true;
       el.tableRoot.hidden = true;
@@ -377,7 +451,7 @@ function render() {
     el.emptyState.hidden = blocks.length > 0;
     if (blocks.length > 0) {
       if (state.view === 'blocks') {
-        renderBlockCards(blocks);
+        renderGroupedGallery(blocks, true);
       } else {
         renderTable(blocks);
       }
@@ -402,6 +476,17 @@ function buildBlockSpecText(materialName, block) {
   return lines.join('\n');
 }
 
+function buildSceneHtml(scene, textureUrl, materialName, lbIndex) {
+  return `
+    <button type="button" class="scene-card" data-lb-idx="${lbIndex}">
+      <div class="scene-stage">
+        <img class="scene-base" src="${escapeHtml(scene.base)}" alt="${escapeHtml(scene.label)} — ${escapeHtml(materialName)}" loading="lazy">
+        <div class="scene-stone-layer" style="background-image:url('${escapeHtml(textureUrl)}');-webkit-mask-image:url('${escapeHtml(scene.mask)}');mask-image:url('${escapeHtml(scene.mask)}');"></div>
+      </div>
+      <div class="scene-label">${escapeHtml(scene.label)} <span>Zvětšit ⤢</span></div>
+    </button>`;
+}
+
 function openMaterialModal(slug, focusBlock = null) {
   const mat = state.data?.materials.find((m) => m.slug === slug);
   if (!mat) return;
@@ -411,6 +496,34 @@ function openMaterialModal(slug, focusBlock = null) {
   if (focusBlock) {
     const foundIdx = images.findIndex((img) => img.blockNumber === focusBlock);
     if (foundIdx >= 0) initialIdx = foundIdx;
+  }
+
+  // Build unified lightbox list: stone gallery + interior visualizations + real realizations
+  const lbItems = images.map((img) => ({
+    kind: 'photo',
+    url: img.fullUrl,
+    caption: img.label,
+  }));
+
+  let sceneStartIdx = lbItems.length;
+  if (mat.sceneTextureUrl) {
+    for (const sc of SCENES) {
+      lbItems.push({
+        kind: 'scene',
+        scene: sc,
+        textureUrl: mat.sceneTextureUrl,
+        caption: `${mat.name} — ${sc.label}`,
+      });
+    }
+  }
+
+  let realStartIdx = lbItems.length;
+  for (const rImg of mat.realizationImages || []) {
+    lbItems.push({
+      kind: 'photo',
+      url: rImg.fullUrl,
+      caption: `${mat.name} — Reálná realizace`,
+    });
   }
 
   const activeImg = images[initialIdx] || null;
@@ -438,6 +551,35 @@ function openMaterialModal(slug, focusBlock = null) {
         }
       </div>`
     : `<div class="gallery-main"><div class="card-placeholder"><span>Bez fotografie bloku</span></div></div>`;
+
+  const realizationsHtml =
+    mat.realizationImages && mat.realizationImages.length
+      ? `<div class="realizations-strip">
+          ${mat.realizationImages
+            .map(
+              (rImg, idx) => `
+            <button type="button" class="realization-card" data-lb-idx="${realStartIdx + idx}">
+              <img src="${escapeHtml(rImg.cardUrl)}" alt="${escapeHtml(mat.name)} — realizace" loading="lazy">
+              <div class="scene-label">Reálná realizace Stone Connection <span>Zvětšit ⤢</span></div>
+            </button>`
+            )
+            .join('')}
+        </div>`
+      : '';
+
+  const interiorSectionHtml = mat.sceneTextureUrl
+    ? `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Nechte se inspirovat v interiéru</h3>
+          <span class="section-sub">Orientační náhled kresby kamene v prostoru</span>
+        </div>
+        ${realizationsHtml}
+        <div class="scenes-grid">
+          ${SCENES.map((sc, idx) => buildSceneHtml(sc, mat.sceneTextureUrl, mat.name, sceneStartIdx + idx)).join('')}
+        </div>
+      </section>`
+    : '';
 
   const blocksHtml = mat.blocks
     .map((b) => {
@@ -497,6 +639,34 @@ function openMaterialModal(slug, focusBlock = null) {
     })
     .join('');
 
+  const alternativesHtml =
+    mat.alternatives && mat.alternatives.length
+      ? `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Podobné alternativy skladem</h3>
+          <span class="section-sub">Dva nejbližší materiály podle barvy, kresby a charakteru</span>
+        </div>
+        <div class="alt-grid">
+          ${mat.alternatives
+            .map(
+              (alt) => `
+            <button type="button" class="alt-card" data-open-material="${escapeHtml(alt.slug)}">
+              <div class="alt-thumb">
+                ${renderCardImage(alt.cardImage, alt.name)}
+              </div>
+              <div class="alt-info">
+                <div class="alt-name">${escapeHtml(alt.name)}</div>
+                <div class="alt-reason">${escapeHtml(alt.reason)}</div>
+                <div class="alt-cta">Zobrazit materiál →</div>
+              </div>
+            </button>`
+            )
+            .join('')}
+        </div>
+      </section>`
+      : '';
+
   el.modalBody.innerHTML = `
     <div class="modal-hero">
       ${galleryHtml}
@@ -504,9 +674,15 @@ function openMaterialModal(slug, focusBlock = null) {
         <div class="meta-badges">
           <span class="meta-tag">${escapeHtml(mat.categoryLabel)}</span>
           ${mat.origin ? `<span class="meta-tag">Původ: ${escapeHtml(mat.origin)}</span>` : ''}
-          ${mat.colors.map((c) => `<span class="meta-tag">${escapeHtml(c.label)}</span>`).join('')}
+          ${mat.colors
+            .map((c) => {
+              const hex = COLOR_MAP.get(c.key)?.hex || '#78716c';
+              return `<span class="meta-tag"><span class="swatch-dot" style="background:${escapeHtml(hex)}"></span>${escapeHtml(c.label)}</span>`;
+            })
+            .join('')}
         </div>
         <h2 id="modal-title">${escapeHtml(mat.name)}</h2>
+        <p class="stone-comment">${escapeHtml(mat.comment || '')}</p>
         <div class="kpi-grid">
           <div class="kpi-box"><strong>${mat.blockCount}</strong><span>bloků skladem</span></div>
           <div class="kpi-box"><strong>${mat.totalSlabs} ks</strong><span>desek celkem</span></div>
@@ -520,7 +696,7 @@ function openMaterialModal(slug, focusBlock = null) {
         </div>
         <div class="modal-cta-row">
           <a href="https://www.stoneconnection.cz/kontakt/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            Poptat materiál u Stone Connection ↗
+            Poptat materiál ↗
           </a>
           ${
             mat.catalogUrl
@@ -533,19 +709,25 @@ function openMaterialModal(slug, focusBlock = null) {
       </div>
     </div>
 
-    <h3 class="blocks-section-title">Skladové bloky a jednotlivé desky (${mat.blockCount})</h3>
-    ${blocksHtml}
+    ${interiorSectionHtml}
+
+    <section class="section-block">
+      <h3 class="blocks-section-title">Skladové bloky a jednotlivé desky (${mat.blockCount})</h3>
+      ${blocksHtml}
+    </section>
+
+    ${alternativesHtml}
   `;
 
-  state.lightboxImages = images;
+  state.lightboxItems = lbItems;
   el.modal.hidden = false;
   document.body.style.overflow = 'hidden';
+  el.modalBody.scrollTop = 0;
 
   if (window.location.hash !== `#m=${slug}`) {
     history.replaceState(null, '', `#m=${slug}`);
   }
 
-  // Modal internal listeners
   el.modalBody.querySelectorAll('[data-thumb-idx]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const idx = Number(btn.getAttribute('data-thumb-idx'));
@@ -564,7 +746,7 @@ function openMaterialModal(slug, focusBlock = null) {
 
   el.modalBody.querySelectorAll('[data-lb-idx]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      if (!images.length) return;
+      if (!lbItems.length) return;
       const idx = Number(trigger.getAttribute('data-lb-idx')) || 0;
       openLightbox(idx);
     });
@@ -579,6 +761,12 @@ function openMaterialModal(slug, focusBlock = null) {
       }
     });
   });
+
+  el.modalBody.querySelectorAll('[data-open-material]').forEach((altBtn) => {
+    altBtn.addEventListener('click', () => {
+      openMaterialModal(altBtn.getAttribute('data-open-material'));
+    });
+  });
 }
 
 function closeModal() {
@@ -590,14 +778,28 @@ function closeModal() {
 }
 
 function openLightbox(index) {
-  if (!state.lightboxImages.length) return;
-  state.lightboxIndex = (index + state.lightboxImages.length) % state.lightboxImages.length;
-  const img = state.lightboxImages[state.lightboxIndex];
-  el.lbImg.src = img.fullUrl;
-  el.lbImg.alt = img.label;
-  el.lbCaption.textContent = `${img.label} (${state.lightboxIndex + 1} / ${state.lightboxImages.length})`;
-  el.lbPrev.hidden = state.lightboxImages.length <= 1;
-  el.lbNext.hidden = state.lightboxImages.length <= 1;
+  if (!state.lightboxItems.length) return;
+  state.lightboxIndex = (index + state.lightboxItems.length) % state.lightboxItems.length;
+  const item = state.lightboxItems[state.lightboxIndex];
+  const countText = `${item.caption} (${state.lightboxIndex + 1} / ${state.lightboxItems.length})`;
+
+  if (item.kind === 'scene') {
+    el.lbStage.innerHTML = `
+      <div class="lb-scene-wrap">
+        <div class="scene-stage">
+          <img class="scene-base" src="${escapeHtml(item.scene.base)}" alt="${escapeHtml(item.caption)}">
+          <div class="scene-stone-layer" style="background-image:url('${escapeHtml(item.textureUrl)}');-webkit-mask-image:url('${escapeHtml(item.scene.mask)}');mask-image:url('${escapeHtml(item.scene.mask)}');"></div>
+        </div>
+      </div>
+      <div class="lb-caption">${escapeHtml(countText)}</div>`;
+  } else {
+    el.lbStage.innerHTML = `
+      <img class="lb-photo" src="${escapeHtml(item.url)}" alt="${escapeHtml(item.caption)}">
+      <div class="lb-caption">${escapeHtml(countText)}</div>`;
+  }
+
+  el.lbPrev.hidden = state.lightboxItems.length <= 1;
+  el.lbNext.hidden = state.lightboxItems.length <= 1;
   el.lightbox.hidden = false;
 }
 
@@ -605,24 +807,34 @@ function closeLightbox() {
   el.lightbox.hidden = true;
 }
 
+function syncPillStates() {
+  el.typePills.querySelectorAll('[data-type]').forEach((btn) => {
+    const active = state.selectedTypes.has(btn.getAttribute('data-type'));
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+  el.colorPills.querySelectorAll('[data-color]').forEach((btn) => {
+    const active = state.selectedColors.has(btn.getAttribute('data-color'));
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+}
+
 function resetAllFilters() {
-  state.category = '';
+  state.selectedTypes.clear();
+  state.selectedColors.clear();
   state.search = '';
   state.warehouse = '';
   state.thickness = '';
   state.surface = '';
-  state.color = '';
   state.photoOnly = false;
 
   el.searchInput.value = '';
   el.thicknessFilter.value = '';
   el.surfaceFilter.value = '';
-  el.colorFilter.value = '';
   el.photoOnlyToggle.checked = false;
 
-  el.categoryTabs.querySelectorAll('.cat-tab').forEach((btn) => {
-    btn.classList.toggle('active', btn.getAttribute('data-category') === '');
-  });
+  syncPillStates();
   document.querySelectorAll('.seg-btn').forEach((btn) => {
     btn.classList.toggle('active', btn.getAttribute('data-warehouse') === '');
   });
@@ -631,11 +843,57 @@ function resetAllFilters() {
 }
 
 function bindEvents() {
-  el.categoryTabs.addEventListener('click', (e) => {
-    const btn = e.target.closest('.cat-tab');
+  if (el.menuToggle && el.mainNav) {
+    el.menuToggle.addEventListener('click', () => {
+      const open = el.mainNav.classList.toggle('open');
+      el.menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  el.typePills.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-type]');
     if (!btn) return;
-    state.category = btn.getAttribute('data-category') || '';
-    el.categoryTabs.querySelectorAll('.cat-tab').forEach((b) => b.classList.toggle('active', b === btn));
+    const val = btn.getAttribute('data-type');
+    if (state.selectedTypes.has(val)) state.selectedTypes.delete(val);
+    else state.selectedTypes.add(val);
+    syncPillStates();
+    render();
+  });
+
+  el.colorPills.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-color]');
+    if (!btn) return;
+    const val = btn.getAttribute('data-color');
+    if (state.selectedColors.has(val)) state.selectedColors.delete(val);
+    else state.selectedColors.add(val);
+    syncPillStates();
+    render();
+  });
+
+  el.activeChips.addEventListener('click', (e) => {
+    const chip = e.target.closest('[data-remove-kind]');
+    if (!chip) return;
+    const kind = chip.getAttribute('data-remove-kind');
+    const val = chip.getAttribute('data-remove-val');
+    if (kind === 'type') state.selectedTypes.delete(val);
+    else if (kind === 'color') state.selectedColors.delete(val);
+    else if (kind === 'warehouse') {
+      state.warehouse = '';
+      document.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('active', b.getAttribute('data-warehouse') === ''));
+    } else if (kind === 'thickness') {
+      state.thickness = '';
+      el.thicknessFilter.value = '';
+    } else if (kind === 'surface') {
+      state.surface = '';
+      el.surfaceFilter.value = '';
+    } else if (kind === 'search') {
+      state.search = '';
+      el.searchInput.value = '';
+    } else if (kind === 'photoOnly') {
+      state.photoOnly = false;
+      el.photoOnlyToggle.checked = false;
+    }
+    syncPillStates();
     render();
   });
 
@@ -670,8 +928,8 @@ function bindEvents() {
     render();
   });
 
-  el.colorFilter.addEventListener('change', () => {
-    state.color = el.colorFilter.value;
+  el.groupBy.addEventListener('change', () => {
+    state.groupBy = el.groupBy.value;
     render();
   });
 
@@ -699,11 +957,8 @@ function bindEvents() {
     const row = e.target.closest('[data-toggle-row]');
     if (!row) return;
     const id = row.getAttribute('data-toggle-row');
-    if (state.expandedTableRows.has(id)) {
-      state.expandedTableRows.delete(id);
-    } else {
-      state.expandedTableRows.add(id);
-    }
+    if (state.expandedTableRows.has(id)) state.expandedTableRows.delete(id);
+    else state.expandedTableRows.add(id);
     render();
   });
 
@@ -746,8 +1001,8 @@ async function init() {
     el.statArea.textContent = `${formatNumber(data.meta.totalAreaM2, 0)} m²`;
 
     const updated = formatDateCs(data.meta.sourceUpdatedAt || data.meta.syncedAt);
-    el.syncStamp.textContent = `Stav skladu: ${updated}`;
-    el.footerMeta.textContent = `Zdroj aktualizován: ${updated} · Poslední synchronizace náhledu: ${formatDateCs(data.meta.syncedAt)}`;
+    el.syncStamp.textContent = `Poslední aktualizace: ${updated}`;
+    el.footerMeta.textContent = `Aktualizováno: ${updated}`;
 
     populateFilterOptions(data);
     render();
