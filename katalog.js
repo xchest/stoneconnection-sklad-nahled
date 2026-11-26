@@ -34,6 +34,12 @@ const kEl = {
   colors: document.getElementById('k-colors'),
   types: document.getElementById('k-types'),
   apps: document.getElementById('k-apps'),
+  sidebar: document.getElementById('k-filter-sidebar'),
+  backdrop: document.getElementById('k-filter-backdrop'),
+  mobileFilterBtn: document.getElementById('k-mobile-filter-btn'),
+  mobileFilterCount: document.getElementById('k-mobile-filter-count'),
+  drawerClose: document.getElementById('k-drawer-close'),
+  drawerApply: document.getElementById('k-drawer-apply'),
   search: document.getElementById('k-search'),
   stockOnly: document.getElementById('k-stock-only'),
   reset: document.getElementById('k-reset'),
@@ -136,6 +142,15 @@ function renderKatalog() {
       </button>`
     )
     .join('');
+
+  const activeFilterTotal = kState.colors.size + kState.types.size + kState.apps.size + (kState.inStockOnly ? 1 : 0);
+  if (kEl.mobileFilterCount) {
+    kEl.mobileFilterCount.hidden = activeFilterTotal === 0;
+    kEl.mobileFilterCount.textContent = String(activeFilterTotal);
+  }
+  if (kEl.drawerApply) {
+    kEl.drawerApply.textContent = `Zobrazit výsledky (${list.length})`;
+  }
 
   kEl.summary.textContent = `${list.length} materiálů`;
   kEl.empty.hidden = list.length > 0;
@@ -250,7 +265,20 @@ function resetKatalog() {
   renderKatalog();
 }
 
+function setKDrawerOpen(open) {
+  if (!kEl.sidebar) return;
+  kEl.sidebar.classList.toggle('drawer-open', open);
+  if (kEl.backdrop) kEl.backdrop.hidden = !open;
+  if (kEl.mobileFilterBtn) kEl.mobileFilterBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  document.body.style.overflow = open || !kEl.modal.hidden ? 'hidden' : '';
+}
+
 async function initKatalog() {
+  if (kEl.mobileFilterBtn) kEl.mobileFilterBtn.addEventListener('click', () => setKDrawerOpen(true));
+  if (kEl.drawerClose) kEl.drawerClose.addEventListener('click', () => setKDrawerOpen(false));
+  if (kEl.drawerApply) kEl.drawerApply.addEventListener('click', () => setKDrawerOpen(false));
+  if (kEl.backdrop) kEl.backdrop.addEventListener('click', () => setKDrawerOpen(false));
+
   document.querySelector('.sidebar-box').addEventListener('change', (e) => {
     const cb = e.target.closest('input[data-kfilter]');
     if (!cb) return;

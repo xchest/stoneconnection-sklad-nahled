@@ -45,20 +45,34 @@
         <h1 class="page-title">Skladová zásoba deskoviny v Praze a Rožnově</h1>
       </div>
 
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-        </svg>
-        <input type="search" id="search-input" placeholder="Vyhledat kámen nebo číslo bloku…" autocomplete="off" aria-label="Vyhledat kámen nebo číslo bloku">
+      <div class="search-row">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input type="search" id="search-input" placeholder="Vyhledat kámen nebo blok…" autocomplete="off" aria-label="Vyhledat kámen nebo číslo bloku">
+        </div>
+        <button type="button" id="mobile-filter-btn" class="mobile-filter-btn" aria-expanded="false" aria-controls="filter-sidebar">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M3 6h18M6 12h12M10 18h4"/>
+          </svg>
+          <span>Filtr</span>
+          <span id="mobile-filter-count" class="mobile-filter-badge" hidden>0</span>
+        </button>
       </div>
     </div>
   </section>
 
+  <div id="filter-backdrop" class="drawer-backdrop" hidden></div>
+
   <div class="container catalog-layout">
-    <aside class="sidebar-box" aria-label="Filtr produktů">
+    <aside class="sidebar-box" id="filter-sidebar" aria-label="Filtr produktů">
       <div class="sidebar-head">
         <h2 class="sidebar-title">Filtr produktů</h2>
-        <button type="button" id="reset-filters" class="sidebar-clear" hidden>Vymazat vše</button>
+        <div class="sidebar-head-actions">
+          <button type="button" id="reset-filters" class="sidebar-clear" hidden>Vymazat vše</button>
+          <button type="button" id="drawer-close" class="drawer-close" aria-label="Zavřít filtr">✕</button>
+        </div>
       </div>
 
       <details class="acc-group" open>
@@ -91,6 +105,10 @@
           <input type="checkbox" id="photo-only-toggle">
           <span class="check-label">Jen položky s fotografií</span>
         </label>
+      </div>
+
+      <div class="drawer-footer">
+        <button type="button" id="drawer-apply" class="btn-primary drawer-apply-btn">Zobrazit výsledky</button>
       </div>
     </aside>
 

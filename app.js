@@ -56,6 +56,12 @@ const el = {
   filterWarehouses: document.getElementById('filter-warehouses'),
   filterSurfaces: document.getElementById('filter-surfaces'),
   filterThicknesses: document.getElementById('filter-thicknesses'),
+  sidebar: document.getElementById('filter-sidebar'),
+  filterBackdrop: document.getElementById('filter-backdrop'),
+  mobileFilterBtn: document.getElementById('mobile-filter-btn'),
+  mobileFilterCount: document.getElementById('mobile-filter-count'),
+  drawerClose: document.getElementById('drawer-close'),
+  drawerApply: document.getElementById('drawer-apply'),
   searchInput: document.getElementById('search-input'),
   groupBy: document.getElementById('group-by'),
   photoOnlyToggle: document.getElementById('photo-only-toggle'),
@@ -431,9 +437,22 @@ function render() {
 
   renderActiveChips();
 
+  const activeFilterTotal =
+    state.selectedColors.size +
+    state.selectedTypes.size +
+    state.selectedWarehouses.size +
+    state.selectedSurfaces.size +
+    state.selectedThicknesses.size +
+    (state.photoOnly ? 1 : 0);
+  if (el.mobileFilterCount) {
+    el.mobileFilterCount.hidden = activeFilterTotal === 0;
+    el.mobileFilterCount.textContent = String(activeFilterTotal);
+  }
+
   if (state.view === 'materials') {
     const materials = getFilteredMaterials();
     el.resultsSummary.textContent = `${materials.length} materiálů`;
+    if (el.drawerApply) el.drawerApply.textContent = `Zobrazit výsledky (${materials.length})`;
     el.emptyState.hidden = materials.length > 0;
     if (materials.length > 0) {
       renderGroupedGallery(materials, false);
@@ -444,6 +463,7 @@ function render() {
   } else {
     const blocks = getFilteredBlocks();
     el.resultsSummary.textContent = `${blocks.length} bloků`;
+    if (el.drawerApply) el.drawerApply.textContent = `Zobrazit výsledky (${blocks.length})`;
     el.emptyState.hidden = blocks.length > 0;
     if (blocks.length > 0) {
       if (state.view === 'blocks') renderGroupedGallery(blocks, true);
@@ -838,7 +858,50 @@ function resetAllFilters() {
   render();
 }
 
+function setDrawerOpen(open) {
+  if (!el.sidebar) return;
+  el.sidebar.classList.toggle('drawer-open', open);
+  if (el.filterBackdrop) el.filterBackdrop.hidden = !open;
+  if (el.mobileFilterBtn) el.mobileFilterBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  document.body.style.overflow = open || !el.modal.hidden ? 'hidden' : '';
+}
+
 function bindEvents() {
+  if (el.mobileFilterBtn) {
+    el.mobileFilterBtn.addEventListener('click', () => setDrawerOpen(true));
+  }
+  if (el.drawerClose) {
+    el.drawerClose.addEventListener('click', () => setDrawerOpen(false));
+  }
+  if (el.drawerApply) {
+    el.drawerApply.addEventListener('click', () => setDrawerOpen(false));
+  }
+  if (el.filterBackdrop) {
+    el.filterBackdrop.addEventListener('click', () => setDrawerOpen(false));
+  }
+
+  let lbTouchStartX = 0;
+  el.lightbox.addEventListener(
+    'touchstart',
+    (e) => {
+      if (e.changedTouches && e.changedTouches[0]) {
+        lbTouchStartX = e.changedTouches[0].clientX;
+      }
+    },
+    { passive: true }
+  );
+  el.lightbox.addEventListener(
+    'touchend',
+    (e) => {
+      if (state.lightboxItems.length <= 1 || !e.changedTouches || !e.changedTouches[0]) return;
+      const dx = e.changedTouches[0].clientX - lbTouchStartX;
+      if (Math.abs(dx) > 45) {
+        openLightbox(state.lightboxIndex + (dx < 0 ? 1 : -1));
+      }
+    },
+    { passive: true }
+  );
+
   document.querySelector('.sidebar-box').addEventListener('change', (e) => {
     const cb = e.target.closest('input[data-filter]');
     if (!cb) return;
@@ -951,6 +1014,8 @@ function bindEvents() {
     }
     if (!el.modal.hidden && e.key === 'Escape') {
       closeModal();
+    } else if (el.sidebar && el.sidebar.classList.contains('drawer-open') && e.key === 'Escape') {
+      setDrawerOpen(false);
     }
   });
 }
