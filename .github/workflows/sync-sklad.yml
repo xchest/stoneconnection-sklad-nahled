@@ -1,0 +1,36 @@
+name: Sync Stone Connection Sklad
+
+on:
+  schedule:
+    - cron: '20 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync stock data from stoneconnection.cz
+        run: node scripts/sync_sklad.mjs
+
+      - name: Commit updated data if changed
+        run: |
+          if git diff --quiet data/sklad.json; then
+            echo "No changes in data/sklad.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sklad.json
+          git commit -m "chore: sync sklad data"
+          git push
