@@ -15,12 +15,6 @@ const COLOR_META = [
 ];
 const COLOR_MAP = new Map(COLOR_META.map((c) => [c.key, c]));
 
-const SCENES = [
-  { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png' },
-  { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png' },
-  { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png' },
-];
-
 const kState = {
   products: [],
   colors: new Set(),
@@ -177,23 +171,34 @@ function openKatalogModal(slug) {
   const p = kState.products.find((x) => x.slug === slug);
   if (!p) return;
 
+  const scenes = window.SC_getScenesForMaterial(p);
+  const sceneHeading =
+    p.usageSegment === 'monument_exterior'
+      ? 'Ukázka použití — pomníky, dlažby a exteriér'
+      : p.usageSegment === 'versatile'
+        ? 'Ukázka použití v exteriéru i interiéru'
+        : 'Nechte se inspirovat v interiéru';
+
   const scenesHtml = p.sceneUrl
     ? `
       <section class="section-block">
         <div class="section-head">
-          <h3 class="section-title">Nechte se inspirovat v interiéru</h3>
-          <span class="section-sub">Orientační náhled kresby kamene v prostoru</span>
+          <h3 class="section-title">${esc(sceneHeading)}</h3>
+          <span class="section-sub">Orientační náhled kresby a měřítka kamene v prostoru</span>
         </div>
         <div class="scenes-grid">
-          ${SCENES.map(
-            (sc) => `
+          ${scenes.map(
+            (sc) => {
+              const bgSize = window.SC_getSceneBgSize(sc, p.textureScale || 'medium');
+              return `
             <div class="scene-card" style="cursor:default;">
               <div class="scene-stage">
                 <img class="scene-base" src="${esc(sc.base)}" alt="${esc(sc.label)} — ${esc(p.name)}" loading="lazy">
-                <div class="scene-stone-layer" style="background-image:url('${esc(p.sceneUrl)}');-webkit-mask-image:url('${esc(sc.mask)}');mask-image:url('${esc(sc.mask)}');"></div>
+                <div class="scene-stone-layer" data-tex-src="${esc(p.sceneUrl)}" style="background-image:url('${esc(p.sceneUrl)}');background-size:${esc(bgSize)};-webkit-mask-image:url('${esc(sc.mask)}');mask-image:url('${esc(sc.mask)}');"></div>
               </div>
               <div class="scene-label">${esc(sc.label)}</div>
-            </div>`
+            </div>`;
+            }
           ).join('')}
         </div>
       </section>`
@@ -238,6 +243,9 @@ function openKatalogModal(slug) {
 
   kEl.modal.hidden = false;
   document.body.style.overflow = 'hidden';
+  if (window.SC_applySeamlessTiles) {
+    window.SC_applySeamlessTiles(kEl.modalBody);
+  }
   if (window.location.hash !== `#k=${slug}`) {
     history.replaceState(null, '', `#k=${slug}`);
   }

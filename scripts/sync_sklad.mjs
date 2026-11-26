@@ -161,15 +161,38 @@ function isLikelyDetailTexture(rawUrl) {
   return base.includes('detail');
 }
 
-function buildSceneTextureUrl(rawUrl, slug) {
-  if (!rawUrl) return null;
+const USAGE_LABELS = new Map([
+  ['interior', 'Interiér'],
+  ['monument_exterior', 'Pomníky & dlažby'],
+  ['versatile', 'Univerzální'],
+]);
+
+function inferUsageSegment(note, thicknesses, surfaces) {
+  if (note?.usageSegment) return note.usageSegment;
+  const hasThickMonument = thicknesses.some((t) => t >= 5);
+  const hasExtSurface = surfaces.some((s) => /trysk|opal|štíp|stip|kart/i.test(s));
+  return hasThickMonument || hasExtSurface ? 'monument_exterior' : 'interior';
+}
+
+function getSceneTransformFor(rawUrl, slug) {
   if (SCENE_CROP_OVERRIDES.has(slug)) {
-    return rewriteCloudinary(rawUrl, SCENE_CROP_OVERRIDES.get(slug));
+    return SCENE_CROP_OVERRIDES.get(slug);
   }
-  const transform = isLikelyDetailTexture(rawUrl)
+  return isLikelyDetailTexture(rawUrl)
     ? DEFAULT_DETAIL_SCENE_TRANSFORM
     : DEFAULT_SLAB_SCENE_TRANSFORM;
-  return rewriteCloudinary(rawUrl, transform);
+}
+
+function buildSceneTextureUrl(rawUrl, slug) {
+  if (!rawUrl) return null;
+  return rewriteCloudinary(rawUrl, getSceneTransformFor(rawUrl, slug));
+}
+
+function buildDetailSwatchUrl(rawUrl, slug) {
+  if (!rawUrl) return null;
+  const tf = getSceneTransformFor(rawUrl, slug)
+    .replace('w_900,h_640', 'w_160,h_160');
+  return rewriteCloudinary(rawUrl, tf);
 }
 
 function makeImageVariants(url, label, kind, blockNumber = null) {
@@ -286,28 +309,75 @@ function extractRealizationMap(html, materialSlugs) {
   return map;
 }
 
+const COMPATIBLE_PRIMARY_COLORS = new Map([
+  ['cerna', new Set(['cerna', 'seda'])],
+  ['seda', new Set(['seda', 'bila', 'modra', 'cerna'])],
+  ['bila', new Set(['bila', 'bezova', 'seda'])],
+  ['bezova', new Set(['bezova', 'bila', 'zluta', 'hneda'])],
+  ['zluta', new Set(['zluta', 'zlata', 'bezova'])],
+  ['zlata', new Set(['zlata', 'zluta', 'bezova', 'hneda'])],
+  ['hneda', new Set(['hneda', 'bezova', 'cervena', 'cerna'])],
+  ['cervena', new Set(['cervena', 'ruzova', 'hneda', 'fialova'])],
+  ['ruzova', new Set(['ruzova', 'cervena', 'bezova'])],
+  ['fialova', new Set(['fialova', 'cervena', 'hneda'])],
+  ['modra', new Set(['modra', 'seda', 'bila'])],
+  ['zelena', new Set(['zelena', 'seda'])],
+  ['oranzova', new Set(['oranzova', 'zluta', 'zlata', 'bezova'])],
+]);
+
 function computeAlternatives(materials) {
   const lightCompat = new Set(['mramor', 'vapenec', 'travertin', 'onyx']);
   const hardCompat = new Set(['zula', 'kvarcit', 'keramika']);
 
   for (const a of materials) {
     const aColors = a.colors.map((c) => c.key);
-    const aColorSet = new Set(aColors);
+    const aPrimary = aColors[0] || null;
+    const aSecondarySet = new Set(aColors.slice(1));
     const scored = [];
 
     for (const b of materials) {
       if (b.slug === a.slug) continue;
       let score = 0;
       const bColors = b.colors.map((c) => c.key);
-      const sharedColors = bColors.filter((c) => aColorSet.has(c));
+      const bPrimary = bColors[0] || null;
+      const sharedWithB = bColors.filter((c) => c === aPrimary || aSecondarySet.has(c));
+      const compatPrimary = Boolean(
+        aPrimary && bPrimary && COMPATIBLE_PRIMARY_COLORS.get(aPrimary)?.has(bPrimary)
+      );
+      const exactPrimary = Boolean(aPrimary && aPrimary === bPrimary);
 
-      if (sharedColors.length > 0) {
-        score += aColors[0] && bColors[0] === aColors[0] ? 5 : 4;
-        score += Math.max(0, sharedColors.length - 1) * 3;
+      if (exactPrimary) {
+        score += 12;
+      } else if (compatPrimary && (sharedWithB.length > 0 || aColors.some((c) => COMPATIBLE_PRIMARY_COLORS.get(c)?.has(bPrimary)))) {
+        score += 5;
+      } else {
+        score -= 18;
+      }
+
+      if (exactPrimary || compatPrimary) {
+        const extraShared = bColors.filter((c) => c !== bPrimary && aColors.includes(c));
+        score += extraShared.length * 2;
+      }
+
+      if (a.tone === b.tone) {
+        score += 3.5;
+      } else if (
+        (a.tone === 'light' && b.tone === 'dark') ||
+        (a.tone === 'dark' && b.tone === 'light')
+      ) {
+        score -= 14;
+      }
+
+      if (a.usageSegment === b.usageSegment) {
+        score += 6;
+      } else if (a.usageSegment === 'versatile' || b.usageSegment === 'versatile') {
+        score += 2.5;
+      } else {
+        score -= 10;
       }
 
       if (a.categoryKey === b.categoryKey) {
-        score += 3.5;
+        score += 4;
       } else if (
         (hardCompat.has(a.categoryKey) && hardCompat.has(b.categoryKey)) ||
         (lightCompat.has(a.categoryKey) && lightCompat.has(b.categoryKey))
@@ -315,22 +385,29 @@ function computeAlternatives(materials) {
         score += 1.5;
       }
 
-      if (a.tone === b.tone) score += 2.5;
-      if (a.pattern === b.pattern) score += 2;
+      if (a.pattern === b.pattern) score += 2.5;
       if (b.cardImage) score += 1.5;
 
       const reasonParts = [];
-      if (sharedColors.length) {
-        const cName = (COLOR_LABELS.get(sharedColors[0]) || sharedColors[0]).toLowerCase();
+      if (exactPrimary) {
+        const cName = (COLOR_LABELS.get(aPrimary) || aPrimary).toLowerCase();
         reasonParts.push(`Podobný odstín (${cName})`);
+      } else if (compatPrimary && bPrimary) {
+        const bName = (COLOR_LABELS.get(bPrimary) || bPrimary).toLowerCase();
+        reasonParts.push(`Blízký odstín (${bName})`);
       } else if (a.tone === b.tone) {
         const toneLabel = a.tone === 'dark' ? 'tmavý tón' : a.tone === 'light' ? 'světlý tón' : 'střední tón';
         reasonParts.push(`Blízký ${toneLabel}`);
       }
+
       if (a.categoryKey === b.categoryKey) {
         reasonParts.push(b.categoryLabel.toLowerCase());
       } else {
         reasonParts.push(`alternativa: ${b.categoryLabel.toLowerCase()}`);
+      }
+
+      if (b.usageSegment === 'monument_exterior') {
+        reasonParts.push('pomníky & dlažby');
       }
 
       scored.push({
@@ -438,10 +515,10 @@ async function main() {
 
     const hasRealPhoto = Boolean(featuredVariant || detailVariants.length > 0);
     const mergedColors =
-      catalogMatch?.colors?.length
-        ? catalogMatch.colors
-        : note?.colors?.length
-          ? note.colors
+      note?.colors?.length
+        ? note.colors
+        : catalogMatch?.colors?.length
+          ? catalogMatch.colors
           : inferColorsFromName(materialName);
 
     return {
@@ -604,10 +681,25 @@ async function main() {
         null;
     }
     const sceneTextureUrl = buildSceneTextureUrl(sceneSourceUrl, mat.slug);
+    const detailSwatchUrl =
+      cardImageSource === 'slab' && firstSlab && !isLikelyDetailTexture(firstSlab.rawUrl) && sceneSourceUrl
+        ? buildDetailSwatchUrl(sceneSourceUrl, mat.slug)
+        : null;
+
+    const allSlabs = mat.blocks.flatMap((b) => b.slabs || []);
+    const lengths = allSlabs.map((s) => Number(s.length) || 0).filter((v) => v > 0);
+    const heights = allSlabs.map((s) => Number(s.height) || 0).filter((v) => v > 0);
+    const maxLengthCm = lengths.length ? Math.max(...lengths) : 0;
+    const maxHeightCm = heights.length ? Math.max(...heights) : 0;
+    const minHeightCm = heights.length ? Math.min(...heights) : 0;
 
     const colorKeys = [...mat.colors];
     const colorObjs = colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c }));
     const surfaces = [...mat.surfaces].sort((a, b) => a.localeCompare(b, 'cs'));
+    const thicknesses = [...mat.thicknesses].sort((a, b) => a - b);
+    const usageSegment = inferUsageSegment(mat.note, thicknesses, surfaces);
+    const usageLabel = USAGE_LABELS.get(usageSegment) || 'Interiér';
+    const textureScale = mat.note?.textureScale || (isLikelyDetailTexture(sceneSourceUrl) ? 'fine' : 'slab');
     const tone = inferTone(colorKeys, mat.note);
     const pattern = inferPattern(mat.note);
     const comment = mat.note?.comment || buildFallbackComment(
@@ -627,16 +719,23 @@ async function main() {
       totalSlabs: mat.totalSlabs,
       blockCount: mat.blockCount,
       warehouses: [...mat.warehouses].sort((a, b) => a.localeCompare(b, 'cs')),
-      thicknesses: [...mat.thicknesses].sort((a, b) => a - b),
+      thicknesses,
       surfaces,
       colors: colorObjs,
       tone,
       pattern,
+      usageSegment,
+      usageLabel,
+      textureScale,
+      maxLengthCm,
+      maxHeightCm,
+      minHeightCm,
       origin: mat.origin,
       applications: mat.applications,
       catalogUrl: mat.catalogUrl,
       comment,
       cardImage,
+      detailSwatchUrl,
       sceneTextureUrl,
       cardImageSource,
       realizationImages: realizationMap.get(mat.slug) || [],
@@ -736,8 +835,12 @@ async function main() {
       const slug = normalizeWhitespace(item.slug) || slugify(name);
       const typeInfo = mapProductType(item.type || item.typeSlug);
       const stockMatch = stockByCatalogSlug.get(slug) || stockByCatalogSlug.get(slugify(name)) || null;
+      const note = notesBySlug[slug] || notesBySlug[slugify(name)] || null;
       const colorKeys = Array.isArray(item.colors) ? item.colors : [];
       const imgs = makeImageVariants(item.image, name, 'catalog');
+      const usageSegment = stockMatch?.usageSegment || note?.usageSegment || 'interior';
+      const usageLabel = USAGE_LABELS.get(usageSegment) || 'Interiér';
+      const textureScale = stockMatch?.textureScale || note?.textureScale || (isLikelyDetailTexture(item.image) ? 'fine' : 'slab');
 
       return {
         id: item.id,
@@ -749,6 +852,9 @@ async function main() {
         colors: colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c })),
         applications: Array.isArray(item.appIcons) ? item.appIcons.map((a) => a.name) : [],
         collections: Array.isArray(item.collections) ? item.collections : [],
+        usageSegment,
+        usageLabel,
+        textureScale,
         cardUrl: imgs?.cardUrl || null,
         fullUrl: imgs?.fullUrl || null,
         sceneUrl: buildSceneTextureUrl(item.image, slug),

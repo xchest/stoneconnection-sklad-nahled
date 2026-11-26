@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T19:11:07.777Z",
+    "syncedAt": "2026-11-26T19:27:42.376Z",
     "totalProducts": 118,
     "inStockCount": 47
   },
@@ -30,13 +30,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
       "inStockSlug": "amarelo-macieira",
       "inStockBlocks": 3,
       "inStockSlabs": 16,
-      "comment": "Teple medová až okrová žula se stejnoměrným středně zrnitým krystalem. V tryskaném provedení vynikne na exteriérových dlažbách, schodištích, soklech a terasách s vysokým nárokem na protiskluznost."
+      "comment": "Teple medová až okrová žula se stejnoměrným středně zrnitým krystalem. V tryskaném provedení i tloušťkách 3–10 cm vynikne na exteriérových dlažbách, schodištích, soklech a hrobových dílech."
     },
     {
       "id": "485",
@@ -66,6 +69,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760688507/zula_andromeda_white_detail_6fe6653aba.jpg",
@@ -106,6 +112,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760688710/zula_astoria_detail_c39bc77e21.jpg",
@@ -142,6 +151,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760016161/quartzite_atlantic_blue_detail_51ee608113.jpg",
@@ -179,13 +191,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
       "inStockSlug": "aurora-india",
       "inStockBlocks": 4,
       "inStockSlabs": 18,
-      "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. Využívá se tam, kde má kámen tvořit dominantní prvek — na krbových stěnách, obkladech i masivních výrobcích."
+      "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. V tloušťkách až 10 cm se uplatňuje na pomnících, náhrobních dílech, masivních schodech i exteriérových obkladech."
     },
     {
       "id": "344",
@@ -211,6 +226,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760016534/quartzite_avocatus_detail_77a2813ced.jpg",
@@ -247,13 +265,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1785481025/zula_azul_aran_detail_5e3bbbb995.jpg",
       "inStockSlug": "azul-aran",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
-      "comment": "Chladnější šedomodrá žula s jemnou krystalickou strukturou a klidným, rovnoměrným výrazem. Kartáčovaný či tryskaný povrch ji předurčuje pro nadčasové fasády, venkovní schody i městskou architekturu."
+      "comment": "Chladnější šedomodrá žula s jemnou krystalickou strukturou a klidným, rovnoměrným výrazem. Kartáčovaný povrch ji předurčuje pro nadčasové fasády, venkovní dlažby, schody a městskou architekturu."
     },
     {
       "id": "345",
@@ -280,13 +301,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "versatile",
+      "usageLabel": "Univerzální",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760084974/zula_azul_noche_detail_e8b15a4a08.jpg",
       "inStockSlug": "azul-noche",
       "inStockBlocks": 2,
       "inStockSlabs": 16,
-      "comment": "Tmavě břidlicově šedá žula s jemnou rovnoměrnou zrnitostí a decentními modrošedými odlesky. Dobře se uplatní na pracovních deskách, schodištích, parapetech i venkovních obkladech."
+      "comment": "Tmavě břidlicově šedá žula s jemnou rovnoměrnou zrnitostí a decentními modrošedými odlesky. V tloušťkách 3–7 cm se uplatní na interiérových obkladech i na schodištích, pomnících a venkovních prvcích."
     },
     {
       "id": "346",
@@ -313,13 +337,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760012710/zula_azul_platino_detail_318fa55372.jpg",
       "inStockSlug": "azul-platino",
       "inStockBlocks": 4,
       "inStockSlabs": 16,
-      "comment": "Vyrovnaná stříbrošedá žula s drobným zrnem a neutrálním architektonickým charakterem. Osvědčená volba pro větší plochy podlah, schodišť, parapetů a komerčních interiérů."
+      "comment": "Vyrovnaná stříbrošedá žula s jemným zrnem a neutrálním technickým charakterem. Osvědčený materiál v tloušťkách 2–10 cm pro pomníky, jednohroby, venkovní dlažby, schodiště, sokly a parapety."
     },
     {
       "id": "347",
@@ -349,6 +376,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760689380/zula_balthus_neve_detail_33f66a5c88.jpg",
@@ -394,13 +424,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1767961182/zula_bararp_detail_9513d20002.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1767961182/zula_bararp_detail_9513d20002.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1767961182/zula_bararp_detail_9513d20002.jpg",
       "inStockSlug": "bararp",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
-      "comment": "Severská rula/žula s charakteristickým pruhováním v teplých měděných, hnědých a tmavě šedých tónech. Vyhledávaný materiál pro reprezentativní fasády, sokly, krby i venkovní dlažby."
+      "comment": "Severská rula s charakteristickým pruhováním v teplých měděných, hnědých a tmavě šedých tónech. V tloušťkách 3–10 cm je vyhledávaná pro pomníky, reprezentativní fasády, sokly a venkovní dlažby."
     },
     {
       "id": "348",
@@ -427,6 +460,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760011697/zula_bayada_detail_d2fbaf338d.jpg",
@@ -467,6 +503,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
@@ -503,6 +542,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760018593/quartzite_belvedere_white_detail_834a654762.jpg",
@@ -535,6 +577,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
@@ -568,6 +613,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760085113/zula_bianco_cristal_detail_1131e937a8.jpg",
@@ -605,6 +653,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1768992789/zula_bianco_sardo_detail_e601508323.jpg",
@@ -637,6 +688,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760689885/zula_black_forest_detail_8a69101a45.jpg",
@@ -673,6 +727,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760076275/zula_black_fusion_detail_b19210eaf5.jpg",
@@ -709,6 +766,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1764250540/zula_black_vermont_detail_185cbcca76.jpg",
@@ -745,6 +805,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761293027/keramika_blanche_detail_6a9a2631af.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293027/keramika_blanche_detail_6a9a2631af.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761293027/keramika_blanche_detail_6a9a2631af.png",
@@ -785,6 +848,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1794402845/zula_blue_dunes_detail2_jpg_0a08703ac1.jpg",
@@ -822,6 +888,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760013020/zula_blue_pearl_detail_68c5c484c5.jpg",
@@ -854,6 +923,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760019774/quartzite_blue_roma_detail_d7af304919.jpg",
@@ -885,6 +957,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623205/mramor_botticino_classico_detail_4b3a09ca7d.jpg",
@@ -923,6 +998,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1778052390/mramor_breccia_pernice_detail_33f3cb3737.jpg",
@@ -959,6 +1037,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760513374/zula_brown_antique_lesk_detail_6b8023ec83.jpg",
@@ -990,6 +1071,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623436/mramor_calacatta_detail_fb67c98b20.jpg",
@@ -1025,6 +1109,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623464/mramor_calacatta_oro_detail_a27a1ffeec.jpg",
@@ -1061,6 +1148,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761294088/keramika_calacatta_oro_detail_0d1bd6aee1.webp",
@@ -1100,6 +1190,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760077245/mramor_calacatta_rose_detail_30a7a0869c.jpg",
@@ -1135,6 +1228,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623461/mramor_calacatta_super_extra_detail_b51cdfe4a8.jpg",
@@ -1175,6 +1271,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761296846/keramika_calacatta_supreme_detail_e2ffd7ad4d.png",
@@ -1211,6 +1310,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761295681/keramika_calacatta_top_detail_101fd734e2.webp",
@@ -1250,6 +1352,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760077244/mramor_calacatta_viola_detail_ae27c5b43e.jpg",
@@ -1289,6 +1394,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1768987356/mramor_calacatta_vivaldi_detail_84627831f5.jpg",
@@ -1326,13 +1434,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761922090/zula_cape_red_detail_263f0bc34c.jpg",
       "inStockSlug": "cape-red",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
-      "comment": "Jihoafrická červenošedá žula s vyrovnaným středně hrubým krystalem a teplým rustikálním tónem. Odolný kámen vhodný na schodiště, obklady, parapety i exteriérové prvky."
+      "comment": "Jihoafrická cihlově červená žula s vyrovnaným středně jemným zrnem a stálou barvou. Osvědčený materiál v tloušťkách 3 a 5 cm pro pomníky, hrobové díly, krycí desky, schody a exteriérové obklady."
     },
     {
       "id": "369",
@@ -1362,6 +1473,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760076429/zula_cielo_de_ivory_detail_9d7bc68413.jpg",
@@ -1395,6 +1509,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760091013/zula_cinza_antas_detail_618f2c83dc.jpg",
@@ -1428,13 +1545,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009148/zula_cinza_ariz_lesk_detail_3fe60d5602.jpg",
       "inStockSlug": "cinza-ariz",
       "inStockBlocks": 6,
       "inStockSlabs": 58,
-      "comment": "Světle šedá portugalská žula s pravidelným jemným zrnem a čistým architektonickým výrazem. V tryskaném provedení je výborná pro venkovní dlažby, schody, obrubníky a sokly."
+      "comment": "Světle šedá portugalská žula s pravidelným jemným zrnem a čistým architektonickým výrazem. V tryskaném provedení a tloušťkách 2–7 cm je výborná pro venkovní dlažby, schody, obrubníky a sokly."
     },
     {
       "id": "505",
@@ -1464,6 +1584,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.42,h_0.34,g_center,y_0.04/c_fill,w_900,h_640,f_auto,q_85/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
@@ -1500,6 +1623,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760692146/zula_colonial_white_detail_39f12e3ec9.jpg",
@@ -1532,6 +1658,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761297665/keramika_cosmopolitan_detail_e1d7ac5fb0.png",
@@ -1563,6 +1692,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623452/mramor_crema_marfil_detail_ea29aa2691.jpg",
@@ -1601,6 +1733,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1791805403/mramor_crema_valencia_detail_0132e4692e.jpg",
@@ -1633,6 +1768,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761299998/keramika_crystal_white_detail_814ab88653.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299998/keramika_crystal_white_detail_814ab88653.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761299998/keramika_crystal_white_detail_814ab88653.png",
@@ -1664,6 +1802,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623506/mramor_daino_reale_detail_0b935eb6f5.jpg",
@@ -1694,6 +1835,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1778137255/mramor_diaspro_detail_3785059141.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1778137255/mramor_diaspro_detail_3785059141.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1778137255/mramor_diaspro_detail_3785059141.jpg",
@@ -1734,6 +1878,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761300628/keramika_doret_detail_6d8c22d187.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300628/keramika_doret_detail_6d8c22d187.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761300628/keramika_doret_detail_6d8c22d187.png",
@@ -1769,6 +1916,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760077698/mramor_dover_white_detail_d8c1e01872.jpg",
@@ -1810,6 +1960,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760013316/zula_emerald_pearl_detail_cb42fe1eba.jpg",
@@ -1841,6 +1994,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623478/mramor_fior_di_pesco_detail_4ae9c4b330.jpg",
@@ -1872,6 +2028,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623509/mramor_forest_brown_detail_abe04c2723.jpg",
@@ -1907,6 +2066,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623506/mramor_forest_green_detail_4ca35cc3b6.jpg",
@@ -1946,6 +2108,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623461/mramor_giallo_siena_detail_c4a6aeeea8.jpg",
@@ -1982,6 +2147,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301068/keramika_glacier_detail_8af10a40ed.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301068/keramika_glacier_detail_8af10a40ed.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761301068/keramika_glacier_detail_8af10a40ed.png",
@@ -2018,6 +2186,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760080365/quartzite_green_army_detail_b59193d07c.jpg",
@@ -2058,6 +2229,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1764251766/quartzite_ijen_blue_detail_3c0f2e67f7.jpg",
@@ -2094,6 +2268,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1785147497/zula_ivory_fantasy_blok2462_detail_a633df5370.jpg",
@@ -2130,6 +2307,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760693284/zula_juparana_india_detail_e97ac0321c.jpg",
@@ -2162,6 +2342,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623472/mramor_jura_beige_detail_7716a75f6f.jpg",
@@ -2198,6 +2381,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623486/mramor_jura_grey_detail_52b1c09900.jpg",
@@ -2234,6 +2420,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760078677/zula_magma_gold_detail_03ca3fb33d.jpg",
@@ -2274,6 +2463,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760080855/zula_marinace_black_detail_7be4128a63.jpg",
@@ -2306,6 +2498,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760081405/zula_marinace_verde_detail_f30ac7f9df.jpg",
@@ -2339,13 +2534,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760694041/zula_misty_brown_detail_62e5a6c5ef.jpg",
       "inStockSlug": "misty-brown-vyska-90-cm",
       "inStockBlocks": 2,
       "inStockSlabs": 77,
-      "comment": "Středně zrnitá hnědošedá žula s rovnoměrnou strukturou bez výkyvů v kresbě. Formát s výškou 90 cm je praktický zejména pro parapety, schody, sokly a standardní kuchyňské desky."
+      "comment": "Středně zrnitá hnědošedá žula s rovnoměrnou strukturou bez výkyvů v kresbě. Pásový formát s výškou 90 cm je ekonomickou volbou pro parapety, schody, sokly a exteriérové obkladové prvky."
     },
     {
       "id": "409",
@@ -2372,6 +2570,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760694338/zula_misty_grey_detail_a0fdad9d79.jpg",
@@ -2407,6 +2608,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1788329839/mramor_moleanos_brus_detail_2632d185cc.jpg",
@@ -2442,6 +2646,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760077513/mramor_monet_detail_b5b1e1e737.jpg",
@@ -2474,6 +2681,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760019336/quartzite_montblanc_detail_b167a6cb84.jpg",
@@ -2507,6 +2717,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760695808/zula_mountain_white_detail_6c32178ea3.jpg",
@@ -2540,13 +2753,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "inStockSlug": "multicolour-red",
       "inStockBlocks": 6,
       "inStockSlabs": 53,
-      "comment": "Indická žula s bohatou vlnitou kresbou spojující terakotově červenou, hnědou a tmavě šedou. Velmi odolný materiál pro interiéry, schodiště, parapety i exteriérové prvky."
+      "comment": "Indická žula s bohatou vlnitou kresbou spojující terakotově červenou, hnědou a tmavě šedou. V tloušťkách 2–10 cm se běžně používá na pomníky, náhrobní díly, schodiště, sokly a parapety."
     },
     {
       "id": "415",
@@ -2573,6 +2789,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760012109/zula_nero_angola_detail_0a751a0a18.jpg",
@@ -2606,13 +2825,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760696610/zula_nero_impala_detail_5fac47e25a.jpg",
       "inStockSlug": "nero-impala",
       "inStockBlocks": 1,
       "inStockSlabs": 16,
-      "comment": "Osvědčená jihoafrická tmavá žula (gabro) s rovnoměrným drobným zrnem a vysokou mrazuvzdorností. V opalované a kartáčované úpravě je ideální pro venkovní dlažby, schody i sokly."
+      "comment": "Osvědčená jihoafrická tmavá žula (gabro) s rovnoměrným drobným zrnem a vysokou mrazuvzdorností. Základní stálice pro pomníky, hrobové rámy, opalované venkovní dlažby, schody a sokly."
     },
     {
       "id": "475",
@@ -2637,6 +2859,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623433/mramor_nero_marquina_detail_4518281f5d.png",
@@ -2668,6 +2893,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761301494/keramika_nero_marquinia_detail_c286d77a97.png",
@@ -2700,6 +2928,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
@@ -2733,13 +2964,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760697389/zula_olive_green_detail_f50de6e99a.jpg",
       "inStockSlug": "olive-green",
       "inStockBlocks": 5,
       "inStockSlabs": 13,
-      "comment": "Tmavě olivově zelená žula (charnockit) s vyrovnanou strukturou a hlubokým přírodním odstínem. Vysoká hustota a odolnost ji předurčují pro kuchyně, parapety i reprezentativní exteriéry."
+      "comment": "Světle šedozelená žula se stejnoměrnou krystalickou strukturou a vysokou mrazuvzdorností. V tloušťkách 3–10 cm se používá především pro pomníky, hrobové díly, schody, sokly a exteriérové dlažby."
     },
     {
       "id": "507",
@@ -2771,6 +3005,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
@@ -2811,6 +3048,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760097913/quartzite_palomino_detail_5a19ccf8d0.jpg",
@@ -2851,6 +3091,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761301883/keramika_paonazzo_detail_0b0783cf2f.png",
@@ -2888,13 +3131,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
       "inStockSlug": "paradiso-classico",
       "inStockBlocks": 3,
       "inStockSlabs": 7,
-      "comment": "Klasická indická žula s proudovitou kresbou mísící šedofialové, růžové a antracitové tóny. Vyznačuje se vysokou tvrdostí a dlouhodobou životností v interiéru i exteriéru."
+      "comment": "Klasická indická žula s proudovitou kresbou mísící šedofialové, růžové a antracitové tóny. V tloušťkách 3–10 cm se osvědčuje na pomníky, náhrobky, venkovní schody, parapety a sokly."
     },
     {
       "id": "424",
@@ -2921,6 +3167,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009305/zula_pedra_porto_detail_930cde9de6.jpg",
@@ -2953,6 +3202,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761302224/keramika_pietra_grey_detail_d82eb93cbb.png",
@@ -2978,13 +3230,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "versatile",
+      "usageLabel": "Univerzální",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "inStockSlug": "pietra-lavica",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
-      "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, krby a moderní fasády."
+      "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, terasy, krby a moderní fasády."
     },
     {
       "id": "426",
@@ -3010,6 +3265,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761302563/keramika_planet_moon_detail_67e83e3823.png",
@@ -3045,6 +3303,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623506/mramor_port_laurent_detail_3212776110.jpg",
@@ -3078,13 +3339,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "versatile",
+      "usageLabel": "Univerzální",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082141/zula_premium_black_detail_ac60424888.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082141/zula_premium_black_detail_ac60424888.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760082141/zula_premium_black_detail_ac60424888.png",
       "inStockSlug": "premium-black",
       "inStockBlocks": 8,
       "inStockSlabs": 17,
-      "comment": "Hluboce černá jemnozrnná indická žula se stabilním tónem a vysokým zrcadlovým leskem. Univerzální kámen pro kuchyňské pracovní desky, parapety, schody i pomníkovou výrobu."
+      "comment": "Hluboce černá jemnozrnná indická žula se stabilním tónem a vysokým zrcadlovým leskem. Univerzální kámen pro interiérové obklady a desky i pomníkovou výrobu v tloušťkách až 10 cm."
     },
     {
       "id": "429",
@@ -3115,6 +3379,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760085236/zula_rosa_porinho_detail_ca440852b6.jpg",
@@ -3150,6 +3417,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623476/mramor_rosso_iberico_detail_c813bbe78f.jpg",
@@ -3181,6 +3451,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623505/mramor_rosso_lepanto_detail_0accadbdf7.jpg",
@@ -3216,6 +3489,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623505/mramor_rosso_verona_detail_570fc3bd44.jpg",
@@ -3251,6 +3527,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623464/mramor_sahara_noir_detail_d3a8bfc3c4.jpg",
@@ -3287,6 +3566,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082403/zula_salone_detail_c6f6374371.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082403/zula_salone_detail_c6f6374371.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760082403/zula_salone_detail_c6f6374371.jpg",
@@ -3323,6 +3605,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760698401/zula_shivakashi_detail_62fe2bcd8f.jpg",
@@ -3358,6 +3643,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623505/mramor_spider_green_detail_b96c85c18c.jpg",
@@ -3395,6 +3683,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760698818/zula_star_galaxy_detail_f2d0f3417a.jpg",
@@ -3431,6 +3722,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761303185/keramika_statuario_detail_4f49a5cbb7.png",
@@ -3467,6 +3761,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761303546/keramika_statuario_extra_detail_30695f9a54.png",
@@ -3500,6 +3797,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
@@ -3536,6 +3836,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761304020/keramika_suger_black_detail_319deb26a0.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761304020/keramika_suger_black_detail_319deb26a0.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761304020/keramika_suger_black_detail_319deb26a0.png",
@@ -3568,6 +3871,9 @@
       "collections": [
         "keramika"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761305106/keramika_super_white_detail_4448a58a5c.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761305106/keramika_super_white_detail_4448a58a5c.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761305106/keramika_super_white_detail_4448a58a5c.png",
@@ -3600,6 +3906,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760075579/quartzite_super_white_detail_86f380d862.jpg",
@@ -3636,6 +3945,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
@@ -3669,6 +3981,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083368/zula_tarn_detail_7994e5be75.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083368/zula_tarn_detail_7994e5be75.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760083368/zula_tarn_detail_7994e5be75.jpg",
@@ -3706,13 +4021,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760083523/zula_tiger_skin_detail_71e519f5b5.jpg",
       "inStockSlug": "tiger-skin",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
-      "comment": "Výrazná indická žula s kontrastním pruhováním v teplých okrově oranžových a černých tónech. Uplatní se na solitérních obkladech, krbech, schodištích i parapetech."
+      "comment": "Výrazná indická žula s kontrastním pruhováním v teplých okrově oranžových a černých tónech. Masivní formát 7 cm je vhodný pro pomníkové stély, těžké schodišťové stupně, sokly a exteriérové prvky."
     },
     {
       "id": "447",
@@ -3737,6 +4055,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760700245/travertino_classico_detail_f13c8eb643.jpg",
@@ -3777,6 +4098,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760019381/quartzite_tropical_storm_detail_13bcfe1871.jpg",
@@ -3810,6 +4134,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760083845/zula_vahlovice_detail_2728bc5258.jpg",
@@ -3843,13 +4170,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760083985/zula_vanga_red_detail_7c22a12cc1.jpg",
       "inStockSlug": "vanga-red",
       "inStockBlocks": 4,
       "inStockSlabs": 9,
-      "comment": "Tradiční švédská žula v ušlechtilé cihlově červené barvě s jemnou pravidelnou zrnitostí. Vyniká mrazuvzdorností a barevnou stálostí na fasádách, dlažbách i v interiéru."
+      "comment": "Tradiční švédská žula v ušlechtilé cihlově červené barvě s jemnou pravidelnou zrnitostí. V tloušťkách 3–10 cm vyniká mrazuvzdorností a barevnou stálostí na pomnících, fasádách, dlažbách a schodech."
     },
     {
       "id": "451",
@@ -3874,6 +4204,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760623490/mramor_verde_guatemala_detail_f109a0ae86.jpg",
@@ -3911,6 +4244,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760084065/zula_verde_marina_detail_6e33b31322.jpg",
@@ -3943,13 +4279,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760699647/zula_via_lattea_leather_detail_13676e1473.jpg",
       "inStockSlug": "via-lattea",
       "inStockBlocks": 1,
       "inStockSlabs": 9,
-      "comment": "Tmavě břidlicová až černá brazilská žula protkaná jemnými bílými křemennými žilkami připomínajícími Mléčnou dráhu. Mimořádně oblíbená na kuchyňské ostrůvky a architektonické fasády."
+      "comment": "Tmavě břidlicová až černá brazilská žula protkaná jemnými bílými křemennými žilkami připomínajícími Mléčnou dráhu. Mimořádně oblíbená na kuchyňské desky a architektonické obklady."
     },
     {
       "id": "459",
@@ -3980,13 +4319,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "versatile",
+      "usageLabel": "Univerzální",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
       "inStockSlug": "viscont-white",
       "inStockBlocks": 3,
       "inStockSlabs": 18,
-      "comment": "Dynamická světlá žula s bílým základem a výraznými vlnitými šedočernými tahy. Na velkých deskách působí velmi živě a skvěle snáší intenzivní provoz v kuchyni."
+      "comment": "Dynamická světlá žula s bílým základem a výraznými vlnitými šedočernými tahy. V tloušťkách 3–7 cm skvěle slouží pro kuchyňské linky i pro reprezentativní exteriérové schody a pomníkovou výrobu."
     },
     {
       "id": "511",
@@ -4012,6 +4354,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1792572369/quartzite_vitro_deska_2_3251612054.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1792572369/quartzite_vitro_deska_2_3251612054.png",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1792572369/quartzite_vitro_deska_2_3251612054.png",
@@ -4045,13 +4390,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "medium",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
       "inStockSlug": "vizag-blue",
       "inStockBlocks": 5,
       "inStockSlabs": 18,
-      "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen pro interiéry, schodiště i venkovní prvky."
+      "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen v tloušťkách 3–6 cm pro pomníkové díly, schodiště, sokly i venkovní prvky."
     },
     {
       "id": "457",
@@ -4081,13 +4429,16 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "monument_exterior",
+      "usageLabel": "Pomníky & dlažby",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760696072/zula_yellow_river_detail_3dfb374290.jpg",
       "inStockSlug": "yellow-river-vyska-70-cm",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
-      "comment": "Světle okrová až písková žula s drobným zrnem a teplým přírodním vzhledem. Formát 70 cm v opalované úpravě se výborně hodí na terasy, schodišťové stupně a venkovní dlažby."
+      "comment": "Světle okrová až písková žula s drobným zrnem a teplým přírodním vzhledem. Opalovaný pásový formát výšky 70 cm se výborně hodí na terasy, schodišťové stupně a venkovní dlažby."
     },
     {
       "id": "458",
@@ -4117,6 +4468,9 @@
       "collections": [
         "prirodni-kamen"
       ],
+      "usageSegment": "interior",
+      "usageLabel": "Interiér",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
