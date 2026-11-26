@@ -2,7 +2,7 @@
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/online-sklad/",
     "catalogUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T18:30:21.167Z",
+    "syncedAt": "2026-11-26T18:34:20.737Z",
     "sourceUpdatedAt": "2026-11-26T05:02:00.604Z",
     "totalMaterials": 77,
     "totalBlocks": 144,
@@ -2540,7 +2540,7 @@
         "Kuchyně"
       ],
       "catalogUrl": "https://www.stoneconnection.cz/katalog/belvedere",
-      "comment": "Exkluzivní tmavý kvarcit s hlubokým černým základem a výraznými bílými i zlatavými žilami. V provedení leather skin dává vyniknout plastiké struktuře na kuchyňských ostrovech a solitérních stěnách.",
+      "comment": "Exkluzivní tmavý kvarcit s hlubokým černým základem a výraznými bílými i zlatavými žilami. V provedení leather skin dává vyniknout plastické struktuře na kuchyňských ostrovech a solitérních stěnách.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
       "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,c_limit/v1760016808/quartzite_belvedere_detail_ede082e162.jpg",
       "cardImageSource": "catalog",
