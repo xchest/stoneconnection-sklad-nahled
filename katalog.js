@@ -171,41 +171,95 @@ function openKatalogModal(slug) {
   const p = kState.products.find((x) => x.slug === slug);
   if (!p) return;
 
-  const scenes = window.SC_getScenesForMaterial(p);
-  const finish = p.surfaceFinish || p.sceneTexture?.finish || 'polished';
-  const sceneHeading =
-    finish === 'antislip'
-      ? 'Ukázka použití — venkovní dlažby, schodiště a exteriér'
-      : p.usageSegment === 'monument_exterior'
-        ? 'Ukázka použití — pomníky, haly a architektonické obklady'
-        : p.usageSegment === 'versatile'
-          ? 'Ukázka použití v exteriéru i interiéru'
-          : 'Nechte se inspirovat v interiéru';
+  const realImages = Array.isArray(p.realizationImages) ? p.realizationImages : [];
+  const demoImages = Array.isArray(p.demoVisualizations) ? p.demoVisualizations : [];
+  const searchUrl = window.SC_buildRealizationSearchUrl ? window.SC_buildRealizationSearchUrl(p) : '#';
+  const grainTexUrl = p.sceneTexture?.url || p.sceneUrl || null;
 
-  const hasSceneTex = Boolean(p.sceneTexture?.url || p.sceneUrl);
-  const scenesHtml = hasSceneTex
-    ? `
+  let showcaseHtml = '';
+  if (realImages.length) {
+    const gridClass = realImages.length === 1 ? 'realizations-grid cols-1' : realImages.length === 2 ? 'realizations-grid cols-2' : 'realizations-grid';
+    showcaseHtml += `
       <section class="section-block">
         <div class="section-head">
-          <h3 class="section-title">${esc(sceneHeading)}</h3>
-          <span class="section-sub">Orientační náhled kresby a měřítka kamene v prostoru</span>
+          <h3 class="section-title">Reálné realizace Stone Connection (${realImages.length})</h3>
+          <span class="section-sub">Skutečné dokončené zakázky · <a href="${esc(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Další realizace v praxi ↗</a></span>
         </div>
-        <div class="scenes-grid">
-          ${scenes
+        <div class="${gridClass}">
+          ${realImages
             .map(
-              (sc) => `
-            <div class="scene-card" style="cursor:default;">
-              <div class="scene-stage">
-                <img class="scene-base" src="${esc(sc.base)}" alt="${esc(sc.label)} — ${esc(p.name)}" loading="lazy">
-                <canvas class="scene-canvas" data-scene-key="${esc(sc.key)}" width="640" height="480" aria-hidden="true"></canvas>
+              (rImg) => `
+            <a class="viz-card" href="${esc(rImg.fullUrl)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+              <div class="viz-media">
+                <img src="${esc(rImg.cardUrl)}" alt="${esc(rImg.label || p.name)}" loading="lazy">
               </div>
-              <div class="scene-label">${esc(sc.label)}</div>
-            </div>`
+              <div class="scene-label">${esc(rImg.category || 'Reálná realizace')} <span>Otevřít ↗</span></div>
+            </a>`
             )
             .join('')}
         </div>
-      </section>`
-    : '';
+      </section>`;
+  }
+
+  if (demoImages.length) {
+    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : 'realizations-grid cols-2';
+    showcaseHtml += `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Architektonická ukázka v prostoru</h3>
+          <span class="section-sub">Fotorealistická vizualizace · <a href="${esc(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Vyhledat reálné realizace „${esc(p.name)}“ ↗</a></span>
+        </div>
+        <div class="${gridClass}">
+          ${demoImages
+            .map(
+              (dImg) => `
+            <a class="viz-card" href="${esc(dImg.url)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+              <div class="viz-media">
+                <img src="${esc(dImg.url)}" alt="${esc(dImg.label)}" loading="lazy">
+              </div>
+              <div class="scene-label">${esc(dImg.label)} <span>Otevřít ↗</span></div>
+            </a>`
+            )
+            .join('')}
+        </div>
+      </section>`;
+  }
+
+  if (!realImages.length && !demoImages.length) {
+    showcaseHtml = `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Detail struktury a realizace v praxi</h3>
+          <span class="section-sub">${esc(p.categoryLabel)}</span>
+        </div>
+        <div class="detail-grain-band${grainTexUrl ? '' : ' no-grain'}">
+          ${
+            grainTexUrl
+              ? `<a class="viz-card" href="${esc(grainTexUrl)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+                  <div class="viz-media">
+                    <img src="${esc(grainTexUrl)}" alt="${esc(p.name)} — detail struktury" loading="lazy">
+                  </div>
+                  <div class="scene-label">Detail kresby kamene <span>Otevřít ↗</span></div>
+                </a>`
+              : ''
+          }
+          <div class="material-spec-panel">
+            <p class="spec-panel-lead">U tohoto materiálu nezkreslujeme povrch lepenými montážemi. Podívejte se na reálné dokončené realizace z praxe:</p>
+            <div class="spec-panel-facts">
+              ${p.origin ? `<div><strong>Původ:</strong> ${esc(p.origin)}</div>` : ''}
+              ${p.applications.length ? `<div><strong>Použití:</strong> ${esc(p.applications.join(', '))}</div>` : ''}
+            </div>
+            <div>
+              <a href="${esc(searchUrl)}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                Vyhledat reálné realizace „${esc(p.name)}“ ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  const scenesHtml = showcaseHtml;
 
   kEl.modalBody.innerHTML = `
     <div class="modal-hero">
@@ -246,9 +300,6 @@ function openKatalogModal(slug) {
 
   kEl.modal.hidden = false;
   document.body.style.overflow = 'hidden';
-  if (window.SC_renderAllSceneCanvases) {
-    window.SC_renderAllSceneCanvases(kEl.modalBody, p);
-  }
   if (window.location.hash !== `#k=${slug}`) {
     history.replaceState(null, '', `#k=${slug}`);
   }

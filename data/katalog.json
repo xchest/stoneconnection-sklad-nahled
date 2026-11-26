@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T21:23:20.722Z",
+    "syncedAt": "2026-11-26T21:46:29.194Z",
     "totalProducts": 118,
     "inStockCount": 47
   },
@@ -42,6 +42,8 @@
         "source": "slab",
         "finish": "antislip"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "amarelo-macieira",
       "inStockBlocks": 3,
       "inStockSlabs": 16,
@@ -89,6 +91,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -140,6 +144,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "astoria",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -187,6 +193,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -233,6 +241,22 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Aurora India — Reálná realizace (Hřbitovní architektura)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182321/hrob_aurora_92f61c994b.jpg",
+          "category": "Hřbitovní architektura",
+          "categoryKey": "hrbitovni-architektura"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "aurora-india",
       "inStockBlocks": 4,
       "inStockSlabs": 18,
@@ -276,6 +300,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -321,6 +347,8 @@
         "source": "detail",
         "finish": "antislip"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "azul-aran",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -365,6 +393,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "azul-noche",
       "inStockBlocks": 2,
       "inStockSlabs": 16,
@@ -407,6 +437,19 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [
+        {
+          "url": "assets/viz/azul-platino-hrob.jpg",
+          "label": "Ukázka pomníku — Azul Platino (leštěná žula)",
+          "kind": "demo-viz"
+        },
+        {
+          "url": "assets/viz/azul-platino-hala.jpg",
+          "label": "Ukázka interiérové haly a schodiště — Azul Platino",
+          "kind": "demo-viz"
+        }
+      ],
       "inStockSlug": "azul-platino",
       "inStockBlocks": 4,
       "inStockSlabs": 16,
@@ -454,6 +497,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "balthus-neve",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -508,6 +553,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "bararp",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -552,6 +599,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -603,6 +652,61 @@
         "source": "slab",
         "finish": "matte"
       },
+      "realizationImages": [
+        {
+          "label": "Belvedere — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Belvedere — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Belvedere — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Belvedere — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "belvedere",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -650,6 +754,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -693,6 +799,14 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [
+        {
+          "url": "assets/viz/bianco-carrara-koupelna.jpg",
+          "label": "Ukázka koupelny — Bianco Carrara (velkoformát)",
+          "kind": "demo-viz"
+        }
+      ],
       "inStockSlug": "bianco-carrara",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -737,6 +851,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -785,6 +901,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -828,6 +946,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -875,6 +995,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -922,6 +1044,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "black-vermont",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -969,6 +1093,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1020,6 +1146,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1068,6 +1196,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1111,6 +1241,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1153,6 +1285,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1202,6 +1336,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1249,6 +1385,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1291,6 +1429,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1337,6 +1477,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1384,6 +1526,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1434,6 +1578,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1480,6 +1626,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1531,6 +1679,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1578,6 +1728,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1628,6 +1780,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1678,6 +1832,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "calacatta-vivaldi",
       "inStockBlocks": 1,
       "inStockSlabs": 8,
@@ -1724,6 +1880,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "cape-red",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -1771,6 +1929,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "cielo-de-ivory",
       "inStockBlocks": 1,
       "inStockSlabs": 7,
@@ -1815,6 +1975,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1857,6 +2019,35 @@
         "source": "detail",
         "finish": "antislip"
       },
+      "realizationImages": [
+        {
+          "label": "Cinza Ariz — Reálná realizace (Exteriéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+          "category": "Exteriéry",
+          "categoryKey": "exteriery"
+        },
+        {
+          "label": "Cinza Ariz — Reálná realizace (Exteriéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+          "category": "Exteriéry",
+          "categoryKey": "exteriery"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "cinza-ariz",
       "inStockBlocks": 6,
       "inStockSlabs": 58,
@@ -1904,6 +2095,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "colonial-gold",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -1951,6 +2144,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1994,6 +2189,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2036,6 +2233,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2085,6 +2284,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2128,6 +2329,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2170,6 +2373,22 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Daino Reale — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "daino-reale",
       "inStockBlocks": 1,
       "inStockSlabs": 18,
@@ -2211,6 +2430,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2262,6 +2483,48 @@
         "source": "ceramic-slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Doret — Reálná realizace (Koupelny)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+          "category": "Koupelny",
+          "categoryKey": "koupelny"
+        },
+        {
+          "label": "Doret — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761300626/keramika_doret_loznice_2df7d42872.png",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        },
+        {
+          "label": "Doret — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "doret",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -2308,6 +2571,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2360,6 +2625,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2402,6 +2669,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2444,6 +2713,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2490,6 +2761,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2540,6 +2813,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2587,6 +2862,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2634,6 +2911,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2685,6 +2964,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "ijen-blue",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -2732,6 +3013,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "ivory-fantasy",
       "inStockBlocks": 1,
       "inStockSlabs": 5,
@@ -2779,6 +3062,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2822,6 +3107,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2869,6 +3156,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2916,6 +3205,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2967,6 +3258,8 @@
         "source": "slab",
         "finish": "matte"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "marinace-black",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -3010,6 +3303,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3052,6 +3347,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "misty-brown-vyska-90-cm",
       "inStockBlocks": 2,
       "inStockSlabs": 77,
@@ -3096,6 +3393,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3142,6 +3441,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "moleanos",
       "inStockBlocks": 3,
       "inStockSlabs": 11,
@@ -3188,6 +3489,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3231,6 +3534,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3275,6 +3580,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3317,6 +3624,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "multicolour-red",
       "inStockBlocks": 6,
       "inStockSlabs": 53,
@@ -3361,6 +3670,35 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Nero Angola — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Nero Angola — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "nero-angola",
       "inStockBlocks": 2,
       "inStockSlabs": 7,
@@ -3403,6 +3741,87 @@
         "source": "detail",
         "finish": "antislip"
       },
+      "realizationImages": [
+        {
+          "label": "Nero Impala — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Impala — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Impala — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Impala — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Impala — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Impala — Reálná realizace (Hřbitovní architektura)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182323/hrob_impala_fa57b34b88.jpg",
+          "category": "Hřbitovní architektura",
+          "categoryKey": "hrbitovni-architektura"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "nero-impala",
       "inStockBlocks": 1,
       "inStockSlabs": 16,
@@ -3445,6 +3864,22 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Nero Marquina — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "nero-marquina",
       "inStockBlocks": 1,
       "inStockSlabs": 5,
@@ -3487,6 +3922,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3530,6 +3967,74 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Nero Assoluto Zimbabwe — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Assoluto Zimbabwe — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Assoluto Zimbabwe — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Assoluto Zimbabwe — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Nero Assoluto Zimbabwe — Reálná realizace (Koupelny)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+          "category": "Koupelny",
+          "categoryKey": "koupelny"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "nero-assoluto-zimbabwe",
       "inStockBlocks": 8,
       "inStockSlabs": 46,
@@ -3572,6 +4077,22 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Olive Green — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "olive-green",
       "inStockBlocks": 5,
       "inStockSlabs": 13,
@@ -3621,6 +4142,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "onyx-orange",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -3672,6 +4195,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3723,6 +4248,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3769,6 +4296,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "paradiso-classico",
       "inStockBlocks": 3,
       "inStockSlabs": 7,
@@ -3813,6 +4342,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3856,6 +4387,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3892,6 +4425,8 @@
         "source": "slab",
         "finish": "matte"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "pietra-lavica",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -3935,6 +4470,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3981,6 +4518,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4025,6 +4564,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "premium-black",
       "inStockBlocks": 8,
       "inStockSlabs": 17,
@@ -4073,6 +4614,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4119,6 +4662,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4161,6 +4706,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4207,6 +4754,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4253,6 +4802,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4300,6 +4851,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "salone",
       "inStockBlocks": 2,
       "inStockSlabs": 4,
@@ -4347,6 +4900,22 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Shivakashi — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "shivakashi",
       "inStockBlocks": 1,
       "inStockSlabs": 13,
@@ -4393,6 +4962,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4441,6 +5012,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "star-galaxy",
       "inStockBlocks": 3,
       "inStockSlabs": 10,
@@ -4488,6 +5061,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4535,6 +5110,61 @@
         "source": "ceramic-slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Statuario Extra — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Statuario Extra — Reálná realizace (Koupelny)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+          "category": "Koupelny",
+          "categoryKey": "koupelny"
+        },
+        {
+          "label": "Statuario Extra — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        },
+        {
+          "label": "Statuario Extra — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "statuario-extra",
       "inStockBlocks": 2,
       "inStockSlabs": 9,
@@ -4579,6 +5209,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "steel-grey",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -4626,6 +5258,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4669,6 +5303,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4712,6 +5348,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4759,6 +5397,22 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Taj Mahal — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "taj-mahal",
       "inStockBlocks": 3,
       "inStockSlabs": 7,
@@ -4803,6 +5457,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4849,6 +5505,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "tiger-skin",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -4891,6 +5549,191 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Travertino Classico — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Interiéry)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+          "category": "Interiéry",
+          "categoryKey": "interiery"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        },
+        {
+          "label": "Travertino Classico — Reálná realizace (Bazény a Wellness)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+          "category": "Bazény a Wellness",
+          "categoryKey": "bazeny-a-wellness"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "travertino-classico",
       "inStockBlocks": 1,
       "inStockSlabs": 11,
@@ -4942,6 +5785,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4986,6 +5831,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5028,6 +5875,8 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "vanga-red",
       "inStockBlocks": 4,
       "inStockSlabs": 9,
@@ -5070,6 +5919,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5118,6 +5969,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5161,6 +6014,48 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Via Lattea — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Via Lattea — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        },
+        {
+          "label": "Via Lattea — Reálná realizace (Fasády a obklady)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+          "category": "Fasády a obklady",
+          "categoryKey": "fasady-a-obklady"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "via-lattea",
       "inStockBlocks": 1,
       "inStockSlabs": 9,
@@ -5209,6 +6104,48 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Viscont White — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Viscont White — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Viscont White — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "viscont-white",
       "inStockBlocks": 3,
       "inStockSlabs": 18,
@@ -5252,6 +6189,8 @@
         "source": "detail",
         "finish": "polished"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5294,6 +6233,35 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Vizag Blue — Reálná realizace (Hřbitovní architektura)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182374/urnak_vizag_ead208f51f.jpg",
+          "category": "Hřbitovní architektura",
+          "categoryKey": "hrbitovni-architektura"
+        },
+        {
+          "label": "Vizag Blue — Reálná realizace (Hřbitovní architektura)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182320/hrob_vizag_819b66a99b.jpg",
+          "category": "Hřbitovní architektura",
+          "categoryKey": "hrbitovni-architektura"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "vizag-blue",
       "inStockBlocks": 5,
       "inStockSlabs": 18,
@@ -5339,6 +6307,8 @@
         "source": "slab",
         "finish": "antislip"
       },
+      "realizationImages": [],
+      "demoVisualizations": [],
       "inStockSlug": "yellow-river-vyska-70-cm",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -5386,6 +6356,35 @@
         "source": "slab",
         "finish": "polished"
       },
+      "realizationImages": [
+        {
+          "label": "Zambezia White — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        },
+        {
+          "label": "Zambezia White — Reálná realizace (Kuchyně)",
+          "kind": "realization",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+          "category": "Kuchyně",
+          "categoryKey": "kuchyne"
+        }
+      ],
+      "demoVisualizations": [],
       "inStockSlug": "zambezia-white",
       "inStockBlocks": 1,
       "inStockSlabs": 15,

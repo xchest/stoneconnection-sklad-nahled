@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261126c">
 </head>
 <body>
   <header class="site-header">
@@ -50,6 +50,7 @@
 
   <main class="page-band">
     <div class="container">
+      <div class="real-filter-bar" id="real-filter-bar" aria-label="Filtrovat realizace podle kategorie"></div>
       <div class="cards-3" id="real-grid">
         <article class="feature-card">
           <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800,h_600,c_fill/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg" alt="Fasády a obklady — Via Lattea" loading="lazy">
@@ -149,6 +150,60 @@
     </div>
   </footer>
 
-  <script src="shared.js" defer></script>
+  <script src="shared.js?v=20261126c" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const bar = document.getElementById('real-filter-bar');
+      const grid = document.getElementById('real-grid');
+      if (!bar || !grid) return;
+
+      const esc = (v) => String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      try {
+        const res = await fetch('data/realizace.json', { cache: 'no-cache' });
+        if (!res.ok) return;
+        const data = await res.json();
+        const items = data.items || [];
+        const cats = data.meta?.categories || [];
+        let activeCat = 'all';
+
+        const renderFilters = () => {
+          bar.innerHTML = [
+            `<button type="button" class="real-pill${activeCat === 'all' ? ' active' : ''}" data-cat="all">Vše (${items.length})</button>`,
+            ...cats.map((c) => `<button type="button" class="real-pill${activeCat === c.key ? ' active' : ''}" data-cat="${esc(c.key)}">${esc(c.label)} (${c.count})</button>`),
+          ].join('');
+        };
+
+        const renderGrid = () => {
+          const visible = activeCat === 'all' ? items : items.filter((it) => it.categoryKey === activeCat);
+          grid.innerHTML = visible.map((it) => `
+            <article class="feature-card real-photo-card">
+              <a href="${esc(it.fullUrl)}" target="_blank" rel="noopener noreferrer" class="real-img-link" title="Otevřít ve větším rozlišení">
+                <img src="${esc(it.cardUrl)}" alt="${esc(it.categoryLabel)}${it.stockName ? ' — ' + esc(it.stockName) : ''}" loading="lazy">
+              </a>
+              <div class="feature-card-body">
+                <span class="real-cat-label">${esc(it.categoryLabel)}</span>
+                ${it.stockSlug
+                  ? `<a href="index.html#m=${esc(it.stockSlug)}" class="btn-secondary" style="justify-self:start;">Skladem: ${esc(it.stockName)} →</a>`
+                  : `<a href="${esc(it.fullUrl)}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="justify-self:start;">Zvětšit fotografii ↗</a>`}
+              </div>
+            </article>
+          `).join('');
+        };
+
+        bar.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-cat]');
+          if (!btn) return;
+          activeCat = btn.getAttribute('data-cat') || 'all';
+          renderFilters();
+          renderGrid();
+        });
+
+        renderFilters();
+        renderGrid();
+      } catch (_err) {
+        // Keep static cards fallback on offline load
+      }
+    });
+  </script>
 </body>
 </html>

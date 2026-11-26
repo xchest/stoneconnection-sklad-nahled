@@ -1,0 +1,1536 @@
+{
+  "meta": {
+    "sourceUrl": "https://www.stoneconnection.cz/realizace/",
+    "syncedAt": "2026-11-26T21:46:29.194Z",
+    "totalPhotos": 149,
+    "categories": [
+      {
+        "key": "kuchyne",
+        "label": "Kuchyně",
+        "count": 52
+      },
+      {
+        "key": "koupelny",
+        "label": "Koupelny",
+        "count": 11
+      },
+      {
+        "key": "interiery",
+        "label": "Interiéry",
+        "count": 48
+      },
+      {
+        "key": "fasady-a-obklady",
+        "label": "Fasády a obklady",
+        "count": 16
+      },
+      {
+        "key": "exteriery",
+        "label": "Exteriéry",
+        "count": 4
+      },
+      {
+        "key": "hrbitovni-architektura",
+        "label": "Hřbitovní architektura",
+        "count": 8
+      },
+      {
+        "key": "bazeny-a-wellness",
+        "label": "Bazény a Wellness",
+        "count": 14
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "kuchyne-1",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599417/quartzite_montblanc_kuchyn5_56bad1b5de.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599417/quartzite_montblanc_kuchyn5_56bad1b5de.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760599417/quartzite_montblanc_kuchyn5_56bad1b5de.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-2",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761305109/keramika_super_white_kuchyn_781929959b.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761305109/keramika_super_white_kuchyn_781929959b.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761305109/keramika_super_white_kuchyn_781929959b.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-3",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303548/keramika_statuario_extra_kuchyn_a0e3fcdb2a.png",
+      "stockSlug": "statuario-extra",
+      "stockName": "Statuario Extra"
+    },
+    {
+      "id": "kuchyne-4",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302564/keramika_planet_moon_kuchyn_d8f1f86a17.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302564/keramika_planet_moon_kuchyn_d8f1f86a17.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302564/keramika_planet_moon_kuchyn_d8f1f86a17.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-5",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299987/keramika_crystal_white_kuchyn_f726903f8b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299987/keramika_crystal_white_kuchyn_f726903f8b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299987/keramika_crystal_white_kuchyn_f726903f8b.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-6",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761296847/keramika_calacatta_supreme_kuchyn2_a20e9b676e.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296847/keramika_calacatta_supreme_kuchyn2_a20e9b676e.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761296847/keramika_calacatta_supreme_kuchyn2_a20e9b676e.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-7",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761296847/keramika_calacatta_supreme_kuchyn3_e482bd9649.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296847/keramika_calacatta_supreme_kuchyn3_e482bd9649.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761296847/keramika_calacatta_supreme_kuchyn3_e482bd9649.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-8",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761296844/keramika_calacatta_supreme_kuchyn1_1e7b00fd22.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296844/keramika_calacatta_supreme_kuchyn1_1e7b00fd22.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761296844/keramika_calacatta_supreme_kuchyn1_1e7b00fd22.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-9",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761293026/keramika_blanche_kuchyn_6441293d2a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293026/keramika_blanche_kuchyn_6441293d2a.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761293026/keramika_blanche_kuchyn_6441293d2a.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-10",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760698394/zula_shivakashi_kuchyn_53856af7eb.jpg",
+      "stockSlug": "shivakashi",
+      "stockName": "Shivakashi"
+    },
+    {
+      "id": "kuchyne-11",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760697386/zula_olive_green_kuchyn_ac561c44cb.jpg",
+      "stockSlug": "olive-green",
+      "stockName": "Olive Green"
+    },
+    {
+      "id": "kuchyne-12",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696997/zula_nero_zimbabwe_kuchyn2_13c6124bbb.jpg",
+      "stockSlug": "nero-assoluto-zimbabwe",
+      "stockName": "Nero Assoluto Zimbabwe"
+    },
+    {
+      "id": "kuchyne-13",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn1_42ad1dc40c.jpg",
+      "stockSlug": "nero-assoluto-zimbabwe",
+      "stockName": "Nero Assoluto Zimbabwe"
+    },
+    {
+      "id": "kuchyne-14",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696996/zula_nero_zimbabwe_kuchyn3_975d6c5518.jpg",
+      "stockSlug": "nero-assoluto-zimbabwe",
+      "stockName": "Nero Assoluto Zimbabwe"
+    },
+    {
+      "id": "kuchyne-15",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696635/zula_nero_impala_leather_kuchyn3_45a34d4599.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "kuchyne-16",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696634/zula_nero_impala_leather_kuchyn5_4c8411dcaa.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "kuchyne-17",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696634/zula_nero_impala_leather_kuchyn6_d9b122f7a5.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "kuchyne-18",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696632/zula_nero_impala_leather_kuchyn4_b47e6c3a6e.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "kuchyne-19",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696633/zula_nero_impala_leather_kuchyn2_0a953568ac.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "kuchyne-20",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623390/mramor_monet_kuchyn_5d7d1f260a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623390/mramor_monet_kuchyn_5d7d1f260a.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623390/mramor_monet_kuchyn_5d7d1f260a.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-21",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599695/quartzite_belvedere_kuchyn4_9836818316.jpg",
+      "stockSlug": "belvedere",
+      "stockName": "Belvedere"
+    },
+    {
+      "id": "kuchyne-22",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599417/quartzite_montblanc_kuchyn2_38b204e790.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599417/quartzite_montblanc_kuchyn2_38b204e790.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599417/quartzite_montblanc_kuchyn2_38b204e790.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-23",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599417/quartzite_montblanc_kuchyn1_292e3a5146.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599417/quartzite_montblanc_kuchyn1_292e3a5146.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599417/quartzite_montblanc_kuchyn1_292e3a5146.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-24",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599417/quartzite_montblanc_kuchyn3_e804f694d2.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599417/quartzite_montblanc_kuchyn3_e804f694d2.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599417/quartzite_montblanc_kuchyn3_e804f694d2.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-25",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760599416/quartzite_montblanc_kuchyn4_08a9c8c0be.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760599416/quartzite_montblanc_kuchyn4_08a9c8c0be.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760599416/quartzite_montblanc_kuchyn4_08a9c8c0be.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-26",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn2_d9e1a82d87.jpg",
+      "stockSlug": "viscont-white",
+      "stockName": "Viscont White"
+    },
+    {
+      "id": "kuchyne-27",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn3_6b22b8959d.jpg",
+      "stockSlug": "viscont-white",
+      "stockName": "Viscont White"
+    },
+    {
+      "id": "kuchyne-28",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760598737/zula_viscont_white_kuchyn1_ef06dd9e0f.jpg",
+      "stockSlug": "viscont-white",
+      "stockName": "Viscont White"
+    },
+    {
+      "id": "kuchyne-29",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760597957/zula_blue_pearl_kuchyn1_1f3fd76555.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760597957/zula_blue_pearl_kuchyn1_1f3fd76555.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760597957/zula_blue_pearl_kuchyn1_1f3fd76555.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-30",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760597957/zula_blue_pearl_kuchyn2_1199aa87d7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760597957/zula_blue_pearl_kuchyn2_1199aa87d7.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760597957/zula_blue_pearl_kuchyn2_1199aa87d7.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-31",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760597800/zula_brown_antique_kuchyn_697300b55c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760597800/zula_brown_antique_kuchyn_697300b55c.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760597800/zula_brown_antique_kuchyn_697300b55c.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-32",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760597800/zula_brown_antique_kuchyn2_d3586121b0.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760597800/zula_brown_antique_kuchyn2_d3586121b0.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760597800/zula_brown_antique_kuchyn2_d3586121b0.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-33",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760597272/zula_black_fusion_kuchyn_7ab21ab4a8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760597272/zula_black_fusion_kuchyn_7ab21ab4a8.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760597272/zula_black_fusion_kuchyn_7ab21ab4a8.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-34",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760596360/zula_nero_zimbabwe_kuchyn_3f0f696989.jpg",
+      "stockSlug": "nero-assoluto-zimbabwe",
+      "stockName": "Nero Assoluto Zimbabwe"
+    },
+    {
+      "id": "kuchyne-35",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760080366/quartzite_green_army_kuchyn2_e9711d352a.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080366/quartzite_green_army_kuchyn2_e9711d352a.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760080366/quartzite_green_army_kuchyn2_e9711d352a.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-36",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760080345/quartzite_green_army_kuchyn_3457222a68.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080345/quartzite_green_army_kuchyn_3457222a68.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760080345/quartzite_green_army_kuchyn_3457222a68.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-37",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760077513/mramor_monet_kuchyn_68fcbaa6ac.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760077513/mramor_monet_kuchyn_68fcbaa6ac.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760077513/mramor_monet_kuchyn_68fcbaa6ac.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-38",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760020435/quartzite_super_white_kuchyn_15f7bb14bc.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760020435/quartzite_super_white_kuchyn_15f7bb14bc.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760020435/quartzite_super_white_kuchyn_15f7bb14bc.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-39",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760020431/quartzite_super_white_kuchyn2_b4dee320cc.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760020431/quartzite_super_white_kuchyn2_b4dee320cc.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760020431/quartzite_super_white_kuchyn2_b4dee320cc.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-40",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760020432/quartzite_super_white_kuchyn3_ca176687a3.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760020432/quartzite_super_white_kuchyn3_ca176687a3.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760020432/quartzite_super_white_kuchyn3_ca176687a3.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-41",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760019996/quartzite_palomino_kuchyn_7e655378da.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019996/quartzite_palomino_kuchyn_7e655378da.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760019996/quartzite_palomino_kuchyn_7e655378da.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-42",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760019996/quartzite_palomino_kuchyn2_5912bd69f7.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019996/quartzite_palomino_kuchyn2_5912bd69f7.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760019996/quartzite_palomino_kuchyn2_5912bd69f7.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-43",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760019273/quartzite_belvedere_white_kuchyn_ab4c903867.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760019273/quartzite_belvedere_white_kuchyn_ab4c903867.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760019273/quartzite_belvedere_white_kuchyn_ab4c903867.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-44",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760017547/quartzite_taj_mahal_kuchyn2_89808445eb.jpg",
+      "stockSlug": "taj-mahal",
+      "stockName": "Taj Mahal"
+    },
+    {
+      "id": "kuchyne-45",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760017546/quartzite_montblanc_kuchyn_a09f2c2e67.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760017546/quartzite_montblanc_kuchyn_a09f2c2e67.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760017546/quartzite_montblanc_kuchyn_a09f2c2e67.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-46",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016998/quartzite_belvedere_kuchyn3_ede251ca39.png",
+      "stockSlug": "belvedere",
+      "stockName": "Belvedere"
+    },
+    {
+      "id": "kuchyne-47",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016822/quartzite_belvedere_kuchyn_91942bca7e.png",
+      "stockSlug": "belvedere",
+      "stockName": "Belvedere"
+    },
+    {
+      "id": "kuchyne-48",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760016591/quartzite_belvedere_white_kuchyn2_ffe2ea8604.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016591/quartzite_belvedere_white_kuchyn2_ffe2ea8604.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016591/quartzite_belvedere_white_kuchyn2_ffe2ea8604.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "kuchyne-49",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760016587/quartzite_belvedere_kuchyn2_c7d5965173.png",
+      "stockSlug": "belvedere",
+      "stockName": "Belvedere"
+    },
+    {
+      "id": "kuchyne-50",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760010985/zula_zambezia_kuchyn_da3ee214ab.jpg",
+      "stockSlug": "zambezia-white",
+      "stockName": "Zambezia White"
+    },
+    {
+      "id": "kuchyne-51",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760010985/zula_zambezia_kuchyn2_15d9a8ad01.jpg",
+      "stockSlug": "zambezia-white",
+      "stockName": "Zambezia White"
+    },
+    {
+      "id": "kuchyne-52",
+      "categoryKey": "kuchyne",
+      "categoryLabel": "Kuchyně",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1764764565/kuchyn_nero_marquina_2ba206a797.jpg",
+      "stockSlug": "nero-marquina",
+      "stockName": "Nero Marquina"
+    },
+    {
+      "id": "koupelny-53",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1761300629/keramika_doret_koupelna_b2fe1da73a.png",
+      "stockSlug": "doret",
+      "stockName": "Doret"
+    },
+    {
+      "id": "koupelny-54",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761297664/keramika_cosmopolitan_koupelna_7a5ab3ebc5.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761297664/keramika_cosmopolitan_koupelna_7a5ab3ebc5.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761297664/keramika_cosmopolitan_koupelna_7a5ab3ebc5.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-55",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761294092/keramika_calacatta_oro_koupelna_6e90364483.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294092/keramika_calacatta_oro_koupelna_6e90364483.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761294092/keramika_calacatta_oro_koupelna_6e90364483.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-56",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760696995/zula_nero_zimbabwe_koupelna_f20be1e0de.jpg",
+      "stockSlug": "nero-assoluto-zimbabwe",
+      "stockName": "Nero Assoluto Zimbabwe"
+    },
+    {
+      "id": "koupelny-57",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761293026/keramika_blanche_koupelna_9dc782792e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293026/keramika_blanche_koupelna_9dc782792e.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761293026/keramika_blanche_koupelna_9dc782792e.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-58",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299989/keramika_crystal_white_koupelna_b43379931d.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299989/keramika_crystal_white_koupelna_b43379931d.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299989/keramika_crystal_white_koupelna_b43379931d.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-59",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761304018/keramika_suger_black_koupelna_5fd67520bb.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761304018/keramika_suger_black_koupelna_5fd67520bb.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761304018/keramika_suger_black_koupelna_5fd67520bb.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-60",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303546/keramika_statuario_extra_koupelna_8d0c068b9d.jpg",
+      "stockSlug": "statuario-extra",
+      "stockName": "Statuario Extra"
+    },
+    {
+      "id": "koupelny-61",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303188/keramika_statuario_koupelna_1c8a06f4a5.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303188/keramika_statuario_koupelna_1c8a06f4a5.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303188/keramika_statuario_koupelna_1c8a06f4a5.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-62",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301066/keramika_glacier_koupelna_bcd2bccb85.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301066/keramika_glacier_koupelna_bcd2bccb85.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301066/keramika_glacier_koupelna_bcd2bccb85.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "koupelny-63",
+      "categoryKey": "koupelny",
+      "categoryLabel": "Koupelny",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760080370/quartzite_green_army_koupelna_944fb22e77.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760080370/quartzite_green_army_koupelna_944fb22e77.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760080370/quartzite_green_army_koupelna_944fb22e77.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-64",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760700308/travertino_classico_schodiste_e7156b05c2.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "interiery-65",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761304019/keramika_suger_black_podlaha_7ebae3e12b.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761304019/keramika_suger_black_podlaha_7ebae3e12b.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761304019/keramika_suger_black_podlaha_7ebae3e12b.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-66",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303549/keramika_statuario_extra_chodba_f04fc86f82.png",
+      "stockSlug": "statuario-extra",
+      "stockName": "Statuario Extra"
+    },
+    {
+      "id": "interiery-67",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303549/keramika_statuario_extra_recepce_994752264b.png",
+      "stockSlug": "statuario-extra",
+      "stockName": "Statuario Extra"
+    },
+    {
+      "id": "interiery-68",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303183/keramika_statuario_podlaha_761bec2cf3.webp",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303183/keramika_statuario_podlaha_761bec2cf3.webp",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303183/keramika_statuario_podlaha_761bec2cf3.webp",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-69",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302565/keramika_planet_moon_obyvak_f9a1ad2528.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302565/keramika_planet_moon_obyvak_f9a1ad2528.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302565/keramika_planet_moon_obyvak_f9a1ad2528.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-70",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302563/keramika_planet_moon_krb_05a0e52240.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302563/keramika_planet_moon_krb_05a0e52240.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302563/keramika_planet_moon_krb_05a0e52240.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-71",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302224/keramika_pietra_grey_pokoj_4f18f629a1.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302224/keramika_pietra_grey_pokoj_4f18f629a1.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302224/keramika_pietra_grey_pokoj_4f18f629a1.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-72",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302224/keramika_pietra_grey_obklad_aa2d6e5a45.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302224/keramika_pietra_grey_obklad_aa2d6e5a45.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302224/keramika_pietra_grey_obklad_aa2d6e5a45.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-73",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761302223/keramika_pietra_grey_loznice_fd53bc9490.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761302223/keramika_pietra_grey_loznice_fd53bc9490.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761302223/keramika_pietra_grey_loznice_fd53bc9490.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-74",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301884/keramika_paonazzo_obyvak_1806f4d68b.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301884/keramika_paonazzo_obyvak_1806f4d68b.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301884/keramika_paonazzo_obyvak_1806f4d68b.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-75",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301884/keramika_paonazzo_obklad_3bdc0845f7.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301884/keramika_paonazzo_obklad_3bdc0845f7.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301884/keramika_paonazzo_obklad_3bdc0845f7.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-76",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301879/keramika_paonazzo_jidelna_be4abe7ea2.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301879/keramika_paonazzo_jidelna_be4abe7ea2.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301879/keramika_paonazzo_jidelna_be4abe7ea2.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-77",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301495/keramika_nero_marquinia_pokoj_49a196bc37.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301495/keramika_nero_marquinia_pokoj_49a196bc37.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301495/keramika_nero_marquinia_pokoj_49a196bc37.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-78",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301495/keramika_nero_marquinia_jidelna_63f6b5d4ff.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301495/keramika_nero_marquinia_jidelna_63f6b5d4ff.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301495/keramika_nero_marquinia_jidelna_63f6b5d4ff.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-79",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301067/keramika_glacier_pokoj_0cb429c491.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301067/keramika_glacier_pokoj_0cb429c491.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301067/keramika_glacier_pokoj_0cb429c491.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-80",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301067/keramika_glacier_kancelar_e22a775d64.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301067/keramika_glacier_kancelar_e22a775d64.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301067/keramika_glacier_kancelar_e22a775d64.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-81",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301060/keramika_glacier_jidelna_4f2d20f3a9.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301060/keramika_glacier_jidelna_4f2d20f3a9.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301060/keramika_glacier_jidelna_4f2d20f3a9.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-82",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761300626/keramika_doret_loznice_2df7d42872.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300626/keramika_doret_loznice_2df7d42872.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761300626/keramika_doret_loznice_2df7d42872.png",
+      "stockSlug": "doret",
+      "stockName": "Doret"
+    },
+    {
+      "id": "interiery-83",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761300622/keramika_doret_loznice2_cc2bcb1eb9.jpg",
+      "stockSlug": "doret",
+      "stockName": "Doret"
+    },
+    {
+      "id": "interiery-84",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299990/keramika_crystal_white_pokoj_5f47b33db1.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299990/keramika_crystal_white_pokoj_5f47b33db1.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299990/keramika_crystal_white_pokoj_5f47b33db1.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-85",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299990/keramika_crystal_white_obyvak_1a127de45c.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299990/keramika_crystal_white_obyvak_1a127de45c.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299990/keramika_crystal_white_obyvak_1a127de45c.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-86",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299987/keramika_crystal_white_jidelna_1c6422641e.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299987/keramika_crystal_white_jidelna_1c6422641e.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299987/keramika_crystal_white_jidelna_1c6422641e.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-87",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761299987/keramika_crystal_white_obyvak2_8f9151ae6d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761299987/keramika_crystal_white_obyvak2_8f9151ae6d.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761299987/keramika_crystal_white_obyvak2_8f9151ae6d.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-88",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761297666/keramika_cosmopolitan_kadernictvi_a291ea3425.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761297666/keramika_cosmopolitan_kadernictvi_a291ea3425.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761297666/keramika_cosmopolitan_kadernictvi_a291ea3425.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-89",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761297666/keramika_cosmopolitan_pokoj_2e3bce2c60.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761297666/keramika_cosmopolitan_pokoj_2e3bce2c60.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761297666/keramika_cosmopolitan_pokoj_2e3bce2c60.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-90",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761296848/keramika_calacatta_supreme_pokoj_0eca273e00.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761296848/keramika_calacatta_supreme_pokoj_0eca273e00.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761296848/keramika_calacatta_supreme_pokoj_0eca273e00.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-91",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761295687/keramika_calacatta_top_pokoj_e0bfb3b7f4.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295687/keramika_calacatta_top_pokoj_e0bfb3b7f4.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761295687/keramika_calacatta_top_pokoj_e0bfb3b7f4.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-92",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761295686/keramika_calacatta_top_obyvak3_cc1e14992a.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295686/keramika_calacatta_top_obyvak3_cc1e14992a.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761295686/keramika_calacatta_top_obyvak3_cc1e14992a.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-93",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761295685/keramika_calacatta_top_obyvak4_de64bde694.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295685/keramika_calacatta_top_obyvak4_de64bde694.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761295685/keramika_calacatta_top_obyvak4_de64bde694.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-94",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761295683/keramika_calacatta_top_obyvak2_46f60c1884.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295683/keramika_calacatta_top_obyvak2_46f60c1884.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761295683/keramika_calacatta_top_obyvak2_46f60c1884.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-95",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761295683/keramika_calacatta_top_obyvak_41fc0ca05c.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761295683/keramika_calacatta_top_obyvak_41fc0ca05c.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761295683/keramika_calacatta_top_obyvak_41fc0ca05c.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-96",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761294091/keramika_calacatta_oro_pokoj_25aec8f213.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294091/keramika_calacatta_oro_pokoj_25aec8f213.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761294091/keramika_calacatta_oro_pokoj_25aec8f213.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-97",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761294090/keramika_calacatta_oro_loznice_648c198740.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294090/keramika_calacatta_oro_loznice_648c198740.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761294090/keramika_calacatta_oro_loznice_648c198740.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-98",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761294089/keramika_calacatta_oro_kuchyne_923a154905.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294089/keramika_calacatta_oro_kuchyne_923a154905.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761294089/keramika_calacatta_oro_kuchyne_923a154905.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-99",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761293366/keramika_blanche_pokoj_51bfe07fe4.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293366/keramika_blanche_pokoj_51bfe07fe4.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761293366/keramika_blanche_pokoj_51bfe07fe4.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-100",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761293365/keramika_blanche_obyvak_d0d83b4fd2.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293365/keramika_blanche_obyvak_d0d83b4fd2.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761293365/keramika_blanche_obyvak_d0d83b4fd2.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-101",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761293026/keramika_blanche_jidelna_ecdd039f65.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761293026/keramika_blanche_jidelna_ecdd039f65.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761293026/keramika_blanche_jidelna_ecdd039f65.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-102",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760700242/travertino_classico_dlazba_57408fd222.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "interiery-103",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623505/mramor_forest_green_krb2_7d610fc4a0.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_forest_green_krb2_7d610fc4a0.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623505/mramor_forest_green_krb2_7d610fc4a0.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-104",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623505/mramor_forest_green_krb1_116880294b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623505/mramor_forest_green_krb1_116880294b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623505/mramor_forest_green_krb1_116880294b.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-105",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623412/mramor_spider_green_dlazba1_6a54f06527.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623412/mramor_spider_green_dlazba1_6a54f06527.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623412/mramor_spider_green_dlazba1_6a54f06527.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-106",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623413/mramor_spider_green_dlazba2_d122524bb3.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623413/mramor_spider_green_dlazba2_d122524bb3.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623413/mramor_spider_green_dlazba2_d122524bb3.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-107",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760623404/mramor_calacatta_viola_krb_4b460d70e5.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760623404/mramor_calacatta_viola_krb_4b460d70e5.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760623404/mramor_calacatta_viola_krb_4b460d70e5.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "interiery-108",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760596776/mramor_daino_reale_krb_9920268f70.jpg",
+      "stockSlug": "daino-reale",
+      "stockName": "Daino Reale"
+    },
+    {
+      "id": "interiery-109",
+      "categoryKey": "interiery",
+      "categoryLabel": "Interiéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760605477/zula_magma_gold_recepce_948653c59b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760605477/zula_magma_gold_recepce_948653c59b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760605477/zula_magma_gold_recepce_948653c59b.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "fasady-a-obklady-110",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760444189/zula_via_lattea_fasada3_16fd9ae7b8.jpg",
+      "stockSlug": "via-lattea",
+      "stockName": "Via Lattea"
+    },
+    {
+      "id": "fasady-a-obklady-111",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760518814/travertino_classico_fasada2_c031446199.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-112",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760518813/travertino_classico_fasada1_ae3a9bf89f.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-113",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444191/zula_via_lattea_fasada2_d467f9dbc6.jpg",
+      "stockSlug": "via-lattea",
+      "stockName": "Via Lattea"
+    },
+    {
+      "id": "fasady-a-obklady-114",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444184/zula_via_lattea_fasada1_c209234821.jpg",
+      "stockSlug": "via-lattea",
+      "stockName": "Via Lattea"
+    },
+    {
+      "id": "fasady-a-obklady-115",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443491/travertino_classico_fasada_6934d2211a.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-116",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760012098/zula_nero_angola_fasada_d90961ad5a.jpg",
+      "stockSlug": "nero-angola",
+      "stockName": "Nero Angola"
+    },
+    {
+      "id": "fasady-a-obklady-117",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760012094/zula_nero_angola_fasada2_32b57868c8.jpg",
+      "stockSlug": "nero-angola",
+      "stockName": "Nero Angola"
+    },
+    {
+      "id": "fasady-a-obklady-118",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444779/travertino_classico_obklad2_74da49b647.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-119",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760076275/zula_black_fusion_obklad_jpeg_7bcb9e82e0.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760076275/zula_black_fusion_obklad_jpeg_7bcb9e82e0.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760076275/zula_black_fusion_obklad_jpeg_7bcb9e82e0.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "fasady-a-obklady-120",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443773/travertino_classico_obklad_recepce_d4db2cb8bd.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-121",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760444779/travertino_classico_obklad1_a5b113daa9.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "fasady-a-obklady-122",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761304020/keramika_suger_black_obklad_ca0e48aee4.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761304020/keramika_suger_black_obklad_ca0e48aee4.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761304020/keramika_suger_black_obklad_ca0e48aee4.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "fasady-a-obklady-123",
+      "categoryKey": "fasady-a-obklady",
+      "categoryLabel": "Fasády a obklady",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760018995/quartzite_belvedere_white_obklad_e0c374aace.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760018995/quartzite_belvedere_white_obklad_e0c374aace.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760018995/quartzite_belvedere_white_obklad_e0c374aace.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "exteriery-124",
+      "categoryKey": "exteriery",
+      "categoryLabel": "Exteriéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761908784/kasna_efa3e79b18.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761908784/kasna_efa3e79b18.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1761908784/kasna_efa3e79b18.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "exteriery-125",
+      "categoryKey": "exteriery",
+      "categoryLabel": "Exteriéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1764761667/kasna2_a2ffb11b52.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1764761667/kasna2_a2ffb11b52.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1764761667/kasna2_a2ffb11b52.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "exteriery-126",
+      "categoryKey": "exteriery",
+      "categoryLabel": "Exteriéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1791382493/schody_cinza_ariz2_6d409f0052.jpg",
+      "stockSlug": "cinza-ariz",
+      "stockName": "Cinza Ariz"
+    },
+    {
+      "id": "exteriery-127",
+      "categoryKey": "exteriery",
+      "categoryLabel": "Exteriéry",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1791382482/schody_cinza_ariz1_bf2f54453a.jpg",
+      "stockSlug": "cinza-ariz",
+      "stockName": "Cinza Ariz"
+    },
+    {
+      "id": "hrbitovni-architektura-128",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760445243/kolumbarium1_610ef04dcc.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760445243/kolumbarium1_610ef04dcc.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760445243/kolumbarium1_610ef04dcc.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "hrbitovni-architektura-129",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760445243/kolumbarium3_b3857c6fb3.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760445243/kolumbarium3_b3857c6fb3.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760445243/kolumbarium3_b3857c6fb3.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "hrbitovni-architektura-130",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760445242/kolumbarium2_577a995e01.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760445242/kolumbarium2_577a995e01.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760445242/kolumbarium2_577a995e01.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "hrbitovni-architektura-131",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1762182374/urnak_vizag_ead208f51f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182374/urnak_vizag_ead208f51f.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182374/urnak_vizag_ead208f51f.jpg",
+      "stockSlug": "vizag-blue",
+      "stockName": "Vizag Blue"
+    },
+    {
+      "id": "hrbitovni-architektura-132",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1762182323/hrob_impala_fa57b34b88.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182323/hrob_impala_fa57b34b88.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182323/hrob_impala_fa57b34b88.jpg",
+      "stockSlug": "nero-impala",
+      "stockName": "Nero Impala"
+    },
+    {
+      "id": "hrbitovni-architektura-133",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1762182322/hrob_himalaya_premium_93202f982d.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182322/hrob_himalaya_premium_93202f982d.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182322/hrob_himalaya_premium_93202f982d.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "hrbitovni-architektura-134",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1762182321/hrob_aurora_92f61c994b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182321/hrob_aurora_92f61c994b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182321/hrob_aurora_92f61c994b.jpg",
+      "stockSlug": "aurora-india",
+      "stockName": "Aurora India"
+    },
+    {
+      "id": "hrbitovni-architektura-135",
+      "categoryKey": "hrbitovni-architektura",
+      "categoryLabel": "Hřbitovní architektura",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1762182320/hrob_vizag_819b66a99b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762182320/hrob_vizag_819b66a99b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1762182320/hrob_vizag_819b66a99b.jpg",
+      "stockSlug": "vizag-blue",
+      "stockName": "Vizag Blue"
+    },
+    {
+      "id": "bazeny-a-wellness-136",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760016193/quartzite_avocatus_bazen_d228ad9ac2.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760016193/quartzite_avocatus_bazen_d228ad9ac2.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_800/v1760016193/quartzite_avocatus_bazen_d228ad9ac2.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-137",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761294089/keramika_calacatta_oro_bazen_9c07abc6fd.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761294089/keramika_calacatta_oro_bazen_9c07abc6fd.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761294089/keramika_calacatta_oro_bazen_9c07abc6fd.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-138",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761301885/keramika_paonazzo_bazen_26ffd64527.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761301885/keramika_paonazzo_bazen_26ffd64527.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761301885/keramika_paonazzo_bazen_26ffd64527.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-139",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1761303188/keramika_statuario_bazen_9881307788.png",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1761303188/keramika_statuario_bazen_9881307788.png",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1761303188/keramika_statuario_bazen_9881307788.png",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-140",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760517205/zula_bianco_cristal_bazen2_1b10f6d243.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760517205/zula_bianco_cristal_bazen2_1b10f6d243.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760517205/zula_bianco_cristal_bazen2_1b10f6d243.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-141",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760517205/zula_bianco_cristal_bazen1_3ad8d4ea8f.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760517205/zula_bianco_cristal_bazen1_3ad8d4ea8f.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760517205/zula_bianco_cristal_bazen1_3ad8d4ea8f.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-142",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760513003/zula_brown_antique_bazen2_62eacee1f1.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760513003/zula_brown_antique_bazen2_62eacee1f1.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760513003/zula_brown_antique_bazen2_62eacee1f1.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-143",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760513003/zula_brown_antique_bazen1_c92d141d2b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760513003/zula_brown_antique_bazen1_c92d141d2b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760513003/zula_brown_antique_bazen1_c92d141d2b.jpg",
+      "stockSlug": null,
+      "stockName": null
+    },
+    {
+      "id": "bazeny-a-wellness-144",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443434/travertino_classico_bazen1_522567d289.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "bazeny-a-wellness-145",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443272/travertino_classico_wellness4_1a0c088253.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "bazeny-a-wellness-146",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness3_a5d4ce8c14.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "bazeny-a-wellness-147",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness1_7401d48ae1.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "bazeny-a-wellness-148",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443271/travertino_classico_wellness2_b3d59e0b2b.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    },
+    {
+      "id": "bazeny-a-wellness-149",
+      "categoryKey": "bazeny-a-wellness",
+      "categoryLabel": "Bazény a Wellness",
+      "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_760,h_540,c_fill,g_center/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+      "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+      "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_600,c_limit/v1760443273/travertino_classico_wellness5_4f4aa62605.jpg",
+      "stockSlug": "travertino-classico",
+      "stockName": "Travertino Classico"
+    }
+  ]
+}

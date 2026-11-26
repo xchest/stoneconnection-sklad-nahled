@@ -25,12 +25,12 @@ jobs:
 
       - name: Commit updated data if changed
         run: |
-          if git diff --quiet data/sklad.json data/katalog.json; then
-            echo "No changes in data/sklad.json or data/katalog.json"
+          if git diff --quiet data/sklad.json data/katalog.json data/realizace.json; then
+            echo "No changes in data files"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sklad.json data/katalog.json
-          git commit -m "chore: sync sklad and katalog data"
+          git add data/sklad.json data/katalog.json data/realizace.json
+          git commit -m "chore: sync sklad, katalog and realizace data"
           git push

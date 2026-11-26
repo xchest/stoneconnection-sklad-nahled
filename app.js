@@ -524,17 +524,6 @@ function buildBlockSpecText(materialName, block) {
   return lines.join('\n');
 }
 
-function buildSceneHtml(scene, materialName, lbIndex) {
-  return `
-    <button type="button" class="scene-card" data-lb-idx="${lbIndex}">
-      <div class="scene-stage">
-        <img class="scene-base" src="${escapeHtml(scene.base)}" alt="${escapeHtml(scene.label)} — ${escapeHtml(materialName)}" loading="lazy">
-        <canvas class="scene-canvas" data-scene-key="${escapeHtml(scene.key)}" width="640" height="480" aria-hidden="true"></canvas>
-      </div>
-      <div class="scene-label">${escapeHtml(scene.label)} <span>Zvětšit ⤢</span></div>
-    </button>`;
-}
-
 function openMaterialModal(slug, focusBlock = null) {
   const mat = state.data?.materials.find((m) => m.slug === slug);
   if (!mat) return;
@@ -552,26 +541,36 @@ function openMaterialModal(slug, focusBlock = null) {
     caption: img.label,
   }));
 
-  const scenes = window.SC_getScenesForMaterial ? window.SC_getScenesForMaterial(mat) : [];
-  const hasSceneTex = Boolean(mat.sceneTexture?.url || mat.sceneTextureUrl);
-  const sceneStartIdx = lbItems.length;
-  if (hasSceneTex) {
-    for (const sc of scenes) {
-      lbItems.push({
-        kind: 'scene',
-        scene: sc,
-        mat,
-        caption: `${mat.name} — ${sc.label}`,
-      });
-    }
-  }
+  const realImages = Array.isArray(mat.realizationImages) ? mat.realizationImages : [];
+  const demoImages = Array.isArray(mat.demoVisualizations) ? mat.demoVisualizations : [];
+  const searchUrl = window.SC_buildRealizationSearchUrl ? window.SC_buildRealizationSearchUrl(mat) : '#';
 
   const realStartIdx = lbItems.length;
-  for (const rImg of mat.realizationImages || []) {
+  for (const rImg of realImages) {
     lbItems.push({
       kind: 'photo',
       url: rImg.fullUrl,
-      caption: `${mat.name} — Reálná realizace`,
+      caption: rImg.label || `${mat.name} — Reálná realizace`,
+    });
+  }
+
+  const demoStartIdx = lbItems.length;
+  for (const dImg of demoImages) {
+    lbItems.push({
+      kind: 'photo',
+      url: dImg.url,
+      caption: dImg.label || `${mat.name} — Architektonická ukázka`,
+    });
+  }
+
+  let detailGrainLbIdx = -1;
+  const grainTexUrl = mat.sceneTexture?.url || mat.sceneTextureUrl || null;
+  if (!realImages.length && !demoImages.length && grainTexUrl) {
+    detailGrainLbIdx = lbItems.length;
+    lbItems.push({
+      kind: 'photo',
+      url: grainTexUrl,
+      caption: `${mat.name} — Detail struktury zrna ze skladové desky`,
     });
   }
 
@@ -602,30 +601,6 @@ function openMaterialModal(slug, focusBlock = null) {
       </div>`
     : `<div class="gallery-main"><div class="card-placeholder"><span>Bez fotografie bloku</span></div></div>`;
 
-  const realizationsHtml =
-    mat.realizationImages && mat.realizationImages.length
-      ? `<div class="realizations-strip">
-          ${mat.realizationImages
-            .map(
-              (rImg, idx) => `
-            <button type="button" class="realization-card" data-lb-idx="${realStartIdx + idx}">
-              <img src="${escapeHtml(rImg.cardUrl)}" alt="${escapeHtml(mat.name)} — realizace" loading="lazy">
-              <div class="scene-label">Reálná realizace Stone Connection <span>Zvětšit ⤢</span></div>
-            </button>`
-            )
-            .join('')}
-        </div>`
-      : '';
-
-  const finish = mat.surfaceFinish || mat.sceneTexture?.finish || 'polished';
-  const sceneHeading =
-    finish === 'antislip'
-      ? 'Ukázka použití — venkovní dlažby, schodiště a exteriér'
-      : mat.usageSegment === 'monument_exterior'
-        ? 'Ukázka použití — pomníky, haly a architektonické obklady'
-        : mat.usageSegment === 'versatile'
-          ? 'Ukázka použití v exteriéru i interiéru'
-          : 'Nechte se inspirovat v interiéru';
   const formatParts = [];
   if (mat.maxLengthCm && mat.maxHeightCm) {
     formatParts.push(`Skladem desky až ${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm`);
@@ -633,24 +608,93 @@ function openMaterialModal(slug, focusBlock = null) {
   if (mat.thicknesses?.length) {
     formatParts.push(`tl. ${mat.thicknesses.join(', ')} cm`);
   }
-  if (mat.maxHeightCm > 0 && mat.maxHeightCm <= 115) {
-    formatParts.push('Pásový formát — obklad skládaný se spárou');
-  }
-  const sceneSub = formatParts.length ? formatParts.join(' · ') : 'Orientační náhled kresby a měřítka kamene v prostoru';
+  const formatLine = formatParts.length ? formatParts.join(' · ') : '';
 
-  const interiorSectionHtml = hasSceneTex
-    ? `
+  let showcaseHtml = '';
+  if (realImages.length) {
+    const gridClass = realImages.length === 1 ? 'realizations-grid cols-1' : realImages.length === 2 ? 'realizations-grid cols-2' : 'realizations-grid';
+    showcaseHtml += `
       <section class="section-block">
         <div class="section-head">
-          <h3 class="section-title">${escapeHtml(sceneHeading)}</h3>
-          <span class="section-sub">${escapeHtml(sceneSub)}</span>
+          <h3 class="section-title">Reálné realizace Stone Connection (${realImages.length})</h3>
+          <span class="section-sub">Skutečné dokončené zakázky · <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Další realizace v praxi ↗</a></span>
         </div>
-        ${realizationsHtml}
-        <div class="scenes-grid">
-          ${scenes.map((sc, idx) => buildSceneHtml(sc, mat.name, sceneStartIdx + idx)).join('')}
+        <div class="${gridClass}">
+          ${realImages
+            .map(
+              (rImg, idx) => `
+            <button type="button" class="viz-card" data-lb-idx="${realStartIdx + idx}">
+              <div class="viz-media">
+                <img src="${escapeHtml(rImg.cardUrl)}" alt="${escapeHtml(rImg.label || mat.name)}" loading="lazy">
+              </div>
+              <div class="scene-label">${escapeHtml(rImg.category || 'Reálná realizace')} <span>Zvětšit ⤢</span></div>
+            </button>`
+            )
+            .join('')}
         </div>
-      </section>`
-    : '';
+      </section>`;
+  }
+
+  if (demoImages.length) {
+    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : 'realizations-grid cols-2';
+    showcaseHtml += `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Architektonická ukázka v prostoru</h3>
+          <span class="section-sub">Fotorealistická vizualizace · <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Vyhledat reálné realizace „${escapeHtml(mat.name)}“ ↗</a></span>
+        </div>
+        <div class="${gridClass}">
+          ${demoImages
+            .map(
+              (dImg, idx) => `
+            <button type="button" class="viz-card" data-lb-idx="${demoStartIdx + idx}">
+              <div class="viz-media">
+                <img src="${escapeHtml(dImg.url)}" alt="${escapeHtml(dImg.label)}" loading="lazy">
+              </div>
+              <div class="scene-label">${escapeHtml(dImg.label)} <span>Zvětšit ⤢</span></div>
+            </button>`
+            )
+            .join('')}
+        </div>
+      </section>`;
+  }
+
+  if (!realImages.length && !demoImages.length) {
+    showcaseHtml = `
+      <section class="section-block">
+        <div class="section-head">
+          <h3 class="section-title">Detail struktury zrna a realizace v praxi</h3>
+          <span class="section-sub">${escapeHtml(formatLine || 'Autentický výřez skladové desky')}</span>
+        </div>
+        <div class="detail-grain-band${grainTexUrl ? '' : ' no-grain'}">
+          ${
+            grainTexUrl
+              ? `<button type="button" class="viz-card" data-lb-idx="${detailGrainLbIdx}">
+                  <div class="viz-media">
+                    <img src="${escapeHtml(grainTexUrl)}" alt="${escapeHtml(mat.name)} — detail zrna" loading="lazy">
+                  </div>
+                  <div class="scene-label">Detail ze skladové desky <span>Zvětšit ⤢</span></div>
+                </button>`
+              : ''
+          }
+          <div class="material-spec-panel">
+            <p class="spec-panel-lead">Pro tento kámen upřednostňujeme reálné fotografie před syntetickými montážemi — níže si můžete otevřít přímo referenční zakázky z praxe.</p>
+            <div class="spec-panel-facts">
+              ${mat.maxLengthCm && mat.maxHeightCm ? `<div><strong>Formát desek:</strong> až ${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm</div>` : ''}
+              ${mat.thicknesses?.length ? `<div><strong>Dostupné tloušťky:</strong> ${escapeHtml(mat.thicknesses.map((t) => `${t} cm`).join(', '))}</div>` : ''}
+              ${mat.surfaces?.length ? `<div><strong>Povrchová úprava:</strong> ${escapeHtml(mat.surfaces.join(', '))}</div>` : ''}
+            </div>
+            <div>
+              <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                Vyhledat reálné realizace „${escapeHtml(mat.name)}“ ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  const interiorSectionHtml = showcaseHtml;
 
   const blocksHtml = mat.blocks
     .map((b) => {
@@ -805,9 +849,6 @@ function openMaterialModal(slug, focusBlock = null) {
   el.modal.hidden = false;
   document.body.style.overflow = 'hidden';
   el.modalBody.scrollTop = 0;
-  if (window.SC_renderAllSceneCanvases) {
-    window.SC_renderAllSceneCanvases(el.modalBody, mat);
-  }
 
   if (window.location.hash !== `#m=${slug}`) {
     history.replaceState(null, '', `#m=${slug}`);
@@ -869,23 +910,9 @@ function openLightbox(index) {
   const item = state.lightboxItems[state.lightboxIndex];
   const countText = `${item.caption} (${state.lightboxIndex + 1} / ${state.lightboxItems.length})`;
 
-  if (item.kind === 'scene') {
-    el.lbStage.innerHTML = `
-      <div class="lb-scene-wrap">
-        <div class="scene-stage">
-          <img class="scene-base" src="${escapeHtml(item.scene.base)}" alt="${escapeHtml(item.caption)}">
-          <canvas class="scene-canvas" data-scene-key="${escapeHtml(item.scene.key)}" width="960" height="720" aria-hidden="true"></canvas>
-        </div>
-      </div>
-      <div class="lb-caption">${escapeHtml(countText)}</div>`;
-    if (window.SC_renderAllSceneCanvases) {
-      window.SC_renderAllSceneCanvases(el.lbStage, item.mat);
-    }
-  } else {
-    el.lbStage.innerHTML = `
-      <img class="lb-photo" src="${escapeHtml(item.url)}" alt="${escapeHtml(item.caption)}">
-      <div class="lb-caption">${escapeHtml(countText)}</div>`;
-  }
+  el.lbStage.innerHTML = `
+    <img class="lb-photo" src="${escapeHtml(item.url)}" alt="${escapeHtml(item.caption)}">
+    <div class="lb-caption">${escapeHtml(countText)}</div>`;
 
   el.lbPrev.hidden = state.lightboxItems.length <= 1;
   el.lbNext.hidden = state.lightboxItems.length <= 1;

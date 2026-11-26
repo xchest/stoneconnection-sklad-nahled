@@ -7,11 +7,51 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'sklad.json');
 const KATALOG_OUT_PATH = path.join(ROOT_DIR, 'data', 'katalog.json');
+const REALIZATIONS_OUT_PATH = path.join(ROOT_DIR, 'data', 'realizace.json');
 const NOTES_PATH = path.join(ROOT_DIR, 'data', 'material_notes.json');
 
 const STOCK_URL = 'https://www.stoneconnection.cz/online-sklad/';
 const CATALOG_URL = 'https://www.stoneconnection.cz/katalog/';
 const REALIZATIONS_URL = 'https://www.stoneconnection.cz/realizace/';
+
+const REALIZATION_CATEGORIES = [
+  ['kuchyne', 'Kuchyně', 'https://www.stoneconnection.cz/realizace/kuchyne'],
+  ['koupelny', 'Koupelny', 'https://www.stoneconnection.cz/realizace/koupelny'],
+  ['interiery', 'Interiéry', 'https://www.stoneconnection.cz/realizace/interiery'],
+  ['fasady-a-obklady', 'Fasády a obklady', 'https://www.stoneconnection.cz/realizace/fasady-a-obklady'],
+  ['exteriery', 'Exteriéry', 'https://www.stoneconnection.cz/realizace/exteriery'],
+  ['hrbitovni-architektura', 'Hřbitovní architektura', 'https://www.stoneconnection.cz/realizace/hrbitovni-architektura'],
+  ['bazeny-a-wellness', 'Bazény a Wellness', 'https://www.stoneconnection.cz/realizace/bazeny-a-wellness'],
+];
+
+const REALIZATION_ALIASES = new Map([
+  ['aurora-india', ['hrob_aurora', 'aurora_india']],
+  ['vizag-blue', ['vizag']],
+  ['nero-impala', ['nero_impala', 'hrob_impala']],
+  ['nero-assoluto-zimbabwe', ['nero_zimbabwe', 'nero_assoluto']],
+  ['zambezia-white', ['zambezia']],
+  ['belvedere', ['belvedere_kuchyn', 'belvedere_obklad']],
+  ['absolut-black-w', ['absolut_black']],
+  ['multicolour-red', ['multicolor_red', 'multicolour_red']],
+  ['yellow-river-vyska-70-cm', ['yellow_river']],
+  ['misty-brown-vyska-90-cm', ['misty_brown']],
+]);
+
+const FLAGSHIP_DEMO_RENDERS = new Map([
+  ['azul-platino', [
+    { url: 'assets/viz/azul-platino-hrob.jpg', label: 'Ukázka pomníku — Azul Platino (leštěná žula)', kind: 'demo-viz' },
+    { url: 'assets/viz/azul-platino-hala.jpg', label: 'Ukázka interiérové haly a schodiště — Azul Platino', kind: 'demo-viz' },
+  ]],
+  ['bianco-carrara', [
+    { url: 'assets/viz/bianco-carrara-koupelna.jpg', label: 'Ukázka koupelny — Bianco Carrara (velkoformát)', kind: 'demo-viz' },
+  ]],
+  ['absolut-black-w', [
+    { url: 'assets/viz/absolut-black-w-kuchyne.jpg', label: 'Ukázka kuchyňského ostrůvku — Absolut Black (matte/leather)', kind: 'demo-viz' },
+  ]],
+  ['imperial-red', [
+    { url: 'assets/viz/imperial-red-hrob.jpg', label: 'Ukázka pomníku — Imperial Red (leštěná žula)', kind: 'demo-viz' },
+  ]],
+]);
 
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -430,27 +470,66 @@ function buildFallbackComment(name, categoryLabel, origin, colorLabels, surfaces
   return `${categoryLabel}${originPart}${colorPart} s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady.${surfPart}`;
 }
 
-function extractRealizationMap(html, materialSlugs) {
-  const map = new Map();
-  if (!html) return map;
+function extractRealizationsData(categoryPages, materialsMeta) {
+  const byMaterialSlug = new Map();
+  const seenGlobal = new Set();
+  const galleryItems = [];
+  const categoryCounts = [];
 
-  const urls = [...new Set(html.match(/https:\/\/res\.cloudinary\.com\/diizxq7gf\/image\/upload\/[^"'\s)]+/g) || [])];
-  for (const rawUrl of urls) {
-    if (rawUrl.includes('favicon_')) continue;
-    const filename = (rawUrl.split('/').pop() || '').toLowerCase();
-    for (const slug of materialSlugs) {
-      const underscoreSlug = slug.replace(/-/g, '_');
-      if (filename.includes(`_${underscoreSlug}_`) || filename.startsWith(`${underscoreSlug}_`)) {
-        const list = map.get(slug) || [];
-        const normalizedBase = filename.replace(/\.[a-z0-9]+$/, '');
-        if (!list.some((item) => item.rawUrl.toLowerCase().includes(normalizedBase))) {
-          list.push(makeImageVariants(rawUrl, 'Reálná realizace Stone Connection', 'realization'));
-          map.set(slug, list);
+  for (const { key, label, html } of categoryPages) {
+    if (!html) {
+      categoryCounts.push({ key, label, count: 0 });
+      continue;
+    }
+    let catCount = 0;
+    const seenInCat = new Set();
+    const urls = html.match(/https:\/\/res\.cloudinary\.com\/diizxq7gf\/image\/upload\/[^"'\s)]+/g) || [];
+    for (const rawUrl of urls) {
+      const fn = (rawUrl.split('/').pop() || '').toLowerCase();
+      if (!fn || fn.includes('favicon_') || fn.includes('logo') || fn.includes('_detail')) continue;
+      const baseKey = fn.replace(/\.[a-z0-9]+$/, '');
+      if (seenInCat.has(baseKey)) continue;
+      seenInCat.add(baseKey);
+      catCount += 1;
+
+      let matchedMat = null;
+      for (const m of materialsMeta) {
+        if (m.slug === 'belvedere' && fn.includes('belvedere_white')) continue;
+        const patterns = REALIZATION_ALIASES.get(m.slug) || [m.slug.replace(/-/g, '_')];
+        if (patterns.some((p) => fn.includes(p))) {
+          matchedMat = m;
+          const list = byMaterialSlug.get(m.slug) || [];
+          if (!list.some((item) => item.rawUrl.toLowerCase().includes(baseKey))) {
+            const v = makeImageVariants(rawUrl, `${m.name} — Reálná realizace (${label})`, 'realization');
+            if (v) {
+              v.category = label;
+              v.categoryKey = key;
+              list.push(v);
+              byMaterialSlug.set(m.slug, list);
+            }
+          }
+          break;
         }
       }
+
+      if (!seenGlobal.has(baseKey)) {
+        seenGlobal.add(baseKey);
+        galleryItems.push({
+          id: `${key}-${galleryItems.length + 1}`,
+          categoryKey: key,
+          categoryLabel: label,
+          cardUrl: rewriteCloudinary(rawUrl, 'f_auto,q_80,w_760,h_540,c_fill,g_center'),
+          fullUrl: rewriteCloudinary(rawUrl, 'f_auto,q_auto,w_1400,c_limit'),
+          rawUrl,
+          stockSlug: matchedMat?.slug || null,
+          stockName: matchedMat?.name || null,
+        });
+      }
     }
+    categoryCounts.push({ key, label, count: catCount });
   }
-  return map;
+
+  return { byMaterialSlug, galleryItems, categoryCounts };
 }
 
 const COMPATIBLE_PRIMARY_COLORS = new Map([
@@ -586,11 +665,16 @@ async function main() {
     notesBySlug = JSON.parse(fs.readFileSync(NOTES_PATH, 'utf8'));
   }
 
-  const [stockHtml, catalogHtml, realizationsHtml] = await Promise.all([
+  const [stockHtml, catalogHtml, ...realCategoryHtmls] = await Promise.all([
     fetchHtml(STOCK_URL),
     fetchHtml(CATALOG_URL),
-    fetchHtml(REALIZATIONS_URL).catch(() => ''),
+    ...REALIZATION_CATEGORIES.map(([, , url]) => fetchHtml(url).catch(() => '')),
   ]);
+  const realizationPages = REALIZATION_CATEGORIES.map(([key, label], i) => ({
+    key,
+    label,
+    html: realCategoryHtmls[i] || '',
+  }));
 
   const tsMatch = stockHtml.match(/data-timestamp="([^"]+)"/);
   const sourceUpdatedAt = tsMatch ? tsMatch[1] : null;
@@ -765,7 +849,9 @@ async function main() {
     mat.blocks.push(block);
   }
 
-  const realizationMap = extractRealizationMap(realizationsHtml, [...materialsMap.keys()]);
+  const materialsMetaList = [...materialsMap.values()].map((m) => ({ slug: m.slug, name: m.name }));
+  const { byMaterialSlug: realizationMap, galleryItems: realizationGallery, categoryCounts: realizationCategories } =
+    extractRealizationsData(realizationPages, materialsMetaList);
 
   const materials = [...materialsMap.values()].map((mat) => {
     const galleryImages = [];
@@ -878,6 +964,7 @@ async function main() {
       sceneTexture,
       cardImageSource,
       realizationImages: realizationMap.get(mat.slug) || [],
+      demoVisualizations: FLAGSHIP_DEMO_RENDERS.get(mat.slug) || [],
       galleryImages,
       alternatives: [],
       blocks: mat.blocks.map((b) => ({
@@ -931,6 +1018,7 @@ async function main() {
       materialsWithoutPhoto: materials.filter((m) => !m.cardImage).length,
       materialsWithColors: materials.filter((m) => m.colors.length > 0).length,
       materialsWithRealizations: materials.filter((m) => m.realizationImages.length > 0).length,
+      totalRealizationPhotos: realizationGallery.length,
     },
     materials,
     blocks: normalizedBlocks.map((b) => ({
@@ -1017,6 +1105,8 @@ async function main() {
         fullUrl: imgs?.fullUrl || null,
         sceneUrl: catalogSceneTexture.url,
         sceneTexture: catalogSceneTexture,
+        realizationImages: stockMatch?.realizationImages || [],
+        demoVisualizations: FLAGSHIP_DEMO_RENDERS.get(stockMatch?.slug || slug) || [],
         inStockSlug: stockMatch ? stockMatch.slug : null,
         inStockBlocks: stockMatch ? stockMatch.blockCount : 0,
         inStockSlabs: stockMatch ? stockMatch.totalSlabs : 0,
@@ -1037,8 +1127,20 @@ async function main() {
 
   fs.writeFileSync(KATALOG_OUT_PATH, JSON.stringify(katalogPayload, null, 2) + '\n', 'utf8');
 
+  const realizacePayload = {
+    meta: {
+      sourceUrl: REALIZATIONS_URL,
+      syncedAt: payload.meta.syncedAt,
+      totalPhotos: realizationGallery.length,
+      categories: realizationCategories,
+    },
+    items: realizationGallery,
+  };
+  fs.writeFileSync(REALIZATIONS_OUT_PATH, JSON.stringify(realizacePayload, null, 2) + '\n', 'utf8');
+
   console.log('Synchronizace dokoncena:', JSON.stringify(payload.meta, null, 2));
   console.log('Katalog synchronizovan:', JSON.stringify(katalogPayload.meta, null, 2));
+  console.log('Realizace synchronizovany:', JSON.stringify(realizacePayload.meta, null, 2));
 }
 
 main().catch((err) => {

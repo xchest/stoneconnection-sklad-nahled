@@ -1,108 +1,21 @@
-window.SC_SCENES = {
-  kuchyne: { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png', shine: null },
-  krb: { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png', shine: null },
-  koupelna: { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png', shine: null },
-  hrob: { key: 'hrob', label: 'Pomník / jednohrob', base: 'assets/scenes/hrob_base.jpg', mask: 'assets/scenes/hrob_mask.png', shine: 'assets/scenes/hrob_shine.png' },
-  hala: { key: 'hala', label: 'Interiérová hala a schodiště', base: 'assets/scenes/hala_base.jpg', mask: 'assets/scenes/hala_mask.png', shine: 'assets/scenes/hala_shine.png' },
-  dlazba: { key: 'dlazba', label: 'Venkovní dlažba a terasa', base: 'assets/scenes/dlazba_base.jpg', mask: 'assets/scenes/dlazba_mask.png', shine: 'assets/scenes/dlazba_shine.png' },
-  schody: { key: 'schody', label: 'Venkovní schodiště a sokl', base: 'assets/scenes/schody_base.jpg', mask: 'assets/scenes/schody_mask.png', shine: 'assets/scenes/schody_shine.png' },
-};
-
-window.SC_getScenesForMaterial = function getScenesForMaterial(mat) {
-  const finish = mat?.surfaceFinish || mat?.sceneTexture?.finish || 'polished';
+window.SC_buildRealizationSearchUrl = function buildRealizationSearchUrl(mat) {
+  const name = (mat?.name || '').trim();
+  const catKey = mat?.categoryKey || '';
   const seg = mat?.usageSegment || 'interior';
-  const cat = mat?.categoryKey || '';
-  const isDelicateMarble = cat === 'mramor' || cat === 'vapenec' || cat === 'travertin' || cat === 'onyx';
-  if (finish === 'antislip') {
-    return [window.SC_SCENES.dlazba, window.SC_SCENES.schody, window.SC_SCENES.hrob];
-  }
-  if (seg === 'monument_exterior') {
-    return [window.SC_SCENES.hrob, window.SC_SCENES.hala, window.SC_SCENES.krb];
-  }
-  if (seg === 'versatile') {
-    return finish === 'matte'
-      ? [window.SC_SCENES.kuchyne, window.SC_SCENES.hala, window.SC_SCENES.hrob]
-      : [window.SC_SCENES.kuchyne, window.SC_SCENES.hrob, window.SC_SCENES.hala];
-  }
-  if (isDelicateMarble) {
-    return [window.SC_SCENES.koupelna, window.SC_SCENES.krb, window.SC_SCENES.hala];
-  }
-  return [window.SC_SCENES.kuchyne, window.SC_SCENES.krb, window.SC_SCENES.koupelna];
-};
-
-window.SC_getSceneBgSize = function getSceneBgSize(scene, textureScale = 'medium') {
-  const tileWidthCm = textureScale === 'fine' ? 72 : textureScale === 'slab' ? 295 : 175;
-  const sceneWidthCm = scene?.sceneWidthCm || 340;
-  const pct = Math.max(18, Math.min(125, Math.round((tileWidthCm / sceneWidthCm) * 100)));
-  return `${pct}% auto`;
-};
-
-window.SC_TILE_CACHE = new Map();
-
-window.SC_buildSeamlessTile = function buildSeamlessTile(url) {
-  if (!url) return Promise.resolve(url);
-  if (window.SC_TILE_CACHE.has(url)) {
-    return window.SC_TILE_CACHE.get(url);
-  }
-  const promise = new Promise((resolve) => {
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      try {
-        const w = Math.min(360, img.naturalWidth || 360);
-        const h = Math.min(256, img.naturalHeight || 256);
-        const canvas = document.createElement('canvas');
-        canvas.width = w * 2;
-        canvas.height = h * 2;
-        const ctx = canvas.getContext('2d');
-        if (!ctx) {
-          resolve(url);
-          return;
-        }
-        // Top-left: normal
-        ctx.drawImage(img, 0, 0, w, h);
-        // Top-right: horizontal mirror
-        ctx.save();
-        ctx.translate(w * 2, 0);
-        ctx.scale(-1, 1);
-        ctx.drawImage(img, 0, 0, w, h);
-        ctx.restore();
-        // Bottom-left: vertical mirror
-        ctx.save();
-        ctx.translate(0, h * 2);
-        ctx.scale(1, -1);
-        ctx.drawImage(img, 0, 0, w, h);
-        ctx.restore();
-        // Bottom-right: both axes mirrored
-        ctx.save();
-        ctx.translate(w * 2, h * 2);
-        ctx.scale(-1, -1);
-        ctx.drawImage(img, 0, 0, w, h);
-        ctx.restore();
-
-        resolve(canvas.toDataURL('image/jpeg', 0.88));
-      } catch {
-        resolve(url);
-      }
-    };
-    img.onerror = () => resolve(url);
-    img.src = url;
-  });
-  window.SC_TILE_CACHE.set(url, promise);
-  return promise;
-};
-
-window.SC_applySeamlessTiles = function applySeamlessTiles(rootEl) {
-  if (!rootEl) return;
-  rootEl.querySelectorAll('.scene-stone-layer[data-tex-src]').forEach((layer) => {
-    const src = layer.getAttribute('data-tex-src');
-    if (!src) return;
-    window.SC_buildSeamlessTile(src).then((tileUrl) => {
-      if (layer.isConnected && tileUrl) {
-        layer.style.backgroundImage = `url('${tileUrl}')`;
-      }
-    });
-  });
+  const typeEn =
+    catKey === 'mramor' ? 'marble'
+      : catKey === 'kvarcit' ? 'quartzite'
+        : catKey === 'travertin' ? 'travertine'
+          : catKey === 'onyx' ? 'onyx stone'
+            : catKey === 'vapenec' ? 'limestone'
+              : catKey === 'keramika' ? 'porcelain slab'
+                : 'granite';
+  const contextEn =
+    seg === 'monument_exterior'
+      ? 'monument OR stairs OR architecture'
+      : 'kitchen countertop OR bathroom interior';
+  const query = `"${name}" ${typeEn} (${contextEn})`;
+  return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
 };
 
 document.addEventListener('DOMContentLoaded', () => {
