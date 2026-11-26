@@ -139,6 +139,39 @@ function rewriteCloudinary(url, transform) {
   return `${prefix}${transform}/${parts.join('/')}`;
 }
 
+const DEFAULT_DETAIL_SCENE_TRANSFORM = 'f_auto,q_85,w_900,h_640,c_fill,g_center';
+const DEFAULT_SLAB_SCENE_TRANSFORM = 'c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85';
+
+const SCENE_CROP_OVERRIDES = new Map([
+  ['absolut-black-w', 'c_crop,w_0.44,h_0.30,g_center,y_0.14/c_fill,w_900,h_640,f_auto,q_85'],
+  ['pietra-di-luserna', 'c_crop,w_0.46,h_0.28,g_center,y_0.02/c_fill,w_900,h_640,f_auto,q_85'],
+  ['onyx-white', 'c_crop,w_0.30,h_0.44,g_east,x_0.16/c_fill,w_900,h_640,f_auto,q_85'],
+  ['colonial-gold', 'c_crop,w_0.42,h_0.34,g_center,y_0.04/c_fill,w_900,h_640,f_auto,q_85'],
+  ['imperial-red', 'c_crop,w_0.36,h_0.75,g_south_east/c_fill,w_900,h_640,f_auto,q_85'],
+  ['nero-cohiba', 'c_crop,w_0.54,h_0.90,g_east/c_fill,w_900,h_640,f_auto,q_85'],
+  ['quartzite-cielo', 'c_crop,w_0.44,h_0.84,g_east/c_fill,w_900,h_640,f_auto,q_85'],
+  ['sahara-white', 'c_crop,w_0.54,h_0.88,g_east/c_fill,w_900,h_640,f_auto,q_85'],
+  ['silvestre', 'c_crop,w_0.90,h_0.55,g_north/c_fill,w_900,h_640,f_auto,q_85'],
+]);
+
+function isLikelyDetailTexture(rawUrl) {
+  if (!rawUrl || typeof rawUrl !== 'string') return false;
+  const filename = (rawUrl.split('/').pop() || '').toLowerCase();
+  const base = filename.replace(/\.[a-z0-9]+$/, '');
+  return base.includes('detail');
+}
+
+function buildSceneTextureUrl(rawUrl, slug) {
+  if (!rawUrl) return null;
+  if (SCENE_CROP_OVERRIDES.has(slug)) {
+    return rewriteCloudinary(rawUrl, SCENE_CROP_OVERRIDES.get(slug));
+  }
+  const transform = isLikelyDetailTexture(rawUrl)
+    ? DEFAULT_DETAIL_SCENE_TRANSFORM
+    : DEFAULT_SLAB_SCENE_TRANSFORM;
+  return rewriteCloudinary(rawUrl, transform);
+}
+
 function makeImageVariants(url, label, kind, blockNumber = null) {
   if (!url) return null;
   return {
@@ -149,10 +182,17 @@ function makeImageVariants(url, label, kind, blockNumber = null) {
     slabCardUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_700,c_limit'),
     thumbUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_240,h_180,c_fill,g_center'),
     fullUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_1400,c_limit'),
-    sceneUrl: rewriteCloudinary(url, 'f_auto,q_85,w_900,h_640,c_fill,g_center'),
+    sceneUrl: rewriteCloudinary(url, DEFAULT_DETAIL_SCENE_TRANSFORM),
     rawUrl: url,
   };
 }
+
+const CATALOG_NAME_ALIASES = new Map([
+  ['multicolour red', 'multicolor red'],
+  ['onyx orange', 'onice orange'],
+  ['zambezia white', 'zambezia'],
+  ['nero assoluto zimbabwe', 'nero zimbabwe'],
+]);
 
 function findCatalogMatch(materialName, catalogByKey) {
   const fullKey = normalizeKey(materialName);
@@ -161,6 +201,11 @@ function findCatalogMatch(materialName, catalogByKey) {
   const withoutComma = fullKey.split(',')[0].trim();
   if (withoutComma && catalogByKey.has(withoutComma)) {
     return catalogByKey.get(withoutComma);
+  }
+
+  const alias = CATALOG_NAME_ALIASES.get(fullKey) || (withoutComma ? CATALOG_NAME_ALIASES.get(withoutComma) : null);
+  if (alias && catalogByKey.has(alias)) {
+    return catalogByKey.get(alias);
   }
   return null;
 }
@@ -540,14 +585,25 @@ async function main() {
     }
 
     // Interior visualization texture keeps clean close-up texture priority (no crane clamp/warehouse background)
-    let sceneTextureUrl = null;
-    if (mat.catalogImage) {
-      sceneTextureUrl = mat.catalogImage.sceneUrl;
-    } else if (firstDetail) {
-      sceneTextureUrl = firstDetail.sceneUrl;
-    } else if (firstSlab) {
-      sceneTextureUrl = firstSlab.sceneUrl;
+    let sceneSourceUrl = null;
+    if (mat.catalogImage && isLikelyDetailTexture(mat.catalogImage.rawUrl)) {
+      sceneSourceUrl = mat.catalogImage.rawUrl;
+    } else {
+      const detailTexture = mat.blocks
+        .flatMap((b) => b.detailImages)
+        .find((img) => isLikelyDetailTexture(img.rawUrl));
+      const slabDetailTexture = mat.blocks
+        .map((b) => b.featuredImage)
+        .find((img) => img && isLikelyDetailTexture(img.rawUrl));
+      sceneSourceUrl =
+        detailTexture?.rawUrl ||
+        slabDetailTexture?.rawUrl ||
+        mat.catalogImage?.rawUrl ||
+        firstDetail?.rawUrl ||
+        firstSlab?.rawUrl ||
+        null;
     }
+    const sceneTextureUrl = buildSceneTextureUrl(sceneSourceUrl, mat.slug);
 
     const colorKeys = [...mat.colors];
     const colorObjs = colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c }));
@@ -695,7 +751,7 @@ async function main() {
         collections: Array.isArray(item.collections) ? item.collections : [],
         cardUrl: imgs?.cardUrl || null,
         fullUrl: imgs?.fullUrl || null,
-        sceneUrl: imgs?.sceneUrl || null,
+        sceneUrl: buildSceneTextureUrl(item.image, slug),
         inStockSlug: stockMatch ? stockMatch.slug : null,
         inStockBlocks: stockMatch ? stockMatch.blockCount : 0,
         inStockSlabs: stockMatch ? stockMatch.totalSlabs : 0,

@@ -2,7 +2,7 @@
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/online-sklad/",
     "catalogUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T18:51:25.787Z",
+    "syncedAt": "2026-11-26T19:09:30.738Z",
     "sourceUpdatedAt": "2026-11-26T05:02:00.604Z",
     "totalMaterials": 77,
     "totalBlocks": 144,
@@ -48,7 +48,7 @@
       "catalogUrl": null,
       "comment": "Hluboká, mimořádně jemnozrnná černá žula s vyrovnaným odstínem bez výrazné kresby. Vhodná pro minimalistické kuchyňské desky, obklady krbů i reprezentativní exteriérové a pomníkové prvky.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762163867/zula_absolut_black_628aa54970.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762163867/zula_absolut_black_628aa54970.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.44,h_0.30,g_center,y_0.14/c_fill,w_900,h_640,f_auto,q_85/v1762163867/zula_absolut_black_628aa54970.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -833,11 +833,11 @@
           "reason": "Podobný odstín (černá) · žula"
         },
         {
-          "slug": "multicolour-red",
-          "name": "Multicolour Red",
+          "slug": "absolut-black-w",
+          "name": "Absolut Black W",
           "categoryLabel": "Žula",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
-          "reason": "Podobný odstín (červená) · žula"
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762163867/zula_absolut_black_628aa54970.jpg",
+          "reason": "Podobný odstín (černá) · žula"
         }
       ],
       "blocks": [
@@ -3180,7 +3180,7 @@
       "catalogUrl": null,
       "comment": "Kvarcit s bílo-krémovým podkladem a elegantní zelenošedou až olivovou kresbou. Nabízí výraz luxusního mramoru při tvrdosti přírodního kvarcitu pro kuchyňské desky i koupelnové stěny.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762418179/quartzite_calacatta_green_blok_CD_19_11_2021_c8bb0a0266.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762418179/quartzite_calacatta_green_blok_CD_19_11_2021_c8bb0a0266.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1762418179/quartzite_calacatta_green_blok_CD_19_11_2021_c8bb0a0266.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -3959,7 +3959,7 @@
       "catalogUrl": null,
       "comment": "Teplá krémová žula se světlým podkladem a jemným minerálním žilkováním bez ostrých kontrastů. Příjemně zatepluje moderní interiéry v kombinaci s dubem či matným lakem.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787580612/zula_cielo_de_marfil_deska_42797_dc302abad4.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787580612/zula_cielo_de_marfil_deska_42797_dc302abad4.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1787580612/zula_cielo_de_marfil_deska_42797_dc302abad4.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -4964,7 +4964,7 @@
       "catalogUrl": "https://www.stoneconnection.cz/katalog/colonial-gold",
       "comment": "Krémově zlatavá žula se šedohnědým obláčkováním a drobnými minerálními akcenty. Tradiční a velmi oblíbená volba pro teplé kuchyňské linky, ostrůvky i koupelny.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787561761/zula_colonial_gold_deska_44008_21b5e92930.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.42,h_0.34,g_center,y_0.04/c_fill,w_900,h_640,f_auto,q_85/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -5395,7 +5395,7 @@
       "catalogUrl": null,
       "comment": "Kontrastní světlá žula s bílým až perleťovým základem a výraznými tmavě šedými až černými shluky biotitu a křemene. Na větších kuchyňských deskách vytváří působivou přírodní grafiku.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762163342/zula_delycatus_white_blok656_263e825900.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762163342/zula_delycatus_white_blok656_263e825900.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1762163342/zula_delycatus_white_blok656_263e825900.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -5697,7 +5697,7 @@
       "catalogUrl": null,
       "comment": "Klasický tmavě čokoládový mramor se sítí jemných světlejších a kalcitových žilek. Dodává koupelnám, krbovým obkladům a hotelovým interiérům teplou, elegantní atmosféru.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762164354/mramor_emperador_dark_f2dfd1e9c0.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762164354/mramor_emperador_dark_f2dfd1e9c0.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1762164354/mramor_emperador_dark_f2dfd1e9c0.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -6249,7 +6249,7 @@
       "catalogUrl": null,
       "comment": "Sytě rubínově červená žula s jemným černobílým zrnem a vysokým leskem. Osvědčená volba pro výrazné interiérové prvky, schodiště i odolné exteriérové aplikace.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761917913/zula_imperial_red_blok145877_921ba508a1.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761917907/zula_imperial_red_blok145877_detail_af0d0e10b7.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.36,h_0.75,g_south_east/c_fill,w_900,h_640,f_auto,q_85/v1761917907/zula_imperial_red_blok145877_detail_af0d0e10b7.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -6554,7 +6554,7 @@
       "catalogUrl": null,
       "comment": "Světlá, téměř bílá až světle šedá žula s drobnou tečkovanou strukturou a teplými minerálními zrny. Nadčasová a praktická alternativa do světlých kuchyní a koupelen.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761916963/zula_kashmir_white_blok12_1890c978fb.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761916963/zula_kashmir_white_blok12_1890c978fb.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1761916963/zula_kashmir_white_blok12_1890c978fb.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -6810,7 +6810,7 @@
       "catalogUrl": null,
       "comment": "Teplá zlatohnědá žula s bohatou kresbou okrových a šedavých pruhů. V úpravě antic vynikne přirozený sametový reliéf kamene v kuchyních i rustikálně laděných interiérech.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1764747983/zula_madura_gold_antic_ef3d2d36bb.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1764747983/zula_madura_gold_antic_ef3d2d36bb.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1764747983/zula_madura_gold_antic_ef3d2d36bb.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -7079,7 +7079,7 @@
       "catalogUrl": null,
       "comment": "Tmavě antracitová až černá žula se zastřenou kouřově šedou kresbou a jemným pohybem. V kombinaci lesk/leather působí klidně a moderně na pracovních deskách i obkladech.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762157292/zula_mist_black_blok43642_19dca77d25.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762157292/zula_mist_black_blok43642_19dca77d25.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1762157292/zula_mist_black_blok43642_19dca77d25.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -8511,24 +8511,24 @@
         {
           "key": "cervena",
           "label": "Červená"
-        },
-        {
-          "key": "hneda",
-          "label": "Hnědá"
-        },
-        {
-          "key": "cerna",
-          "label": "Černá"
         }
       ],
       "tone": "medium",
       "pattern": "dramatic",
       "origin": "Indie",
-      "applications": [],
-      "catalogUrl": null,
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Hřbitovní architektura",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "catalogUrl": "https://www.stoneconnection.cz/katalog/multicolor-red",
       "comment": "Indická žula s bohatou vlnitou kresbou spojující terakotově červenou, hnědou a tmavě šedou. Velmi odolný materiál pro interiéry, schodiště, parapety i exteriérové prvky.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -8597,22 +8597,33 @@
           "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
           "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
           "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_75,w_800/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg"
+        },
+        {
+          "label": "Multicolour Red — katalogová kresba",
+          "kind": "catalog",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_668,h_384,c_fill/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg"
         }
       ],
       "alternatives": [
         {
-          "slug": "bararp",
-          "name": "Bararp",
+          "slug": "cape-red",
+          "name": "Cape Red",
           "categoryLabel": "Žula",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1764667504/zula_bararp_blok501270306_0e60da8f32.jpg",
-          "reason": "Podobný odstín (hnědá) · žula"
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922089/zula_cape_red_deska_313a02ce0d.jpg",
+          "reason": "Podobný odstín (červená) · žula"
         },
         {
-          "slug": "romantica",
-          "name": "Romantica",
+          "slug": "imperial-red",
+          "name": "Imperial Red",
           "categoryLabel": "Žula",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762158841/zula_romantica_red_blok44137_d19b37ca26.jpg",
-          "reason": "Podobný odstín (hnědá) · žula"
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761917913/zula_imperial_red_blok145877_921ba508a1.jpg",
+          "reason": "Podobný odstín (červená) · žula"
         }
       ],
       "blocks": [
@@ -9553,8 +9564,15 @@
       "tone": "dark",
       "pattern": "uniform",
       "origin": "Zimbabwe",
-      "applications": [],
-      "catalogUrl": null,
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "catalogUrl": "https://www.stoneconnection.cz/katalog/nero-zimbabwe",
       "comment": "Špičková hluboce černá žula ze Zimbabwe s velmi jemnou a stejnorodou strukturou. Patří k nejoblíbenějším materiálům pro moderní kuchyňské desky, obklady a precizní kamenické detaily.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762426891/zula_nero_zimbabwe_deska_leather_f93ddd19e7.jpg",
       "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
@@ -10318,7 +10336,7 @@
       "catalogUrl": null,
       "comment": "Tmavě hnědočerná žula s vyrovnanou jemnou strukturou a teplým tmavým podtónem. Skvěle doplňuje dřevěné dekory a bronzové či černé prvky v moderních kuchyních.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787903218/zula_nero_cohiba_leather_deska_2501739_2ebba3677f.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787903241/zula_nero_cohiba_leather_detail_2501739_b29fc73eb9.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.54,h_0.90,g_east/c_fill,w_900,h_640,f_auto,q_85/v1787903241/zula_nero_cohiba_leather_detail_2501739_b29fc73eb9.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -11256,22 +11274,27 @@
           "label": "Oranžová"
         },
         {
-          "key": "zluta",
-          "label": "Žlutá"
+          "key": "cervena",
+          "label": "Červená"
         },
         {
-          "key": "bila",
-          "label": "Bílá"
+          "key": "zluta",
+          "label": "Žlutá"
         }
       ],
       "tone": "light",
       "pattern": "dramatic",
-      "origin": "",
-      "applications": [],
-      "catalogUrl": null,
+      "origin": "Irán",
+      "applications": [
+        "Bazény a Wellness",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny"
+      ],
+      "catalogUrl": "https://www.stoneconnection.cz/katalog/onice-orange",
       "comment": "Průsvitný přírodní onyx v teplých medových, oranžových a krémových pruzích. Vyniká zejména jako podsvícený obklad stěn, barů, recepcí a solitérních krbů.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1793781671/onyx_orange_deska_f71c32eecd.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793781719/onyx_orange_detail_a_57dbe55b15.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -11318,22 +11341,33 @@
           "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762428686/onice_orange_prosvetlena_5e05d15b73.jpg",
           "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762428686/onice_orange_prosvetlena_5e05d15b73.jpg",
           "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_1200/v1762428686/onice_orange_prosvetlena_5e05d15b73.jpg"
+        },
+        {
+          "label": "Onyx Orange — katalogová kresba",
+          "kind": "catalog",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_668,h_384,c_fill/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg"
         }
       ],
       "alternatives": [
         {
-          "slug": "onyx-white",
-          "name": "Onyx White",
-          "categoryLabel": "Onyx",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787308727/onyx_white_deska_69da076126.jpg",
-          "reason": "Podobný odstín (bílá) · onyx"
+          "slug": "bararp",
+          "name": "Bararp",
+          "categoryLabel": "Žula",
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1764667504/zula_bararp_blok501270306_0e60da8f32.jpg",
+          "reason": "Podobný odstín (oranžová) · alternativa: žula"
         },
         {
-          "slug": "delycatus-white",
-          "name": "Delycatus White",
+          "slug": "amarelo-macieira",
+          "name": "Amarelo Macieira",
           "categoryLabel": "Žula",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762163342/zula_delycatus_white_blok656_263e825900.jpg",
-          "reason": "Podobný odstín (bílá) · alternativa: žula"
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760008519/zula_amarelo_macieira_trysk_deska_2fb36d3929.jpg",
+          "reason": "Podobný odstín (žlutá) · alternativa: žula"
         }
       ],
       "blocks": [
@@ -11446,7 +11480,7 @@
       "catalogUrl": null,
       "comment": "Světlý alabastrově bílý onyx s jemnými mléčnými a světle zlatavými vrstvami. Ideální pro podsvícené interiérové panely, luxusní koupelny a dekorativní detaily.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787308727/onyx_white_deska_69da076126.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787308727/onyx_white_deska_69da076126.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.30,h_0.44,g_east,x_0.16/c_fill,w_900,h_640,f_auto,q_85/v1787308727/onyx_white_deska_69da076126.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -12095,7 +12129,7 @@
       "catalogUrl": null,
       "comment": "Tradiční alpská rula z oblasti Piemontu se šedozeleným nádechem a břidličnatou strukturou. Ve štípaném provedení je špičkovým materiálem pro terasy, fasády a venkovní dlažby.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1793790501/pietra_di_luserna_deska_f72ddea9d7.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793790501/pietra_di_luserna_deska_f72ddea9d7.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.28,g_center,y_0.02/c_fill,w_900,h_640,f_auto,q_85/v1793790501/pietra_di_luserna_deska_f72ddea9d7.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -12854,7 +12888,7 @@
       "catalogUrl": null,
       "comment": "Nebesky šedomodrý přírodní kvarcit s jemnou mramorovanou kresbou a krystalickou hloubkou. Spojuje mimořádnou tvrdost kvarcitu s lehkým vzdušným vzhledem pro kuchyně a koupelny.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787556228/quartzite_cielo_deska_e3e4c2dee8.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787556269/quartzite_cielo_detailb_92b909ab4f.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.44,h_0.84,g_east/c_fill,w_900,h_640,f_auto,q_85/v1787556269/quartzite_cielo_detailb_92b909ab4f.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -13590,7 +13624,7 @@
       "catalogUrl": null,
       "comment": "Žula s teplou vlnitou kresbou v tónech hnědé, karamelové a jemně načervenalé. Přináší výraznější přírodní kresbu na pracovní desky, schody i krbové obklady.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1762158841/zula_romantica_red_blok44137_d19b37ca26.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1762158841/zula_romantica_red_blok44137_d19b37ca26.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1762158841/zula_romantica_red_blok44137_d19b37ca26.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -13816,7 +13850,7 @@
       "catalogUrl": null,
       "comment": "Světlá žula v pískově bílých a měkce šedých tónech s jemnou, vyváženou kresbou. Hodí se do světlých kuchyní a koupelen, kde působí čistě a nadčasově.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761921283/zula_sahara_white_blok265_b6afe1ae38.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1761921282/zula_sahara_white_blok265_detail_1dfb7a372f.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.54,h_0.88,g_east/c_fill,w_900,h_640,f_auto,q_85/v1761921282/zula_sahara_white_blok265_detail_1dfb7a372f.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -14402,7 +14436,7 @@
       "catalogUrl": null,
       "comment": "Klasická španělská středně zrnitá šedá žula s vyváženým černo-bílým zrnem. V tryskaném povrchu je mimořádně vhodná pro venkovní dlažby, schody, sokly a veřejné prostory.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1789646892/zula_silvestre_deska_b0a93af265.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1789646918/zula_silvestre_detail_c054e4b386.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.90,h_0.55,g_north/c_fill,w_900,h_640,f_auto,q_85/v1789646918/zula_silvestre_detail_c054e4b386.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -14872,7 +14906,7 @@
       "catalogUrl": null,
       "comment": "Ušlechtilý bílý italský mramor s chladným základem a výraznější šedou žilnou sítí. Vhodný pro koupelny, obklady stěn, krbové portály a klasické i moderní interiéry.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1790234609/mramor_statuario_corchia_PLST_8711_deska_fb988ed12d.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1790234609/mramor_statuario_corchia_PLST_8711_deska_fb988ed12d.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1790234609/mramor_statuario_corchia_PLST_8711_deska_fb988ed12d.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -15569,7 +15603,7 @@
       "catalogUrl": null,
       "comment": "Charakteristický bílý mramor s rovnoběžnými vodorovnými šedými pruhy. Umožňuje výrazné architektonické skládání kresby na stěnách koupelen, sprchových koutů a krbů.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1764235774/mramor_striato_olimpico_deska_2a2eae7612.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1764235774/mramor_striato_olimpico_deska_2a2eae7612.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1764235774/mramor_striato_olimpico_deska_2a2eae7612.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -16037,17 +16071,17 @@
       ],
       "alternatives": [
         {
-          "slug": "multicolour-red",
-          "name": "Multicolour Red",
-          "categoryLabel": "Žula",
-          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
-          "reason": "Podobný odstín (černá) · žula"
-        },
-        {
           "slug": "aurora-india",
           "name": "Aurora India",
           "categoryLabel": "Žula",
           "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761919329/zula_aurora_india_blok45279_64d807cf43.jpg",
+          "reason": "Podobný odstín (černá) · žula"
+        },
+        {
+          "slug": "marinace-black",
+          "name": "Marinace Black",
+          "categoryLabel": "Žula",
+          "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760080857/zula_marinace_black_deska_441be08234.jpg",
           "reason": "Podobný odstín (černá) · žula"
         }
       ],
@@ -16885,7 +16919,7 @@
       "catalogUrl": null,
       "comment": "Přírodní zelená žula s chladnými eukalyptovými a šedozelenými přechody. Vnáší do prostoru klidný organický tón na obkladech, deskách i solitérních prvcích.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787557108/zula_verde_eucaliptus_deska_bef7a5a05c.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787557108/zula_verde_eucaliptus_deska_bef7a5a05c.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1787557108/zula_verde_eucaliptus_deska_bef7a5a05c.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -18219,12 +18253,19 @@
       ],
       "tone": "light",
       "pattern": "veined",
-      "origin": "",
-      "applications": [],
-      "catalogUrl": null,
+      "origin": "Mosambik",
+      "applications": [
+        "Bazény a Wellness",
+        "Exteriéry",
+        "Fasády a obklady",
+        "Interiéry",
+        "Koupelny",
+        "Kuchyně"
+      ],
+      "catalogUrl": "https://www.stoneconnection.cz/katalog/zambezia",
       "comment": "Světlá žula s bílým základem a jemnými šedavými přechody s přírodním leskem či leather úpravou. Čistý a odolný materiál pro světlé kuchyňské desky a koupelnové stěny.",
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1787744693/zula_zambezia_deska_bf020ceed8.jpg",
-      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787744717/zula_zambezia_detail_b_7600ddd887.jpg",
+      "sceneTextureUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
       "cardImageSource": "slab",
       "realizationImages": [],
       "galleryImages": [
@@ -18260,6 +18301,17 @@
           "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1787744718/zula_zambezia_detail_a_eb83e83234.jpg",
           "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1787744718/zula_zambezia_detail_a_eb83e83234.jpg",
           "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_1200/v1787744718/zula_zambezia_detail_a_eb83e83234.jpg"
+        },
+        {
+          "label": "Zambezia White — katalogová kresba",
+          "kind": "catalog",
+          "blockNumber": null,
+          "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+          "slabCardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+          "thumbUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_240,h_180,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+          "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+          "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
+          "rawUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_668,h_384,c_fill/v1760009626/zula_zambezia_detail_18709efbe7.jpg"
         }
       ],
       "alternatives": [
@@ -24831,9 +24883,7 @@
         "lesk"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922965/zula_multicolor_red_blok43643_8631eab53d.jpg",
       "cardImageSource": "slab",
@@ -24882,9 +24932,7 @@
         "lesk"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922964/zula_multicolor_red_blok43650_fcd83a9305.jpg",
       "cardImageSource": "slab",
@@ -24951,9 +24999,7 @@
         "lesk"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922969/zula_multicolor_red_blok44598_1501739b08.jpg",
       "cardImageSource": "slab",
@@ -25022,9 +25068,7 @@
         "lesk/leather"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
       "cardImageSource": "slab",
@@ -25238,9 +25282,7 @@
         "lesk"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1761922967/zula_multicolor_red_blok45482_33d4f4956d.jpg",
       "cardImageSource": "slab",
@@ -25392,9 +25434,7 @@
         "lesk"
       ],
       "colors": [
-        "cervena",
-        "hneda",
-        "cerna"
+        "cervena"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
       "cardImageSource": "slab",
@@ -27161,8 +27201,8 @@
       ],
       "colors": [
         "oranzova",
-        "zluta",
-        "bila"
+        "cervena",
+        "zluta"
       ],
       "cardImage": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_700,c_limit/v1793781671/onyx_orange_deska_f71c32eecd.jpg",
       "cardImageSource": "slab",

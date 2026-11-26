@@ -1,9 +1,9 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T18:51:25.787Z",
+    "syncedAt": "2026-11-26T19:09:30.738Z",
     "totalProducts": 118,
-    "inStockCount": 43
+    "inStockCount": 47
   },
   "products": [
     {
@@ -1466,7 +1466,7 @@
       ],
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.42,h_0.34,g_center,y_0.04/c_fill,w_900,h_640,f_auto,q_85/v1793001070/zula_colonial_gold_leather_deska_351c556b84.jpg",
       "inStockSlug": "colonial-gold",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -2543,10 +2543,10 @@
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
-      "inStockSlug": null,
-      "inStockBlocks": 0,
-      "inStockSlabs": 0,
-      "comment": "Žula z oblasti Indie v odstínech červená s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+      "inStockSlug": "multicolour-red",
+      "inStockBlocks": 6,
+      "inStockSlabs": 53,
+      "comment": "Indická žula s bohatou vlnitou kresbou spojující terakotově červenou, hnědou a tmavě šedou. Velmi odolný materiál pro interiéry, schodiště, parapety i exteriérové prvky."
     },
     {
       "id": "415",
@@ -2703,10 +2703,10 @@
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760697002/zula_nero_zimbabwe_detail_0ed0097793.jpg",
-      "inStockSlug": null,
-      "inStockBlocks": 0,
-      "inStockSlabs": 0,
-      "comment": "Žula z oblasti Zimbabwe v odstínech černá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+      "inStockSlug": "nero-assoluto-zimbabwe",
+      "inStockBlocks": 8,
+      "inStockSlabs": 46,
+      "comment": "Špičková hluboce černá žula ze Zimbabwe s velmi jemnou a stejnorodou strukturou. Patří k nejoblíbenějším materiálům pro moderní kuchyňské desky, obklady a precizní kamenické detaily."
     },
     {
       "id": "420",
@@ -2774,10 +2774,10 @@
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1793783846/onyx_orange_detail_b_0451fa44b7.jpg",
-      "inStockSlug": null,
-      "inStockBlocks": 0,
-      "inStockSlabs": 0,
-      "comment": "Exkluzivní z oblasti Irán v odstínech oranžová, červená, žlutá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+      "inStockSlug": "onyx-orange",
+      "inStockBlocks": 1,
+      "inStockSlabs": 1,
+      "comment": "Průsvitný přírodní onyx v teplých medových, oranžových a krémových pruzích. Vyniká zejména jako podsvícený obklad stěn, barů, recepcí a solitérních krbů."
     },
     {
       "id": "421",
@@ -4014,7 +4014,7 @@
       ],
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1792572369/quartzite_vitro_deska_2_3251612054.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1792572369/quartzite_vitro_deska_2_3251612054.png",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1792572369/quartzite_vitro_deska_2_3251612054.png",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85/v1792572369/quartzite_vitro_deska_2_3251612054.png",
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4120,10 +4120,10 @@
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_85,w_900,h_640,c_fill,g_center/v1760009626/zula_zambezia_detail_18709efbe7.jpg",
-      "inStockSlug": null,
-      "inStockBlocks": 0,
-      "inStockSlabs": 0,
-      "comment": "Žula z oblasti Mosambik v odstínech bílá, šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+      "inStockSlug": "zambezia-white",
+      "inStockBlocks": 1,
+      "inStockSlabs": 15,
+      "comment": "Světlá žula s bílým základem a jemnými šedavými přechody s přírodním leskem či leather úpravou. Čistý a odolný materiál pro světlé kuchyňské desky a koupelnové stěny."
     }
   ]
 }
