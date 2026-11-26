@@ -524,15 +524,12 @@ function buildBlockSpecText(materialName, block) {
   return lines.join('\n');
 }
 
-function buildSceneHtml(scene, textureUrl, materialName, lbIndex, mat) {
-  const bgSize = window.SC_getSceneBgSize ? window.SC_getSceneBgSize(scene, mat.textureScale || 'medium') : 'cover';
-  const isJointed = Boolean(scene.supportsJoints && mat.maxHeightCm > 0 && mat.maxHeightCm <= 115);
+function buildSceneHtml(scene, materialName, lbIndex) {
   return `
     <button type="button" class="scene-card" data-lb-idx="${lbIndex}">
       <div class="scene-stage">
         <img class="scene-base" src="${escapeHtml(scene.base)}" alt="${escapeHtml(scene.label)} — ${escapeHtml(materialName)}" loading="lazy">
-        <div class="scene-stone-layer${isJointed ? ' is-jointed' : ''}" data-tex-src="${escapeHtml(textureUrl)}" style="background-image:url('${escapeHtml(textureUrl)}');background-size:${escapeHtml(bgSize)};-webkit-mask-image:url('${escapeHtml(scene.mask)}');mask-image:url('${escapeHtml(scene.mask)}');"></div>
-        ${scene.shine ? `<img class="scene-shine" src="${escapeHtml(scene.shine)}" alt="" aria-hidden="true" loading="lazy">` : ''}
+        <canvas class="scene-canvas" data-scene-key="${escapeHtml(scene.key)}" width="640" height="480" aria-hidden="true"></canvas>
       </div>
       <div class="scene-label">${escapeHtml(scene.label)} <span>Zvětšit ⤢</span></div>
     </button>`;
@@ -556,15 +553,14 @@ function openMaterialModal(slug, focusBlock = null) {
   }));
 
   const scenes = window.SC_getScenesForMaterial ? window.SC_getScenesForMaterial(mat) : [];
+  const hasSceneTex = Boolean(mat.sceneTexture?.url || mat.sceneTextureUrl);
   const sceneStartIdx = lbItems.length;
-  if (mat.sceneTextureUrl) {
+  if (hasSceneTex) {
     for (const sc of scenes) {
       lbItems.push({
         kind: 'scene',
         scene: sc,
-        textureUrl: mat.sceneTextureUrl,
-        textureScale: mat.textureScale || 'medium',
-        isJointed: Boolean(sc.supportsJoints && mat.maxHeightCm > 0 && mat.maxHeightCm <= 115),
+        mat,
         caption: `${mat.name} — ${sc.label}`,
       });
     }
@@ -621,12 +617,15 @@ function openMaterialModal(slug, focusBlock = null) {
         </div>`
       : '';
 
+  const finish = mat.surfaceFinish || mat.sceneTexture?.finish || 'polished';
   const sceneHeading =
-    mat.usageSegment === 'monument_exterior'
-      ? 'Ukázka použití — pomníky, dlažby a exteriér'
-      : mat.usageSegment === 'versatile'
-        ? 'Ukázka použití v exteriéru i interiéru'
-        : 'Nechte se inspirovat v interiéru';
+    finish === 'antislip'
+      ? 'Ukázka použití — venkovní dlažby, schodiště a exteriér'
+      : mat.usageSegment === 'monument_exterior'
+        ? 'Ukázka použití — pomníky, haly a architektonické obklady'
+        : mat.usageSegment === 'versatile'
+          ? 'Ukázka použití v exteriéru i interiéru'
+          : 'Nechte se inspirovat v interiéru';
   const formatParts = [];
   if (mat.maxLengthCm && mat.maxHeightCm) {
     formatParts.push(`Skladem desky až ${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm`);
@@ -639,7 +638,7 @@ function openMaterialModal(slug, focusBlock = null) {
   }
   const sceneSub = formatParts.length ? formatParts.join(' · ') : 'Orientační náhled kresby a měřítka kamene v prostoru';
 
-  const interiorSectionHtml = mat.sceneTextureUrl
+  const interiorSectionHtml = hasSceneTex
     ? `
       <section class="section-block">
         <div class="section-head">
@@ -648,7 +647,7 @@ function openMaterialModal(slug, focusBlock = null) {
         </div>
         ${realizationsHtml}
         <div class="scenes-grid">
-          ${scenes.map((sc, idx) => buildSceneHtml(sc, mat.sceneTextureUrl, mat.name, sceneStartIdx + idx, mat)).join('')}
+          ${scenes.map((sc, idx) => buildSceneHtml(sc, mat.name, sceneStartIdx + idx)).join('')}
         </div>
       </section>`
     : '';
@@ -806,8 +805,8 @@ function openMaterialModal(slug, focusBlock = null) {
   el.modal.hidden = false;
   document.body.style.overflow = 'hidden';
   el.modalBody.scrollTop = 0;
-  if (window.SC_applySeamlessTiles) {
-    window.SC_applySeamlessTiles(el.modalBody);
+  if (window.SC_renderAllSceneCanvases) {
+    window.SC_renderAllSceneCanvases(el.modalBody, mat);
   }
 
   if (window.location.hash !== `#m=${slug}`) {
@@ -871,18 +870,16 @@ function openLightbox(index) {
   const countText = `${item.caption} (${state.lightboxIndex + 1} / ${state.lightboxItems.length})`;
 
   if (item.kind === 'scene') {
-    const bgSize = window.SC_getSceneBgSize ? window.SC_getSceneBgSize(item.scene, item.textureScale || 'medium') : 'cover';
     el.lbStage.innerHTML = `
       <div class="lb-scene-wrap">
         <div class="scene-stage">
           <img class="scene-base" src="${escapeHtml(item.scene.base)}" alt="${escapeHtml(item.caption)}">
-          <div class="scene-stone-layer${item.isJointed ? ' is-jointed' : ''}" data-tex-src="${escapeHtml(item.textureUrl)}" style="background-image:url('${escapeHtml(item.textureUrl)}');background-size:${escapeHtml(bgSize)};-webkit-mask-image:url('${escapeHtml(item.scene.mask)}');mask-image:url('${escapeHtml(item.scene.mask)}');"></div>
-          ${item.scene.shine ? `<img class="scene-shine" src="${escapeHtml(item.scene.shine)}" alt="" aria-hidden="true">` : ''}
+          <canvas class="scene-canvas" data-scene-key="${escapeHtml(item.scene.key)}" width="960" height="720" aria-hidden="true"></canvas>
         </div>
       </div>
       <div class="lb-caption">${escapeHtml(countText)}</div>`;
-    if (window.SC_applySeamlessTiles) {
-      window.SC_applySeamlessTiles(el.lbStage);
+    if (window.SC_renderAllSceneCanvases) {
+      window.SC_renderAllSceneCanvases(el.lbStage, item.mat);
     }
   } else {
     el.lbStage.innerHTML = `

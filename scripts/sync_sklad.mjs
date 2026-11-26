@@ -139,19 +139,66 @@ function rewriteCloudinary(url, transform) {
   return `${prefix}${transform}/${parts.join('/')}`;
 }
 
-const DEFAULT_DETAIL_SCENE_TRANSFORM = 'f_auto,q_85,w_900,h_640,c_fill,g_center';
-const DEFAULT_SLAB_SCENE_TRANSFORM = 'c_crop,w_0.40,h_0.32,g_center,y_0.08/c_fill,w_900,h_640,f_auto,q_85';
+const DETAIL_PREFERRED_SLUGS = new Set([
+  'daino-reale',
+  'nero-assoluto-zimbabwe',
+  'nero-impala',
+  'nero-marquina',
+  'steel-grey',
+  'via-lattea',
+]);
 
-const SCENE_CROP_OVERRIDES = new Map([
-  ['absolut-black-w', 'c_crop,w_0.44,h_0.30,g_center,y_0.14/c_fill,w_900,h_640,f_auto,q_85'],
-  ['pietra-di-luserna', 'c_crop,w_0.46,h_0.28,g_center,y_0.02/c_fill,w_900,h_640,f_auto,q_85'],
-  ['onyx-white', 'c_crop,w_0.30,h_0.44,g_east,x_0.16/c_fill,w_900,h_640,f_auto,q_85'],
-  ['colonial-gold', 'c_crop,w_0.42,h_0.34,g_center,y_0.04/c_fill,w_900,h_640,f_auto,q_85'],
-  ['imperial-red', 'c_crop,w_0.36,h_0.75,g_south_east/c_fill,w_900,h_640,f_auto,q_85'],
-  ['nero-cohiba', 'c_crop,w_0.54,h_0.90,g_east/c_fill,w_900,h_640,f_auto,q_85'],
-  ['quartzite-cielo', 'c_crop,w_0.44,h_0.84,g_east/c_fill,w_900,h_640,f_auto,q_85'],
-  ['sahara-white', 'c_crop,w_0.54,h_0.88,g_east/c_fill,w_900,h_640,f_auto,q_85'],
-  ['silvestre', 'c_crop,w_0.90,h_0.55,g_north/c_fill,w_900,h_640,f_auto,q_85'],
+const CATALOG_PREFERRED_SLUGS = new Set([
+  'daino-reale',
+]);
+
+const CERAMIC_SLAB_SLUGS = new Set([
+  'doret',
+  'statuario-extra',
+]);
+
+const DETAIL_SIZE_CM = new Map([
+  ['azul-aran', [32, 22]],
+  ['cinza-ariz', [28, 20]],
+  ['daino-reale', [65, 45]],
+  ['nero-assoluto-zimbabwe', [30, 21]],
+  ['nero-impala', [24, 24]],
+  ['nero-marquina', [65, 46]],
+  ['olive-green', [36, 25]],
+  ['premium-black', [30, 21]],
+  ['shivakashi', [45, 32]],
+  ['star-galaxy', [30, 21]],
+  ['steel-grey', [35, 25]],
+  ['verde-bahia', [30, 21]],
+  ['via-lattea', [65, 46]],
+]);
+
+const DETAIL_CROP_SPEC = new Map([
+  ['nero-impala', 'c_crop,w_0.58,h_0.44,g_east,x_0.02/c_limit,w_900,f_auto,q_90'],
+  ['shivakashi', 'c_crop,w_0.92,h_0.65,g_center/c_limit,w_900,f_auto,q_90'],
+  ['verde-bahia', 'c_crop,w_0.82,h_0.82,g_east/c_limit,w_900,f_auto,q_90'],
+]);
+
+const DEFAULT_SLAB_CROP = { w: 0.46, h: 0.36, g: 'center', x: 0, y: 0.08, slabWFrac: 0.78, slabHFrac: 0.64 };
+
+const SLAB_CROP_SPEC = new Map([
+  ['absolut-black-w', { w: 0.44, h: 0.30, g: 'center', x: 0, y: 0.14, slabWFrac: 0.76, slabHFrac: 0.58 }],
+  ['black-vermont', { w: 0.28, h: 0.56, g: 'center', x: 0.03, y: 0.04, slabWFrac: 0.72, slabHFrac: 0.88 }],
+  ['pietra-di-luserna', { w: 0.46, h: 0.28, g: 'center', x: 0, y: 0.04, slabWFrac: 0.80, slabHFrac: 0.50 }],
+  ['onyx-white', { g: 'north_west', x: 0.48, y: 0.20, w: 0.40, h: 0.56, slabWFrac: 0.80, slabHFrac: 0.84 }],
+  ['colonial-gold', { w: 0.42, h: 0.34, g: 'center', x: 0, y: 0.06, slabWFrac: 0.78, slabHFrac: 0.64 }],
+  ['imperial-red', { w: 0.40, h: 0.52, g: 'center', x: 0, y: 0.04, slabWFrac: 0.80, slabHFrac: 0.88 }],
+  ['madura-gold', { g: 'north_west', x: 0.35, y: 0.36, w: 0.37, h: 0.42, slabWFrac: 0.72, slabHFrac: 0.68 }],
+  ['nero-cohiba', { w: 0.40, h: 0.52, g: 'center', x: 0, y: 0.02, slabWFrac: 0.76, slabHFrac: 0.88 }],
+  ['quartzite-cielo', { g: 'north_west', x: 0.50, y: 0.28, w: 0.34, h: 0.44, slabWFrac: 0.78, slabHFrac: 0.68 }],
+  ['sahara-white', { g: 'north_west', x: 0.27, y: 0.20, w: 0.42, h: 0.52, slabWFrac: 0.80, slabHFrac: 0.76 }],
+  ['silvestre', { w: 0.54, h: 0.34, g: 'center', x: 0, y: 0.06, slabWFrac: 0.80, slabHFrac: 0.58 }],
+  ['bararp', { w: 0.46, h: 0.26, g: 'center', x: 0, y: 0.08, slabWFrac: 0.78, slabHFrac: 0.46 }],
+  ['cape-red', { w: 0.46, h: 0.30, g: 'center', x: 0, y: 0.08, slabWFrac: 0.76, slabHFrac: 0.54 }],
+  ['vanga-red', { w: 0.46, h: 0.28, g: 'center', x: 0, y: 0.08, slabWFrac: 0.78, slabHFrac: 0.50 }],
+  ['misty-brown-vyska-90-cm', { w: 0.46, h: 0.24, g: 'center', x: 0, y: 0.08, slabWFrac: 0.78, slabHFrac: 0.44 }],
+  ['yellow-river-vyska-70-cm', { g: 'north_west', x: 0.60, y: 0.42, w: 0.24, h: 0.20, slabWFrac: 0.78, slabHFrac: 0.38 }],
+  ['palm-green', { g: 'north_west', x: 0.56, y: 0.38, w: 0.32, h: 0.21, slabWFrac: 0.80, slabHFrac: 0.36 }],
 ]);
 
 function isLikelyDetailTexture(rawUrl) {
@@ -174,25 +221,122 @@ function inferUsageSegment(note, thicknesses, surfaces) {
   return hasThickMonument || hasExtSurface ? 'monument_exterior' : 'interior';
 }
 
-function getSceneTransformFor(rawUrl, slug) {
-  if (SCENE_CROP_OVERRIDES.has(slug)) {
-    return SCENE_CROP_OVERRIDES.get(slug);
+function inferSurfaceFinish(surfaces) {
+  const joined = surfaces.join(' ').toLowerCase();
+  const hasPolished = /lesk|lešt|lest|plněn|plnen/i.test(joined);
+  const hasAntislip = /trysk|opal|štíp|stip/i.test(joined);
+  const hasMatte = /leather|broušen|brousen|antic|natural|kartáč|kartac/i.test(joined);
+  if (hasAntislip && !hasPolished) return 'antislip';
+  if (hasMatte && !hasPolished) return 'matte';
+  return 'polished';
+}
+
+function formatCropTransform(spec) {
+  const parts = [`c_crop,w_${spec.w.toFixed(2)},h_${spec.h.toFixed(2)},g_${spec.g}`];
+  if (spec.g === 'north_west') {
+    parts.push(`x_${(spec.x || 0).toFixed(2)}`, `y_${(spec.y || 0).toFixed(2)}`);
+  } else {
+    if (spec.x) parts.push(`x_${spec.x.toFixed(2)}`);
+    if (spec.y) parts.push(`y_${spec.y.toFixed(2)}`);
   }
-  return isLikelyDetailTexture(rawUrl)
-    ? DEFAULT_DETAIL_SCENE_TRANSFORM
-    : DEFAULT_SLAB_SCENE_TRANSFORM;
+  return `${parts.join(',')}/c_limit,w_900,f_auto,q_90`;
 }
 
-function buildSceneTextureUrl(rawUrl, slug) {
-  if (!rawUrl) return null;
-  return rewriteCloudinary(rawUrl, getSceneTransformFor(rawUrl, slug));
+function resolveMaterialSceneTexture(mat, firstSlab, firstDetail, surfaceFinish) {
+  const slug = mat.slug;
+  const preferDetail = DETAIL_PREFERRED_SLUGS.has(slug);
+  const isCeramicSlab = CERAMIC_SLAB_SLUGS.has(slug) || mat.categoryKey === 'velkoformatova-keramika';
+
+  const nonDetailSlabBlock = mat.blocks.find(
+    (b) => b.featuredImage?.rawUrl && !isLikelyDetailTexture(b.featuredImage.rawUrl)
+  ) || null;
+
+  const detailCandidateUrl =
+    mat.blocks.flatMap((b) => b.detailImages || []).find((d) => isLikelyDetailTexture(d.rawUrl))?.rawUrl ||
+    mat.blocks.map((b) => b.featuredImage).find((img) => img && isLikelyDetailTexture(img.rawUrl))?.rawUrl ||
+    (mat.catalogImage && isLikelyDetailTexture(mat.catalogImage.rawUrl) ? mat.catalogImage.rawUrl : null) ||
+    firstDetail?.rawUrl ||
+    mat.catalogImage?.rawUrl ||
+    null;
+
+  let chosenRaw = null;
+  let source = 'none';
+  let slabBlock = nonDetailSlabBlock;
+
+  if (isCeramicSlab) {
+    chosenRaw = nonDetailSlabBlock?.featuredImage?.rawUrl || firstSlab?.rawUrl || mat.catalogImage?.rawUrl || detailCandidateUrl;
+    source = 'ceramic-slab';
+  } else if (CATALOG_PREFERRED_SLUGS.has(slug) && mat.catalogImage?.rawUrl) {
+    chosenRaw = mat.catalogImage.rawUrl;
+    source = 'detail';
+  } else if (!preferDetail && nonDetailSlabBlock) {
+    chosenRaw = nonDetailSlabBlock.featuredImage.rawUrl;
+    source = 'slab';
+  } else if (detailCandidateUrl) {
+    chosenRaw = detailCandidateUrl;
+    source = 'detail';
+  } else if (firstSlab?.rawUrl) {
+    chosenRaw = firstSlab.rawUrl;
+    source = isLikelyDetailTexture(firstSlab.rawUrl) ? 'detail' : 'slab';
+    slabBlock = mat.blocks.find((b) => b.featuredImage?.rawUrl === firstSlab.rawUrl) || null;
+  }
+
+  if (!chosenRaw) {
+    return { url: null, widthCm: 60, heightCm: 42, source: 'none', finish: surfaceFinish };
+  }
+
+  if (source === 'ceramic-slab') {
+    const slabs = slabBlock?.slabs || mat.blocks.flatMap((b) => b.slabs || []);
+    const lengths = slabs.map((s) => Number(s.length) || 0).filter((v) => v > 0);
+    const heights = slabs.map((s) => Number(s.height) || 0).filter((v) => v > 0);
+    const widthCm = lengths.length ? Math.round(lengths.reduce((a, b) => a + b, 0) / lengths.length) : 320;
+    const heightCm = heights.length ? Math.round(heights.reduce((a, b) => a + b, 0) / heights.length) : 160;
+    return {
+      url: rewriteCloudinary(chosenRaw, 'c_limit,w_1200,f_auto,q_90'),
+      widthCm,
+      heightCm,
+      source: 'ceramic-slab',
+      finish: surfaceFinish,
+    };
+  }
+
+  if (source === 'slab') {
+    const spec = SLAB_CROP_SPEC.get(slug) || DEFAULT_SLAB_CROP;
+    const slabs = slabBlock?.slabs?.length ? slabBlock.slabs : mat.blocks.flatMap((b) => b.slabs || []);
+    const lengths = slabs.map((s) => Number(s.length) || 0).filter((v) => v > 0);
+    const heights = slabs.map((s) => Number(s.height) || 0).filter((v) => v > 0);
+    const slabLenCm = lengths.length ? lengths.reduce((a, b) => a + b, 0) / lengths.length : 300;
+    const slabHeightCm = heights.length ? heights.reduce((a, b) => a + b, 0) / heights.length : 185;
+    const widthCm = Math.max(25, Math.round((spec.w / spec.slabWFrac) * slabLenCm));
+    const heightCm = Math.max(20, Math.round((spec.h / spec.slabHFrac) * slabHeightCm));
+    return {
+      url: rewriteCloudinary(chosenRaw, formatCropTransform(spec)),
+      widthCm,
+      heightCm,
+      source: 'slab',
+      finish: surfaceFinish,
+    };
+  }
+
+  const [dw, dh] = DETAIL_SIZE_CM.get(slug) || [45, 32];
+  const detailTf = DETAIL_CROP_SPEC.get(slug) || 'c_limit,w_900,f_auto,q_90';
+  return {
+    url: rewriteCloudinary(chosenRaw, detailTf),
+    widthCm: dw,
+    heightCm: dh,
+    source: 'detail',
+    finish: surfaceFinish,
+  };
 }
 
-function buildDetailSwatchUrl(rawUrl, slug) {
-  if (!rawUrl) return null;
-  const tf = getSceneTransformFor(rawUrl, slug)
-    .replace('w_900,h_640', 'w_160,h_160');
-  return rewriteCloudinary(rawUrl, tf);
+function buildDetailSwatchUrl(sceneTexture) {
+  if (!sceneTexture?.url) return null;
+  if (sceneTexture.url.includes('/image/upload/')) {
+    return sceneTexture.url
+      .replace('/c_limit,w_900,f_auto,q_90', '/w_160,h_160,c_fill,g_center,f_auto,q_85')
+      .replace('/c_limit,w_1200,f_auto,q_90', '/w_160,h_160,c_fill,g_center,f_auto,q_85');
+  }
+  return sceneTexture.url;
 }
 
 function makeImageVariants(url, label, kind, blockNumber = null) {
@@ -205,7 +349,7 @@ function makeImageVariants(url, label, kind, blockNumber = null) {
     slabCardUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_700,c_limit'),
     thumbUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_240,h_180,c_fill,g_center'),
     fullUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_1400,c_limit'),
-    sceneUrl: rewriteCloudinary(url, DEFAULT_DETAIL_SCENE_TRANSFORM),
+    sceneUrl: rewriteCloudinary(url, 'c_limit,w_900,f_auto,q_90'),
     rawUrl: url,
   };
 }
@@ -661,31 +805,6 @@ async function main() {
       cardImageSource = 'catalog';
     }
 
-    // Interior visualization texture keeps clean close-up texture priority (no crane clamp/warehouse background)
-    let sceneSourceUrl = null;
-    if (mat.catalogImage && isLikelyDetailTexture(mat.catalogImage.rawUrl)) {
-      sceneSourceUrl = mat.catalogImage.rawUrl;
-    } else {
-      const detailTexture = mat.blocks
-        .flatMap((b) => b.detailImages)
-        .find((img) => isLikelyDetailTexture(img.rawUrl));
-      const slabDetailTexture = mat.blocks
-        .map((b) => b.featuredImage)
-        .find((img) => img && isLikelyDetailTexture(img.rawUrl));
-      sceneSourceUrl =
-        detailTexture?.rawUrl ||
-        slabDetailTexture?.rawUrl ||
-        mat.catalogImage?.rawUrl ||
-        firstDetail?.rawUrl ||
-        firstSlab?.rawUrl ||
-        null;
-    }
-    const sceneTextureUrl = buildSceneTextureUrl(sceneSourceUrl, mat.slug);
-    const detailSwatchUrl =
-      cardImageSource === 'slab' && firstSlab && !isLikelyDetailTexture(firstSlab.rawUrl) && sceneSourceUrl
-        ? buildDetailSwatchUrl(sceneSourceUrl, mat.slug)
-        : null;
-
     const allSlabs = mat.blocks.flatMap((b) => b.slabs || []);
     const lengths = allSlabs.map((s) => Number(s.length) || 0).filter((v) => v > 0);
     const heights = allSlabs.map((s) => Number(s.height) || 0).filter((v) => v > 0);
@@ -699,7 +818,14 @@ async function main() {
     const thicknesses = [...mat.thicknesses].sort((a, b) => a - b);
     const usageSegment = inferUsageSegment(mat.note, thicknesses, surfaces);
     const usageLabel = USAGE_LABELS.get(usageSegment) || 'Interiér';
-    const textureScale = mat.note?.textureScale || (isLikelyDetailTexture(sceneSourceUrl) ? 'fine' : 'slab');
+    const surfaceFinish = inferSurfaceFinish(surfaces);
+    const sceneTexture = resolveMaterialSceneTexture(mat, firstSlab, firstDetail, surfaceFinish);
+    const sceneTextureUrl = sceneTexture.url;
+    const detailSwatchUrl =
+      cardImageSource === 'slab' && firstSlab && !isLikelyDetailTexture(firstSlab.rawUrl) && sceneTextureUrl
+        ? buildDetailSwatchUrl(sceneTexture)
+        : null;
+    const textureScale = sceneTexture.source === 'detail' ? 'fine' : 'slab';
     const tone = inferTone(colorKeys, mat.note);
     const pattern = inferPattern(mat.note);
     const comment = mat.note?.comment || buildFallbackComment(
@@ -709,6 +835,17 @@ async function main() {
       colorObjs.map((c) => c.label),
       surfaces
     );
+
+    let applications = Array.isArray(mat.applications) ? [...mat.applications] : [];
+    if (usageSegment === 'monument_exterior') {
+      applications = applications.filter((a) => !/kuchyn|koupeln/i.test(a));
+      if (!applications.some((a) => /pomník|pomnik/i.test(a))) {
+        applications.push('Pomníky');
+      }
+      if (surfaceFinish === 'antislip' && !applications.some((a) => /dlažb|dlazb/i.test(a))) {
+        applications.push('Dlažby a exteriér');
+      }
+    }
 
     return {
       slug: mat.slug,
@@ -721,6 +858,7 @@ async function main() {
       warehouses: [...mat.warehouses].sort((a, b) => a.localeCompare(b, 'cs')),
       thicknesses,
       surfaces,
+      surfaceFinish,
       colors: colorObjs,
       tone,
       pattern,
@@ -731,12 +869,13 @@ async function main() {
       maxHeightCm,
       minHeightCm,
       origin: mat.origin,
-      applications: mat.applications,
+      applications,
       catalogUrl: mat.catalogUrl,
       comment,
       cardImage,
       detailSwatchUrl,
       sceneTextureUrl,
+      sceneTexture,
       cardImageSource,
       realizationImages: realizationMap.get(mat.slug) || [],
       galleryImages,
@@ -840,7 +979,25 @@ async function main() {
       const imgs = makeImageVariants(item.image, name, 'catalog');
       const usageSegment = stockMatch?.usageSegment || note?.usageSegment || 'interior';
       const usageLabel = USAGE_LABELS.get(usageSegment) || 'Interiér';
-      const textureScale = stockMatch?.textureScale || note?.textureScale || (isLikelyDetailTexture(item.image) ? 'fine' : 'slab');
+      const surfaceFinish = stockMatch?.surfaceFinish || (typeInfo.key === 'granitova-dlazba' ? 'antislip' : 'polished');
+      const catalogSceneTexture = stockMatch?.sceneTexture || (item.image
+        ? (() => {
+            const isCeramic = CERAMIC_SLAB_SLUGS.has(slug) || typeInfo.key === 'velkoformatova-keramika';
+            const [dw, dh] = DETAIL_SIZE_CM.get(slug) || (isCeramic ? [320, 160] : [65, 46]);
+            return {
+              url: rewriteCloudinary(item.image, isCeramic ? 'c_limit,w_1200,f_auto,q_90' : 'c_limit,w_900,f_auto,q_90'),
+              widthCm: dw,
+              heightCm: dh,
+              source: isCeramic ? 'ceramic-slab' : 'detail',
+              finish: surfaceFinish,
+            };
+          })()
+        : { url: null, widthCm: 60, heightCm: 42, source: 'none', finish: surfaceFinish });
+      const textureScale = stockMatch?.textureScale || note?.textureScale || (catalogSceneTexture.source === 'detail' ? 'fine' : 'slab');
+      let applications = Array.isArray(item.appIcons) ? item.appIcons.map((a) => a.name) : [];
+      if (usageSegment === 'monument_exterior') {
+        applications = applications.filter((a) => !/kuchyn|koupeln/i.test(a));
+      }
 
       return {
         id: item.id,
@@ -850,14 +1007,16 @@ async function main() {
         categoryLabel: typeInfo.label,
         origin: normalizeWhitespace(item.origin),
         colors: colorKeys.map((c) => ({ key: c, label: COLOR_LABELS.get(c) || c })),
-        applications: Array.isArray(item.appIcons) ? item.appIcons.map((a) => a.name) : [],
+        applications,
         collections: Array.isArray(item.collections) ? item.collections : [],
         usageSegment,
         usageLabel,
+        surfaceFinish,
         textureScale,
         cardUrl: imgs?.cardUrl || null,
         fullUrl: imgs?.fullUrl || null,
-        sceneUrl: buildSceneTextureUrl(item.image, slug),
+        sceneUrl: catalogSceneTexture.url,
+        sceneTexture: catalogSceneTexture,
         inStockSlug: stockMatch ? stockMatch.slug : null,
         inStockBlocks: stockMatch ? stockMatch.blockCount : 0,
         inStockSlabs: stockMatch ? stockMatch.totalSlabs : 0,

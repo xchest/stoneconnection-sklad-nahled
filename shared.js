@@ -1,19 +1,31 @@
 window.SC_SCENES = {
-  kuchyne: { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png', shine: null, sceneWidthCm: 330, supportsJoints: false },
-  krb: { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png', shine: null, sceneWidthCm: 500, supportsJoints: true },
-  koupelna: { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png', shine: null, sceneWidthCm: 340, supportsJoints: true },
-  hrob: { key: 'hrob', label: 'Pomník / jednohrob', base: 'assets/scenes/hrob_base.jpg', mask: 'assets/scenes/hrob_mask.png', shine: 'assets/scenes/hrob_shine.png', sceneWidthCm: 200, supportsJoints: false },
-  dlazba: { key: 'dlazba', label: 'Venkovní dlažba a terasa', base: 'assets/scenes/dlazba_base.jpg', mask: 'assets/scenes/dlazba_mask.png', shine: 'assets/scenes/dlazba_shine.png', sceneWidthCm: 360, supportsJoints: false },
-  schody: { key: 'schody', label: 'Venkovní schodiště a sokl', base: 'assets/scenes/schody_base.jpg', mask: 'assets/scenes/schody_mask.png', shine: 'assets/scenes/schody_shine.png', sceneWidthCm: 280, supportsJoints: false },
+  kuchyne: { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png', shine: null },
+  krb: { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png', shine: null },
+  koupelna: { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png', shine: null },
+  hrob: { key: 'hrob', label: 'Pomník / jednohrob', base: 'assets/scenes/hrob_base.jpg', mask: 'assets/scenes/hrob_mask.png', shine: 'assets/scenes/hrob_shine.png' },
+  hala: { key: 'hala', label: 'Interiérová hala a schodiště', base: 'assets/scenes/hala_base.jpg', mask: 'assets/scenes/hala_mask.png', shine: 'assets/scenes/hala_shine.png' },
+  dlazba: { key: 'dlazba', label: 'Venkovní dlažba a terasa', base: 'assets/scenes/dlazba_base.jpg', mask: 'assets/scenes/dlazba_mask.png', shine: 'assets/scenes/dlazba_shine.png' },
+  schody: { key: 'schody', label: 'Venkovní schodiště a sokl', base: 'assets/scenes/schody_base.jpg', mask: 'assets/scenes/schody_mask.png', shine: 'assets/scenes/schody_shine.png' },
 };
 
 window.SC_getScenesForMaterial = function getScenesForMaterial(mat) {
+  const finish = mat?.surfaceFinish || mat?.sceneTexture?.finish || 'polished';
   const seg = mat?.usageSegment || 'interior';
+  const cat = mat?.categoryKey || '';
+  const isDelicateMarble = cat === 'mramor' || cat === 'vapenec' || cat === 'travertin' || cat === 'onyx';
+  if (finish === 'antislip') {
+    return [window.SC_SCENES.dlazba, window.SC_SCENES.schody, window.SC_SCENES.hrob];
+  }
   if (seg === 'monument_exterior') {
-    return [window.SC_SCENES.hrob, window.SC_SCENES.dlazba, window.SC_SCENES.schody];
+    return [window.SC_SCENES.hrob, window.SC_SCENES.hala, window.SC_SCENES.krb];
   }
   if (seg === 'versatile') {
-    return [window.SC_SCENES.kuchyne, window.SC_SCENES.hrob, window.SC_SCENES.dlazba];
+    return finish === 'matte'
+      ? [window.SC_SCENES.kuchyne, window.SC_SCENES.hala, window.SC_SCENES.hrob]
+      : [window.SC_SCENES.kuchyne, window.SC_SCENES.hrob, window.SC_SCENES.hala];
+  }
+  if (isDelicateMarble) {
+    return [window.SC_SCENES.koupelna, window.SC_SCENES.krb, window.SC_SCENES.hala];
   }
   return [window.SC_SCENES.kuchyne, window.SC_SCENES.krb, window.SC_SCENES.koupelna];
 };

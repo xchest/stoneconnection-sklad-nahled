@@ -172,14 +172,18 @@ function openKatalogModal(slug) {
   if (!p) return;
 
   const scenes = window.SC_getScenesForMaterial(p);
+  const finish = p.surfaceFinish || p.sceneTexture?.finish || 'polished';
   const sceneHeading =
-    p.usageSegment === 'monument_exterior'
-      ? 'Ukázka použití — pomníky, dlažby a exteriér'
-      : p.usageSegment === 'versatile'
-        ? 'Ukázka použití v exteriéru i interiéru'
-        : 'Nechte se inspirovat v interiéru';
+    finish === 'antislip'
+      ? 'Ukázka použití — venkovní dlažby, schodiště a exteriér'
+      : p.usageSegment === 'monument_exterior'
+        ? 'Ukázka použití — pomníky, haly a architektonické obklady'
+        : p.usageSegment === 'versatile'
+          ? 'Ukázka použití v exteriéru i interiéru'
+          : 'Nechte se inspirovat v interiéru';
 
-  const scenesHtml = p.sceneUrl
+  const hasSceneTex = Boolean(p.sceneTexture?.url || p.sceneUrl);
+  const scenesHtml = hasSceneTex
     ? `
       <section class="section-block">
         <div class="section-head">
@@ -187,20 +191,18 @@ function openKatalogModal(slug) {
           <span class="section-sub">Orientační náhled kresby a měřítka kamene v prostoru</span>
         </div>
         <div class="scenes-grid">
-          ${scenes.map(
-            (sc) => {
-              const bgSize = window.SC_getSceneBgSize(sc, p.textureScale || 'medium');
-              return `
+          ${scenes
+            .map(
+              (sc) => `
             <div class="scene-card" style="cursor:default;">
               <div class="scene-stage">
                 <img class="scene-base" src="${esc(sc.base)}" alt="${esc(sc.label)} — ${esc(p.name)}" loading="lazy">
-                <div class="scene-stone-layer" data-tex-src="${esc(p.sceneUrl)}" style="background-image:url('${esc(p.sceneUrl)}');background-size:${esc(bgSize)};-webkit-mask-image:url('${esc(sc.mask)}');mask-image:url('${esc(sc.mask)}');"></div>
-                ${sc.shine ? `<img class="scene-shine" src="${esc(sc.shine)}" alt="" aria-hidden="true" loading="lazy">` : ''}
+                <canvas class="scene-canvas" data-scene-key="${esc(sc.key)}" width="640" height="480" aria-hidden="true"></canvas>
               </div>
               <div class="scene-label">${esc(sc.label)}</div>
-            </div>`;
-            }
-          ).join('')}
+            </div>`
+            )
+            .join('')}
         </div>
       </section>`
     : '';
@@ -244,8 +246,8 @@ function openKatalogModal(slug) {
 
   kEl.modal.hidden = false;
   document.body.style.overflow = 'hidden';
-  if (window.SC_applySeamlessTiles) {
-    window.SC_applySeamlessTiles(kEl.modalBody);
+  if (window.SC_renderAllSceneCanvases) {
+    window.SC_renderAllSceneCanvases(kEl.modalBody, p);
   }
   if (window.location.hash !== `#k=${slug}`) {
     history.replaceState(null, '', `#k=${slug}`);
