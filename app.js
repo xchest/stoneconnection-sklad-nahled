@@ -576,7 +576,7 @@ function openMaterialModal(slug, focusBlock = null) {
 
   const blocksHtml = mat.blocks
     .map((b) => {
-      const bImg = b.detailImages[0] || b.featuredImage;
+      const bImg = b.featuredImage || b.detailImages[0];
       const bLbIdx = bImg ? images.findIndex((img) => img.rawUrl === bImg.rawUrl) : -1;
       const slabsHtml = b.slabs
         .map(

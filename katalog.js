@@ -144,7 +144,7 @@ function renderKatalog() {
   kEl.grid.innerHTML = list
     .map(
       (p) => `
-      <article class="stone-card">
+      <article class="stone-card catalog-card">
         <button type="button" class="card-media-btn" data-kopen="${esc(p.slug)}" aria-label="${esc(p.name)}">
           ${p.cardUrl ? `<img src="${esc(p.cardUrl)}" alt="${esc(p.name)}" loading="lazy" decoding="async">` : `<div class="card-placeholder"><span>Bez fotografie</span></div>`}
         </button>

@@ -146,9 +146,10 @@ function makeImageVariants(url, label, kind, blockNumber = null) {
     kind,
     blockNumber,
     cardUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_640,h_440,c_fill,g_center'),
+    slabCardUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_700,c_limit'),
     thumbUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_240,h_180,c_fill,g_center'),
     fullUrl: rewriteCloudinary(url, 'f_auto,q_auto,w_1400,c_limit'),
-    sceneUrl: rewriteCloudinary(url, 'f_auto,q_85,w_900,c_limit'),
+    sceneUrl: rewriteCloudinary(url, 'f_auto,q_85,w_900,h_640,c_fill,g_center'),
     rawUrl: url,
   };
 }
@@ -415,7 +416,7 @@ async function main() {
       featuredImage: featuredVariant,
       detailImages: detailVariants,
       hasRealPhoto,
-      cardImage: featuredVariant?.cardUrl || detailVariants[0]?.cardUrl || null,
+      cardImage: featuredVariant?.slabCardUrl || detailVariants[0]?.slabCardUrl || null,
       cardImageSource: featuredVariant ? 'slab' : (detailVariants[0] ? 'detail' : 'none'),
       catalogMatch: catalogMatch
         ? {
@@ -437,8 +438,8 @@ async function main() {
 
   const siblingPhotoByMaterial = new Map();
   for (const b of normalizedBlocks) {
-    if (!siblingPhotoByMaterial.has(b.materialSlug) && (b.detailImages[0] || b.featuredImage)) {
-      siblingPhotoByMaterial.set(b.materialSlug, b.detailImages[0] || b.featuredImage);
+    if (!siblingPhotoByMaterial.has(b.materialSlug) && (b.featuredImage || b.detailImages[0])) {
+      siblingPhotoByMaterial.set(b.materialSlug, b.featuredImage || b.detailImages[0]);
     }
   }
 
@@ -449,13 +450,13 @@ async function main() {
   for (const b of normalizedBlocks) {
     if (b.hasRealPhoto) {
       blocksWithPhoto += 1;
+    } else if (siblingPhotoByMaterial.has(b.materialSlug)) {
+      b.cardImage = siblingPhotoByMaterial.get(b.materialSlug).slabCardUrl;
+      b.cardImageSource = 'material-fallback';
+      blocksFallbackPhoto += 1;
     } else if (b.catalogMatch?.image) {
       b.cardImage = b.catalogMatch.image.cardUrl;
       b.cardImageSource = 'catalog-fallback';
-      blocksFallbackPhoto += 1;
-    } else if (siblingPhotoByMaterial.has(b.materialSlug)) {
-      b.cardImage = siblingPhotoByMaterial.get(b.materialSlug).cardUrl;
-      b.cardImageSource = 'material-fallback';
       blocksFallbackPhoto += 1;
     } else {
       blocksWithoutPhoto += 1;
@@ -512,32 +513,40 @@ async function main() {
       galleryImages.push(img);
     };
 
-    if (mat.catalogImage) pushUnique(mat.catalogImage);
-    for (const b of mat.blocks) {
-      for (const d of b.detailImages) pushUnique(d);
-    }
+    // Online Sklad modal gallery: real slab photos (deskovina) FIRST, then block detail shots, then catalog texture
     for (const b of mat.blocks) {
       if (b.featuredImage) pushUnique(b.featuredImage);
     }
+    for (const b of mat.blocks) {
+      for (const d of b.detailImages) pushUnique(d);
+    }
+    if (mat.catalogImage) pushUnique(mat.catalogImage);
 
     const firstDetail = mat.blocks.find((b) => b.detailImages.length > 0)?.detailImages[0] || null;
     const firstSlab = mat.blocks.find((b) => b.featuredImage)?.featuredImage || null;
 
+    // Online Sklad card image MUST prioritize real full slab photo (deskovina)
     let cardImage = null;
-    let sceneTextureUrl = null;
     let cardImageSource = 'none';
-    if (mat.catalogImage) {
-      cardImage = mat.catalogImage.cardUrl;
-      sceneTextureUrl = mat.catalogImage.sceneUrl;
-      cardImageSource = 'catalog';
-    } else if (firstDetail) {
-      cardImage = firstDetail.cardUrl;
-      sceneTextureUrl = firstDetail.sceneUrl;
-      cardImageSource = 'detail';
-    } else if (firstSlab) {
-      cardImage = firstSlab.cardUrl;
-      sceneTextureUrl = firstSlab.sceneUrl;
+    if (firstSlab) {
+      cardImage = firstSlab.slabCardUrl;
       cardImageSource = 'slab';
+    } else if (firstDetail) {
+      cardImage = firstDetail.slabCardUrl;
+      cardImageSource = 'detail';
+    } else if (mat.catalogImage) {
+      cardImage = mat.catalogImage.cardUrl;
+      cardImageSource = 'catalog';
+    }
+
+    // Interior visualization texture keeps clean close-up texture priority (no crane clamp/warehouse background)
+    let sceneTextureUrl = null;
+    if (mat.catalogImage) {
+      sceneTextureUrl = mat.catalogImage.sceneUrl;
+    } else if (firstDetail) {
+      sceneTextureUrl = firstDetail.sceneUrl;
+    } else if (firstSlab) {
+      sceneTextureUrl = firstSlab.sceneUrl;
     }
 
     const colorKeys = [...mat.colors];

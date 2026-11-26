@@ -502,10 +502,10 @@ body {
 .card-media-btn {
   appearance: none;
   border: none;
-  padding: 0;
-  background: #f2f0ec;
+  padding: 8px;
+  background: #f5f4f2;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   cursor: pointer;
   display: block;
@@ -514,9 +514,19 @@ body {
 .card-media-btn img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.catalog-card .card-media-btn {
+  padding: 0;
+  aspect-ratio: 4 / 3;
+  background: #efede9;
+}
+
+.catalog-card .card-media-btn img {
+  object-fit: cover;
 }
 
 .stone-card:hover .card-media-btn img {
@@ -761,8 +771,9 @@ body {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background-color: #efede9;
-  background-size: cover;
+  background-color: #f3f2ef;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   aspect-ratio: 3 / 2;
   cursor: zoom-in;
@@ -771,7 +782,7 @@ body {
 .gallery-main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
