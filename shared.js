@@ -1,10 +1,10 @@
 window.SC_SCENES = {
-  kuchyne: { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png', sceneWidthCm: 330, supportsJoints: false },
-  krb: { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png', sceneWidthCm: 500, supportsJoints: true },
-  koupelna: { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png', sceneWidthCm: 340, supportsJoints: true },
-  hrob: { key: 'hrob', label: 'Pomník / jednohrob', base: 'assets/scenes/hrob_base.jpg', mask: 'assets/scenes/hrob_mask.png', sceneWidthCm: 200, supportsJoints: false },
-  dlazba: { key: 'dlazba', label: 'Venkovní dlažba a terasa', base: 'assets/scenes/dlazba_base.jpg', mask: 'assets/scenes/dlazba_mask.png', sceneWidthCm: 360, supportsJoints: false },
-  schody: { key: 'schody', label: 'Venkovní schodiště a sokl', base: 'assets/scenes/schody_base.jpg', mask: 'assets/scenes/schody_mask.png', sceneWidthCm: 280, supportsJoints: false },
+  kuchyne: { key: 'kuchyne', label: 'Kuchyně s ostrovem', base: 'assets/scenes/kuchyne_base.jpg', mask: 'assets/scenes/kuchyne_mask.png', shine: null, sceneWidthCm: 330, supportsJoints: false },
+  krb: { key: 'krb', label: 'Krbová stěna', base: 'assets/scenes/krb_base.jpg', mask: 'assets/scenes/krb_mask.png', shine: null, sceneWidthCm: 500, supportsJoints: true },
+  koupelna: { key: 'koupelna', label: 'Koupelna', base: 'assets/scenes/koupelna_base.jpg', mask: 'assets/scenes/koupelna_mask.png', shine: null, sceneWidthCm: 340, supportsJoints: true },
+  hrob: { key: 'hrob', label: 'Pomník / jednohrob', base: 'assets/scenes/hrob_base.jpg', mask: 'assets/scenes/hrob_mask.png', shine: 'assets/scenes/hrob_shine.png', sceneWidthCm: 200, supportsJoints: false },
+  dlazba: { key: 'dlazba', label: 'Venkovní dlažba a terasa', base: 'assets/scenes/dlazba_base.jpg', mask: 'assets/scenes/dlazba_mask.png', shine: 'assets/scenes/dlazba_shine.png', sceneWidthCm: 360, supportsJoints: false },
+  schody: { key: 'schody', label: 'Venkovní schodiště a sokl', base: 'assets/scenes/schody_base.jpg', mask: 'assets/scenes/schody_mask.png', shine: 'assets/scenes/schody_shine.png', sceneWidthCm: 280, supportsJoints: false },
 };
 
 window.SC_getScenesForMaterial = function getScenesForMaterial(mat) {
@@ -19,7 +19,7 @@ window.SC_getScenesForMaterial = function getScenesForMaterial(mat) {
 };
 
 window.SC_getSceneBgSize = function getSceneBgSize(scene, textureScale = 'medium') {
-  const tileWidthCm = textureScale === 'fine' ? 90 : textureScale === 'slab' ? 300 : 185;
+  const tileWidthCm = textureScale === 'fine' ? 72 : textureScale === 'slab' ? 295 : 175;
   const sceneWidthCm = scene?.sceneWidthCm || 340;
   const pct = Math.max(18, Math.min(125, Math.round((tileWidthCm / sceneWidthCm) * 100)));
   return `${pct}% auto`;

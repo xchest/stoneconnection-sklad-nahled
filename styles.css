@@ -1153,6 +1153,17 @@ body {
   pointer-events: none;
 }
 
+.scene-shine {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: screen;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 .scene-label {
   padding: 9px 12px;
   font-size: 13px;

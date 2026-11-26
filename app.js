@@ -532,6 +532,7 @@ function buildSceneHtml(scene, textureUrl, materialName, lbIndex, mat) {
       <div class="scene-stage">
         <img class="scene-base" src="${escapeHtml(scene.base)}" alt="${escapeHtml(scene.label)} — ${escapeHtml(materialName)}" loading="lazy">
         <div class="scene-stone-layer${isJointed ? ' is-jointed' : ''}" data-tex-src="${escapeHtml(textureUrl)}" style="background-image:url('${escapeHtml(textureUrl)}');background-size:${escapeHtml(bgSize)};-webkit-mask-image:url('${escapeHtml(scene.mask)}');mask-image:url('${escapeHtml(scene.mask)}');"></div>
+        ${scene.shine ? `<img class="scene-shine" src="${escapeHtml(scene.shine)}" alt="" aria-hidden="true" loading="lazy">` : ''}
       </div>
       <div class="scene-label">${escapeHtml(scene.label)} <span>Zvětšit ⤢</span></div>
     </button>`;
@@ -876,6 +877,7 @@ function openLightbox(index) {
         <div class="scene-stage">
           <img class="scene-base" src="${escapeHtml(item.scene.base)}" alt="${escapeHtml(item.caption)}">
           <div class="scene-stone-layer${item.isJointed ? ' is-jointed' : ''}" data-tex-src="${escapeHtml(item.textureUrl)}" style="background-image:url('${escapeHtml(item.textureUrl)}');background-size:${escapeHtml(bgSize)};-webkit-mask-image:url('${escapeHtml(item.scene.mask)}');mask-image:url('${escapeHtml(item.scene.mask)}');"></div>
+          ${item.scene.shine ? `<img class="scene-shine" src="${escapeHtml(item.scene.shine)}" alt="" aria-hidden="true">` : ''}
         </div>
       </div>
       <div class="lb-caption">${escapeHtml(countText)}</div>`;

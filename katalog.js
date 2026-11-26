@@ -195,6 +195,7 @@ function openKatalogModal(slug) {
               <div class="scene-stage">
                 <img class="scene-base" src="${esc(sc.base)}" alt="${esc(sc.label)} — ${esc(p.name)}" loading="lazy">
                 <div class="scene-stone-layer" data-tex-src="${esc(p.sceneUrl)}" style="background-image:url('${esc(p.sceneUrl)}');background-size:${esc(bgSize)};-webkit-mask-image:url('${esc(sc.mask)}');mask-image:url('${esc(sc.mask)}');"></div>
+                ${sc.shine ? `<img class="scene-shine" src="${esc(sc.shine)}" alt="" aria-hidden="true" loading="lazy">` : ''}
               </div>
               <div class="scene-label">${esc(sc.label)}</div>
             </div>`;
