@@ -2875,4 +2875,125 @@ body {
   .b2b-modal-body {
     padding: 18px 14px 28px;
   }
+
+  .b2b-shop-head {
+    padding: 14px;
+  }
+
+  .b2b-block-photo-strip img {
+    max-height: 190px;
+  }
+}
+
+.b2b-shop-head {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #faf8f5;
+  margin-bottom: 16px;
+}
+
+.b2b-shop-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.b2b-shop-title {
+  margin: 4px 0 6px;
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.b2b-shop-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.b2b-buy-first-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  align-items: center;
+}
+
+.b2b-buy-primary {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+.b2b-buy-primary:hover {
+  filter: brightness(0.94);
+}
+
+.btn-photo-demand {
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: #faf8f5;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-photo-demand:hover,
+.btn-photo-demand.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #fef2f2;
+}
+
+.b2b-block-photo-strip {
+  padding: 12px 14px;
+  background: #f5f3ef;
+  border-bottom: 1px solid var(--border);
+}
+
+.b2b-block-photo-strip img {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  cursor: zoom-in;
+}
+
+.b2b-block-photo-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.b2b-mode-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #d6c5b3;
+  background: #fffdfb;
+  font-size: 13px;
 }
