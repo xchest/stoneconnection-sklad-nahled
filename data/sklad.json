@@ -2,7 +2,7 @@
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/online-sklad/",
     "catalogUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T11:30:29.534Z",
+    "syncedAt": "2026-11-27T11:41:04.044Z",
     "sourceUpdatedAt": "2026-11-27T05:02:08.520Z",
     "totalMaterials": 76,
     "totalBlocks": 143,
@@ -15,8 +15,8 @@
     "materialsWithoutPhoto": 3,
     "materialsWithColors": 76,
     "materialsWithRealizations": 18,
-    "materialsWithStudioViz": 16,
-    "totalStudioViz": 65,
+    "materialsWithStudioViz": 38,
+    "totalStudioViz": 112,
     "totalRealizationPhotos": 149
   },
   "materials": [
@@ -259,7 +259,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/amarelo-macieira/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/amarelo-macieira/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 26A1026 — celá deska",
@@ -871,7 +888,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/aurora-india/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/aurora-india/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PIL-296 — celá deska",
@@ -1354,7 +1388,24 @@
       },
       "cardImageSource": "catalog",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/azul-aran/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/azul-aran/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Azul Aran — katalogová kresba",
@@ -2531,7 +2582,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/bararp/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/bararp/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 8019811 — celá deska",
@@ -3973,7 +4041,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/cape-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/cape-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 340 — celá deska",
@@ -4697,7 +4782,24 @@
           "categoryKey": "exteriery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/cinza-ariz/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/cinza-ariz/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PO260072 — celá deska",
@@ -7042,6 +7144,14 @@
           "order": 1,
           "url": "assets/viz/imperial-red/hrob.jpg",
           "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/imperial-red/hala.jpg",
+          "kind": "studio-viz"
         }
       ],
       "galleryImages": [
@@ -8330,7 +8440,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/misty-brown-vyska-90-cm/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/misty-brown-vyska-90-cm/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PO240296 — celá deska",
@@ -9517,7 +9644,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/multicolour-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/multicolour-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 45824 — celá deska",
@@ -11770,7 +11914,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/nero-impala/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/nero-impala/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 284800 — celá deska",
@@ -12284,7 +12445,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/olive-green/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/olive-green/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 8012781 — celá deska",
@@ -12649,7 +12827,32 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "recepce",
+          "label": "Prosvětlená recepce",
+          "group": "onyx",
+          "order": 1,
+          "url": "assets/viz/onyx-orange/recepce.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/onyx-orange/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "foyer",
+          "label": "Prosvětlený foyer pult",
+          "group": "onyx",
+          "order": 2,
+          "url": "assets/viz/onyx-orange/foyer.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 23242 — celá deska",
@@ -12852,7 +13055,32 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "recepce",
+          "label": "Prosvětlená recepce",
+          "group": "onyx",
+          "order": 1,
+          "url": "assets/viz/onyx-white/recepce.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/onyx-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "foyer",
+          "label": "Prosvětlený foyer pult",
+          "group": "onyx",
+          "order": 2,
+          "url": "assets/viz/onyx-white/foyer.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 307202 — celá deska",
@@ -12979,7 +13207,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/palm-green/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/palm-green/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 23-012 — celá deska",
@@ -13140,7 +13385,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/paradiso-classico/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/paradiso-classico/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 42850 — celá deska",
@@ -13618,7 +13880,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/pietra-di-luserna/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/pietra-di-luserna/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 1026 — celá deska",
@@ -14446,7 +14725,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/regal-black/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/regal-black/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 46089 — celá deska",
@@ -15064,7 +15360,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/romantica/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/romantica/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 44137 — celá deska",
@@ -16002,7 +16315,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/silvestre/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/silvestre/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 60038 — celá deska",
@@ -17928,7 +18258,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/tiger-skin/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/tiger-skin/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PIL-6398 — celá deska",
@@ -18570,7 +18917,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/vanga-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/vanga-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 8019810 — celá deska",
@@ -19955,7 +20319,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/vizag-blue/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/vizag-blue/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 16151 — celá deska",
@@ -20399,7 +20780,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/yellow-river-vyska-70-cm/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/yellow-river-vyska-70-cm/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 220083 — celá deska",

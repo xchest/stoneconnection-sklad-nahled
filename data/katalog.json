@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T11:30:29.534Z",
+    "syncedAt": "2026-11-27T11:41:04.044Z",
     "totalProducts": 118,
     "inStockCount": 46
   },
@@ -43,7 +43,24 @@
         "finish": "antislip"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/amarelo-macieira/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/amarelo-macieira/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "amarelo-macieira",
       "inStockBlocks": 3,
@@ -301,7 +318,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/aurora-india/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/aurora-india/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "aurora-india",
       "inStockBlocks": 4,
@@ -395,7 +429,24 @@
         "finish": "antislip"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/azul-aran/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/azul-aran/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "azul-aran",
       "inStockBlocks": 1,
@@ -611,7 +662,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/bararp/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/bararp/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "bararp",
       "inStockBlocks": 3,
@@ -1967,7 +2035,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/cape-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/cape-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "cape-red",
       "inStockBlocks": 1,
@@ -2177,7 +2262,24 @@
           "categoryKey": "exteriery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/cinza-ariz/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/cinza-ariz/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "cinza-ariz",
       "inStockBlocks": 6,
@@ -3586,7 +3688,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/misty-brown-vyska-90-cm/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/misty-brown-vyska-90-cm/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "misty-brown-vyska-90-cm",
       "inStockBlocks": 2,
@@ -3869,7 +3988,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/multicolour-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/multicolour-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "multicolour-red",
       "inStockBlocks": 6,
@@ -4108,7 +4244,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/nero-impala/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/nero-impala/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "nero-impala",
       "inStockBlocks": 1,
@@ -4383,7 +4536,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/olive-green/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/olive-green/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "olive-green",
       "inStockBlocks": 5,
@@ -4435,7 +4605,32 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "recepce",
+          "label": "Prosvětlená recepce",
+          "group": "onyx",
+          "order": 1,
+          "url": "assets/viz/onyx-orange/recepce.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/onyx-orange/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "foyer",
+          "label": "Prosvětlený foyer pult",
+          "group": "onyx",
+          "order": 2,
+          "url": "assets/viz/onyx-orange/foyer.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "onyx-orange",
       "inStockBlocks": 1,
@@ -4592,7 +4787,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/paradiso-classico/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/paradiso-classico/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "paradiso-classico",
       "inStockBlocks": 3,
@@ -5989,7 +6201,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/tiger-skin/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/tiger-skin/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "tiger-skin",
       "inStockBlocks": 1,
@@ -6363,7 +6592,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/vanga-red/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/vanga-red/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "vanga-red",
       "inStockBlocks": 4,
@@ -6795,7 +7041,24 @@
           "categoryKey": "hrbitovni-architektura"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/vizag-blue/hrob.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/vizag-blue/hala.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "vizag-blue",
       "inStockBlocks": 5,
@@ -6843,7 +7106,24 @@
         "finish": "antislip"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "terasa",
+          "label": "Venkovní terasa 60×60",
+          "group": "exterior",
+          "order": 1,
+          "url": "assets/viz/yellow-river-vyska-70-cm/terasa.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "schody",
+          "label": "Venkovní schodiště",
+          "group": "exterior",
+          "order": 2,
+          "url": "assets/viz/yellow-river-vyska-70-cm/schody.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "yellow-river-vyska-70-cm",
       "inStockBlocks": 1,
