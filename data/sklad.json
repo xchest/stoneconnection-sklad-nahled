@@ -2,7 +2,7 @@
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/online-sklad/",
     "catalogUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T11:41:04.044Z",
+    "syncedAt": "2026-11-27T11:46:47.375Z",
     "sourceUpdatedAt": "2026-11-27T05:02:08.520Z",
     "totalMaterials": 76,
     "totalBlocks": 143,
@@ -15,8 +15,8 @@
     "materialsWithoutPhoto": 3,
     "materialsWithColors": 76,
     "materialsWithRealizations": 18,
-    "materialsWithStudioViz": 38,
-    "totalStudioViz": 112,
+    "materialsWithStudioViz": 56,
+    "totalStudioViz": 152,
     "totalRealizationPhotos": 149
   },
   "materials": [
@@ -72,11 +72,27 @@
       "realizationImages": [],
       "demoVisualizations": [
         {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/absolut-black-w/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
           "slot": "kuchyne",
           "label": "Kuchyně s ostrovem",
           "group": "interior",
           "order": 2,
           "url": "assets/viz/absolut-black-w/kuchyne.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/absolut-black-w/tables.jpg",
           "kind": "studio-viz"
         }
       ],
@@ -1539,7 +1555,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/azul-noche/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/azul-noche/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 550208 — celá deska",
@@ -2347,7 +2380,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/balthus-neve/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/balthus-neve/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 44107 — celá deska",
@@ -2979,7 +3029,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/belvedere/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/belvedere/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PO240024 — celá deska",
@@ -3153,6 +3220,22 @@
           "group": "interior",
           "order": 1,
           "url": "assets/viz/bianco-carrara/koupelna.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/bianco-carrara/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/bianco-carrara/tables.jpg",
           "kind": "studio-viz"
         }
       ],
@@ -3453,7 +3536,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/black-vermont/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/black-vermont/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 16821 — celá deska",
@@ -3616,7 +3716,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/calacatta-green/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/calacatta-green/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 210151 — celá deska",
@@ -3760,7 +3877,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/calacatta-vivaldi/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/calacatta-vivaldi/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 25/001 — celá deska",
@@ -5833,7 +5967,24 @@
           "categoryKey": "interiery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/daino-reale/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/daino-reale/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 240278 — celá deska",
@@ -6150,7 +6301,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/delycatus-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/delycatus-white/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 656 — celá deska",
@@ -6344,7 +6512,24 @@
           "categoryKey": "interiery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/doret/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/doret/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok A2734ANR — celá deska",
@@ -6514,7 +6699,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/emperador-dark/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/emperador-dark/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 8992 — celá deska",
@@ -6670,7 +6872,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/fior-di-bosco/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/fior-di-bosco/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 03112 — celá deska",
@@ -6822,7 +7041,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/golden-macaubas/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/golden-macaubas/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 497 — celá deska",
@@ -6990,7 +7226,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/ijen-blue/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/ijen-blue/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 6927 — celá deska",
@@ -7524,7 +7777,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/kashmir-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/kashmir-white/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 12 — celá deska",
@@ -7653,7 +7923,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/labradorite-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/labradorite-white/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 530 — celá deska",
@@ -7814,7 +8101,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/madura-gold/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/madura-gold/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 922 — celá deska",
@@ -7959,7 +8263,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/marinace-black/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/marinace-black/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok PO210371 — celá deska",
@@ -8117,7 +8438,24 @@
       },
       "cardImageSource": "slab",
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/mist-black/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/mist-black/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "galleryImages": [
         {
           "label": "Blok 43642 — celá deska",

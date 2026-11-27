@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T11:41:04.044Z",
+    "syncedAt": "2026-11-27T11:46:47.375Z",
     "totalProducts": 118,
     "inStockCount": 46
   },
@@ -493,7 +493,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/azul-noche/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/azul-noche/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "azul-noche",
       "inStockBlocks": 2,
@@ -605,7 +622,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/balthus-neve/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/balthus-neve/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "balthus-neve",
       "inStockBlocks": 1,
@@ -833,7 +867,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/belvedere/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/belvedere/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "belvedere",
       "inStockBlocks": 1,
@@ -936,6 +987,22 @@
           "group": "interior",
           "order": 1,
           "url": "assets/viz/bianco-carrara/koupelna.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/bianco-carrara/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/bianco-carrara/tables.jpg",
           "kind": "studio-viz"
         }
       ],
@@ -1182,7 +1249,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/black-vermont/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/black-vermont/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "black-vermont",
       "inStockBlocks": 1,
@@ -1986,7 +2070,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/calacatta-vivaldi/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/calacatta-vivaldi/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "calacatta-vivaldi",
       "inStockBlocks": 1,
@@ -2668,7 +2769,24 @@
           "categoryKey": "interiery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/daino-reale/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/daino-reale/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "daino-reale",
       "inStockBlocks": 1,
@@ -2806,7 +2924,24 @@
           "categoryKey": "interiery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/doret/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/doret/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "doret",
       "inStockBlocks": 1,
@@ -3256,7 +3391,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/ijen-blue/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/ijen-blue/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "ijen-blue",
       "inStockBlocks": 1,
@@ -3597,7 +3749,24 @@
         "finish": "matte"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/marinace-black/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/marinace-black/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "marinace-black",
       "inStockBlocks": 1,
