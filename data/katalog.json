@@ -1,9 +1,9 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-26T21:46:46.991Z",
+    "syncedAt": "2026-11-27T11:27:38.451Z",
     "totalProducts": 118,
-    "inStockCount": 47
+    "inStockCount": 46
   },
   "products": [
     {
@@ -34,16 +34,17 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760008496/zula_amarelo_macieira_lesk_detail_246d52b1a3.png",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760008519/zula_amarelo_macieira_trysk_deska_2fb36d3929.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789540657/zula_amarelo_macieira_trysk_deska_aa3bbc2f51.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760008519/zula_amarelo_macieira_trysk_deska_2fb36d3929.jpg",
-        "widthCm": 169,
-        "heightCm": 111,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789540657/zula_amarelo_macieira_trysk_deska_aa3bbc2f51.jpg",
+        "widthCm": 183,
+        "heightCm": 98,
         "source": "slab",
         "finish": "antislip"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "amarelo-macieira",
       "inStockBlocks": 3,
       "inStockSlabs": 16,
@@ -93,6 +94,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -145,7 +147,49 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/astoria/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/astoria/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/astoria/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/astoria/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/astoria/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "astoria",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -195,6 +239,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -233,10 +278,10 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761919329/zula_aurora_india_blok45279_64d807cf43.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785480533/zula_aurora_india_blok296_deska_af15d4d59c.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761919329/zula_aurora_india_blok45279_64d807cf43.jpg",
-        "widthCm": 197,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785480533/zula_aurora_india_blok296_deska_af15d4d59c.jpg",
+        "widthCm": 188,
         "heightCm": 112,
         "source": "slab",
         "finish": "polished"
@@ -257,9 +302,10 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "aurora-india",
       "inStockBlocks": 4,
-      "inStockSlabs": 18,
+      "inStockSlabs": 17,
       "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. V tloušťkách až 10 cm se uplatňuje na pomnících, náhrobních dílech, masivních schodech i exteriérových obkladech."
     },
     {
@@ -302,6 +348,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -349,6 +396,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "azul-aran",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -388,13 +436,14 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760084973/zula_azul_noche_deska_14c45cd1dd.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760084973/zula_azul_noche_deska_14c45cd1dd.jpg",
-        "widthCm": 171,
-        "heightCm": 105,
+        "widthCm": 157,
+        "heightCm": 101,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "azul-noche",
       "inStockBlocks": 2,
       "inStockSlabs": 16,
@@ -432,24 +481,31 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1790679699/zula_azul_platino_deska_ea8de8640e.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1790679699/zula_azul_platino_deska_ea8de8640e.jpg",
-        "widthCm": 193,
-        "heightCm": 103,
+        "widthCm": 185,
+        "heightCm": 106,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [
         {
-          "url": "assets/viz/azul-platino-hrob.jpg",
-          "label": "Ukázka pomníku — Azul Platino (leštěná žula)",
-          "kind": "demo-viz"
+          "slot": "hrob",
+          "label": "Pomník / jednohrob",
+          "group": "monument",
+          "order": 1,
+          "url": "assets/viz/azul-platino/hrob.jpg",
+          "kind": "studio-viz"
         },
         {
-          "url": "assets/viz/azul-platino-hala.jpg",
-          "label": "Ukázka interiérové haly a schodiště — Azul Platino",
-          "kind": "demo-viz"
+          "slot": "hala",
+          "label": "Interiérová hala a schodiště",
+          "group": "monument",
+          "order": 2,
+          "url": "assets/viz/azul-platino/hala.jpg",
+          "kind": "studio-viz"
         }
       ],
+      "bookmatchEligible": false,
       "inStockSlug": "azul-platino",
       "inStockBlocks": 4,
       "inStockSlabs": 16,
@@ -499,6 +555,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "balthus-neve",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -545,16 +602,17 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1767961182/zula_bararp_detail_9513d20002.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1767961182/zula_bararp_detail_9513d20002.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764667504/zula_bararp_blok501270306_0e60da8f32.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1769769192/zula_bararp_blok8019811_d63dd3e966.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764667504/zula_bararp_blok501270306_0e60da8f32.jpg",
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1769769192/zula_bararp_blok8019811_d63dd3e966.jpg",
         "widthCm": 160,
-        "heightCm": 59,
+        "heightCm": 79,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "bararp",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -601,6 +659,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -707,6 +766,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "belvedere",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -756,6 +816,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -791,22 +852,26 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760610570/mramor_bianco_carrara_detail_728baf20ae.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1768989307/mramor_bianco_carrara_blok424_4d709af833.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1779789430/mramor_bianco_carrara_blok_BC_2020_78e6e410e5.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1768989307/mramor_bianco_carrara_blok424_4d709af833.jpg",
-        "widthCm": 180,
-        "heightCm": 108,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1779789430/mramor_bianco_carrara_blok_BC_2020_78e6e410e5.jpg",
+        "widthCm": 182,
+        "heightCm": 98,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [
         {
-          "url": "assets/viz/bianco-carrara-koupelna.jpg",
-          "label": "Ukázka koupelny — Bianco Carrara (velkoformát)",
-          "kind": "demo-viz"
+          "slot": "koupelna",
+          "label": "Koupelna velkoformát",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/bianco-carrara/koupelna.jpg",
+          "kind": "studio-viz"
         }
       ],
+      "bookmatchEligible": true,
       "inStockSlug": "bianco-carrara",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -853,6 +918,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -903,6 +969,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -948,6 +1015,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -997,6 +1065,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1046,6 +1115,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "black-vermont",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -1095,6 +1165,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1148,6 +1219,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1198,6 +1270,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1243,6 +1316,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1287,6 +1361,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1338,6 +1413,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1387,6 +1463,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1431,6 +1508,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1479,6 +1557,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1528,6 +1607,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1580,6 +1660,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1628,6 +1709,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1681,6 +1763,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1730,6 +1813,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1782,6 +1866,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -1834,6 +1919,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "calacatta-vivaldi",
       "inStockBlocks": 1,
       "inStockSlabs": 8,
@@ -1882,6 +1968,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "cape-red",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -1930,10 +2017,52 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/cielo-de-ivory/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/cielo-de-ivory/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/cielo-de-ivory/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/cielo-de-ivory/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/cielo-de-ivory/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "cielo-de-ivory",
       "inStockBlocks": 1,
-      "inStockSlabs": 7,
+      "inStockSlabs": 5,
       "comment": "Světlá slonovinově béžová žula s jemnou oblačnou kresbou v teple šedých odstínech. Klidný, univerzální materiál pro kuchyňské desky, parapety a světlé koupelny."
     },
     {
@@ -1977,6 +2106,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2048,6 +2178,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "cinza-ariz",
       "inStockBlocks": 6,
       "inStockSlabs": 58,
@@ -2096,7 +2227,49 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/colonial-gold/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/colonial-gold/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/colonial-gold/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/colonial-gold/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/colonial-gold/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "colonial-gold",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -2146,6 +2319,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2191,6 +2365,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2235,6 +2410,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2286,6 +2462,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2331,6 +2508,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2389,6 +2567,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "daino-reale",
       "inStockBlocks": 1,
       "inStockSlabs": 18,
@@ -2432,6 +2611,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2525,6 +2705,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "doret",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -2573,6 +2754,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2627,6 +2809,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2671,6 +2854,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2715,6 +2899,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2763,6 +2948,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2815,6 +3001,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2864,6 +3051,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2913,6 +3101,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -2966,6 +3155,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "ijen-blue",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -3008,16 +3198,58 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785147498/zula_ivory_fantasy_blok2462_a_f6178da205.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785147498/zula_ivory_fantasy_blok2462_a_f6178da205.jpg",
-        "widthCm": 195,
+        "widthCm": 196,
         "heightCm": 113,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/ivory-fantasy/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/ivory-fantasy/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/ivory-fantasy/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/ivory-fantasy/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/ivory-fantasy/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "ivory-fantasy",
       "inStockBlocks": 1,
-      "inStockSlabs": 5,
+      "inStockSlabs": 4,
       "comment": "Světlá slonovinová žula s jemně plynoucí kresbou v teplých béžových a měkkých šedých odstínech. Působí vzdušně na kuchyňských deskách, parapetech i koupelnových obkladech."
     },
     {
@@ -3064,6 +3296,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3109,6 +3342,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3158,6 +3392,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3207,6 +3442,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3260,6 +3496,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "marinace-black",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -3305,6 +3542,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3342,13 +3580,14 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.24,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760694038/zula_misty_brown_deska_62fbb368be.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.24,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760694038/zula_misty_brown_deska_62fbb368be.jpg",
-        "widthCm": 161,
-        "heightCm": 51,
+        "widthCm": 162,
+        "heightCm": 50,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "misty-brown-vyska-90-cm",
       "inStockBlocks": 2,
       "inStockSlabs": 77,
@@ -3395,6 +3634,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3436,13 +3676,14 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1788329768/mramor_moleanos_lesk_deska_f4d31a56b5.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1788329768/mramor_moleanos_lesk_deska_f4d31a56b5.jpg",
-        "widthCm": 165,
-        "heightCm": 79,
+        "widthCm": 164,
+        "heightCm": 82,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "moleanos",
       "inStockBlocks": 3,
       "inStockSlabs": 11,
@@ -3491,6 +3732,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3536,6 +3778,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3582,6 +3825,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -3616,16 +3860,17 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761922965/zula_multicolor_red_blok44837_108c2586f4.jpg",
-        "widthCm": 170,
-        "heightCm": 108,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
+        "widthCm": 185,
+        "heightCm": 101,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "multicolour-red",
       "inStockBlocks": 6,
       "inStockSlabs": 53,
@@ -3698,7 +3943,49 @@
           "categoryKey": "fasady-a-obklady"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/nero-angola/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/nero-angola/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/nero-angola/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/nero-angola/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/nero-angola/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": false,
       "inStockSlug": "nero-angola",
       "inStockBlocks": 2,
       "inStockSlabs": 7,
@@ -3822,6 +4109,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "nero-impala",
       "inStockBlocks": 1,
       "inStockSlabs": 16,
@@ -3880,6 +4168,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "nero-marquina",
       "inStockBlocks": 1,
       "inStockSlabs": 5,
@@ -3924,6 +4213,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4035,9 +4325,10 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "nero-assoluto-zimbabwe",
       "inStockBlocks": 8,
-      "inStockSlabs": 46,
+      "inStockSlabs": 45,
       "comment": "Špičková hluboce černá žula ze Zimbabwe s velmi jemnou a stejnorodou strukturou. Patří k nejoblíbenějším materiálům pro moderní kuchyňské desky, obklady a precizní kamenické detaily."
     },
     {
@@ -4093,6 +4384,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "olive-green",
       "inStockBlocks": 5,
       "inStockSlabs": 13,
@@ -4144,6 +4436,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "onyx-orange",
       "inStockBlocks": 1,
       "inStockSlabs": 1,
@@ -4197,6 +4490,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4250,6 +4544,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4288,16 +4583,17 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760697769/zula_paradiso_classico_detail_f83c5c37c4.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761914712/zula_paradiso_classico_blok10137_5d140121dd.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761914706/zula_paradiso_classico_blok42850_d42aaa1811.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761914712/zula_paradiso_classico_blok10137_5d140121dd.jpg",
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761914706/zula_paradiso_classico_blok42850_d42aaa1811.jpg",
         "widthCm": 186,
-        "heightCm": 101,
+        "heightCm": 82,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "paradiso-classico",
       "inStockBlocks": 3,
       "inStockSlabs": 7,
@@ -4344,6 +4640,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4389,6 +4686,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4413,24 +4711,25 @@
       ],
       "usageSegment": "versatile",
       "usageLabel": "Univerzální",
-      "surfaceFinish": "matte",
-      "textureScale": "slab",
+      "surfaceFinish": "polished",
+      "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1792488934/zula_pietra_lavica_deska_e09eb110e4.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1792488934/zula_pietra_lavica_deska_e09eb110e4.jpg",
-        "widthCm": 150,
-        "heightCm": 79,
-        "source": "slab",
-        "finish": "matte"
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
+        "widthCm": 65,
+        "heightCm": 46,
+        "source": "detail",
+        "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
-      "inStockSlug": "pietra-lavica",
-      "inStockBlocks": 1,
-      "inStockSlabs": 2,
-      "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, terasy, krby a moderní fasády."
+      "bookmatchEligible": false,
+      "inStockSlug": null,
+      "inStockBlocks": 0,
+      "inStockSlabs": 0,
+      "comment": "Žula z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
     },
     {
       "id": "426",
@@ -4472,6 +4771,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4520,6 +4820,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4556,16 +4857,17 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082141/zula_premium_black_detail_ac60424888.png",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082141/zula_premium_black_detail_ac60424888.png",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1791528756/zula_premium_black_deska_blok7186_90784bd205.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1791528732/zula_premium_black_deska_blok7182_81fa8fc1f7.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1791528756/zula_premium_black_deska_blok7186_90784bd205.jpg",
-        "widthCm": 153,
-        "heightCm": 81,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1791528732/zula_premium_black_deska_blok7182_81fa8fc1f7.jpg",
+        "widthCm": 180,
+        "heightCm": 97,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "premium-black",
       "inStockBlocks": 8,
       "inStockSlabs": 17,
@@ -4616,6 +4918,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4664,6 +4967,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4708,6 +5012,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4756,6 +5061,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4804,6 +5110,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -4843,16 +5150,58 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082403/zula_salone_detail_c6f6374371.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082403/zula_salone_detail_c6f6374371.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762158439/zula_salone_blok44654_85fa0f1d8e.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762158441/zula_salone_blok44094_f597ae4491.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762158439/zula_salone_blok44654_85fa0f1d8e.jpg",
-        "widthCm": 184,
-        "heightCm": 113,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762158441/zula_salone_blok44094_f597ae4491.jpg",
+        "widthCm": 194,
+        "heightCm": 111,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/salone/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/salone/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/salone/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/salone/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/salone/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": false,
       "inStockSlug": "salone",
       "inStockBlocks": 2,
       "inStockSlabs": 4,
@@ -4916,6 +5265,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "shivakashi",
       "inStockBlocks": 1,
       "inStockSlabs": 13,
@@ -4964,6 +5314,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5014,6 +5365,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "star-galaxy",
       "inStockBlocks": 3,
       "inStockSlabs": 10,
@@ -5063,6 +5415,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5164,7 +5517,49 @@
           "categoryKey": "interiery"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/statuario-extra/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/statuario-extra/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/statuario-extra/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/statuario-extra/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/statuario-extra/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "statuario-extra",
       "inStockBlocks": 2,
       "inStockSlabs": 9,
@@ -5210,7 +5605,49 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/steel-grey/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/steel-grey/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/steel-grey/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/steel-grey/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/steel-grey/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": false,
       "inStockSlug": "steel-grey",
       "inStockBlocks": 3,
       "inStockSlabs": 9,
@@ -5260,6 +5697,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5305,6 +5743,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5350,6 +5789,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5412,7 +5852,49 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "recepce",
+          "label": "Prosvětlená recepce",
+          "group": "onyx",
+          "order": 1,
+          "url": "assets/viz/taj-mahal/recepce.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/taj-mahal/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "foyer",
+          "label": "Prosvětlený foyer pult",
+          "group": "onyx",
+          "order": 2,
+          "url": "assets/viz/taj-mahal/foyer.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/taj-mahal/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/taj-mahal/vc.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "taj-mahal",
       "inStockBlocks": 3,
       "inStockSlabs": 7,
@@ -5459,6 +5941,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5507,6 +5990,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "tiger-skin",
       "inStockBlocks": 1,
       "inStockSlabs": 2,
@@ -5734,6 +6218,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "travertino-classico",
       "inStockBlocks": 1,
       "inStockSlabs": 11,
@@ -5787,6 +6272,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5833,6 +6319,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5870,13 +6357,14 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.28,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760083988/zula_vanga_red_deska_3d38b5d961.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.28,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760083988/zula_vanga_red_deska_3d38b5d961.jpg",
-        "widthCm": 170,
-        "heightCm": 70,
+        "widthCm": 166,
+        "heightCm": 80,
         "source": "slab",
         "finish": "polished"
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "vanga-red",
       "inStockBlocks": 4,
       "inStockSlabs": 9,
@@ -5921,6 +6409,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -5971,6 +6460,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -6055,7 +6545,49 @@
           "categoryKey": "fasady-a-obklady"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/via-lattea/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/via-lattea/tables.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vb",
+          "label": "Umyvadlo pod desku (VB)",
+          "group": "interior",
+          "order": 3,
+          "url": "assets/viz/via-lattea/vb.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "vc",
+          "label": "Umyvadlo na desku (VC)",
+          "group": "interior",
+          "order": 4,
+          "url": "assets/viz/via-lattea/vc.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "buffet",
+          "label": "Snídaňový / barový pult",
+          "group": "interior",
+          "order": 5,
+          "url": "assets/viz/via-lattea/buffet.jpg",
+          "kind": "studio-viz"
+        }
+      ],
+      "bookmatchEligible": true,
       "inStockSlug": "via-lattea",
       "inStockBlocks": 1,
       "inStockSlabs": 9,
@@ -6146,6 +6678,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "viscont-white",
       "inStockBlocks": 3,
       "inStockSlabs": 18,
@@ -6191,6 +6724,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": null,
       "inStockBlocks": 0,
       "inStockSlabs": 0,
@@ -6225,11 +6759,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1787581502/zula_vizag_blue_deska_46209_1d1a43ccff.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918455/zula_vizag_blue_blok16151_82feab7679.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1787581502/zula_vizag_blue_deska_46209_1d1a43ccff.jpg",
-        "widthCm": 187,
-        "heightCm": 113,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918455/zula_vizag_blue_blok16151_82feab7679.jpg",
+        "widthCm": 179,
+        "heightCm": 108,
         "source": "slab",
         "finish": "polished"
       },
@@ -6262,9 +6796,10 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "vizag-blue",
       "inStockBlocks": 5,
-      "inStockSlabs": 18,
+      "inStockSlabs": 16,
       "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen v tloušťkách 3–6 cm pro pomníkové díly, schodiště, sokly i venkovní prvky."
     },
     {
@@ -6309,6 +6844,7 @@
       },
       "realizationImages": [],
       "demoVisualizations": [],
+      "bookmatchEligible": false,
       "inStockSlug": "yellow-river-vyska-70-cm",
       "inStockBlocks": 1,
       "inStockSlabs": 6,
@@ -6385,6 +6921,7 @@
         }
       ],
       "demoVisualizations": [],
+      "bookmatchEligible": true,
       "inStockSlug": "zambezia-white",
       "inStockBlocks": 1,
       "inStockSlabs": 15,

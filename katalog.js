@@ -202,12 +202,19 @@ function openKatalogModal(slug) {
   }
 
   if (demoImages.length) {
-    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : 'realizations-grid cols-2';
+    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : demoImages.length === 2 ? 'realizations-grid cols-2' : 'realizations-grid';
+    const firstSlot = demoImages[0]?.slot;
+    const compareBtn = firstSlot && p.inStockSlug
+      ? `<a href="showroom.html#scene=${encodeURIComponent(firstSlot)}&a=${encodeURIComponent(p.inStockSlug)}" class="btn-secondary compare-cta-inline">Porovnat v Showroomu ⇄</a>`
+      : '';
     showcaseHtml += `
       <section class="section-block">
         <div class="section-head">
-          <h3 class="section-title">Architektonická ukázka v prostoru</h3>
-          <span class="section-sub">Fotorealistická vizualizace · <a href="${esc(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Vyhledat reálné realizace „${esc(p.name)}“ ↗</a></span>
+          <div>
+            <h3 class="section-title">Architektonické vizualizace v prostoru (${demoImages.length})</h3>
+            <span class="section-sub">Fotorealistické renderované scény · <a href="${esc(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Další realizace „${esc(p.name)}“ ↗</a></span>
+          </div>
+          ${compareBtn}
         </div>
         <div class="${gridClass}">
           ${demoImages

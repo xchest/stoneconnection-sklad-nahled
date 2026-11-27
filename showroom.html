@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Showroom — Srovnání materiálů v prostoru | Stone Connection</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261127a">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="domu.html" class="brand-logo" aria-label="Stone Connection — Domů">
+        <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_80,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection logo" width="34" height="34">
+        <span class="brand-text">STONE CONNECTION</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace">
+        <a href="domu.html" class="nav-link">Domů</a>
+        <a href="index.html" class="nav-link">Online Sklad</a>
+        <a href="katalog.html" class="nav-link">Katalog</a>
+        <a href="showroom.html" class="nav-link active" aria-current="page">Showroom</a>
+        <a href="realizace.html" class="nav-link">Realizace</a>
+        <a href="o-nas.html" class="nav-link">O nás</a>
+        <a href="kontakt.html" class="nav-link nav-cta">Kontakt</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="context-bar">
+    <div class="container context-row">
+      <div>
+        <nav class="breadcrumb" aria-label="Drobečková navigace">
+          <a href="domu.html">Stone Connection</a>
+          <span aria-hidden="true">›</span>
+          <span>Showroom</span>
+        </nav>
+        <h1 class="page-title">Architektonický Showroom — srovnání desek ve shodném prostoru</h1>
+      </div>
+      <a href="index.html" class="btn-primary">Přejít do Online skladu →</a>
+    </div>
+  </section>
+
+  <main class="page-band">
+    <div class="container">
+      <div class="showroom-scene-tabs" id="sr-scene-tabs" role="tablist" aria-label="Vybrat scénu"></div>
+
+      <section class="showroom-stage-shell" aria-label="Srovnání dvou materiálů posuvníkem">
+        <div class="showroom-compare" id="sr-compare" tabindex="0" role="slider" aria-label="Posuvník porovnání materiálu vlevo a vpravo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <img class="sr-img sr-img-right" id="sr-img-right" alt="">
+          <div class="sr-left-clip" id="sr-left-clip">
+            <img class="sr-img sr-img-left" id="sr-img-left" alt="">
+          </div>
+          <div class="sr-divider" id="sr-divider">
+            <span class="sr-handle" aria-hidden="true">⇄</span>
+          </div>
+          <div class="sr-corner-badge left" id="sr-badge-left"></div>
+          <div class="sr-corner-badge right" id="sr-badge-right"></div>
+        </div>
+
+        <div class="showroom-info-bar" id="sr-info-bar">
+          <div class="sr-side-card" id="sr-info-left"></div>
+          <div class="sr-side-card align-right" id="sr-info-right"></div>
+        </div>
+      </section>
+
+      <div class="showroom-pickers">
+        <section class="sr-picker-col">
+          <div class="sr-picker-head">
+            <h2>Levá strana <span id="sr-left-count"></span></h2>
+          </div>
+          <div class="sr-swatch-list" id="sr-list-left"></div>
+        </section>
+
+        <section class="sr-picker-col">
+          <div class="sr-picker-head">
+            <h2>Pravá strana <span id="sr-right-count"></span></h2>
+          </div>
+          <div class="sr-swatch-list" id="sr-list-right"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-header site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="domu.html" class="brand-logo">
+          <img src="https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_80,w_40,c_limit/v1748457478/favicon_f51d88bed5.png" alt="Stone Connection" width="32" height="32">
+          <span class="brand-text">STONE CONNECTION</span>
+        </a>
+        <p class="footer-note">Interaktivní porovnání skladových materiálů při shodném osvětlení a architektuře.</p>
+      </div>
+
+      <address class="footer-col">
+        <strong>Stone Connection Czech s.r.o.</strong>
+        <div>Sokolská 408</div>
+        <div>756 61 Rožnov pod Radhoštěm</div>
+        <div class="footer-ico">IČO: 26827301</div>
+      </address>
+
+      <div class="footer-col">
+        <strong>Sklady a showroomy</strong>
+        <div>Praha 4 — Dobronická 1256</div>
+        <div>Rožnov pod Radhoštěm — Zuberská ul.</div>
+        <div><a href="kontakt.html">Kontakty a otevírací doba →</a></div>
+      </div>
+
+      <div class="footer-col">
+        <strong>Navigace</strong>
+        <div><a href="domu.html">Domů</a> · <a href="index.html">Online Sklad</a></div>
+        <div><a href="katalog.html">Katalog</a> · <a href="realizace.html">Realizace</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js?v=20261127a" defer></script>
+  <script src="showroom.js?v=20261127a" defer></script>
+</body>
+</html>

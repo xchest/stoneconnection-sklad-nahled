@@ -524,6 +524,136 @@ function buildBlockSpecText(materialName, block) {
   return lines.join('\n');
 }
 
+function findSharedCompareSlot(matA, matB) {
+  const aSlots = new Map((matA?.demoVisualizations || []).map((v) => [v.slot, v]));
+  for (const v of matB?.demoVisualizations || []) {
+    if (aSlots.has(v.slot)) return v.slot;
+  }
+  return null;
+}
+
+function findShowroomTarget(mat) {
+  const own = mat?.demoVisualizations || [];
+  if (!own.length || !state.data?.materials) return null;
+  const alts = mat.alternatives || [];
+  for (const v of own) {
+    for (const alt of alts) {
+      const altMat = state.data.materials.find((m) => m.slug === alt.slug);
+      if (altMat?.demoVisualizations?.some((av) => av.slot === v.slot)) {
+        return { slot: v.slot, partnerSlug: alt.slug };
+      }
+    }
+    const anyPartner = state.data.materials.find(
+      (m) => m.slug !== mat.slug && (m.demoVisualizations || []).some((mv) => mv.slot === v.slot)
+    );
+    if (anyPartner) return { slot: v.slot, partnerSlug: anyPartner.slug };
+  }
+  return null;
+}
+
+function buildBookmatchGridHtml(url, altText) {
+  const u = escapeHtml(url);
+  const a = escapeHtml(altText);
+  return `
+    <div class="bookmatch-wall">
+      <div class="bookmatch-tile bm-tl"><img src="${u}" alt="${a}" loading="lazy"></div>
+      <div class="bookmatch-tile bm-tr"><img src="${u}" alt="" loading="lazy"></div>
+      <div class="bookmatch-tile bm-bl"><img src="${u}" alt="" loading="lazy"></div>
+      <div class="bookmatch-tile bm-br"><img src="${u}" alt="" loading="lazy"></div>
+    </div>`;
+}
+
+function printSpecSheet(mat) {
+  const win = window.open('', '_blank', 'width=960,height=1100');
+  if (!win) {
+    showToast('Povolte vyskakovací okna pro otevření tiskového PDF listu.');
+    return;
+  }
+  const heroImg = mat.galleryImages?.[0]?.fullUrl || mat.cardImage || '';
+  const fmt = mat.maxLengthCm && mat.maxHeightCm ? `${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm` : 'dle bloků';
+  const vizSamples = [...(mat.demoVisualizations || []), ...(mat.realizationImages || []).map((r) => ({ url: r.cardUrl, label: r.category || 'Reálná realizace' }))].slice(0, 2);
+  const blockRows = (mat.blocks || [])
+    .slice(0, 12)
+    .map(
+      (b) => `<tr>
+        <td><strong>${escapeHtml(b.blockNumber)}</strong></td>
+        <td>${escapeHtml(b.warehouses.join(', '))}</td>
+        <td>${b.slabCount} ks</td>
+        <td>${escapeHtml(b.thicknesses.map((t) => `${t} cm`).join(', '))}</td>
+        <td>${escapeHtml(b.surfaces.join(', '))}</td>
+        <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong></td>
+      </tr>`
+    )
+    .join('');
+
+  win.document.write(`<!doctype html>
+<html lang="cs"><head><meta charset="utf-8">
+<title>${escapeHtml(mat.name)} — Katalogový list | Stone Connection</title>
+<style>
+  @page { size: A4; margin: 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, Segoe UI, Arial, sans-serif; color: #1c1917; font-size: 12px; line-height: 1.45; }
+  .head { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #991b1b; padding-bottom: 8px; margin-bottom: 14px; }
+  .brand { font-weight: 700; letter-spacing: 0.08em; font-size: 14px; color: #1c1917; }
+  .meta-right { font-size: 11px; color: #57534e; }
+  h1 { margin: 0 0 6px; font-family: Georgia, serif; font-size: 24px; }
+  .badges { color: #57534e; font-size: 11.5px; margin-bottom: 10px; }
+  .top-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; margin-bottom: 14px; }
+  .hero-img { width: 100%; max-height: 215px; object-fit: contain; background: #f5f3ef; border: 1px solid #e5e0d8; border-radius: 6px; }
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 10px 0; }
+  .kpi { border: 1px solid #e5e0d8; border-radius: 5px; padding: 7px 9px; background: #faf8f5; }
+  .kpi strong { display: block; font-size: 14px; }
+  .kpi span { font-size: 10.5px; color: #57534e; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 11px; }
+  th, td { border-bottom: 1px solid #e7e5e4; padding: 5px 6px; text-align: left; }
+  th { background: #f5f3ef; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em; color: #57534e; }
+  .viz-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 14px; }
+  .viz-box { border: 1px solid #e5e0d8; border-radius: 6px; overflow: hidden; }
+  .viz-box img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+  .viz-cap { padding: 5px 8px; font-size: 11px; font-weight: 600; background: #faf8f5; }
+  .foot { margin-top: 16px; padding-top: 8px; border-top: 1px solid #e5e0d8; font-size: 10.5px; color: #57534e; display: flex; justify-content: space-between; }
+</style></head><body>
+  <div class="head">
+    <div class="brand">STONE CONNECTION · PŘÍRODNÍ KÁMEN</div>
+    <div class="meta-right">Sklad Praha &amp; Rožnov pod Radhoštěm · stoneconnection.cz</div>
+  </div>
+  <h1>${escapeHtml(mat.name)}</h1>
+  <div class="badges">${escapeHtml(mat.categoryLabel)}${mat.origin ? ` · Původ: ${escapeHtml(mat.origin)}` : ''} · Použití: ${escapeHtml(mat.usageLabel || 'Interiér')}</div>
+  <div class="top-grid">
+    <div>${heroImg ? `<img class="hero-img" src="${escapeHtml(heroImg)}" alt="${escapeHtml(mat.name)}">` : ''}</div>
+    <div>
+      <p style="margin:0 0 8px;">${escapeHtml(mat.comment || '')}</p>
+      <div class="kpis">
+        <div class="kpi"><strong>${mat.blockCount}</strong><span>bloků skladem</span></div>
+        <div class="kpi"><strong>${mat.totalSlabs} ks</strong><span>desek celkem</span></div>
+        <div class="kpi"><strong>${formatNumber(mat.totalAreaM2, 2)} m²</strong><span>celková plocha</span></div>
+      </div>
+      <div><strong>Max. formát:</strong> ${escapeHtml(fmt)}</div>
+      <div><strong>Tloušťky:</strong> ${escapeHtml(mat.thicknesses.map((t) => `${t} cm`).join(', ') || 'neuvedeno')}</div>
+      <div><strong>Povrchy:</strong> ${escapeHtml(mat.surfaces.join(', ') || 'neuvedeno')}</div>
+      ${mat.applications.length ? `<div><strong>Vhodné použití:</strong> ${escapeHtml(mat.applications.join(', '))}</div>` : ''}
+    </div>
+  </div>
+  <strong>Přehled skladových bloků</strong>
+  <table>
+    <thead><tr><th>Blok</th><th>Sklad</th><th>Desky</th><th>Tloušťka</th><th>Povrch</th><th>Plocha</th></tr></thead>
+    <tbody>${blockRows}</tbody>
+  </table>
+  ${vizSamples.length ? `<div class="viz-grid">${vizSamples.map((v) => `<div class="viz-box"><img src="${escapeHtml(v.url)}" alt="${escapeHtml(v.label)}"><div class="viz-cap">${escapeHtml(v.label)}</div></div>`).join('')}</div>` : ''}
+  <div class="foot">
+    <span>Online sklad Stone Connection · orientační prezentační list</span>
+    <span>${escapeHtml(window.location.origin + window.location.pathname + '#m=' + mat.slug)}</span>
+  </div>
+</body></html>`);
+  win.document.close();
+  win.addEventListener('load', () => {
+    setTimeout(() => {
+      win.focus();
+      win.print();
+    }, 350);
+  });
+}
+
 function openMaterialModal(slug, focusBlock = null) {
   const mat = state.data?.materials.find((m) => m.slug === slug);
   if (!mat) return;
@@ -544,6 +674,7 @@ function openMaterialModal(slug, focusBlock = null) {
   const realImages = Array.isArray(mat.realizationImages) ? mat.realizationImages : [];
   const demoImages = Array.isArray(mat.demoVisualizations) ? mat.demoVisualizations : [];
   const searchUrl = window.SC_buildRealizationSearchUrl ? window.SC_buildRealizationSearchUrl(mat) : '#';
+  const showroomTarget = findShowroomTarget(mat);
 
   const realStartIdx = lbItems.length;
   for (const rImg of realImages) {
@@ -563,8 +694,18 @@ function openMaterialModal(slug, focusBlock = null) {
     });
   }
 
-  let detailGrainLbIdx = -1;
+  let bookmatchLbIdx = -1;
   const grainTexUrl = mat.sceneTexture?.url || mat.sceneTextureUrl || null;
+  if (mat.bookmatchEligible && grainTexUrl) {
+    bookmatchLbIdx = lbItems.length;
+    lbItems.push({
+      kind: 'bookmatch',
+      url: grainTexUrl,
+      caption: `${mat.name} — Zrcadlený Bookmatch 2×2 ze skladové desky`,
+    });
+  }
+
+  let detailGrainLbIdx = -1;
   if (!realImages.length && !demoImages.length && grainTexUrl) {
     detailGrainLbIdx = lbItems.length;
     lbItems.push({
@@ -574,6 +715,12 @@ function openMaterialModal(slug, focusBlock = null) {
     });
   }
 
+  const isStripFormat = mat.maxHeightCm > 0 && mat.maxHeightCm <= 115;
+  const heroFmtPill =
+    mat.maxLengthCm && mat.maxHeightCm
+      ? `<span class="gallery-format-pill">${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm${isStripFormat ? ' · pásový formát' : ''}</span>`
+      : '';
+
   const activeImg = images[initialIdx] || null;
   const stageBg = mat.cardImage || activeImg?.thumbUrl || '';
   const galleryHtml = activeImg
@@ -582,6 +729,7 @@ function openMaterialModal(slug, focusBlock = null) {
         <div class="gallery-main" id="modal-main-stage" data-lb-idx="${initialIdx}" ${stageBg ? `style="background-image:url('${escapeHtml(stageBg)}')"` : ''}>
           <img id="modal-main-img" src="${escapeHtml(activeImg.fullUrl)}" alt="${escapeHtml(mat.name)}">
           <span class="gallery-caption" id="modal-main-caption">${escapeHtml(activeImg.label)}</span>
+          ${heroFmtPill}
           <span class="gallery-zoom-pill">Zvětšit ⤢</span>
         </div>
         ${
@@ -611,6 +759,36 @@ function openMaterialModal(slug, focusBlock = null) {
   const formatLine = formatParts.length ? formatParts.join(' · ') : '';
 
   let showcaseHtml = '';
+  if (demoImages.length) {
+    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : demoImages.length === 2 ? 'realizations-grid cols-2' : 'realizations-grid';
+    const compareBtn = showroomTarget
+      ? `<a href="showroom.html#scene=${encodeURIComponent(showroomTarget.slot)}&a=${encodeURIComponent(mat.slug)}&b=${encodeURIComponent(showroomTarget.partnerSlug)}" class="btn-secondary compare-cta-inline">Porovnat v Showroomu (Před / Po) ⇄</a>`
+      : '';
+    showcaseHtml += `
+      <section class="section-block">
+        <div class="section-head">
+          <div>
+            <h3 class="section-title">Architektonické vizualizace v prostoru (${demoImages.length})</h3>
+            <span class="section-sub">Fotorealistické renderované scény · <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Další realizace „${escapeHtml(mat.name)}“ ↗</a></span>
+          </div>
+          ${compareBtn}
+        </div>
+        <div class="${gridClass}">
+          ${demoImages
+            .map(
+              (dImg, idx) => `
+            <button type="button" class="viz-card" data-lb-idx="${demoStartIdx + idx}">
+              <div class="viz-media">
+                <img src="${escapeHtml(dImg.url)}" alt="${escapeHtml(dImg.label)}" loading="lazy">
+              </div>
+              <div class="scene-label">${escapeHtml(dImg.label)} <span>Zvětšit ⤢</span></div>
+            </button>`
+            )
+            .join('')}
+        </div>
+      </section>`;
+  }
+
   if (realImages.length) {
     const gridClass = realImages.length === 1 ? 'realizations-grid cols-1' : realImages.length === 2 ? 'realizations-grid cols-2' : 'realizations-grid';
     showcaseHtml += `
@@ -635,31 +813,33 @@ function openMaterialModal(slug, focusBlock = null) {
       </section>`;
   }
 
-  if (demoImages.length) {
-    const gridClass = demoImages.length === 1 ? 'realizations-grid cols-1' : 'realizations-grid cols-2';
+  if (bookmatchLbIdx >= 0) {
     showcaseHtml += `
       <section class="section-block">
         <div class="section-head">
-          <h3 class="section-title">Architektonická ukázka v prostoru</h3>
-          <span class="section-sub">Fotorealistická vizualizace · <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="ext-ref-link">Vyhledat reálné realizace „${escapeHtml(mat.name)}“ ↗</a></span>
+          <h3 class="section-title">Náhled zrcadlového skládání — Bookmatch 2×2</h3>
+          <span class="section-sub">Symetrická kresba při řezání sousedních desek za sebou do celostěnového obkladu</span>
         </div>
-        <div class="${gridClass}">
-          ${demoImages
-            .map(
-              (dImg, idx) => `
-            <button type="button" class="viz-card" data-lb-idx="${demoStartIdx + idx}">
-              <div class="viz-media">
-                <img src="${escapeHtml(dImg.url)}" alt="${escapeHtml(dImg.label)}" loading="lazy">
-              </div>
-              <div class="scene-label">${escapeHtml(dImg.label)} <span>Zvětšit ⤢</span></div>
-            </button>`
-            )
-            .join('')}
+        <div class="detail-grain-band">
+          <button type="button" class="viz-card" data-lb-idx="${bookmatchLbIdx}">
+            ${buildBookmatchGridHtml(grainTexUrl, mat.name)}
+            <div class="scene-label">Bookmatch 2×2 stěna <span>Zvětšit ⤢</span></div>
+          </button>
+          <div class="material-spec-panel">
+            <p class="spec-panel-lead">U výrazně žilnatých materiálů lze desky řezané za sebou v bloku zrcadlově rozkládat („do knihy“) na krbové stěny, koupelny či recepce.</p>
+            <div class="spec-panel-facts">
+              ${mat.maxLengthCm && mat.maxHeightCm ? `<div><strong>Formát desek:</strong> až ${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm</div>` : ''}
+              ${mat.thicknesses?.length ? `<div><strong>Tloušťky:</strong> ${escapeHtml(mat.thicknesses.map((t) => `${t} cm`).join(', '))}</div>` : ''}
+            </div>
+            <div>
+              <a href="${escapeHtml(searchUrl)}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                Vyhledat reálné realizace „${escapeHtml(mat.name)}“ ↗
+              </a>
+            </div>
+          </div>
         </div>
       </section>`;
-  }
-
-  if (!realImages.length && !demoImages.length) {
+  } else if (!realImages.length && !demoImages.length) {
     showcaseHtml = `
       <section class="section-block">
         <div class="section-head">
@@ -771,8 +951,10 @@ function openMaterialModal(slug, focusBlock = null) {
         </div>
         <div class="alt-grid">
           ${mat.alternatives
-            .map(
-              (alt) => `
+            .map((alt) => {
+              const altMat = state.data?.materials.find((m) => m.slug === alt.slug);
+              const sharedSlot = findSharedCompareSlot(mat, altMat);
+              return `
             <button type="button" class="alt-card" data-open-material="${escapeHtml(alt.slug)}">
               <div class="alt-thumb">
                 ${renderCardImage(alt.cardImage, alt.name)}
@@ -780,10 +962,17 @@ function openMaterialModal(slug, focusBlock = null) {
               <div class="alt-info">
                 <div class="alt-name">${escapeHtml(alt.name)}</div>
                 <div class="alt-reason">${escapeHtml(alt.reason)}</div>
-                <div class="alt-cta">Zobrazit materiál →</div>
+                <div class="alt-actions-row">
+                  <span class="alt-cta">Zobrazit materiál →</span>
+                  ${
+                    sharedSlot
+                      ? `<a href="showroom.html#scene=${encodeURIComponent(sharedSlot)}&a=${encodeURIComponent(mat.slug)}&b=${encodeURIComponent(alt.slug)}" class="alt-compare-link" data-no-modal>Porovnat ⇄</a>`
+                      : ''
+                  }
+                </div>
               </div>
-            </button>`
-            )
+            </button>`;
+            })
             .join('')}
         </div>
       </section>`
@@ -824,6 +1013,9 @@ function openMaterialModal(slug, focusBlock = null) {
           <a href="${materialInquiryHref}" class="btn-primary">
             Poptat materiál →
           </a>
+          <button type="button" class="btn-secondary" id="modal-print-btn">
+            Tisk / PDF list ⎙
+          </button>
           ${
             catalogSlug
               ? `<a href="katalog.html#k=${escapeHtml(catalogSlug)}" class="btn-secondary">
@@ -890,10 +1082,16 @@ function openMaterialModal(slug, focusBlock = null) {
   });
 
   el.modalBody.querySelectorAll('[data-open-material]').forEach((altBtn) => {
-    altBtn.addEventListener('click', () => {
+    altBtn.addEventListener('click', (e) => {
+      if (e.target.closest('a[data-no-modal]')) return;
       openMaterialModal(altBtn.getAttribute('data-open-material'));
     });
   });
+
+  const printBtn = document.getElementById('modal-print-btn');
+  if (printBtn) {
+    printBtn.addEventListener('click', () => printSpecSheet(mat));
+  }
 }
 
 function closeModal() {
@@ -910,9 +1108,17 @@ function openLightbox(index) {
   const item = state.lightboxItems[state.lightboxIndex];
   const countText = `${item.caption} (${state.lightboxIndex + 1} / ${state.lightboxItems.length})`;
 
-  el.lbStage.innerHTML = `
-    <img class="lb-photo" src="${escapeHtml(item.url)}" alt="${escapeHtml(item.caption)}">
-    <div class="lb-caption">${escapeHtml(countText)}</div>`;
+  if (item.kind === 'bookmatch') {
+    el.lbStage.innerHTML = `
+      <div class="lb-bookmatch-wrap">
+        ${buildBookmatchGridHtml(item.url, item.caption)}
+      </div>
+      <div class="lb-caption">${escapeHtml(countText)}</div>`;
+  } else {
+    el.lbStage.innerHTML = `
+      <img class="lb-photo" src="${escapeHtml(item.url)}" alt="${escapeHtml(item.caption)}">
+      <div class="lb-caption">${escapeHtml(countText)}</div>`;
+  }
 
   el.lbPrev.hidden = state.lightboxItems.length <= 1;
   el.lbNext.hidden = state.lightboxItems.length <= 1;

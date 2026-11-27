@@ -37,21 +37,51 @@ const REALIZATION_ALIASES = new Map([
   ['misty-brown-vyska-90-cm', ['misty_brown']],
 ]);
 
-const FLAGSHIP_DEMO_RENDERS = new Map([
-  ['azul-platino', [
-    { url: 'assets/viz/azul-platino-hrob.jpg', label: 'Ukázka pomníku — Azul Platino (leštěná žula)', kind: 'demo-viz' },
-    { url: 'assets/viz/azul-platino-hala.jpg', label: 'Ukázka interiérové haly a schodiště — Azul Platino', kind: 'demo-viz' },
-  ]],
-  ['bianco-carrara', [
-    { url: 'assets/viz/bianco-carrara-koupelna.jpg', label: 'Ukázka koupelny — Bianco Carrara (velkoformát)', kind: 'demo-viz' },
-  ]],
-  ['absolut-black-w', [
-    { url: 'assets/viz/absolut-black-w-kuchyne.jpg', label: 'Ukázka kuchyňského ostrůvku — Absolut Black (matte/leather)', kind: 'demo-viz' },
-  ]],
-  ['imperial-red', [
-    { url: 'assets/viz/imperial-red-hrob.jpg', label: 'Ukázka pomníku — Imperial Red (leštěná žula)', kind: 'demo-viz' },
-  ]],
+const VIZ_SLOT_META = new Map([
+  ['va', { key: 'va', label: 'Koupelnový žlab (VA)', group: 'interior', order: 1 }],
+  ['tables', { key: 'tables', label: 'Bistro / konferenční stolky', group: 'interior', order: 2 }],
+  ['vb', { key: 'vb', label: 'Umyvadlo pod desku (VB)', group: 'interior', order: 3 }],
+  ['vc', { key: 'vc', label: 'Umyvadlo na desku (VC)', group: 'interior', order: 4 }],
+  ['buffet', { key: 'buffet', label: 'Snídaňový / barový pult', group: 'interior', order: 5 }],
+  ['recepce', { key: 'recepce', label: 'Prosvětlená recepce', group: 'onyx', order: 1 }],
+  ['foyer', { key: 'foyer', label: 'Prosvětlený foyer pult', group: 'onyx', order: 2 }],
+  ['koupelna', { key: 'koupelna', label: 'Koupelna velkoformát', group: 'interior', order: 1 }],
+  ['kuchyne', { key: 'kuchyne', label: 'Kuchyně s ostrovem', group: 'interior', order: 2 }],
+  ['hrob', { key: 'hrob', label: 'Pomník / jednohrob', group: 'monument', order: 1 }],
+  ['hala', { key: 'hala', label: 'Interiérová hala a schodiště', group: 'monument', order: 2 }],
+  ['terasa', { key: 'terasa', label: 'Venkovní terasa 60×60', group: 'exterior', order: 1 }],
+  ['schody', { key: 'schody', label: 'Venkovní schodiště', group: 'exterior', order: 2 }],
 ]);
+
+function scanStudioVizMap() {
+  const vizRoot = path.join(ROOT_DIR, 'assets', 'viz');
+  const map = new Map();
+  if (!fs.existsSync(vizRoot)) return map;
+
+  for (const entry of fs.readdirSync(vizRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const slug = entry.name;
+    const dirPath = path.join(vizRoot, slug);
+    const items = [];
+    for (const file of fs.readdirSync(dirPath, { withFileTypes: true })) {
+      if (!file.isFile()) continue;
+      if (!/\.(jpe?g|png|webp)$/i.test(file.name)) continue;
+      const slot = file.name.replace(/\.[a-z0-9]+$/i, '').toLowerCase();
+      const meta = VIZ_SLOT_META.get(slot) || { key: slot, label: slot, group: 'interior', order: 99 };
+      items.push({
+        slot: meta.key,
+        label: meta.label,
+        group: meta.group,
+        order: meta.order,
+        url: `assets/viz/${slug}/${file.name}`,
+        kind: 'studio-viz',
+      });
+    }
+    items.sort((a, b) => a.order - b.order || a.slot.localeCompare(b.slot, 'cs'));
+    if (items.length) map.set(slug, items);
+  }
+  return map;
+}
 
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -849,6 +879,7 @@ async function main() {
     mat.blocks.push(block);
   }
 
+  const studioVizMap = scanStudioVizMap();
   const materialsMetaList = [...materialsMap.values()].map((m) => ({ slug: m.slug, name: m.name }));
   const { byMaterialSlug: realizationMap, galleryItems: realizationGallery, categoryCounts: realizationCategories } =
     extractRealizationsData(realizationPages, materialsMetaList);
@@ -933,6 +964,17 @@ async function main() {
       }
     }
 
+    const bookmatchEligible = Boolean(
+      sceneTexture.url &&
+        (pattern === 'veined' ||
+          pattern === 'dramatic' ||
+          pattern === 'onyx' ||
+          mat.categoryKey === 'mramor' ||
+          mat.categoryKey === 'kvarcit' ||
+          mat.categoryKey === 'onyx' ||
+          mat.categoryKey === 'keramika')
+    );
+
     return {
       slug: mat.slug,
       name: mat.name,
@@ -948,6 +990,7 @@ async function main() {
       colors: colorObjs,
       tone,
       pattern,
+      bookmatchEligible,
       usageSegment,
       usageLabel,
       textureScale,
@@ -964,7 +1007,7 @@ async function main() {
       sceneTexture,
       cardImageSource,
       realizationImages: realizationMap.get(mat.slug) || [],
-      demoVisualizations: FLAGSHIP_DEMO_RENDERS.get(mat.slug) || [],
+      demoVisualizations: studioVizMap.get(mat.slug) || [],
       galleryImages,
       alternatives: [],
       blocks: mat.blocks.map((b) => ({
@@ -1018,6 +1061,8 @@ async function main() {
       materialsWithoutPhoto: materials.filter((m) => !m.cardImage).length,
       materialsWithColors: materials.filter((m) => m.colors.length > 0).length,
       materialsWithRealizations: materials.filter((m) => m.realizationImages.length > 0).length,
+      materialsWithStudioViz: materials.filter((m) => m.demoVisualizations.length > 0).length,
+      totalStudioViz: materials.reduce((acc, m) => acc + m.demoVisualizations.length, 0),
       totalRealizationPhotos: realizationGallery.length,
     },
     materials,
@@ -1106,7 +1151,8 @@ async function main() {
         sceneUrl: catalogSceneTexture.url,
         sceneTexture: catalogSceneTexture,
         realizationImages: stockMatch?.realizationImages || [],
-        demoVisualizations: FLAGSHIP_DEMO_RENDERS.get(stockMatch?.slug || slug) || [],
+        demoVisualizations: studioVizMap.get(stockMatch?.slug || slug) || [],
+        bookmatchEligible: Boolean(stockMatch?.bookmatchEligible),
         inStockSlug: stockMatch ? stockMatch.slug : null,
         inStockBlocks: stockMatch ? stockMatch.blockCount : 0,
         inStockSlabs: stockMatch ? stockMatch.totalSlabs : 0,
