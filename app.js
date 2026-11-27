@@ -50,6 +50,7 @@ const state = {
   search: '',
   photoOnly: false,
   expandedTableRows: new Set(),
+  activeModalSlug: null,
   lightboxItems: [],
   lightboxIndex: 0,
 };
@@ -397,24 +398,41 @@ function renderTable(blocks) {
   el.galleryRoot.hidden = true;
   el.tableRoot.hidden = false;
 
+  const b2b = window.SC_B2B;
+  const b2bOk = Boolean(b2b?.isLoggedIn());
+  if (!b2bOk) {
+    el.tableRoot.innerHTML = b2b ? b2b.renderLockCard('table') : '';
+    return;
+  }
+
   const rowsHtml = blocks
     .map((b) => {
       const isExpanded = state.expandedTableRows.has(b.id);
       const thumb = b.cardImage
         ? `<img src="${escapeHtml(b.cardImage)}" alt="${escapeHtml(b.materialName)}" class="table-thumb" loading="lazy">`
         : `<div class="table-thumb"></div>`;
+      const blockWeight = b2b.calcBlockWeightKg(b);
 
       const slabRows = b.slabs
-        .map(
-          (s) => `
+        .map((s, idx) => {
+          const wKg = b2b.calcSlabWeightKg(s, b.categoryKey, b.materialSlug);
+          const itemKey = b2b.makeSlabKey(b.id, idx);
+          const inCart = b2b.hasItem(itemKey);
+          return `
           <tr>
             <td>${formatNumber(s.length)} × ${formatNumber(s.height)} cm</td>
             <td>${formatNumber(s.thickness, Number.isInteger(s.thickness) ? 0 : 1)} cm</td>
             <td>${escapeHtml(s.surface)}</td>
             <td>${renderWarehouseBadges([s.warehouse])}</td>
             <td><strong>${formatNumber(s.areaM2, 2)} m²</strong></td>
-          </tr>`
-        )
+            <td><strong>${formatNumber(Math.round(wKg))} kg</strong></td>
+            <td>
+              <button type="button" class="btn-slab-add${inCart ? ' in-cart' : ''}" data-add-slab="${escapeHtml(b.id)}:${idx}">
+                ${inCart ? '✓ V košíku' : '+ Deska'}
+              </button>
+            </td>
+          </tr>`;
+        })
         .join('');
 
       return `
@@ -424,11 +442,14 @@ function renderTable(blocks) {
           <td>${escapeHtml(b.blockNumber)}</td>
           <td>${escapeHtml(b.categoryLabel)}</td>
           <td>${renderWarehouseBadges(b.warehouses)}</td>
-          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="check-count">(${b.slabCount} ks)</span></td>
+          <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong> <span class="check-count">(${b.slabCount} ks · ${escapeHtml(b2b.formatWeight(blockWeight))})</span></td>
           <td>
-            <button type="button" class="table-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
-              Detail
-            </button>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <button type="button" class="btn-slab-add" data-add-block="${escapeHtml(b.id)}">+ Blok</button>
+              <button type="button" class="table-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
+                Detail
+              </button>
+            </div>
           </td>
         </tr>
         <tr ${isExpanded ? '' : 'hidden'}>
@@ -441,6 +462,8 @@ function renderTable(blocks) {
                   <th>Povrch</th>
                   <th>Sklad</th>
                   <th>Plocha</th>
+                  <th>Hmotnost</th>
+                  <th>Objednat</th>
                 </tr>
               </thead>
               <tbody>${slabRows}</tbody>
@@ -459,7 +482,7 @@ function renderTable(blocks) {
           <th>Číslo bloku</th>
           <th>Druh</th>
           <th>Sklad</th>
-          <th>Množství</th>
+          <th>Množství / Váha</th>
           <th>Akce</th>
         </tr>
       </thead>
@@ -471,6 +494,10 @@ function render() {
   if (!state.data) return;
 
   renderActiveChips();
+
+  const b2bOk = Boolean(window.SC_B2B?.isLoggedIn());
+  const lockIcon = document.getElementById('tab-table-lock');
+  if (lockIcon) lockIcon.hidden = b2bOk;
 
   const activeFilterTotal =
     state.selectedColors.size +
@@ -498,28 +525,31 @@ function render() {
     }
   } else {
     const blocks = getFilteredBlocks();
-    el.resultsSummary.textContent = `${blocks.length} bloků`;
+    el.resultsSummary.textContent = b2bOk ? `${blocks.length} bloků` : `${blocks.length} bloků (B2B uzamčeno)`;
     if (el.drawerApply) el.drawerApply.textContent = `Zobrazit výsledky (${blocks.length})`;
-    el.emptyState.hidden = blocks.length > 0;
-    if (blocks.length > 0) {
-      renderTable(blocks);
-    } else {
+    el.emptyState.hidden = b2bOk ? blocks.length > 0 : false;
+    if (b2bOk && blocks.length === 0) {
       el.galleryRoot.hidden = true;
       el.tableRoot.hidden = true;
+    } else {
+      renderTable(blocks);
     }
   }
 }
 
 function buildBlockSpecText(materialName, block) {
+  const b2b = window.SC_B2B;
+  const totalW = b2b ? b2b.calcBlockWeightKg(block) : 0;
   const lines = [
     `Poptávka materiálu: ${materialName}`,
     `Blok: ${block.blockNumber}`,
     `Sklad: ${block.warehouses.join(', ')}`,
-    `Celkem: ${block.slabCount} ks (${formatNumber(block.totalAreaM2, 2)} m²)`,
+    `Celkem: ${block.slabCount} ks (${formatNumber(block.totalAreaM2, 2)} m²${b2b ? ` · cca ${b2b.formatWeight(totalW, true)}` : ''})`,
     'Desky:',
-    ...block.slabs.map(
-      (s) => `  - ${s.length} × ${s.height} × ${s.thickness} cm | ${s.surface} | ${s.warehouse} | ${formatNumber(s.areaM2, 2)} m²`
-    ),
+    ...block.slabs.map((s) => {
+      const wKg = b2b ? Math.round(b2b.calcSlabWeightKg(s, block.categoryKey, block.materialSlug)) : null;
+      return `  - ${s.length} × ${s.height} × ${s.thickness} cm | ${s.surface} | ${s.warehouse} | ${formatNumber(s.areaM2, 2)} m²${wKg ? ` | ${wKg} kg` : ''}`;
+    }),
   ];
   return lines.join('\n');
 }
@@ -569,6 +599,8 @@ function printSpecSheet(mat) {
     showToast('Povolte vyskakovací okna pro otevření tiskového PDF listu.');
     return;
   }
+  const b2b = window.SC_B2B;
+  const b2bOk = Boolean(b2b?.isLoggedIn());
   const heroImg = mat.galleryImages?.[0]?.fullUrl || mat.cardImage || '';
   const fmt = mat.maxLengthCm && mat.maxHeightCm ? `${formatNumber(mat.maxLengthCm)} × ${formatNumber(mat.maxHeightCm)} cm` : 'dle bloků';
   const vizSamples = [...(mat.demoVisualizations || []), ...(mat.realizationImages || []).map((r) => ({ url: r.cardUrl, label: r.category || 'Reálná realizace' }))].slice(0, 2);
@@ -582,6 +614,7 @@ function printSpecSheet(mat) {
         <td>${escapeHtml(b.thicknesses.map((t) => `${t} cm`).join(', '))}</td>
         <td>${escapeHtml(b.surfaces.join(', '))}</td>
         <td><strong>${formatNumber(b.totalAreaM2, 2)} m²</strong></td>
+        <td>${b2b ? escapeHtml(b2b.formatWeight(b2b.calcBlockWeightKg(b))) : '—'}</td>
       </tr>`
     )
     .join('');
@@ -634,11 +667,15 @@ function printSpecSheet(mat) {
       ${mat.applications.length ? `<div><strong>Vhodné použití:</strong> ${escapeHtml(mat.applications.join(', '))}</div>` : ''}
     </div>
   </div>
-  <strong>Přehled skladových bloků</strong>
+  ${
+    b2bOk
+      ? `<strong>Přehled skladových bloků a hmotností</strong>
   <table>
-    <thead><tr><th>Blok</th><th>Sklad</th><th>Desky</th><th>Tloušťka</th><th>Povrch</th><th>Plocha</th></tr></thead>
+    <thead><tr><th>Blok</th><th>Sklad</th><th>Desky</th><th>Tloušťka</th><th>Povrch</th><th>Plocha</th><th>Hmotnost</th></tr></thead>
     <tbody>${blockRows}</tbody>
-  </table>
+  </table>`
+      : `<p style="padding:10px 12px;border:1px solid #e5e0d8;border-radius:6px;background:#faf8f5;"><strong>Přehled skladových bloků a hmotností:</strong> konkrétní čísla bloků a váhy desek jsou dostupné v B2B zóně po přihlášení kameníka (${mat.blockCount} bloků · ${mat.totalSlabs} ks · ${formatNumber(mat.totalAreaM2, 2)} m²).</p>`
+  }
   ${vizSamples.length ? `<div class="viz-grid">${vizSamples.map((v) => `<div class="viz-box"><img src="${escapeHtml(v.url)}" alt="${escapeHtml(v.label)}"><div class="viz-cap">${escapeHtml(v.label)}</div></div>`).join('')}</div>` : ''}
   <div class="foot">
     <span>Online sklad Stone Connection · orientační prezentační list</span>
@@ -657,6 +694,9 @@ function printSpecSheet(mat) {
 function openMaterialModal(slug, focusBlock = null) {
   const mat = state.data?.materials.find((m) => m.slug === slug);
   if (!mat) return;
+  state.activeModalSlug = slug;
+  const b2b = window.SC_B2B;
+  const b2bOk = Boolean(b2b?.isLoggedIn());
 
   const images = mat.galleryImages;
   let initialIdx = 0;
@@ -876,34 +916,50 @@ function openMaterialModal(slug, focusBlock = null) {
 
   const interiorSectionHtml = showcaseHtml;
 
-  const blocksHtml = mat.blocks
-    .map((b) => {
-      const bImg = b.featuredImage || b.detailImages[0];
-      const bLbIdx = bImg ? images.findIndex((img) => img.rawUrl === bImg.rawUrl) : -1;
-      const slabsHtml = b.slabs
-        .map(
-          (s) => `
+  const totalMatWeightKg = b2b ? b2b.calcMaterialWeightKg(mat) : 0;
+  const blocksSectionInner = !b2bOk
+    ? (b2b ? b2b.renderLockCard('modal', mat) : '')
+    : mat.blocks
+        .map((b) => {
+          const bImg = b.featuredImage || b.detailImages[0];
+          const bLbIdx = bImg ? images.findIndex((img) => img.rawUrl === bImg.rawUrl) : -1;
+          const blockW = b2b.calcBlockWeightKg(b);
+          const slabsHtml = b.slabs
+            .map((s, idx) => {
+              const wKg = b2b.calcSlabWeightKg(s, b.categoryKey, b.materialSlug);
+              const itemKey = b2b.makeSlabKey(b.id, idx);
+              const inCart = b2b.hasItem(itemKey);
+              return `
           <tr>
             <td>${formatNumber(s.length)} × ${formatNumber(s.height)} cm</td>
             <td>${formatNumber(s.thickness, Number.isInteger(s.thickness) ? 0 : 1)} cm</td>
             <td>${escapeHtml(s.surface)}</td>
             <td>${renderWarehouseBadges([s.warehouse])}</td>
             <td><strong>${formatNumber(s.areaM2, 2)} m²</strong></td>
-          </tr>`
-        )
-        .join('');
+            <td><strong>${formatNumber(Math.round(wKg))} kg</strong></td>
+            <td>
+              <button type="button" class="btn-slab-add${inCart ? ' in-cart' : ''}" data-add-slab="${escapeHtml(b.id)}:${idx}">
+                ${inCart ? '✓ V košíku' : '+ Deska'}
+              </button>
+            </td>
+          </tr>`;
+            })
+            .join('');
 
-      const inquiryHref = `kontakt.html?material=${encodeURIComponent(mat.name)}&blok=${encodeURIComponent(b.blockNumber)}`;
+          const inquiryHref = `kontakt.html?material=${encodeURIComponent(mat.name)}&blok=${encodeURIComponent(b.blockNumber)}`;
 
-      return `
+          return `
         <article class="block-card" id="block-card-${escapeHtml(b.id)}">
           <div class="block-card-head">
             <div class="block-card-title">
               <span>Blok <strong>${escapeHtml(b.blockNumber)}</strong></span>
               ${renderWarehouseBadges(b.warehouses)}
-              <span class="meta-tag">${b.slabCount} ks · ${formatNumber(b.totalAreaM2, 2)} m²</span>
+              <span class="meta-tag">${b.slabCount} ks · ${formatNumber(b.totalAreaM2, 2)} m² · cca ${escapeHtml(b2b.formatWeight(blockW, true))}</span>
             </div>
             <div class="block-head-actions">
+              <button type="button" class="btn-slab-add" data-add-block="${escapeHtml(b.id)}">
+                + Celý blok
+              </button>
               <button type="button" class="copy-block-btn" data-copy-block="${escapeHtml(b.blockNumber)}">
                 Zkopírovat specifikaci
               </button>
@@ -931,6 +987,8 @@ function openMaterialModal(slug, focusBlock = null) {
                     <th>Povrch</th>
                     <th>Sklad</th>
                     <th>Plocha</th>
+                    <th>Hmotnost</th>
+                    <th>Objednat</th>
                   </tr>
                 </thead>
                 <tbody>${slabsHtml}</tbody>
@@ -938,8 +996,8 @@ function openMaterialModal(slug, focusBlock = null) {
             </div>
           </div>
         </article>`;
-    })
-    .join('');
+        })
+        .join('');
 
   const alternativesHtml =
     mat.alternatives && mat.alternatives.length
@@ -1007,6 +1065,7 @@ function openMaterialModal(slug, focusBlock = null) {
           <div><strong>Sklady:</strong> ${escapeHtml(mat.warehouses.join(', '))}</div>
           <div><strong>Tloušťky:</strong> ${escapeHtml(mat.thicknesses.map((t) => `${t} cm`).join(', ') || 'neuvedeno')}</div>
           <div><strong>Povrchy:</strong> ${escapeHtml(mat.surfaces.join(', ') || 'neuvedeno')}</div>
+          ${b2bOk && b2b ? `<div><strong>Orientační hmotnost skladem:</strong> ${escapeHtml(b2b.formatWeight(totalMatWeightKg, true))}</div>` : ''}
           ${mat.applications.length ? `<div><strong>Vhodné použití:</strong> ${escapeHtml(mat.applications.join(', '))}</div>` : ''}
         </div>
         <div class="modal-cta-row">
@@ -1031,7 +1090,7 @@ function openMaterialModal(slug, focusBlock = null) {
 
     <section class="section-block">
       <h3 class="blocks-section-title">Skladové bloky a jednotlivé desky (${mat.blockCount})</h3>
-      ${blocksHtml}
+      ${blocksSectionInner}
     </section>
 
     ${alternativesHtml}
@@ -1092,9 +1151,39 @@ function openMaterialModal(slug, focusBlock = null) {
   if (printBtn) {
     printBtn.addEventListener('click', () => printSpecSheet(mat));
   }
+
+  el.modalBody.querySelectorAll('[data-add-slab]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (!b2b) return;
+      const [blockId, idxStr] = btn.getAttribute('data-add-slab').split(':');
+      const idx = Number(idxStr);
+      const blk = mat.blocks.find((b) => b.id === blockId);
+      const slab = blk?.slabs?.[idx];
+      if (!blk || !slab) return;
+      const res = b2b.addSlab(mat, blk, slab, idx);
+      if (res.added) showToast(`Deska z bloku ${blk.blockNumber} přidána do objednávky.`);
+      else if (res.removed) showToast(`Deska z bloku ${blk.blockNumber} odebrána z objednávky.`);
+    });
+  });
+
+  el.modalBody.querySelectorAll('[data-add-block]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (!b2b) return;
+      const blockId = btn.getAttribute('data-add-block');
+      const blk = mat.blocks.find((b) => b.id === blockId);
+      if (!blk) return;
+      const res = b2b.addBlock(mat, blk);
+      if (res.addedCount > 0) {
+        showToast(`Přidáno ${res.addedCount} desek z bloku ${blk.blockNumber} (${b2b.formatWeight(b2b.calcBlockWeightKg(blk))}).`);
+      } else {
+        showToast(`Všechny desky bloku ${blk.blockNumber} už jsou v objednávce.`);
+      }
+    });
+  });
 }
 
 function closeModal() {
+  state.activeModalSlug = null;
   el.modal.hidden = true;
   document.body.style.overflow = '';
   if (window.location.hash.startsWith('#m=')) {
@@ -1281,6 +1370,37 @@ function bindEvents() {
   });
 
   el.tableRoot.addEventListener('click', (e) => {
+    const addSlabBtn = e.target.closest('[data-add-slab]');
+    if (addSlabBtn && window.SC_B2B) {
+      e.stopPropagation();
+      const [blockId, idxStr] = addSlabBtn.getAttribute('data-add-slab').split(':');
+      const idx = Number(idxStr);
+      const blk = state.data?.blocks.find((b) => b.id === blockId);
+      const mat = state.data?.materials.find((m) => m.slug === blk?.materialSlug);
+      const slab = blk?.slabs?.[idx];
+      if (blk && mat && slab) {
+        const res = window.SC_B2B.addSlab(mat, blk, slab, idx);
+        if (res.added) showToast(`Deska z bloku ${blk.blockNumber} přidána do objednávky.`);
+        else if (res.removed) showToast(`Deska z bloku ${blk.blockNumber} odebrána z objednávky.`);
+      }
+      return;
+    }
+    const addBlockBtn = e.target.closest('[data-add-block]');
+    if (addBlockBtn && window.SC_B2B) {
+      e.stopPropagation();
+      const blockId = addBlockBtn.getAttribute('data-add-block');
+      const blk = state.data?.blocks.find((b) => b.id === blockId);
+      const mat = state.data?.materials.find((m) => m.slug === blk?.materialSlug);
+      if (blk && mat) {
+        const res = window.SC_B2B.addBlock(mat, blk);
+        if (res.addedCount > 0) {
+          showToast(`Přidáno ${res.addedCount} desek z bloku ${blk.blockNumber}.`);
+        } else {
+          showToast(`Celý blok ${blk.blockNumber} už je v objednávce.`);
+        }
+      }
+      return;
+    }
     const detailBtn = e.target.closest('[data-open-material]');
     if (detailBtn) {
       e.stopPropagation();
@@ -1324,6 +1444,14 @@ function bindEvents() {
 
 async function init() {
   bindEvents();
+  window.addEventListener('sc-b2b-change', () => {
+    render();
+    if (!el.modal.hidden && state.activeModalSlug) {
+      const y = el.modalBody.scrollTop;
+      openMaterialModal(state.activeModalSlug);
+      el.modalBody.scrollTop = y;
+    }
+  });
   try {
     const res = await fetch('data/sklad.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);

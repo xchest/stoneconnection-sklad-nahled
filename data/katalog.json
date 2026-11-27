@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T15:17:26.060Z",
+    "syncedAt": "2026-11-27T20:38:35.475Z",
     "totalProducts": 118,
     "inStockCount": 46
   },
@@ -3970,7 +3970,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/moleanos/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/moleanos/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "moleanos",
       "inStockBlocks": 3,
@@ -4489,7 +4506,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/nero-marquina/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/nero-marquina/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "nero-marquina",
       "inStockBlocks": 1,
@@ -4646,7 +4680,24 @@
           "categoryKey": "koupelny"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/nero-assoluto-zimbabwe/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/nero-assoluto-zimbabwe/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "nero-assoluto-zimbabwe",
       "inStockBlocks": 8,
@@ -5247,7 +5298,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/premium-black/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/premium-black/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "premium-black",
       "inStockBlocks": 8,
@@ -5645,7 +5713,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/shivakashi/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/shivakashi/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "shivakashi",
       "inStockBlocks": 1,
@@ -5745,7 +5830,24 @@
         "finish": "polished"
       },
       "realizationImages": [],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/star-galaxy/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/star-galaxy/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": false,
       "inStockSlug": "star-galaxy",
       "inStockBlocks": 3,
@@ -6615,7 +6717,24 @@
           "categoryKey": "bazeny-a-wellness"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/travertino-classico/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/travertino-classico/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "travertino-classico",
       "inStockBlocks": 1,
@@ -7092,7 +7211,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/viscont-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/viscont-white/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "viscont-white",
       "inStockBlocks": 3,
@@ -7369,7 +7505,24 @@
           "categoryKey": "kuchyne"
         }
       ],
-      "demoVisualizations": [],
+      "demoVisualizations": [
+        {
+          "slot": "va",
+          "label": "Koupelnový žlab (VA)",
+          "group": "interior",
+          "order": 1,
+          "url": "assets/viz/zambezia-white/va.jpg",
+          "kind": "studio-viz"
+        },
+        {
+          "slot": "tables",
+          "label": "Bistro / konferenční stolky",
+          "group": "interior",
+          "order": 2,
+          "url": "assets/viz/zambezia-white/tables.jpg",
+          "kind": "studio-viz"
+        }
+      ],
       "bookmatchEligible": true,
       "inStockSlug": "zambezia-white",
       "inStockBlocks": 1,

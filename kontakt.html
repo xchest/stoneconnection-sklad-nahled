@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261127a">
+  <link rel="stylesheet" href="styles.css?v=20261127b">
 </head>
 <body>
   <header class="site-header">
@@ -75,6 +75,14 @@
         <div class="info-panel">
           <h2 class="band-title" style="font-size:24px;margin-bottom:14px;">Napište nám / Poptávka materiálu</h2>
           <form id="contact-form" class="form-grid">
+            <div class="form-field">
+              <label for="f-ico">IČO firmy (nepovinné — automatické načtení z ARES)</label>
+              <div class="ares-row">
+                <input type="text" id="f-ico" inputmode="numeric" maxlength="12" placeholder="Např. 26827301">
+                <button type="button" class="btn-secondary" id="f-ares-btn">Načíst z ARES</button>
+              </div>
+              <div id="f-ares-status" class="ares-status" aria-live="polite"></div>
+            </div>
             <div class="form-field">
               <label for="f-name">Jméno nebo firma *</label>
               <input type="text" id="f-name" required placeholder="Vaše jméno nebo název společnosti">
@@ -151,9 +159,34 @@
     </div>
   </footer>
 
-  <script src="shared.js" defer></script>
+  <script src="shared.js?v=20261127b" defer></script>
+  <script src="b2b.js?v=20261127b" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const aresBtn = document.getElementById('f-ares-btn');
+      const aresStatus = document.getElementById('f-ares-status');
+      const icoInput = document.getElementById('f-ico');
+      const nameInput = document.getElementById('f-name');
+      if (aresBtn && icoInput && nameInput) {
+        aresBtn.addEventListener('click', async () => {
+          aresBtn.disabled = true;
+          aresStatus.textContent = 'Načítám z ARES…';
+          aresStatus.className = 'ares-status loading';
+          try {
+            const info = await window.SC_B2B.lookupAresByIco(icoInput.value);
+            icoInput.value = info.ico;
+            const dicPart = info.dic ? `, DIČ ${info.dic}` : '';
+            nameInput.value = `${info.companyName} (IČO ${info.ico}${dicPart}, ${info.address})`;
+            aresStatus.textContent = `✓ Načteno z ARES: ${info.companyName}`;
+            aresStatus.className = 'ares-status ok';
+          } catch (err) {
+            aresStatus.textContent = err.message;
+            aresStatus.className = 'ares-status err';
+          } finally {
+            aresBtn.disabled = false;
+          }
+        });
+      }
       const params = new URLSearchParams(window.location.search);
       const mat = params.get('material');
       const blok = params.get('blok');
