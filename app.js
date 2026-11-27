@@ -50,7 +50,9 @@ const state = {
   search: '',
   photoOnly: false,
   expandedTableRows: new Set(),
+  expandedThicknessKeys: new Set(),
   expandedBlockPhotos: new Set(),
+  multiThicknessOnly: false,
   modalPresentationMode: false,
   wasLoggedIn: false,
   activeModalSlug: null,
@@ -416,6 +418,165 @@ function renderBlockPhotoStripHtml(block, matName) {
     </div>`;
 }
 
+function groupSlabsByThickness(block, b2b) {
+  const byThick = new Map();
+  (block.slabs || []).forEach((slab, idx) => {
+    const thickness = Number(slab.thickness) || 0;
+    if (!byThick.has(thickness)) {
+      byThick.set(thickness, []);
+    }
+    const wKg = b2b ? b2b.calcSlabWeightKg(slab, block.categoryKey, block.materialSlug) : 0;
+    const itemKey = b2b ? b2b.makeSlabKey(block.id, idx) : '';
+    const inCart = b2b ? b2b.hasItem(itemKey) : false;
+    byThick.get(thickness).push({ slab, idx, wKg, inCart });
+  });
+
+  return [...byThick.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([thickness, entries]) => {
+      const surfaces = [...new Set(entries.map((e) => e.slab.surface).filter(Boolean))];
+      const warehouses = [...new Set(entries.map((e) => e.slab.warehouse).filter(Boolean))];
+      let areaM2 = 0;
+      let weightKg = 0;
+      let inCartCount = 0;
+      for (const e of entries) {
+        areaM2 += Number(e.slab.areaM2) || 0;
+        weightKg += Number(e.wKg) || 0;
+        if (e.inCart) inCartCount += 1;
+      }
+      const label = `${formatNumber(thickness, Number.isInteger(thickness) ? 0 : 1)} cm`;
+      return {
+        thickness,
+        label,
+        entries,
+        count: entries.length,
+        inCartCount,
+        areaM2: Math.round(areaM2 * 100) / 100,
+        weightKg,
+        surfaces,
+        warehouses,
+      };
+    });
+}
+
+function renderBlockFrameHtml(mat, block, options = {}) {
+  const mode = options.mode === 'modal' ? 'modal' : 'eshop';
+  const b2b = options.b2b || window.SC_B2B;
+  const groups = groupSlabsByThickness(block, b2b);
+  const isMulti = groups.length > 1;
+  const blockWeight = b2b ? b2b.calcBlockWeightKg(block) : 0;
+  const hasPhoto = Boolean(getBlockPhotoUrl(block));
+  const photoOpen = state.expandedBlockPhotos.has(block.id);
+  const totalInCart = groups.reduce((acc, g) => acc + g.inCartCount, 0);
+  const allBlockInCart = block.slabCount > 0 && totalInCart === block.slabCount;
+  const matName = mat?.name || block.materialName || '';
+  const photoStripHtml = photoOpen && hasPhoto ? renderBlockPhotoStripHtml(block, matName) : '';
+  const inquiryHref = `kontakt.html?material=${encodeURIComponent(matName)}&blok=${encodeURIComponent(block.blockNumber)}`;
+
+  const thickHtml = groups
+    .map((g) => {
+      const thickKey = `${block.id}:${g.thickness}`;
+      const hasThickFilter = state.selectedThicknesses.size > 0;
+      const isFilterMatch = hasThickFilter && state.selectedThicknesses.has(String(g.thickness));
+      const isSiblingMatch = hasThickFilter && !isFilterMatch;
+      const allGroupInCart = g.count > 0 && g.inCartCount === g.count;
+      const slabsOpen =
+        mode === 'modal' || Boolean(options.autoExpandSlabs) || state.expandedThicknessKeys.has(thickKey);
+
+      const slabRows = g.entries
+        .map(({ slab: s, idx, wKg, inCart }) => `
+          <tr>
+            <td>
+              <button type="button" class="btn-slab-add${inCart ? ' in-cart' : ''}" data-add-slab="${escapeHtml(block.id)}:${idx}">
+                ${inCart ? '✓ V košíku' : '+ Deska'}
+              </button>
+            </td>
+            <td>${formatNumber(s.length)} × ${formatNumber(s.height)} cm</td>
+            <td>${escapeHtml(s.surface)}</td>
+            <td>${renderWarehouseBadges([s.warehouse])}</td>
+            <td><strong>${formatNumber(s.areaM2, 2)} m²</strong></td>
+            <td><strong>${formatNumber(Math.round(wKg))} kg</strong></td>
+          </tr>`)
+        .join('');
+
+      return `
+        <div class="b2b-thick-box${isFilterMatch ? ' is-matched' : ''}${isSiblingMatch ? ' is-sibling' : ''}${slabsOpen ? ' is-open' : ''}">
+          <div class="b2b-thick-head">
+            <button type="button" class="btn-slab-add${allGroupInCart ? ' in-cart' : ''}" data-add-block-thickness="${escapeHtml(thickKey)}">
+              ${allGroupInCart ? `✓ Vše ${escapeHtml(g.label)} v košíku` : `+ Vše ${escapeHtml(g.label)} (${g.count} ks)`}
+            </button>
+            <span class="b2b-thick-pill">Síla ${escapeHtml(g.label)}</span>
+            <span class="b2b-thick-meta">${g.count} ks · ${formatNumber(g.areaM2, 2)} m² · ⚖ ${escapeHtml(b2b.formatWeight(g.weightKg, true))}${g.surfaces.length ? ` · ${escapeHtml(g.surfaces.join(', '))}` : ''}</span>
+            ${isFilterMatch ? '<span class="b2b-thick-tag match">✓ Vybraná síla</span>' : ''}
+            ${isSiblingMatch ? '<span class="b2b-thick-tag sibling">🔗 Další síla ze stejného bloku</span>' : ''}
+            ${
+              mode === 'eshop'
+                ? `<button type="button" class="table-detail-btn b2b-thick-toggle" data-toggle-thick="${escapeHtml(thickKey)}">
+                    ${slabsOpen ? 'Skrýt desky ▴' : `Jednotlivé desky (${g.count}) ▾`}
+                  </button>`
+                : ''
+            }
+          </div>
+          <div class="b2b-thick-slabs"${slabsOpen ? '' : ' hidden'}>
+            <div class="slab-table-wrap">
+              <table class="slab-table subtable">
+                <thead>
+                  <tr>
+                    <th>Objednat</th>
+                    <th>Rozměry (D × V)</th>
+                    <th>Povrch</th>
+                    <th>Sklad</th>
+                    <th>Plocha</th>
+                    <th>Hmotnost</th>
+                  </tr>
+                </thead>
+                <tbody>${slabRows}</tbody>
+              </table>
+            </div>
+          </div>
+        </div>`;
+    })
+    .join('');
+
+  return `
+    <article class="b2b-block-frame${isMulti ? ' is-multi-thickness' : ''}" id="block-frame-${escapeHtml(block.id)}">
+      <div class="b2b-block-frame-head">
+        <div class="b2b-block-head-left">
+          <div class="block-head-actions">
+            <button type="button" class="btn-slab-add b2b-buy-primary${allBlockInCart ? ' in-cart' : ''}" data-add-block="${escapeHtml(block.id)}">
+              ${allBlockInCart ? '✓ Celý blok v košíku' : '+ Celý blok'}
+            </button>
+            ${
+              hasPhoto
+                ? `<button type="button" class="btn-photo-demand${photoOpen ? ' active' : ''}" data-toggle-block-photo="${escapeHtml(block.id)}">📷 ${photoOpen ? 'Skrýt foto' : 'Foto bloku'}</button>`
+                : ''
+            }
+          </div>
+          <div class="b2b-block-frame-title">
+            ${mode === 'eshop' ? `<strong>${escapeHtml(matName)}</strong>` : ''}
+            <span class="b2b-block-num">Blok <strong>${escapeHtml(block.blockNumber)}</strong></span>
+            ${mode === 'eshop' && block.categoryLabel ? `<span class="meta-tag">${escapeHtml(block.categoryLabel)}</span>` : ''}
+            ${renderWarehouseBadges(block.warehouses)}
+            <span class="meta-tag">${block.slabCount} ks · ${formatNumber(block.totalAreaM2, 2)} m² · ⚖ ${escapeHtml(b2b.formatWeight(blockWeight, true))}</span>
+            ${isMulti ? `<span class="b2b-multi-badge">🔗 Stejný blok v ${groups.length} sílách (shodný odstín)</span>` : ''}
+          </div>
+        </div>
+        <div class="block-head-actions">
+          ${
+            mode === 'eshop'
+              ? `<button type="button" class="table-detail-btn" data-open-material="${escapeHtml(block.materialSlug)}" data-focus-block="${escapeHtml(block.blockNumber)}">Karta</button>`
+              : `<button type="button" class="copy-block-btn" data-copy-block="${escapeHtml(block.blockNumber)}">Zkopírovat</button>
+                 <a href="${inquiryHref}" class="btn-secondary" style="padding:5px 10px;font-size:12px;">Poptat →</a>`
+          }
+        </div>
+      </div>
+      ${photoStripHtml}
+      <div class="b2b-thick-list">
+        ${thickHtml}
+      </div>
+    </article>`;
+}
+
 function renderTable(blocks) {
   el.galleryRoot.hidden = true;
   el.tableRoot.hidden = false;
@@ -423,109 +584,43 @@ function renderTable(blocks) {
   const b2b = window.SC_B2B;
   const b2bOk = Boolean(b2b?.isLoggedIn());
   if (!b2bOk) {
+    el.tableRoot.classList.remove('is-frames');
     el.tableRoot.innerHTML = b2b ? b2b.renderLockCard('table') : '';
     return;
   }
 
-  const rowsHtml = blocks
-    .map((b) => {
-      const isExpanded = state.expandedTableRows.has(b.id);
-      const photoOpen = state.expandedBlockPhotos.has(b.id);
-      const hasPhoto = Boolean(getBlockPhotoUrl(b));
-      const blockWeight = b2b.calcBlockWeightKg(b);
-      const photoStripHtml = photoOpen && hasPhoto ? renderBlockPhotoStripHtml(b, b.materialName) : '';
+  el.tableRoot.classList.add('is-frames');
+  const matBySlug = new Map((state.data?.materials || []).map((m) => [m.slug, m]));
+  const multiCount = blocks.filter((b) => (b.thicknesses?.length || 0) > 1).length;
+  const visibleBlocks = state.multiThicknessOnly
+    ? blocks.filter((b) => (b.thicknesses?.length || 0) > 1)
+    : blocks;
+  const autoExpandSlabs = visibleBlocks.length <= 6;
 
-      const slabRows = b.slabs
-        .map((s, idx) => {
-          const wKg = b2b.calcSlabWeightKg(s, b.categoryKey, b.materialSlug);
-          const itemKey = b2b.makeSlabKey(b.id, idx);
-          const inCart = b2b.hasItem(itemKey);
-          return `
-          <tr>
-            <td>
-              <button type="button" class="btn-slab-add${inCart ? ' in-cart' : ''}" data-add-slab="${escapeHtml(b.id)}:${idx}">
-                ${inCart ? '✓ V košíku' : '+ Deska'}
-              </button>
-            </td>
-            <td>${formatNumber(s.length)} × ${formatNumber(s.height)} cm</td>
-            <td>${formatNumber(s.thickness, Number.isInteger(s.thickness) ? 0 : 1)} cm</td>
-            <td>${escapeHtml(s.surface)}</td>
-            <td>${renderWarehouseBadges([s.warehouse])}</td>
-            <td><strong>${formatNumber(s.areaM2, 2)} m²</strong></td>
-            <td><strong>${formatNumber(Math.round(wKg))} kg</strong></td>
-          </tr>`;
-        })
-        .join('');
-
-      return `
-        <tr class="stock-row" data-toggle-row="${escapeHtml(b.id)}">
-          <td>
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
-              <button type="button" class="btn-slab-add b2b-buy-primary" data-add-block="${escapeHtml(b.id)}">+ Blok</button>
-              <button type="button" class="table-detail-btn" data-toggle-row="${escapeHtml(b.id)}">
-                ${isExpanded ? 'Skrýt desky ▴' : `Desky (${b.slabCount}) ▾`}
-              </button>
-            </div>
-          </td>
-          <td>
-            <strong>${escapeHtml(b.materialName)}</strong>
-            <div style="font-size:12px;color:var(--text-muted);">
-              Blok <strong>${escapeHtml(b.blockNumber)}</strong> · ${escapeHtml(b.categoryLabel)} · ${escapeHtml(b.thicknesses.join(', '))} cm · ${escapeHtml(b.surfaces.join(', '))}
-            </div>
-          </td>
-          <td>${renderWarehouseBadges(b.warehouses)}</td>
-          <td>
-            <strong>${formatNumber(b.totalAreaM2, 2)} m²</strong>
-            <div class="check-count">⚖ ${escapeHtml(b2b.formatWeight(blockWeight, true))}</div>
-          </td>
-          <td>
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
-              ${
-                hasPhoto
-                  ? `<button type="button" class="btn-photo-demand${photoOpen ? ' active' : ''}" data-toggle-block-photo="${escapeHtml(b.id)}">📷 ${photoOpen ? 'Skrýt foto' : 'Foto bloku'}</button>`
-                  : '<span class="check-count">—</span>'
-              }
-              <button type="button" class="table-detail-btn" data-open-material="${escapeHtml(b.materialSlug)}" data-focus-block="${escapeHtml(b.blockNumber)}">
-                Karta
-              </button>
-            </div>
-          </td>
-        </tr>
-        <tr ${isExpanded ? '' : 'hidden'}>
-          <td colspan="5" class="subtable-cell">
-            ${photoStripHtml}
-            <table class="subtable">
-              <thead>
-                <tr>
-                  <th>Objednat</th>
-                  <th>Rozměry (D × V)</th>
-                  <th>Tloušťka</th>
-                  <th>Povrch</th>
-                  <th>Sklad</th>
-                  <th>Plocha</th>
-                  <th>Hmotnost</th>
-                </tr>
-              </thead>
-              <tbody>${slabRows}</tbody>
-            </table>
-          </td>
-        </tr>`;
-    })
-    .join('');
+  const framesHtml = visibleBlocks.length
+    ? visibleBlocks
+        .map((b) =>
+          renderBlockFrameHtml(matBySlug.get(b.materialSlug), b, {
+            mode: 'eshop',
+            autoExpandSlabs,
+            b2b,
+          })
+        )
+        .join('')
+    : '<div class="b2b-empty-frames">Žádný ze zobrazených bloků nemá v aktuálním filtru více než jednu tloušťku. Zrušte filtr více sil výše.</div>';
 
   el.tableRoot.innerHTML = `
-    <table class="stock-table">
-      <thead>
-        <tr>
-          <th>Objednat</th>
-          <th>Materiál / Blok</th>
-          <th>Sklad</th>
-          <th>Skladem / Hmotnost</th>
-          <th>Fotka bloku</th>
-        </tr>
-      </thead>
-      <tbody>${rowsHtml}</tbody>
-    </table>`;
+    <div class="b2b-eshop-toolbar">
+      <div class="b2b-eshop-hint">
+        <strong>Stejný odstín napříč sílami:</strong> každý rámeček představuje jeden lomový blok se všemi dostupnými tloušťkami desek.
+      </div>
+      <button type="button" class="b2b-multi-toggle${state.multiThicknessOnly ? ' active' : ''}" data-toggle-multi-thickness>
+        🔗 Jen bloky ve více sílách (${multiCount})
+      </button>
+    </div>
+    <div class="b2b-blocks-stack">
+      ${framesHtml}
+    </div>`;
 }
 
 function setActiveView(viewName) {
@@ -967,96 +1062,15 @@ function openMaterialModal(slug, focusBlock = null) {
   const totalMatWeightKg = b2b ? b2b.calcMaterialWeightKg(mat) : 0;
   const blocksSectionInner = !b2bOk
     ? (b2b ? b2b.renderLockCard('modal', mat) : '')
-    : mat.blocks
-        .map((b) => {
-          const bImg = b.featuredImage || b.detailImages[0];
-          const hasPhoto = Boolean(getBlockPhotoUrl(b));
-          const photoOpen = state.expandedBlockPhotos.has(b.id);
-          const photoStripHtml = isBuyFirstB2b && photoOpen && hasPhoto ? renderBlockPhotoStripHtml(b, mat.name) : '';
-          const bLbIdx = bImg ? images.findIndex((img) => img.rawUrl === bImg.rawUrl) : -1;
-          const blockW = b2b.calcBlockWeightKg(b);
-          const slabsHtml = b.slabs
-            .map((s, idx) => {
-              const wKg = b2b.calcSlabWeightKg(s, b.categoryKey, b.materialSlug);
-              const itemKey = b2b.makeSlabKey(b.id, idx);
-              const inCart = b2b.hasItem(itemKey);
-              return `
-          <tr>
-            <td>
-              <button type="button" class="btn-slab-add${inCart ? ' in-cart' : ''}" data-add-slab="${escapeHtml(b.id)}:${idx}">
-                ${inCart ? '✓ V košíku' : '+ Deska'}
-              </button>
-            </td>
-            <td>${formatNumber(s.length)} × ${formatNumber(s.height)} cm</td>
-            <td>${formatNumber(s.thickness, Number.isInteger(s.thickness) ? 0 : 1)} cm</td>
-            <td>${escapeHtml(s.surface)}</td>
-            <td>${renderWarehouseBadges([s.warehouse])}</td>
-            <td><strong>${formatNumber(s.areaM2, 2)} m²</strong></td>
-            <td><strong>${formatNumber(Math.round(wKg))} kg</strong></td>
-          </tr>`;
-            })
-            .join('');
-
-          const inquiryHref = `kontakt.html?material=${encodeURIComponent(mat.name)}&blok=${encodeURIComponent(b.blockNumber)}`;
-
-          return `
-        <article class="block-card" id="block-card-${escapeHtml(b.id)}">
-          <div class="block-card-head">
-            <div class="block-head-actions">
-              <button type="button" class="btn-slab-add b2b-buy-primary" data-add-block="${escapeHtml(b.id)}">
-                + Celý blok
-              </button>
-              ${
-                hasPhoto && isBuyFirstB2b
-                  ? `<button type="button" class="btn-photo-demand${photoOpen ? ' active' : ''}" data-toggle-block-photo="${escapeHtml(b.id)}">📷 ${photoOpen ? 'Skrýt foto' : 'Foto bloku'}</button>`
-                  : ''
-              }
-            </div>
-            <div class="block-card-title">
-              <span>Blok <strong>${escapeHtml(b.blockNumber)}</strong></span>
-              ${renderWarehouseBadges(b.warehouses)}
-              <span class="meta-tag">${b.slabCount} ks · ${formatNumber(b.totalAreaM2, 2)} m² · cca ${escapeHtml(b2b.formatWeight(blockW, true))}</span>
-            </div>
-            <div class="block-head-actions">
-              <button type="button" class="copy-block-btn" data-copy-block="${escapeHtml(b.blockNumber)}">
-                Zkopírovat
-              </button>
-              <a href="${inquiryHref}" class="btn-secondary" style="padding:5px 10px;font-size:12px;">
-                Poptat →
-              </a>
-            </div>
-          </div>
-          ${photoStripHtml}
-          <div class="block-card-body${!isBuyFirstB2b && bImg ? '' : ' no-photo'}">
-            ${
-              !isBuyFirstB2b && bImg
-                ? `<div class="block-photo-col">
-                    <button type="button" class="block-photo-btn" data-lb-idx="${bLbIdx >= 0 ? bLbIdx : 0}" title="Zvětšit fotografii bloku ${escapeHtml(b.blockNumber)}">
-                      <img src="${escapeHtml(bImg.thumbUrl)}" alt="${escapeHtml(mat.name)} blok ${escapeHtml(b.blockNumber)}">
-                    </button>
-                  </div>`
-                : ''
-            }
-            <div class="slab-table-wrap">
-              <table class="slab-table">
-                <thead>
-                  <tr>
-                    <th>Objednat</th>
-                    <th>Rozměry (D × V)</th>
-                    <th>Tloušťka</th>
-                    <th>Povrch</th>
-                    <th>Sklad</th>
-                    <th>Plocha</th>
-                    <th>Hmotnost</th>
-                  </tr>
-                </thead>
-                <tbody>${slabsHtml}</tbody>
-              </table>
-            </div>
-          </div>
-        </article>`;
-        })
-        .join('');
+    : `<div class="b2b-blocks-stack">${mat.blocks
+        .map((b) =>
+          renderBlockFrameHtml(mat, b, {
+            mode: 'modal',
+            autoExpandSlabs: true,
+            b2b,
+          })
+        )
+        .join('')}</div>`;
 
   const alternativesHtml =
     mat.alternatives && mat.alternatives.length
@@ -1331,6 +1345,25 @@ function openMaterialModal(slug, focusBlock = null) {
     });
   });
 
+  el.modalBody.querySelectorAll('[data-add-block-thickness]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (!b2b) return;
+      const val = btn.getAttribute('data-add-block-thickness') || '';
+      const sep = val.lastIndexOf(':');
+      if (sep < 0) return;
+      const blockId = val.slice(0, sep);
+      const thickness = Number(val.slice(sep + 1));
+      const blk = mat.blocks.find((b) => b.id === blockId);
+      if (!blk) return;
+      const res = b2b.addBlockThickness(mat, blk, thickness);
+      if (res.addedCount > 0) {
+        showToast(`Přidáno ${res.addedCount} desek (${thickness} cm) z bloku ${blk.blockNumber}.`);
+      } else {
+        showToast(`Všechny desky síly ${thickness} cm z bloku ${blk.blockNumber} už jsou v objednávce.`);
+      }
+    });
+  });
+
   el.modalBody.querySelectorAll('[data-add-block]').forEach((btn) => {
     btn.addEventListener('click', () => {
       if (!b2b) return;
@@ -1405,6 +1438,7 @@ function resetAllFilters() {
   state.selectedThicknesses.clear();
   state.search = '';
   state.photoOnly = false;
+  state.multiThicknessOnly = false;
 
   el.searchInput.value = '';
   el.photoOnlyToggle.checked = false;
@@ -1535,6 +1569,22 @@ function bindEvents() {
   });
 
   el.tableRoot.addEventListener('click', (e) => {
+    const multiBtn = e.target.closest('[data-toggle-multi-thickness]');
+    if (multiBtn) {
+      e.stopPropagation();
+      state.multiThicknessOnly = !state.multiThicknessOnly;
+      render();
+      return;
+    }
+    const thickToggleBtn = e.target.closest('[data-toggle-thick]');
+    if (thickToggleBtn) {
+      e.stopPropagation();
+      const key = thickToggleBtn.getAttribute('data-toggle-thick');
+      if (state.expandedThicknessKeys.has(key)) state.expandedThicknessKeys.delete(key);
+      else state.expandedThicknessKeys.add(key);
+      render();
+      return;
+    }
     const zoomImg = e.target.closest('[data-zoom-url]');
     if (zoomImg) {
       e.stopPropagation();
@@ -1552,9 +1602,29 @@ function bindEvents() {
         state.expandedBlockPhotos.delete(id);
       } else {
         state.expandedBlockPhotos.add(id);
-        state.expandedTableRows.add(id);
       }
       render();
+      return;
+    }
+    const addThickBtn = e.target.closest('[data-add-block-thickness]');
+    if (addThickBtn && window.SC_B2B) {
+      e.stopPropagation();
+      const val = addThickBtn.getAttribute('data-add-block-thickness') || '';
+      const sep = val.lastIndexOf(':');
+      if (sep >= 0) {
+        const blockId = val.slice(0, sep);
+        const thickness = Number(val.slice(sep + 1));
+        const blk = state.data?.blocks.find((b) => b.id === blockId);
+        const mat = state.data?.materials.find((m) => m.slug === blk?.materialSlug);
+        if (blk && mat) {
+          const res = window.SC_B2B.addBlockThickness(mat, blk, thickness);
+          if (res.addedCount > 0) {
+            showToast(`Přidáno ${res.addedCount} desek (${thickness} cm) z bloku ${blk.blockNumber}.`);
+          } else {
+            showToast(`Všechny desky síly ${thickness} cm z bloku ${blk.blockNumber} už jsou v objednávce.`);
+          }
+        }
+      }
       return;
     }
     const addSlabBtn = e.target.closest('[data-add-slab]');

@@ -351,6 +351,34 @@
     return { addedCount, totalInBlock: (block.slabs || []).length };
   }
 
+  function addBlockThickness(mat, block, thickness) {
+    if (!isLoggedIn()) {
+      openAuth('login');
+      return { addedCount: 0, reason: 'auth' };
+    }
+    const targetThick = Number(thickness);
+    const cart = getCart();
+    const existing = new Set(cart.map((it) => it.key));
+    let addedCount = 0;
+    let totalInGroup = 0;
+    (block.slabs || []).forEach((slab, idx) => {
+      if (Math.abs(Number(slab.thickness) - targetThick) < 0.01) {
+        totalInGroup += 1;
+        const key = makeSlabKey(block.id, idx);
+        if (!existing.has(key)) {
+          cart.push(createCartItem(mat, block, slab, idx));
+          existing.add(key);
+          addedCount += 1;
+        }
+      }
+    });
+    if (addedCount > 0) {
+      writeJson(LS_CART, cart);
+      emitChange();
+    }
+    return { addedCount, totalInGroup, thickness: targetThick };
+  }
+
   function removeItem(key) {
     const cart = getCart().filter((it) => it.key !== key);
     writeJson(LS_CART, cart);
@@ -415,10 +443,65 @@
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   }
 
+  function syncFloatingVisibility() {
+    const fl = document.getElementById('b2b-floating-cart');
+    const authM = document.getElementById('b2b-auth-modal');
+    const orderM = document.getElementById('b2b-order-modal');
+    const modalOpen = Boolean((authM && !authM.hidden) || (orderM && !orderM.hidden));
+    const show = isLoggedIn() && !modalOpen;
+    if (fl) fl.hidden = !show;
+    document.body?.classList?.toggle('b2b-has-floating-cart', show);
+  }
+
+  function renderFloatingCart() {
+    const fl = document.getElementById('b2b-floating-cart');
+    if (!fl) {
+      document.body?.classList?.toggle('b2b-has-floating-cart', false);
+      return;
+    }
+    if (!isLoggedIn()) {
+      fl.hidden = true;
+      fl.innerHTML = '';
+      document.body?.classList?.toggle('b2b-has-floating-cart', false);
+      return;
+    }
+
+    const summary = getCartSummary();
+    const blockCount = new Set(summary.items.map((it) => it.blockId)).size;
+    const whText = summary.byWarehouse.map((g) => `${g.warehouse}: ${g.count} ks`).join(' · ');
+    const blockWord = blockCount === 1 ? 'blok' : blockCount <= 4 ? 'bloky' : 'bloků';
+
+    fl.innerHTML = `
+      <div class="b2b-float-inner">
+        <div class="b2b-float-info">
+          <span class="b2b-float-badge${summary.count === 0 ? ' empty' : ''}">${summary.count} ks</span>
+          <div class="b2b-float-text">
+            ${
+              summary.count > 0
+                ? `<strong>Objednávka deskoviny · ${formatNumber(summary.totalAreaM2, 2)} m² · ⚖ ${esc(formatWeight(summary.totalWeightKg, true))}</strong>
+                   <span>${esc(whText)} · ${blockCount} ${blockWord} · ${esc(summary.transport.label)}</span>`
+                : `<strong>B2B objednávka deskoviny</strong>
+                   <span>Vyberte jednotlivé desky, celé síly nebo bloky níže</span>`
+            }
+          </div>
+        </div>
+        <div class="b2b-float-actions">
+          <button type="button" class="b2b-float-cta" data-b2b-open-order>
+            ${summary.count > 0 ? 'Otevřít objednávku →' : 'Košík (0 ks)'}
+          </button>
+        </div>
+      </div>`;
+
+    syncFloatingVisibility();
+  }
+
   function renderBar() {
     const host = document.getElementById('b2b-bar');
-    if (!host) return;
     const user = getUser();
+    if (!host) {
+      renderFloatingCart();
+      return;
+    }
     const summary = getCartSummary();
 
     if (!user) {
@@ -434,6 +517,7 @@
             </button>
           </div>
         </div>`;
+      renderFloatingCart();
       return;
     }
 
@@ -453,6 +537,7 @@
           </button>
         </div>
       </div>`;
+    renderFloatingCart();
   }
 
   function renderLockCard(context, mat = null) {
@@ -489,6 +574,7 @@
     if (!detailM || detailM.hidden) {
       document.body.style.overflow = '';
     }
+    syncFloatingVisibility();
   }
 
   function openAuth(defaultTab = 'login') {
@@ -662,6 +748,7 @@
 
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    syncFloatingVisibility();
     draw();
   }
 
@@ -1138,6 +1225,7 @@
 
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    syncFloatingVisibility();
     draw();
   }
 
@@ -1207,6 +1295,7 @@
     hasItem,
     addSlab,
     addBlock,
+    addBlockThickness,
     removeItem,
     clearCart,
     openAuth,
