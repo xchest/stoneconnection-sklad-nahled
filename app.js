@@ -1231,6 +1231,7 @@ function openMaterialModal(slug, focusBlock = null) {
 
   el.modal.hidden = false;
   document.body.style.overflow = 'hidden';
+  document.body.classList?.add('detail-modal-open');
   el.modalBody.scrollTop = 0;
 
   if (window.location.hash !== `#m=${slug}`) {
@@ -1384,6 +1385,7 @@ function closeModal() {
   state.activeModalSlug = null;
   el.modal.hidden = true;
   document.body.style.overflow = '';
+  document.body.classList?.remove('detail-modal-open');
   if (window.location.hash.startsWith('#m=')) {
     history.replaceState(null, '', window.location.pathname + window.location.search);
   }

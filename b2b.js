@@ -472,24 +472,20 @@
     const blockWord = blockCount === 1 ? 'blok' : blockCount <= 4 ? 'bloky' : 'bloků';
 
     fl.innerHTML = `
-      <div class="b2b-float-inner">
+      <div class="container b2b-float-inner">
         <div class="b2b-float-info">
           <span class="b2b-float-badge${summary.count === 0 ? ' empty' : ''}">${summary.count} ks</span>
-          <div class="b2b-float-text">
+          <span class="b2b-float-summary">
             ${
               summary.count > 0
-                ? `<strong>Objednávka deskoviny · ${formatNumber(summary.totalAreaM2, 2)} m² · ⚖ ${esc(formatWeight(summary.totalWeightKg, true))}</strong>
-                   <span>${esc(whText)} · ${blockCount} ${blockWord} · ${esc(summary.transport.label)}</span>`
-                : `<strong>B2B objednávka deskoviny</strong>
-                   <span>Vyberte jednotlivé desky, celé síly nebo bloky níže</span>`
+                ? `<strong>${formatNumber(summary.totalAreaM2, 2)} m² · ${esc(formatWeight(summary.totalWeightKg))}</strong><span class="b2b-float-extra"> · ${esc(whText)} · ${blockCount} ${blockWord} · ${esc(summary.transport.label)}</span>`
+                : `<strong>B2B objednávka</strong><span class="b2b-float-extra"> · vyberte desky, síly nebo bloky níže</span>`
             }
-          </div>
+          </span>
         </div>
-        <div class="b2b-float-actions">
-          <button type="button" class="b2b-float-cta" data-b2b-open-order>
-            ${summary.count > 0 ? 'Otevřít objednávku →' : 'Košík (0 ks)'}
-          </button>
-        </div>
+        <button type="button" class="b2b-float-cta" data-b2b-open-order>
+          ${summary.count > 0 ? 'Objednávka →' : 'Košík →'}
+        </button>
       </div>`;
 
     syncFloatingVisibility();
