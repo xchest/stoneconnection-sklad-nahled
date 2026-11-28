@@ -1,9 +1,9 @@
 {
   "meta": {
     "sourceUrl": "https://www.stoneconnection.cz/katalog/",
-    "syncedAt": "2026-11-27T20:38:35.475Z",
+    "syncedAt": "2026-11-28T14:20:20.350Z",
     "totalProducts": 118,
-    "inStockCount": 46
+    "inStockCount": 47
   },
   "products": [
     {
@@ -295,11 +295,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760010490/zula_aurora_india_detail2_9361c2bd6c.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785480533/zula_aurora_india_blok296_deska_af15d4d59c.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1763720555/aurora_india_blok280_deska_cb8d0f1725.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785480533/zula_aurora_india_blok296_deska_af15d4d59c.jpg",
-        "widthCm": 188,
-        "heightCm": 112,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1763720555/aurora_india_blok280_deska_cb8d0f1725.jpg",
+        "widthCm": 168,
+        "heightCm": 99,
         "source": "slab",
         "finish": "polished"
       },
@@ -339,7 +339,7 @@
       "bookmatchEligible": true,
       "inStockSlug": "aurora-india",
       "inStockBlocks": 4,
-      "inStockSlabs": 17,
+      "inStockSlabs": 18,
       "comment": "Výrazná žula s dynamickými vínově červenými a hnědočervenými proudy na tmavém antracitovém podkladu. V tloušťkách až 10 cm se uplatňuje na pomnících, náhrobních dílech, masivních schodech i exteriérových obkladech."
     },
     {
@@ -487,8 +487,8 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760084973/zula_azul_noche_deska_14c45cd1dd.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760084973/zula_azul_noche_deska_14c45cd1dd.jpg",
-        "widthCm": 157,
-        "heightCm": 101,
+        "widthCm": 171,
+        "heightCm": 105,
         "source": "slab",
         "finish": "polished"
       },
@@ -687,10 +687,10 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1767961182/zula_bararp_detail_9513d20002.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1767961182/zula_bararp_detail_9513d20002.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1769769192/zula_bararp_blok8019811_d63dd3e966.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762159707/zula_bararp_blok50120171_863f89112b.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1769769192/zula_bararp_blok8019811_d63dd3e966.jpg",
-        "widthCm": 160,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.26,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1762159707/zula_bararp_blok50120171_863f89112b.jpg",
+        "widthCm": 142,
         "heightCm": 79,
         "source": "slab",
         "finish": "polished"
@@ -2248,7 +2248,7 @@
       "bookmatchEligible": true,
       "inStockSlug": "cielo-de-ivory",
       "inStockBlocks": 1,
-      "inStockSlabs": 5,
+      "inStockSlabs": 7,
       "comment": "Světlá slonovinově béžová žula s jemnou oblačnou kresbou v teple šedých odstínech. Klidný, univerzální materiál pro kuchyňské desky, parapety a světlé koupelny."
     },
     {
@@ -3452,7 +3452,7 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785147498/zula_ivory_fantasy_blok2462_a_f6178da205.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1785147498/zula_ivory_fantasy_blok2462_a_f6178da205.jpg",
-        "widthCm": 196,
+        "widthCm": 195,
         "heightCm": 113,
         "source": "slab",
         "finish": "polished"
@@ -3503,7 +3503,7 @@
       "bookmatchEligible": true,
       "inStockSlug": "ivory-fantasy",
       "inStockBlocks": 1,
-      "inStockSlabs": 4,
+      "inStockSlabs": 5,
       "comment": "Světlá slonovinová žula s jemně plynoucí kresbou v teplých béžových a měkkých šedých odstínech. Působí vzdušně na kuchyňských deskách, parapetech i koupelnových obkladech."
     },
     {
@@ -3851,8 +3851,8 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.24,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760694038/zula_misty_brown_deska_62fbb368be.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.24,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760694038/zula_misty_brown_deska_62fbb368be.jpg",
-        "widthCm": 162,
-        "heightCm": 50,
+        "widthCm": 161,
+        "heightCm": 51,
         "source": "slab",
         "finish": "polished"
       },
@@ -4165,11 +4165,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760081499/zula_multicolor_red_detail_98f5760e03.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761922965/zula_multicolor_red_blok43643_8631eab53d.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1789733873/zula_multicolour_red_blok_45824_ed4adc0d89.jpg",
-        "widthCm": 185,
-        "heightCm": 101,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761922965/zula_multicolor_red_blok43643_8631eab53d.jpg",
+        "widthCm": 186,
+        "heightCm": 114,
         "source": "slab",
         "finish": "polished"
       },
@@ -4232,8 +4232,8 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760012107/zula_nero_angola_deska_a98b3424c7.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760012107/zula_nero_angola_deska_a98b3424c7.jpg",
-        "widthCm": 176,
-        "heightCm": 114,
+        "widthCm": 185,
+        "heightCm": 113,
         "source": "slab",
         "finish": "polished"
       },
@@ -4777,7 +4777,7 @@
       "bookmatchEligible": false,
       "inStockSlug": "olive-green",
       "inStockBlocks": 5,
-      "inStockSlabs": 13,
+      "inStockSlabs": 16,
       "comment": "Světle šedozelená žula se stejnoměrnou krystalickou strukturou a vysokou mrazuvzdorností. V tloušťkách 3–10 cm se používá především pro pomníky, hrobové díly, schody, sokly a exteriérové dlažby."
     },
     {
@@ -5143,25 +5143,25 @@
       ],
       "usageSegment": "versatile",
       "usageLabel": "Univerzální",
-      "surfaceFinish": "polished",
-      "textureScale": "fine",
+      "surfaceFinish": "matte",
+      "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1792488934/zula_pietra_lavica_deska_e09eb110e4.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1762430304/zula_pietra_lavica_detail_294379d91e.jpg",
-        "widthCm": 65,
-        "heightCm": 46,
-        "source": "detail",
-        "finish": "polished"
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1792488934/zula_pietra_lavica_deska_e09eb110e4.jpg",
+        "widthCm": 150,
+        "heightCm": 79,
+        "source": "slab",
+        "finish": "matte"
       },
       "realizationImages": [],
       "demoVisualizations": [],
       "bookmatchEligible": false,
-      "inStockSlug": null,
-      "inStockBlocks": 0,
-      "inStockSlabs": 0,
-      "comment": "Žula z oblasti Itálie v odstínech šedá s přirozenou kresbou vhodnou pro kuchyňské desky, koupelny i architektonické obklady."
+      "inStockSlug": "pietra-lavica",
+      "inStockBlocks": 1,
+      "inStockSlabs": 2,
+      "comment": "Autentický italský čedič/lávový kámen s jemnou pórovitostí a sametově šedočerným broušeným povrchem. Skvěle odolává žáru i mrazu — ideální na venkovní kuchyně, terasy, krby a moderní fasády."
     },
     {
       "id": "426",
@@ -6079,9 +6079,9 @@
       "textureScale": "fine",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760082701/zula_steel_grey_detail_d9ce1e50b1.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1787907097/zula_steel_grey_lesk_detail_d2ec7c35b1.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1787906520/zula_steel_grey_leather_skin_detail_PO_250071_87924e52e3.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1787907097/zula_steel_grey_lesk_detail_d2ec7c35b1.jpg",
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_limit,w_900,f_auto,q_90/v1787906520/zula_steel_grey_leather_skin_detail_PO_250071_87924e52e3.jpg",
         "widthCm": 35,
         "heightCm": 25,
         "source": "detail",
@@ -6312,11 +6312,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760096490/quartzite_taj_mahal_detail_bf0f009148.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764752569/quartzite_taj_mahal_blok11328_4d4760c7bc.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761917409/quartzite_taj_mahal_blok12012_e4a9c41e2d.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764752569/quartzite_taj_mahal_blok11328_4d4760c7bc.jpg",
-        "widthCm": 196,
-        "heightCm": 103,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761917409/quartzite_taj_mahal_blok12012_e4a9c41e2d.jpg",
+        "widthCm": 189,
+        "heightCm": 104,
         "source": "slab",
         "finish": "polished"
       },
@@ -6380,7 +6380,7 @@
       "bookmatchEligible": true,
       "inStockSlug": "taj-mahal",
       "inStockBlocks": 3,
-      "inStockSlabs": 7,
+      "inStockSlabs": 8,
       "comment": "Vysoce žádaný brazilský kvarcit se sametovým krémově béžovým základem a jemnými zlatavými či šedými žilkami. Ideální spojení křehké krásy mramoru a extrémní odolnosti pro kuchyně."
     },
     {
@@ -6874,8 +6874,8 @@
       "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.28,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760083988/zula_vanga_red_deska_3d38b5d961.jpg",
       "sceneTexture": {
         "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.28,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1760083988/zula_vanga_red_deska_3d38b5d961.jpg",
-        "widthCm": 166,
-        "heightCm": 80,
+        "widthCm": 145,
+        "heightCm": 89,
         "source": "slab",
         "finish": "polished"
       },
@@ -7162,11 +7162,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084400/zula_viscont_white_detail_1b3dc43c04.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764753665/zula_viscont_white_blok_PIL_823_39778cd31d.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1763734788/zula_viscont_white_blok10070_71595cfcca.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1764753665/zula_viscont_white_blok_PIL_823_39778cd31d.jpg",
-        "widthCm": 171,
-        "heightCm": 109,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1763734788/zula_viscont_white_blok10070_71595cfcca.jpg",
+        "widthCm": 166,
+        "heightCm": 102,
         "source": "slab",
         "finish": "polished"
       },
@@ -7310,11 +7310,11 @@
       "textureScale": "slab",
       "cardUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_640,h_440,c_fill,g_center/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
       "fullUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/f_auto,q_auto,w_1400,c_limit/v1760084595/zula_vizag_blue_detail_97f22f77d3.jpg",
-      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918455/zula_vizag_blue_blok16151_82feab7679.jpg",
+      "sceneUrl": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918456/zula_vizag_blue_blok15368_c1998edc6c.jpg",
       "sceneTexture": {
-        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918455/zula_vizag_blue_blok16151_82feab7679.jpg",
-        "widthCm": 179,
-        "heightCm": 108,
+        "url": "https://res.cloudinary.com/diizxq7gf/image/upload/c_crop,w_0.46,h_0.36,g_center,y_0.08/c_limit,w_900,f_auto,q_90/v1761918456/zula_vizag_blue_blok15368_c1998edc6c.jpg",
+        "widthCm": 171,
+        "heightCm": 104,
         "source": "slab",
         "finish": "polished"
       },
@@ -7367,7 +7367,7 @@
       "bookmatchEligible": true,
       "inStockSlug": "vizag-blue",
       "inStockBlocks": 5,
-      "inStockSlabs": 16,
+      "inStockSlabs": 20,
       "comment": "Ocelově modrošedá žula s jemnou vlnitou kresbou a fialovo-modrým nádechem. Pevný, mrazuvzdorný kámen v tloušťkách 3–6 cm pro pomníkové díly, schodiště, sokly i venkovní prvky."
     },
     {
